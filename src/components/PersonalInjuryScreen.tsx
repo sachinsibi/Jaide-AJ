@@ -52,7 +52,7 @@ export function PersonalInjuryScreen({ onBack }: PersonalInjuryScreenProps) {
             Personal Injury Matter Detected
           </h1>
           <p className="text-grey-dark" style={{ fontSize: '1.0625rem', lineHeight: '1.7' }}>
-            We're sorry, but J.A.I.D.E. does not currently support personal injury cases.
+            We're sorry, but JAIDE does not currently support personal injury cases.
           </p>
         </div>
 

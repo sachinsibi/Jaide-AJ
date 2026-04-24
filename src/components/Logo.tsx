@@ -2,67 +2,91 @@ import React from 'react';
 
 interface LogoProps {
   size?: 'small' | 'medium' | 'large';
+  dark?: boolean;
   showText?: boolean;
 }
 
-export function Logo({ size = 'medium', showText = true }: LogoProps) {
-  const dimensions = {
-    small: { icon: 32, text: 'text-xl' },
-    medium: { icon: 40, text: 'text-2xl' },
-    large: { icon: 56, text: 'text-4xl' }
-  };
+const STAR_POINTS = "10,1 12.06,7.17 18.56,7.22 13.33,11.08 15.29,17.28 10,13.5 4.71,17.28 6.67,11.08 1.44,7.22 7.94,7.17";
 
-  const iconSize = dimensions[size].icon;
-  const textSize = dimensions[size].text;
-
+function Star({ size }: { size: number }) {
   return (
-    <div className="flex items-center gap-3">
-      {/* Open Book Icon with Gold Bookmark */}
+    <svg width={size} height={size} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points={STAR_POINTS} fill="#D49E37" />
+    </svg>
+  );
+}
+
+export function Logo({ size = 'medium', dark = false, showText = true }: LogoProps) {
+  const textColor = dark ? '#FFFFFF' : '#073C65';
+
+  const config = {
+    small:  { fontSize: '1.375rem', starSize: 11, iconSize: 44 },
+    medium: { fontSize: '1.875rem', starSize: 15, iconSize: 60 },
+    large:  { fontSize: '4rem',     starSize: 32, iconSize: 128 },
+  }[size];
+
+  if (!showText) {
+    return (
       <svg
-        width={iconSize}
-        height={iconSize}
-        viewBox="0 0 48 48"
+        width={config.iconSize}
+        height={Math.round(config.iconSize * 1.1)}
+        viewBox="0 0 72 88"
         fill="none"
+        overflow="visible"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Book pages */}
+        {/* Top bar */}
+        <rect x="0" y="0" width="72" height="20" rx="3" fill={textColor} />
+        {/* Stem + hook */}
         <path
-          d="M6 8C6 6.89543 6.89543 6 8 6H22V40H8C6.89543 40 6 39.1046 6 38V8Z"
-          fill="#073C65"
-          opacity="0.9"
+          d="M 44,20 H 72 V 68 C 72,90 0,90 0,68 V 54 H 20 V 68 C 20,76 52,76 52,68 V 20 H 44 Z"
+          fill={textColor}
         />
-        <path
-          d="M26 6H40C41.1046 6 42 6.89543 42 8V38C42 39.1046 41.1046 40 40 40H26V6Z"
-          fill="#073C65"
-          opacity="0.9"
-        />
-        {/* Book spine/center */}
-        <path
-          d="M22 6H26V40H22V6Z"
-          fill="#042841"
-        />
-        {/* Gold bookmark */}
-        <path
-          d="M28 4H32C33.1046 4 34 4.89543 34 6V24L30 20L26 24V6C26 4.89543 26.8954 4 28 4Z"
-          fill="#D49E37"
-        />
-        {/* Page lines (left) */}
-        <line x1="10" y1="14" x2="18" y2="14" stroke="#E6F2FA" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="10" y1="19" x2="18" y2="19" stroke="#E6F2FA" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="10" y1="24" x2="16" y2="24" stroke="#E6F2FA" strokeWidth="1.5" strokeLinecap="round" />
-        {/* Page lines (right) */}
-        <line x1="30" y1="30" x2="38" y2="30" stroke="#E6F2FA" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="30" y1="35" x2="38" y2="35" stroke="#E6F2FA" strokeWidth="1.5" strokeLinecap="round" />
+        {/* Gold star at top-right, partially outside */}
+        <g transform="translate(51, -18)">
+          <svg width="22" height="22" viewBox="0 0 20 20">
+            <polygon points={STAR_POINTS} fill="#D49E37" />
+          </svg>
+        </g>
       </svg>
+    );
+  }
 
-      {showText && (
+  return (
+    <div
+      style={{
+        display: 'inline-flex',
+        alignItems: 'baseline',
+        fontFamily: "'Inter', 'Arial Black', -apple-system, BlinkMacSystemFont, sans-serif",
+        fontWeight: 900,
+        fontSize: config.fontSize,
+        letterSpacing: '0.01em',
+        color: textColor,
+        lineHeight: 1,
+        userSelect: 'none',
+      }}
+    >
+      <span>JA</span>
+      <span style={{ position: 'relative', display: 'inline-block' }}>
+        {/* Star as the i-dot */}
         <span
-          className={`${textSize} tracking-wider text-navy`}
-          style={{ fontFamily: "'Inter', sans-serif", fontWeight: 900, letterSpacing: '0.1em' }}
+          style={{
+            position: 'absolute',
+            bottom: '100%',
+            left: '50%',
+            transform: 'translateX(-50%) translateY(40%)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            pointerEvents: 'none',
+          }}
         >
-          J.A.I.D.E.
+          <Star size={config.starSize} />
         </span>
-      )}
+        {/* Dotless i (U+0131) */}
+        <span>&#305;</span>
+      </span>
+      <span>DE</span>
     </div>
   );
 }

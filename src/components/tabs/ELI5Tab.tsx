@@ -387,7 +387,7 @@ export function ELI5Tab({ scenario, onboardingData }: ELI5TabProps) {
           >
             This explains how the <strong>law works</strong> in England & Wales in simple terms. It's not advice about what <strong>you</strong> should do. 
             Every situation is different, so it's best to talk to a solicitor who can look at your specific details and give you proper advice. 
-            J.A.I.D.E. helps you understand the legal world so you're ready to have that conversation! You can also get free advice from Citizens Advice.
+            JAIDE helps you understand the legal world so you're ready to have that conversation! You can also get free advice from Citizens Advice.
           </p>
         </div>
       </div>

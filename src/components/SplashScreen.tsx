@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Logo } from './Logo';
-import { Loader2 } from 'lucide-react';
 
 interface SplashScreenProps {
   onComplete: () => void;
@@ -10,14 +9,8 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    const fadeTimer = setTimeout(() => {
-      setFadeOut(true);
-    }, 2700); // Start fade at 2.7s
-
-    const completeTimer = setTimeout(() => {
-      onComplete();
-    }, 3000); // Complete at 3s
-
+    const fadeTimer = setTimeout(() => setFadeOut(true), 2700);
+    const completeTimer = setTimeout(() => onComplete(), 3000);
     return () => {
       clearTimeout(fadeTimer);
       clearTimeout(completeTimer);
@@ -25,17 +18,41 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
   }, [onComplete]);
 
   return (
-    <div 
-      className={`min-h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-white via-pale-blue-light to-white transition-all duration-500 ${
-        fadeOut ? 'opacity-0 scale-105' : 'opacity-100 scale-100'
-      }`}
+    <div
+      style={{
+        minHeight: '100vh',
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: '#073C65',
+        transition: 'opacity 0.4s ease, transform 0.4s ease',
+        opacity: fadeOut ? 0 : 1,
+        transform: fadeOut ? 'scale(1.04)' : 'scale(1)',
+      }}
     >
-      <div className="flex flex-col items-center gap-6">
-        <Logo size="large" showText={true} />
-        
-        {/* Spinning loading icon */}
-        <Loader2 className="w-8 h-8 text-gold animate-spin" />
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
+        <Logo size="large" dark={true} showText={true} />
+
+        {/* Gold pulsing dot */}
+        <div
+          style={{
+            width: '8px',
+            height: '8px',
+            borderRadius: '50%',
+            background: '#D49E37',
+            animation: 'pulse 1.2s ease-in-out infinite',
+          }}
+        />
       </div>
+
+      <style>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.4; transform: scale(0.6); }
+        }
+      `}</style>
     </div>
   );
 }

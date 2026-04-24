@@ -122,7 +122,7 @@ export function HelpModal({ onClose }: HelpModalProps) {
         {/* Intro Text */}
         <div style={{ padding: '1.5rem 1.5rem 0', background: '#F5FAFD' }}>
           <p className="text-grey-dark" style={{ lineHeight: '1.7', margin: 0, fontSize: '0.9375rem' }}>
-            The more details you provide, the better J.A.I.D.E. can help you understand your legal situation. 
+            The more details you provide, the better JAIDE can help you understand your legal situation. 
             Here's what to include:
           </p>
         </div>
@@ -222,7 +222,7 @@ export function HelpModal({ onClose }: HelpModalProps) {
                   Don't worry about being perfect!
                 </p>
                 <p className="text-grey-dark" style={{ lineHeight: '1.6', margin: 0, fontSize: '0.875rem' }}>
-                  J.A.I.D.E. will ask follow-up questions to get all the details needed to help you understand your situation.
+                  JAIDE will ask follow-up questions to get all the details needed to help you understand your situation.
                 </p>
               </div>
             </div>

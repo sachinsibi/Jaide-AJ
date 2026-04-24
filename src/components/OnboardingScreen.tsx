@@ -198,7 +198,7 @@ export function OnboardingScreen({ initialInput, category, onComplete, onBack }:
             {currentQuestionData.question}
           </h2>
           <p className="text-grey-medium" style={{ marginBottom: '1.75rem', lineHeight: '1.7', fontSize: '0.9375rem' }}>
-            This helps J.A.I.D.E. understand your situation better and provide accurate, personalized legal information.
+            This helps JAIDE understand your situation better and provide accurate, personalized legal information.
           </p>
 
           {/* Input based on question type */}

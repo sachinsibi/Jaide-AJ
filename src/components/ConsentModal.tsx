@@ -116,7 +116,7 @@ export function ConsentModal({ onAgree }: ConsentModalProps) {
                     This is NOT Legal Advice
                   </h4>
                   <p className="text-grey-dark" style={{ fontSize: '0.875rem', lineHeight: '1.6', margin: 0 }}>
-                    J.A.I.D.E. provides <strong>general legal information only</strong>. We do not provide legal advice, 
+                    JAIDE provides <strong>general legal information only</strong>. We do not provide legal advice, 
                     legal representation, or replace the services of a qualified attorney.
                   </p>
                 </div>
@@ -225,7 +225,7 @@ export function ConsentModal({ onAgree }: ConsentModalProps) {
                   </h4>
                   <p className="text-grey-dark" style={{ fontSize: '0.875rem', lineHeight: '1.6', margin: 0 }}>
                     For personalized legal advice specific to your situation, you must consult with a 
-                    licensed attorney in your jurisdiction. J.A.I.D.E. can help you find one.
+                    licensed attorney in your jurisdiction. JAIDE can help you find one.
                   </p>
                 </div>
               </div>
@@ -245,7 +245,7 @@ export function ConsentModal({ onAgree }: ConsentModalProps) {
               <Info className="text-navy" style={{ width: '20px', height: '20px', flexShrink: 0, marginTop: '0.125rem' }} />
               <p className="text-grey-dark" style={{ fontSize: '0.8125rem', lineHeight: '1.6', margin: 0 }}>
                 By clicking "I Understand and Agree," you acknowledge that you have read and understand these terms, 
-                and you agree to use J.A.I.D.E. for <strong>informational purposes only</strong>.
+                and you agree to use JAIDE for <strong>informational purposes only</strong>.
               </p>
             </div>
           </div>

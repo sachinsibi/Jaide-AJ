@@ -87,16 +87,17 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
       display: 'flex',
       flexDirection: 'column'
     }}>
-      {/* Faded logo backsplash */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.008 }}>
+      {/* Faded J icon backsplash */}
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.012 }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '4rem', padding: '4rem', height: '100%' }}>
           {[...Array(80)].map((_, i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <svg width="80" height="80" viewBox="0 0 48 48" fill="none">
-                <path d="M6 8C6 6.89543 6.89543 6 8 6H22V40H8C6.89543 40 6 39.1046 6 38V8Z" fill="#073C65" />
-                <path d="M26 6H40C41.1046 6 42 6.89543 42 8V38C42 39.1046 41.1046 40 40 40H26V6Z" fill="#073C65" />
-                <path d="M22 6H26V40H22V6Z" fill="#042841" />
-                <path d="M28 4H32C33.1046 4 34 4.89543 34 6V24L30 20L26 24V6C26 4.89543 26.8954 4 28 4Z" fill="#D49E37" />
+              <svg width="60" height="70" viewBox="0 0 72 88" fill="none">
+                <rect x="0" y="0" width="72" height="20" rx="3" fill="#073C65" />
+                <path d="M 44,20 H 72 V 68 C 72,90 0,90 0,68 V 54 H 20 V 68 C 20,76 52,76 52,68 V 20 H 44 Z" fill="#073C65" />
+                <g transform="translate(51, -18)">
+                  <polygon points="10,1 12.06,7.17 18.56,7.22 13.33,11.08 15.29,17.28 10,13.5 4.71,17.28 6.67,11.08 1.44,7.22 7.94,7.17" fill="#D49E37" />
+                </g>
               </svg>
             </div>
           ))}
@@ -121,22 +122,10 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
         zIndex: 10
       }}>
         {/* Brand name */}
-        <div style={{ marginBottom: '3rem', width: '100%', maxWidth: '1280px', margin: '0 auto 3rem', textAlign: 'center' }}>
-          <h1
-            className="text-navy"
-            style={{
-              fontFamily: "'Inter', sans-serif",
-              fontWeight: 900,
-              fontSize: 'clamp(2.5rem, 8vw, 4rem)',
-              letterSpacing: '0.12em',
-              lineHeight: 1.1,
-              marginBottom: '1rem'
-            }}
-          >
-            J.A.I.D.E.
-          </h1>
+        <div style={{ marginBottom: '3rem', width: '100%', maxWidth: '1280px', margin: '0 auto 3rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
+          <Logo size="large" showText={true} />
           <p className="text-grey-dark" style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.125rem)', lineHeight: '1.7' }}>
-            Justice. Assistance. Information. Decision. Engine.
+            Justice · Assistance · Information · Decision · Engine
           </p>
         </div>
 
@@ -295,7 +284,7 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
           style={{ fontSize: '0.9375rem', marginTop: '1rem' }}
         >
           <HelpCircle className="w-5 h-5" />
-          <span>What kind of issues can J.A.I.D.E. help with?</span>
+          <span>What kind of issues can JAIDE help with?</span>
         </button>
       </div>
 

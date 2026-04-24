@@ -895,7 +895,7 @@ export function ReferencesTab({ scenario, onboardingData }: ReferencesTabProps) 
           >
             These links are provided for informational purposes and represent official and reputable resources 
             for legal matters in England & Wales. Always verify you are accessing current official sources. 
-            J.A.I.D.E. is not affiliated with any linked organisations. Laws and procedures may change - check for updates.
+            JAIDE is not affiliated with any linked organisations. Laws and procedures may change - check for updates.
           </p>
         </div>
       </div>

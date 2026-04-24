@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Loader2 } from 'lucide-react';
+import { Logo } from './Logo';
 
 interface SynthesizingScreenProps {
   onComplete: () => void;
@@ -37,19 +37,34 @@ export function SynthesizingScreen({ onComplete }: SynthesizingScreenProps) {
         transform: fadeOut ? 'scale(1.05)' : 'scale(1)'
       }}
     >
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
-        <div style={{ position: 'relative' }}>
-          <Loader2 className="w-16 h-16 text-navy animate-spin" />
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
+        <Logo size="large" showText={true} />
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+          <div
+            style={{
+              width: '8px',
+              height: '8px',
+              borderRadius: '50%',
+              background: '#D49E37',
+              animation: 'pulse 1.2s ease-in-out infinite',
+            }}
+          />
+          <h2 className="text-navy" style={{ fontSize: '1.25rem', fontWeight: 700 }}>
+            Synthesizing...
+          </h2>
+          <p className="text-grey-medium" style={{ textAlign: 'center', maxWidth: '28rem', padding: '0 1.5rem' }}>
+            Analyzing your situation and preparing personalized legal information
+          </p>
         </div>
-        
-        <h2 className="text-navy">
-          Synthesizing...
-        </h2>
-        
-        <p className="text-grey-medium" style={{ textAlign: 'center', width: '100%', maxWidth: '28rem', padding: '0 1.5rem' }}>
-          Analyzing your situation and preparing personalized legal information
-        </p>
       </div>
+
+      <style>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.4; transform: scale(0.6); }
+        }
+      `}</style>
     </div>
   );
 }

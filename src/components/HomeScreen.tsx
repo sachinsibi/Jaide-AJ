@@ -63,23 +63,24 @@ export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScree
   };
 
   return (
-    <div style={{ 
-      minHeight: '100vh', 
-      width: '100%', 
-      background: 'linear-gradient(to bottom, #F9FAFB 0%, white 50%)',
+    <div style={{
+      minHeight: '100vh',
+      width: '100%',
+      background: 'linear-gradient(to bottom, #E6F2FA 0%, #F5FAFD 30%, white 100%)',
       position: 'relative',
       overflow: 'hidden'
     }}>
-      {/* Faded logo pattern background */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.006, zIndex: 0 }}>
+      {/* Faded J icon pattern background */}
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.012, zIndex: 0 }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '4rem', padding: '4rem' }}>
           {[...Array(64)].map((_, i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <svg width="60" height="60" viewBox="0 0 48 48" fill="none">
-                <path d="M6 8C6 6.89543 6.89543 6 8 6H22V40H8C6.89543 40 6 39.1046 6 38V8Z" fill="#073C65" />
-                <path d="M26 6H40C41.1046 6 42 6.89543 42 8V38C42 39.1046 41.1046 40 40 40H26V6Z" fill="#073C65" />
-                <path d="M22 6H26V40H22V6Z" fill="#042841" />
-                <path d="M28 4H32C33.1046 4 34 4.89543 34 6V24L30 20L26 24V6C26 4.89543 26.8954 4 28 4Z" fill="#D49E37" />
+              <svg width="60" height="70" viewBox="0 0 72 88" fill="none">
+                <rect x="0" y="0" width="72" height="20" rx="3" fill="#073C65" />
+                <path d="M 44,20 H 72 V 68 C 72,90 0,90 0,68 V 54 H 20 V 68 C 20,76 52,76 52,68 V 20 H 44 Z" fill="#073C65" />
+                <g transform="translate(51, -18)">
+                  <polygon points="10,1 12.06,7.17 18.56,7.22 13.33,11.08 15.29,17.28 10,13.5 4.71,17.28 6.67,11.08 1.44,7.22 7.94,7.17" fill="#D49E37" />
+                </g>
               </svg>
             </div>
           ))}
@@ -180,11 +181,11 @@ export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScree
           </div>
 
           {/* Scenario Summary */}
-          <div 
+          <div
             className="rounded-xl"
-            style={{ 
+            style={{
               background: 'white',
-              border: '1px solid #E5E7EB',
+              border: '1px solid rgba(7, 60, 101, 0.12)',
               padding: '1.5rem'
             }}
           >
@@ -294,7 +295,7 @@ export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScree
                       style={{
                         width: '48px',
                         height: '48px',
-                        background: isExpanded ? section.color : '#F3F4F6',
+                        background: isExpanded ? section.color : 'rgba(7, 60, 101, 0.06)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -342,7 +343,7 @@ export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScree
                 padding: '1.5rem 1rem',
                 textAlign: 'center',
                 background: 'white',
-                border: '1px solid #E5E7EB',
+                border: '1px solid rgba(7, 60, 101, 0.12)',
                 cursor: 'pointer',
                 minHeight: '140px'
               }}
@@ -352,7 +353,7 @@ export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScree
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'white';
-                e.currentTarget.style.borderColor = '#E5E7EB';
+                e.currentTarget.style.borderColor = 'rgba(7, 60, 101, 0.12)';
               }}
             >
               <div 
@@ -387,7 +388,7 @@ export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScree
                 padding: '1.5rem 1rem',
                 textAlign: 'center',
                 background: 'white',
-                border: '1px solid #E5E7EB',
+                border: '1px solid rgba(7, 60, 101, 0.12)',
                 cursor: 'pointer',
                 minHeight: '140px'
               }}
@@ -397,7 +398,7 @@ export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScree
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'white';
-                e.currentTarget.style.borderColor = '#E5E7EB';
+                e.currentTarget.style.borderColor = 'rgba(7, 60, 101, 0.12)';
               }}
             >
               <div 

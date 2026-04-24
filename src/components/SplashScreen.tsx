@@ -26,31 +26,32 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        background: '#073C65',
+        background: 'linear-gradient(to bottom, #E6F2FA 0%, #F5FAFD 50%, #FFFFFF 100%)',
         transition: 'opacity 0.4s ease, transform 0.4s ease',
         opacity: fadeOut ? 0 : 1,
-        transform: fadeOut ? 'scale(1.04)' : 'scale(1)',
+        transform: fadeOut ? 'scale(1.03)' : 'scale(1)',
       }}
     >
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
-        <Logo size="large" dark={true} showText={true} />
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.25rem' }}>
+        <Logo size="large" showText={false} />
+        <Logo size="large" showText={true} />
 
-        {/* Gold pulsing dot */}
         <div
           style={{
-            width: '8px',
-            height: '8px',
+            width: '32px',
+            height: '32px',
+            border: '3px solid transparent',
+            borderTopColor: '#D49E37',
             borderRadius: '50%',
-            background: '#D49E37',
-            animation: 'pulse 1.2s ease-in-out infinite',
+            animation: 'arcSpin 1s linear infinite',
+            marginTop: '0.5rem',
           }}
         />
       </div>
 
       <style>{`
-        @keyframes pulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.4; transform: scale(0.6); }
+        @keyframes arcSpin {
+          to { transform: rotate(360deg); }
         }
       `}</style>
     </div>

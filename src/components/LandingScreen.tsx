@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Logo } from './Logo';
-import { Upload, Mic, HelpCircle, Search } from 'lucide-react';
+import { Camera, Mic, HelpCircle, User } from 'lucide-react';
 import { ConsentModal } from './ConsentModal';
 import { HelpModal } from './HelpModal';
 
@@ -15,12 +15,11 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
   const [showHelp, setShowHelp] = useState(false);
 
   const handleSubmit = () => {
-    if (userInput.trim()) {
-      if (!hasAgreed) {
-        setShowConsent(true);
-      } else {
-        onContinue(userInput);
-      }
+    if (!userInput.trim()) return;
+    if (!hasAgreed) {
+      setShowConsent(true);
+    } else {
+      onContinue(userInput);
     }
   };
 
@@ -42,7 +41,7 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
     if (file) {
       const reader = new FileReader();
       reader.onload = () => {
-        setUserInput(prev => prev + (prev ? '\n\n' : '') + '[Photo uploaded: ' + file.name + ']');
+        setUserInput(prev => prev + (prev ? '\n\n' : '') + '[Photo attached: ' + file.name + ']');
       };
       reader.readAsDataURL(file);
     }
@@ -50,261 +49,207 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
 
   const handleVoiceInput = () => {
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    
     if (!SpeechRecognition) {
       alert('Voice input is not supported in your browser. Please try Chrome or Edge.');
       return;
     }
-
     const recognition = new SpeechRecognition();
     recognition.lang = 'en-US';
     recognition.continuous = false;
     recognition.interimResults = false;
-
     recognition.onresult = (event: any) => {
       const transcript = event.results[0][0].transcript;
       setUserInput(prev => prev + (prev ? ' ' : '') + transcript);
     };
-
     recognition.onerror = (event: any) => {
       alert('Voice input error: ' + event.error);
     };
-
     recognition.start();
   };
 
-  const handleHelp = () => {
-    setShowHelp(!showHelp);
-  };
-
   return (
-    <div style={{ 
-      minHeight: '100vh', 
+    <div style={{
+      minHeight: '100vh',
       width: '100%',
-      background: 'linear-gradient(to bottom, #E6F2FA, #F5FAFD, white)',
-      position: 'relative',
-      overflow: 'hidden',
+      background: 'linear-gradient(to bottom, #E6F2FA 0%, #F5FAFD 40%, #ffffff 100%)',
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
     }}>
-      {/* Faded J icon backsplash */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.012 }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 1fr)', gap: '4rem', padding: '4rem', height: '100%' }}>
-          {[...Array(80)].map((_, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <svg width="60" height="70" viewBox="0 0 72 88" fill="none">
-                <rect x="0" y="0" width="72" height="20" rx="3" fill="#073C65" />
-                <path d="M 44,20 H 72 V 68 C 72,90 0,90 0,68 V 54 H 20 V 68 C 20,76 52,76 52,68 V 20 H 44 Z" fill="#073C65" />
-                <g transform="translate(51, -18)">
-                  <polygon points="10,1 12.06,7.17 18.56,7.22 13.33,11.08 15.29,17.28 10,13.5 4.71,17.28 6.67,11.08 1.44,7.22 7.94,7.17" fill="#D49E37" />
-                </g>
-              </svg>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Header */}
-      <header style={{ width: '100%', padding: '2rem 1.5rem 1.5rem', position: 'relative', zIndex: 10 }}>
+      <header style={{
+        width: '100%',
+        padding: '1.25rem 1.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+      }}>
         <Logo size="small" showText={true} />
+        <button
+          style={{
+            width: '40px',
+            height: '40px',
+            borderRadius: '50%',
+            background: 'white',
+            border: '1px solid rgba(7, 60, 101, 0.12)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+          }}
+          onClick={() => alert('Profile — coming soon')}
+          aria-label="Profile"
+        >
+          <User style={{ width: '18px', height: '18px', color: '#073C65' }} />
+        </button>
       </header>
 
-      {/* Main content */}
-      <div style={{ 
-        flex: 1, 
-        width: '100%',
-        display: 'flex', 
-        flexDirection: 'column', 
-        alignItems: 'center', 
-        justifyContent: 'center', 
-        padding: '4rem 1.5rem',
-        position: 'relative',
-        zIndex: 10
+      {/* Main */}
+      <div style={{
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '2rem 1.5rem 3rem',
+        gap: '2rem',
       }}>
-        {/* Brand name */}
-        <div style={{ marginBottom: '3rem', width: '100%', maxWidth: '1280px', margin: '0 auto 3rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
+        {/* Brand */}
+        <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.625rem' }}>
           <Logo size="large" showText={true} />
-          <p className="text-grey-dark" style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.125rem)', lineHeight: '1.7' }}>
-            Justice · Assistance · Information · Decision · Engine
+          <p style={{ color: '#6B7280', fontSize: '1rem', lineHeight: 1.5 }}>
+            Your civil law intelligence engine.
           </p>
         </div>
 
-        {/* Google-style search input */}
-        <div style={{ width: '100%', maxWidth: '680px', margin: '0 auto 2rem' }}>
-          {/* Main search bar */}
-          <div
-            className="relative bg-white rounded-full transition-all duration-200"
-            style={{
-              boxShadow: userInput.trim() 
-                ? '0 1px 6px rgba(32, 33, 36, 0.28)' 
-                : '0 1px 6px rgba(32, 33, 36, 0.18)',
-              border: '1px solid rgba(223, 225, 229, 0)',
-              padding: '0.375rem'
-            }}
-            onMouseEnter={(e) => {
-              if (!userInput.trim()) {
-                e.currentTarget.style.boxShadow = '0 1px 6px rgba(32, 33, 36, 0.28)';
-              }
-            }}
-            onMouseLeave={(e) => {
-              if (!userInput.trim()) {
-                e.currentTarget.style.boxShadow = '0 1px 6px rgba(32, 33, 36, 0.18)';
-              }
-            }}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', padding: '0 1rem' }}>
-              {/* Search icon */}
-              <Search 
-                className="text-grey-medium" 
-                style={{ width: '20px', height: '20px', marginRight: '0.875rem', flexShrink: 0 }} 
-              />
-              
-              {/* Input field */}
-              <textarea
-                value={userInput}
-                onChange={(e) => setUserInput(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="Describe your legal situation..."
-                className="bg-transparent text-navy placeholder-grey-medium resize-none"
-                style={{
-                  flex: 1,
-                  border: 'none',
-                  outline: 'none',
-                  fontSize: '1rem',
-                  lineHeight: '20px',
-                  minHeight: '44px',
-                  maxHeight: '120px',
-                  padding: '12px 0',
-                  fontFamily: 'Arial, sans-serif'
-                }}
-              />
-
-              {/* Right icons */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', marginLeft: '0.5rem' }}>
-                {/* Photo upload */}
-                <label 
-                  className="cursor-pointer rounded-full transition-colors" 
-                  style={{ 
-                    padding: '0.5rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}
-                  title="Upload photo"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = 'rgba(0, 0, 0, 0.04)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'transparent';
-                  }}
-                >
-                  <Upload className="text-grey-dark" style={{ width: '20px', height: '20px' }} />
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={handlePhotoUpload}
-                    className="hidden"
-                  />
-                </label>
-
-                {/* Voice input */}
-                <button
-                  onClick={handleVoiceInput}
-                  className="rounded-full transition-colors"
-                  style={{ 
-                    padding: '0.5rem',
-                    border: 'none',
-                    background: 'transparent',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}
-                  title="Voice input"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = 'rgba(0, 0, 0, 0.04)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'transparent';
-                  }}
-                >
-                  <Mic className="text-grey-dark" style={{ width: '20px', height: '20px' }} />
-                </button>
-              </div>
-            </div>
+        {/* Input card */}
+        <div style={{ width: '100%', maxWidth: '520px' }}>
+          <div style={{
+            background: 'white',
+            borderRadius: '1.25rem',
+            boxShadow: '0 2px 20px rgba(7, 60, 101, 0.08)',
+            padding: '1.25rem 1.25rem 1rem',
+          }}>
+            <textarea
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              onKeyPress={handleKeyPress}
+              placeholder="Tell us what happened."
+              style={{
+                width: '100%',
+                minHeight: '120px',
+                border: 'none',
+                outline: 'none',
+                resize: 'none',
+                fontSize: '1rem',
+                lineHeight: '1.65',
+                color: '#073C65',
+                background: 'transparent',
+                fontFamily: 'inherit',
+              }}
+            />
           </div>
 
-          {/* GO Button - Call to Action */}
-          <div style={{ 
-            display: 'flex', 
+          {/* Action icon buttons */}
+          <div style={{
+            display: 'flex',
             justifyContent: 'center',
-            marginTop: '1.5rem'
+            gap: '2rem',
+            marginTop: '1.5rem',
           }}>
+            {/* Upload Photo */}
+            <label style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+              <div style={{
+                width: '52px',
+                height: '52px',
+                borderRadius: '50%',
+                background: 'white',
+                boxShadow: '0 2px 12px rgba(7, 60, 101, 0.1)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <Camera style={{ width: '22px', height: '22px', color: '#073C65' }} />
+              </div>
+              <span style={{ fontSize: '0.75rem', color: '#6B7280', fontWeight: 500 }}>Upload Photo</span>
+              <input type="file" accept="image/*" onChange={handlePhotoUpload} style={{ display: 'none' }} />
+            </label>
+
+            {/* Speech-to-Text */}
             <button
-              onClick={handleSubmit}
-              disabled={!userInput.trim()}
-              className="rounded-full transition-all"
-              style={{
-                padding: '1rem 3rem',
-                fontSize: '1.125rem',
-                fontWeight: 700,
-                background: userInput.trim() ? '#D49E37' : '#E5E7EB',
-                border: 'none',
-                color: userInput.trim() ? '#073C65' : '#9CA3AF',
-                cursor: userInput.trim() ? 'pointer' : 'not-allowed',
-                boxShadow: userInput.trim() ? '0 4px 12px rgba(212, 158, 55, 0.3)' : 'none',
-                letterSpacing: '0.1em',
-                fontFamily: "'Inter', sans-serif"
-              }}
-              onMouseEnter={(e) => {
-                if (userInput.trim()) {
-                  e.currentTarget.style.background = '#E0B24E';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                  e.currentTarget.style.boxShadow = '0 6px 16px rgba(212, 158, 55, 0.4)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (userInput.trim()) {
-                  e.currentTarget.style.background = '#D49E37';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 12px rgba(212, 158, 55, 0.3)';
-                }
-              }}
+              onClick={handleVoiceInput}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
             >
-              GO
+              <div style={{
+                width: '52px',
+                height: '52px',
+                borderRadius: '50%',
+                background: 'white',
+                boxShadow: '0 2px 12px rgba(7, 60, 101, 0.1)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <Mic style={{ width: '22px', height: '22px', color: '#073C65' }} />
+              </div>
+              <span style={{ fontSize: '0.75rem', color: '#6B7280', fontWeight: 500 }}>Speech-to-Text</span>
+            </button>
+
+            {/* Help Describe */}
+            <button
+              onClick={() => setShowHelp(true)}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            >
+              <div style={{
+                width: '52px',
+                height: '52px',
+                borderRadius: '50%',
+                background: 'white',
+                boxShadow: '0 2px 12px rgba(7, 60, 101, 0.1)',
+                border: '2px solid #D49E37',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}>
+                <HelpCircle style={{ width: '22px', height: '22px', color: '#D49E37' }} />
+              </div>
+              <span style={{ fontSize: '0.75rem', color: '#6B7280', fontWeight: 500 }}>Help Describe</span>
             </button>
           </div>
 
+          {/* Continue button */}
+          <button
+            onClick={handleSubmit}
+            disabled={!userInput.trim()}
+            style={{
+              width: '100%',
+              marginTop: '1.75rem',
+              padding: '1rem',
+              borderRadius: '100px',
+              border: 'none',
+              background: userInput.trim() ? '#073C65' : '#D1D5DB',
+              color: 'white',
+              fontSize: '1.0625rem',
+              fontWeight: 600,
+              cursor: userInput.trim() ? 'pointer' : 'not-allowed',
+              transition: 'background 0.2s, transform 0.15s',
+              fontFamily: 'inherit',
+            }}
+            onMouseEnter={(e) => { if (userInput.trim()) e.currentTarget.style.background = '#0A5A8A'; }}
+            onMouseLeave={(e) => { if (userInput.trim()) e.currentTarget.style.background = '#073C65'; }}
+          >
+            Continue
+          </button>
         </div>
-
-        {/* Help button */}
-        <button
-          onClick={handleHelp}
-          className="flex items-center gap-2 text-navy hover:text-navy-light transition-colors"
-          style={{ fontSize: '0.9375rem', marginTop: '1rem' }}
-        >
-          <HelpCircle className="w-5 h-5" />
-          <span>What kind of issues can JAIDE help with?</span>
-        </button>
       </div>
 
-      {/* Footer Disclaimer */}
-      <footer style={{ 
-        position: 'relative', 
-        zIndex: 10, 
-        padding: '1rem 1.5rem', 
-        background: 'rgba(255, 255, 255, 0.8)', 
-        backdropFilter: 'blur(4px)',
-        borderTop: '1px solid #F5F5F5'
-      }}>
-        <div style={{ width: '100%', maxWidth: '1536px', margin: '0 auto' }}>
-          <p style={{ fontSize: '0.75rem', color: '#9CA3AF', textAlign: 'center', lineHeight: '1.7' }}>
-            <strong className="text-grey-dark">Disclaimer:</strong> This platform provides general legal information only. We do not offer legal advice or replace the services of a qualified lawyer. For legal advice, please consult a licensed attorney.
-          </p>
-        </div>
+      {/* Footer */}
+      <footer style={{ padding: '1rem 1.5rem', textAlign: 'center' }}>
+        <p style={{ fontSize: '0.75rem', color: '#9CA3AF', lineHeight: 1.6 }}>
+          General legal information only — not legal advice. Consult a licensed attorney for your situation.
+        </p>
       </footer>
 
-      {showConsent && <ConsentModal onAgree={handleAgree} />}
+      {showConsent && <ConsentModal onAgree={handleAgree} onCancel={() => setShowConsent(false)} />}
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Logo } from './Logo';
-import { FileText, Scale, Baby, BookOpen, UserCircle, Sparkles, ChevronDown, RotateCcw, Save, Download, Briefcase } from 'lucide-react';
+import { User, Save, Download, Search, Zap, X } from 'lucide-react';
 import { OverviewTab } from './tabs/OverviewTab';
 import { LegalBreakdownTab } from './tabs/LegalBreakdownTab';
 import { ELI5Tab } from './tabs/ELI5Tab';
@@ -12,491 +12,279 @@ interface HomeScreenProps {
   onStartOver?: () => void;
 }
 
+const TABS = [
+  { id: 'overview',    label: 'Overview' },
+  { id: 'legal',       label: 'Full Legal Breakdown' },
+  { id: 'eli5',        label: "Explain Like I'm 5" },
+  { id: 'references',  label: 'Links & Literature' },
+] as const;
+
+type TabId = typeof TABS[number]['id'];
+
 export function HomeScreen({ caseData, onAccessLawyers, onStartOver }: HomeScreenProps) {
-  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<TabId>('overview');
+  const [showBottomSheet, setShowBottomSheet] = useState(false);
 
-  const sections = [
-    { 
-      id: 'overview', 
-      label: 'Overview', 
-      icon: FileText, 
-      description: 'Quick summary of your legal situation',
-      color: '#D49E37',
-      component: <OverviewTab scenario={caseData.scenario || ''} onboardingData={caseData} />
-    },
-    { 
-      id: 'legal', 
-      label: 'Full Legal Breakdown', 
-      icon: Scale, 
-      description: 'Detailed legal analysis and implications',
-      color: '#073C65',
-      component: <LegalBreakdownTab scenario={caseData.scenario || ''} onboardingData={caseData} />
-    },
-    { 
-      id: 'eli5', 
-      label: 'Explain Like I\'m 5', 
-      icon: Baby, 
-      description: 'Simple explanation in plain language',
-      color: '#D49E37',
-      component: <ELI5Tab scenario={caseData.scenario || ''} onboardingData={caseData} />
-    },
-    { 
-      id: 'references', 
-      label: 'Links and Literature', 
-      icon: BookOpen, 
-      description: 'Resources, references, and helpful materials',
-      color: '#073C65',
-      component: <ReferencesTab scenario={caseData.scenario || ''} onboardingData={caseData} />
+  const scenario = caseData.scenario || caseData.initial || '';
+
+  const renderTab = () => {
+    switch (activeTab) {
+      case 'overview':    return <OverviewTab scenario={scenario} onboardingData={caseData} />;
+      case 'legal':       return <LegalBreakdownTab scenario={scenario} onboardingData={caseData} />;
+      case 'eli5':        return <ELI5Tab scenario={scenario} onboardingData={caseData} />;
+      case 'references':  return <ReferencesTab scenario={scenario} onboardingData={caseData} />;
     }
-  ];
-
-  const toggleSection = (sectionId: string) => {
-    setExpandedSection(expandedSection === sectionId ? null : sectionId);
-  };
-
-  const handleExport = () => {
-    alert('Export functionality - Downloads PDF summary');
-  };
-
-  const handleSave = () => {
-    alert('Save functionality - Saves progress for later');
   };
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      width: '100%',
-      background: 'linear-gradient(to bottom, #E6F2FA 0%, #F5FAFD 30%, white 100%)',
-      position: 'relative',
-      overflow: 'hidden'
-    }}>
-      {/* Faded J icon pattern background */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', opacity: 0.012, zIndex: 0 }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '4rem', padding: '4rem' }}>
-          {[...Array(64)].map((_, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <svg width="60" height="70" viewBox="0 0 72 88" fill="none">
-                <rect x="0" y="0" width="72" height="20" rx="3" fill="#073C65" />
-                <path d="M 44,20 H 72 V 68 C 72,90 0,90 0,68 V 54 H 20 V 68 C 20,76 52,76 52,68 V 20 H 44 Z" fill="#073C65" />
-                <g transform="translate(51, -18)">
-                  <polygon points="10,1 12.06,7.17 18.56,7.22 13.33,11.08 15.29,17.28 10,13.5 4.71,17.28 6.67,11.08 1.44,7.22 7.94,7.17" fill="#D49E37" />
-                </g>
-              </svg>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Header */}
-      <header style={{ 
-        width: '100%',
-        background: 'rgba(255, 255, 255, 0.98)',
-        backdropFilter: 'blur(12px)',
+    <div style={{ minHeight: '100vh', width: '100%', background: '#FAFBFC', position: 'relative' }}>
+      {/* Sticky header */}
+      <header style={{
         position: 'sticky',
         top: 0,
         zIndex: 20,
-        borderBottom: '1px solid rgba(0, 0, 0, 0.06)',
-        boxShadow: '0 1px 2px rgba(0, 0, 0, 0.04)'
+        width: '100%',
+        background: 'white',
+        borderBottom: '1px solid rgba(7, 60, 101, 0.07)',
+        padding: '1rem 1.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
       }}>
-        <div style={{ width: '100%', maxWidth: '900px', margin: '0 auto', padding: '1.25rem 1.5rem' }}>
-          {/* Top bar with logo and actions */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
-            <Logo size="small" showText={true} />
-            
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              {/* Start New Analysis Button */}
-              {onStartOver && (
-                <button 
-                  className="rounded-xl transition-all"
-                  style={{
-                    padding: '0.625rem 1rem',
-                    background: 'transparent',
-                    border: '1.5px solid #E5E7EB',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.5rem',
-                    fontSize: '0.875rem',
-                    fontWeight: 600,
-                    color: '#073C65'
-                  }}
-                  onClick={onStartOver}
-                  aria-label="Start new analysis"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = 'rgba(7, 60, 101, 0.04)';
-                    e.currentTarget.style.borderColor = '#D49E37';
-                    e.currentTarget.style.color = '#D49E37';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.borderColor = '#E5E7EB';
-                    e.currentTarget.style.color = '#073C65';
-                  }}
-                >
-                  <RotateCcw style={{ width: '16px', height: '16px' }} />
-                  <span style={{ display: window.innerWidth > 640 ? 'inline' : 'none' }}>New Analysis</span>
-                </button>
-              )}
-              
-              <button 
-                className="rounded-full transition-all"
-                style={{
-                  padding: '0.5rem',
-                  background: 'transparent',
-                  border: 'none',
-                  cursor: 'pointer'
-                }}
-                onClick={() => alert('Profile settings - Coming soon!')}
-                aria-label="User profile"
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = 'rgba(0, 0, 0, 0.04)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = 'transparent';
-                }}
-              >
-                <UserCircle className="text-grey-dark" style={{ width: '28px', height: '28px' }} />
-              </button>
-            </div>
-          </div>
-
-          {/* AI-Powered Badge */}
-          <div style={{ marginBottom: '1.25rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div 
-              className="rounded-full"
-              style={{ 
-                padding: '0.5rem 1rem',
-                background: 'rgba(212, 158, 55, 0.08)',
-                border: '1px solid rgba(212, 158, 55, 0.2)',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.5rem'
-              }}
-            >
-              <Sparkles className="text-gold" style={{ width: '14px', height: '14px' }} />
-              <span style={{ fontSize: '0.8125rem', fontWeight: 600 }} className="text-gold">
-                AI Analysis Complete
-              </span>
-            </div>
-          </div>
-
-          {/* Scenario Summary */}
-          <div
-            className="rounded-xl"
-            style={{
-              background: 'white',
-              border: '1px solid rgba(7, 60, 101, 0.12)',
-              padding: '1.5rem'
-            }}
-          >
-            <h3 className="text-navy" style={{ fontSize: '0.9375rem', fontWeight: 600, margin: '0 0 0.625rem 0' }}>
-              Your Legal Situation
-            </h3>
-            <p className="text-grey-dark" style={{ lineHeight: '1.65', fontSize: '0.875rem', margin: 0 }}>
-              Based on your description, we've prepared detailed information to help you understand your situation 
-              and next steps. Click the arrows below to explore each section.
-            </p>
-          </div>
-        </div>
+        <Logo size="small" showText={true} />
+        <button
+          style={{
+            width: '38px',
+            height: '38px',
+            borderRadius: '50%',
+            background: '#F3F4F6',
+            border: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+          }}
+          onClick={() => alert('Profile — coming soon')}
+          aria-label="Profile"
+        >
+          <User style={{ width: '18px', height: '18px', color: '#6B7280' }} />
+        </button>
       </header>
 
-      {/* Accordion Sections */}
-      <div style={{ 
-        width: '100%', 
-        padding: '2rem 1.5rem 2rem',
-        position: 'relative',
-        zIndex: 1
-      }}>
-        <div style={{ width: '100%', maxWidth: '900px', margin: '0 auto' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            {sections.map((section) => {
-              const Icon = section.icon;
-              const isExpanded = expandedSection === section.id;
-              
-              return (
-                <div
-                  key={section.id}
-                  className="rounded-2xl transition-all duration-300"
-                  style={{
-                    background: 'white',
-                    border: isExpanded ? `2px solid ${section.color}` : '1px solid #E5E7EB',
-                    boxShadow: isExpanded 
-                      ? `0 4px 12px ${section.color}15` 
-                      : '0 1px 2px rgba(0, 0, 0, 0.04)',
-                    overflow: 'hidden'
-                  }}
-                >
-                  {/* Section Header - Button */}
-                  <button
-                    onClick={() => toggleSection(section.id)}
-                    className="w-full text-left transition-all duration-200"
-                    style={{
-                      padding: '1.5rem',
-                      background: isExpanded ? `${section.color}05` : 'white',
-                      border: 'none',
-                      cursor: 'pointer',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      gap: '1.25rem'
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: 1 }}>
-                      {/* Icon Circle */}
-                      <div 
-                        className="rounded-full transition-all duration-200"
-                        style={{
-                          width: '52px',
-                          height: '52px',
-                          background: isExpanded 
-                            ? section.color
-                            : `${section.color}10`,
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          flexShrink: 0
-                        }}
-                      >
-                        <Icon 
-                          style={{ width: '24px', height: '24px' }}
-                          className={isExpanded ? 'text-white' : ''}
-                          color={isExpanded ? 'white' : section.color}
-                        />
-                      </div>
+      {/* Scrollable content */}
+      <div style={{ width: '100%', maxWidth: '720px', margin: '0 auto', padding: '1.5rem 1.25rem 6rem' }}>
 
-                      {/* Text Content */}
-                      <div style={{ flex: 1 }}>
-                        <div 
-                          className="text-navy"
-                          style={{ 
-                            fontSize: '1.125rem', 
-                            fontWeight: 600,
-                            marginBottom: '0.25rem',
-                            letterSpacing: '-0.01em'
-                          }}
-                        >
-                          {section.label}
-                        </div>
-                        <div 
-                          className="text-grey-medium"
-                          style={{ 
-                            fontSize: '0.875rem',
-                            lineHeight: '1.4'
-                          }}
-                        >
-                          {section.description}
-                        </div>
-                      </div>
-                    </div>
+        {/* Scenario label + card */}
+        <p style={{
+          fontSize: '0.6875rem',
+          fontWeight: 700,
+          letterSpacing: '0.1em',
+          textTransform: 'uppercase',
+          color: '#9CA3AF',
+          marginBottom: '0.625rem',
+        }}>
+          Your Scenario
+        </p>
+        <div style={{
+          background: 'white',
+          borderRadius: '1rem',
+          padding: '1rem 1.25rem',
+          marginBottom: '1.5rem',
+          boxShadow: '0 1px 8px rgba(7, 60, 101, 0.06)',
+          fontSize: '0.9375rem',
+          color: '#374151',
+          lineHeight: 1.6,
+        }}>
+          {scenario || 'Dispute regarding a civil matter.'}
+        </div>
 
-                    {/* Arrow Button */}
-                    <div
-                      className="rounded-full transition-all duration-200"
-                      style={{
-                        width: '48px',
-                        height: '48px',
-                        background: isExpanded ? section.color : 'rgba(7, 60, 101, 0.06)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        flexShrink: 0,
-                        transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)'
-                      }}
-                    >
-                      <ChevronDown 
-                        style={{ width: '24px', height: '24px' }}
-                        className={isExpanded ? 'text-white' : 'text-grey-dark'}
-                      />
-                    </div>
-                  </button>
-
-                  {/* Expanded Content */}
-                  {isExpanded && (
-                    <div 
-                      style={{ 
-                        padding: '0 2rem 2rem 2rem',
-                        borderTop: `1px solid ${section.color}15`,
-                        animation: 'expandContent 0.3s ease-out'
-                      }}
-                    >
-                      {section.component}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Action Buttons */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.75rem', marginTop: '1.5rem' }}>
-            {/* Save Progress */}
+        {/* Horizontal tab pills */}
+        <div style={{
+          display: 'flex',
+          gap: '0.5rem',
+          overflowX: 'auto',
+          paddingBottom: '0.25rem',
+          marginBottom: '1.5rem',
+          scrollbarWidth: 'none',
+        }}>
+          {TABS.map((tab) => (
             <button
-              onClick={handleSave}
-              className="rounded-2xl transition-all"
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
               style={{
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.75rem',
-                padding: '1.5rem 1rem',
-                textAlign: 'center',
-                background: 'white',
-                border: '1px solid rgba(7, 60, 101, 0.12)',
+                flexShrink: 0,
+                padding: '0.5rem 1.125rem',
+                borderRadius: '100px',
+                border: activeTab === tab.id ? 'none' : '1.5px solid #E5E7EB',
+                background: activeTab === tab.id ? '#073C65' : 'white',
+                color: activeTab === tab.id ? 'white' : '#374151',
+                fontSize: '0.875rem',
+                fontWeight: activeTab === tab.id ? 600 : 500,
                 cursor: 'pointer',
-                minHeight: '140px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(7, 60, 101, 0.04)';
-                e.currentTarget.style.borderColor = '#073C65';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'white';
-                e.currentTarget.style.borderColor = 'rgba(7, 60, 101, 0.12)';
+                whiteSpace: 'nowrap',
+                fontFamily: 'inherit',
+                transition: 'background 0.15s, color 0.15s',
               }}
             >
-              <div 
-                className="rounded-full" 
-                style={{ 
-                  width: '56px', 
-                  height: '56px', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center',
-                  background: 'rgba(7, 60, 101, 0.1)'
-                }}
-              >
-                <Save className="text-navy" style={{ width: '28px', height: '28px' }} />
-              </div>
-              <div>
-                <p className="text-navy" style={{ fontWeight: 600, fontSize: '0.9375rem' }}>Save Progress</p>
-              </div>
+              {tab.label}
             </button>
+          ))}
+        </div>
 
-            {/* Export Summary */}
-            <button
-              onClick={handleExport}
-              className="rounded-2xl transition-all"
-              style={{
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.75rem',
-                padding: '1.5rem 1rem',
-                textAlign: 'center',
-                background: 'white',
-                border: '1px solid rgba(7, 60, 101, 0.12)',
-                cursor: 'pointer',
-                minHeight: '140px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(7, 60, 101, 0.04)';
-                e.currentTarget.style.borderColor = '#073C65';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'white';
-                e.currentTarget.style.borderColor = 'rgba(7, 60, 101, 0.12)';
-              }}
-            >
-              <div 
-                className="rounded-full" 
-                style={{ 
-                  width: '56px', 
-                  height: '56px', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center',
-                  background: 'rgba(7, 60, 101, 0.1)'
-                }}
-              >
-                <Download className="text-navy" style={{ width: '28px', height: '28px' }} />
-              </div>
-              <div>
-                <p className="text-navy" style={{ fontWeight: 600, fontSize: '0.9375rem' }}>Export Summary</p>
-              </div>
-            </button>
-
-            {/* Find a Lawyer - Prominent CTA */}
-            <button
-              onClick={onAccessLawyers}
-              className="rounded-2xl transition-all"
-              style={{
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.75rem',
-                padding: '1.5rem 1rem',
-                textAlign: 'center',
-                background: 'linear-gradient(135deg, #D49E37, #E0B24E)',
-                border: 'none',
-                cursor: 'pointer',
-                boxShadow: '0 4px 12px rgba(212, 158, 55, 0.3)',
-                minHeight: '140px',
-                position: 'relative'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 6px 16px rgba(212, 158, 55, 0.4)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 12px rgba(212, 158, 55, 0.3)';
-              }}
-            >
-              <div 
-                className="rounded-full" 
-                style={{ 
-                  width: '56px', 
-                  height: '56px', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center',
-                  background: 'rgba(255, 255, 255, 0.25)'
-                }}
-              >
-                <Briefcase className="text-white" style={{ width: '28px', height: '28px' }} />
-              </div>
-              <div>
-                <p className="text-white" style={{ fontWeight: 600, fontSize: '0.9375rem' }}>Find a Lawyer</p>
-              </div>
-              <div
-                className="rounded-full"
-                style={{
-                  position: 'absolute',
-                  top: '1rem',
-                  right: '1rem',
-                  width: '28px',
-                  height: '28px',
-                  background: 'rgba(255, 255, 255, 0.2)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}
-              >
-                <span className="text-white" style={{ fontSize: '1rem', fontWeight: 600 }}>→</span>
-              </div>
-            </button>
-          </div>
+        {/* Tab content */}
+        <div key={activeTab}>
+          {renderTab()}
         </div>
       </div>
 
-      <style>{`
-        @keyframes expandContent {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
+      {/* FAB — gold lightning bolt */}
+      <button
+        onClick={() => setShowBottomSheet(true)}
+        style={{
+          position: 'fixed',
+          bottom: '1.75rem',
+          right: '1.5rem',
+          width: '56px',
+          height: '56px',
+          borderRadius: '50%',
+          background: '#D49E37',
+          border: 'none',
+          boxShadow: '0 4px 16px rgba(212, 158, 55, 0.45)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          cursor: 'pointer',
+          zIndex: 30,
+          transition: 'transform 0.15s, box-shadow 0.15s',
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'scale(1.08)';
+          e.currentTarget.style.boxShadow = '0 6px 20px rgba(212, 158, 55, 0.55)';
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'scale(1)';
+          e.currentTarget.style.boxShadow = '0 4px 16px rgba(212, 158, 55, 0.45)';
+        }}
+        aria-label="Actions"
+      >
+        <Zap style={{ width: '24px', height: '24px', color: 'white', fill: 'white' }} />
+      </button>
+
+      {/* Bottom sheet overlay */}
+      {showBottomSheet && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 40,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+          }}
+          onClick={() => setShowBottomSheet(false)}
+        >
+          {/* Scrim */}
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'rgba(7, 60, 101, 0.25)',
+            backdropFilter: 'blur(2px)',
+          }} />
+
+          {/* Sheet */}
+          <div
+            style={{
+              position: 'relative',
+              background: 'white',
+              borderRadius: '1.5rem 1.5rem 0 0',
+              padding: '1.25rem 1.5rem 2.5rem',
+              boxShadow: '0 -4px 24px rgba(7, 60, 101, 0.12)',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Handle */}
+            <div style={{
+              width: '36px',
+              height: '4px',
+              borderRadius: '2px',
+              background: '#D1D5DB',
+              margin: '0 auto 1.25rem',
+            }} />
+
+            <div style={{ display: 'flex', gap: '0.875rem' }}>
+              {/* Save */}
+              <button
+                onClick={() => { alert('Save Progress — coming soon'); setShowBottomSheet(false); }}
+                style={{
+                  flex: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '0.625rem',
+                  padding: '1.25rem 0.75rem',
+                  background: 'white',
+                  border: '1.5px solid #E5E7EB',
+                  borderRadius: '1rem',
+                  cursor: 'pointer',
+                  fontFamily: 'inherit',
+                }}
+              >
+                <Save style={{ width: '24px', height: '24px', color: '#073C65' }} />
+                <span style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#073C65', textAlign: 'center', lineHeight: 1.3 }}>
+                  Save<br />Progress
+                </span>
+              </button>
+
+              {/* Export */}
+              <button
+                onClick={() => { alert('Export Summary — coming soon'); setShowBottomSheet(false); }}
+                style={{
+                  flex: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '0.625rem',
+                  padding: '1.25rem 0.75rem',
+                  background: 'white',
+                  border: '1.5px solid #E5E7EB',
+                  borderRadius: '1rem',
+                  cursor: 'pointer',
+                  fontFamily: 'inherit',
+                }}
+              >
+                <Download style={{ width: '24px', height: '24px', color: '#073C65' }} />
+                <span style={{ fontSize: '0.8125rem', fontWeight: 600, color: '#073C65', textAlign: 'center', lineHeight: 1.3 }}>
+                  Export<br />Summary
+                </span>
+              </button>
+
+              {/* Find a Lawyer */}
+              <button
+                onClick={() => { onAccessLawyers(); setShowBottomSheet(false); }}
+                style={{
+                  flex: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '0.625rem',
+                  padding: '1.25rem 0.75rem',
+                  background: '#D49E37',
+                  border: 'none',
+                  borderRadius: '1rem',
+                  cursor: 'pointer',
+                  fontFamily: 'inherit',
+                  boxShadow: '0 2px 10px rgba(212, 158, 55, 0.35)',
+                }}
+              >
+                <Search style={{ width: '24px', height: '24px', color: 'white' }} />
+                <span style={{ fontSize: '0.8125rem', fontWeight: 600, color: 'white', textAlign: 'center', lineHeight: 1.3 }}>
+                  Find a<br />Lawyer
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

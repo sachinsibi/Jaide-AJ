@@ -1,0 +1,43 @@
+{
+  "name": "general-civil-online-harassment-and-defamation",
+  "category": "general-civil",
+  "userInput": "My ex-partner has been posting lies about me on social media. This is defamation. They have also been sending repeated messages and engaging in harassment for the past two months. I want to stop them and get compensation for the damage to my reputation and the distress this has caused.",
+  "caseData": {
+    "issue": "Defamation via social media posts containing false statements, combined with a course of conduct amounting to harassment through repeated messages and unwanted contact over two months.",
+    "impact": "Damage to reputation in local community; ongoing distress and anxiety caused by the harassment; impact on employment and personal relationships.",
+    "remedy": "Injunction to stop them posting and messaging; compensation for reputational damage and distress."
+  },
+  "expectedDocs": {
+    "overview": [
+      "statute-limitation-act-1980-general",
+      "procedure-pd-pre-action-conduct-general-civil",
+      "procedure-county-court-general-civil",
+      "statute-defamation-act-2013",
+      "statute-protection-from-harassment-act-1997"
+    ],
+    "legalBreakdown": [
+      "statute-limitation-act-1980-general",
+      "procedure-pd-pre-action-conduct-general-civil",
+      "procedure-county-court-general-civil",
+      "statute-defamation-act-2013",
+      "statute-protection-from-harassment-act-1997",
+      "case-lachaux-v-independent-print",
+      "case-hayes-v-willoughby",
+      "test-defamation-test",
+      "test-harassment-pha-test",
+      "concept-civil-standard-of-proof",
+      "concept-damages-civil",
+      "concept-injunctions-civil"
+    ],
+    "eli5": [
+      "concept-civil-standard-of-proof",
+      "concept-damages-civil"
+    ],
+    "references": [
+      "statute-defamation-act-2013",
+      "statute-protection-from-harassment-act-1997",
+      "resource-citizens-advice",
+      "resource-ico"
+    ]
+  }
+}

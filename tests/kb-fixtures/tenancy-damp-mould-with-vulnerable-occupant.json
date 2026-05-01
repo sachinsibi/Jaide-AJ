@@ -1,0 +1,48 @@
+{
+  "name": "tenancy-damp-mould-with-vulnerable-occupant",
+  "category": "tenancy",
+  "userInput": "My flat in Manchester has had a serious damp and mould problem for over a year. The walls are wet and the bathroom ceiling is black with mould. My toddler has been getting chest infections and the GP says it's the mould. I have told the landlord several times by email and they keep saying they will inspect but never do. I want repairs and compensation. Section 11 disrepair I think.",
+  "caseData": {
+    "issue": "Severe damp and mould throughout the flat; bathroom ceiling visibly affected; child suffering chest infections.",
+    "evidence": "Photographs with metadata going back 14 months; emails to landlord and replies; GP letter linking child's chest infections to mould exposure; tenancy agreement and rent receipts.",
+    "notification": "Repeatedly notified landlord by email over 14 months; landlord acknowledged but no inspection or works carried out."
+  },
+  "expectedDocs": {
+    "overview": [
+      "statute-lta-1985-s11",
+      "statute-fitness-habitation-2018",
+      "statute-housing-act-2004-pt1-hhsrs",
+      "procedure-pre-action-protocol-housing-conditions",
+      "procedure-environmental-health-hhsrs",
+      "procedure-county-court-disrepair-claim"
+    ],
+    "legalBreakdown": [
+      "statute-lta-1985-s11",
+      "statute-fitness-habitation-2018",
+      "statute-housing-act-2004-pt1-hhsrs",
+      "case-quick-v-taff-ely",
+      "case-wallace-v-manchester",
+      "case-obrien-v-robinson",
+      "test-s11-disrepair-test",
+      "procedure-pre-action-protocol-housing-conditions",
+      "procedure-environmental-health-hhsrs",
+      "procedure-county-court-disrepair-claim",
+      "concept-quiet-enjoyment"
+    ],
+    "eli5": [
+      "statute-lta-1985-s11",
+      "statute-fitness-habitation-2018",
+      "concept-quiet-enjoyment"
+    ],
+    "references": [
+      "statute-lta-1985-s11",
+      "statute-fitness-habitation-2018",
+      "statute-housing-act-2004-pt1-hhsrs",
+      "resource-shelter",
+      "resource-citizens-advice",
+      "resource-gov-uk-eviction",
+      "resource-legislation-gov-uk",
+      "resource-bailii"
+    ]
+  }
+}

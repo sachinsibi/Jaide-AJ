@@ -1,0 +1,43 @@
+{
+  "name": "employment-unfair-dismissal-without-process",
+  "category": "employment",
+  "userInput": "I was dismissed from my marketing role last week with no warning, no investigation, and no chance to defend myself. My manager called me into a meeting on Monday, said performance had been below expectations, and that my employment was terminated with two weeks' notice. I had been there 4 years and had no prior warnings or performance reviews indicating problems. I'm a single parent and I'm worried about money. I want to challenge the dismissal.",
+  "caseData": {
+    "issue": "Summary dismissal for alleged poor performance with no warnings, no PIP, no investigation, no hearing, no opportunity to respond, no appeal offered.",
+    "evidence": "4 years' employment, contract, last three years of positive performance reviews, the termination email, calendar showing no prior performance management meetings, payslips, evidence of single-parent dependant status (relevant to mitigation and to compensation).",
+    "process": "No grievance possible (already dismissed). The employer did not follow the ACAS Code: no written warning, no investigation meeting, no disciplinary hearing, no right of appeal. Dismissal was a single 10-minute meeting."
+  },
+  "expectedDocs": {
+    "overview": [
+      "statute-era-1996-s94",
+      "statute-era-1996-s98",
+      "statute-equality-act-2010",
+      "procedure-acas-early-conciliation",
+      "procedure-internal-grievance-and-disciplinary",
+      "procedure-employment-tribunal"
+    ],
+    "legalBreakdown": [
+      "statute-era-1996-s94",
+      "statute-era-1996-s98",
+      "case-bhs-v-burchell",
+      "case-iceland-frozen-foods",
+      "case-polkey-v-dayton",
+      "test-unfair-dismissal-test",
+      "procedure-acas-early-conciliation",
+      "procedure-internal-grievance-and-disciplinary",
+      "procedure-employment-tribunal"
+    ],
+    "eli5": [
+      "statute-era-1996-s94",
+      "statute-equality-act-2010"
+    ],
+    "references": [
+      "statute-era-1996-s94",
+      "statute-equality-act-2010",
+      "resource-citizens-advice",
+      "resource-legislation-gov-uk",
+      "resource-bailii",
+      "resource-acas"
+    ]
+  }
+}

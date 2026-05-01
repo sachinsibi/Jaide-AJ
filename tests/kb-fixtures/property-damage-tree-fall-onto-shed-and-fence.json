@@ -1,0 +1,46 @@
+{
+  "name": "property-damage-tree-fall-onto-shed-and-fence",
+  "category": "property-damage",
+  "userInput": "During the storm last week a large tree on my next-door neighbour's property fell across the boundary fence and crushed my garden shed and the contents inside. The tree had been visibly diseased for over a year — branches kept dropping into our garden — and I had asked my neighbour twice to have it inspected, including by email. They didn't respond. There are tree roots that have also been pushing under the fence and cracking my patio. The shed cost about £2,400 to replace and the fence replacement is around £900. I want them to pay for the repairs and remove the rest of the tree before the next storm.",
+  "caseData": {
+    "issue": "Diseased tree on neighbour's land fell during storm onto claimant's shed and fence; tree roots also causing continuing encroachment and patio damage; neighbour ignored prior warnings.",
+    "evidence": "Photographs of the diseased tree before and after; emails to neighbour requesting inspection; arboriculturist's quote and report on remaining tree condition; receipts for shed and fence replacement; photographs of root encroachment and cracked patio.",
+    "loss": "Shed replacement (£2,400), fence replacement (£900), patio reinstatement quote (£1,600), arboriculturist's fee (£250)."
+  },
+  "expectedDocs": {
+    "overview": [
+      "statute-defective-premises-act-1972-s4",
+      "statute-limitation-act-1980-s2",
+      "procedure-pd-pre-action-conduct-property",
+      "procedure-county-court-money-claim-property"
+    ],
+    "legalBreakdown": [
+      "statute-defective-premises-act-1972-s4",
+      "statute-limitation-act-1980-s2",
+      "case-donoghue-v-stevenson",
+      "case-rylands-v-fletcher",
+      "case-sedleigh-denfield-v-ocallaghan",
+      "case-leakey-v-national-trust",
+      "case-hunter-v-canary-wharf",
+      "case-delaware-mansions-v-westminster",
+      "test-private-nuisance-test",
+      "test-property-damages-measure-test",
+      "procedure-pd-pre-action-conduct-property",
+      "procedure-county-court-money-claim-property",
+      "concept-negligence",
+      "concept-private-nuisance",
+      "statute-lr-cna-1945"
+    ],
+    "eli5": [
+      "concept-negligence",
+      "concept-private-nuisance"
+    ],
+    "references": [
+      "statute-defective-premises-act-1972-s4",
+      "statute-limitation-act-1980-s2",
+      "resource-citizens-advice",
+      "resource-legislation-gov-uk",
+      "resource-bailii"
+    ]
+  }
+}

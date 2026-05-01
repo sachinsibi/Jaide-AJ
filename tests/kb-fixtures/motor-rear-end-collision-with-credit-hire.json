@@ -1,0 +1,44 @@
+{
+  "name": "motor-rear-end-collision-with-credit-hire",
+  "category": "motor-accident",
+  "userInput": "I was stopped at traffic lights on the A406 last Tuesday and a van rear-ended me at maybe 25 mph. The other driver admitted fault at the scene and we exchanged details. My car is at the garage waiting for a repair quote and I've taken a hire car in the meantime. The other driver's insurer is now disputing the hire rate and saying I should have used basic hire. I want my car repaired, my hire car costs covered, and my excess back. I had a passenger but no one was injured.",
+  "caseData": {
+    "issue": "Rear-end collision at traffic lights; liability admitted at scene; insurer disputing credit-hire rate.",
+    "evidence": "Photos of damage, dashcam footage of the collision, exchanged driver/insurer details, repair garage quote, hire vehicle agreement and rates.",
+    "loss": "Vehicle repair (estimated £3,200), credit hire (£780 to date), recovery and storage (£180), policy excess (£500)."
+  },
+  "expectedDocs": {
+    "overview": [
+      "statute-rta-1988-s170",
+      "statute-lr-cna-1945",
+      "procedure-pre-action-protocol-non-pi-motor",
+      "procedure-insurer-notification-and-negotiation",
+      "procedure-county-court-money-claim-rta"
+    ],
+    "legalBreakdown": [
+      "statute-rta-1988-s170",
+      "statute-lr-cna-1945",
+      "case-donoghue-v-stevenson",
+      "case-nettleship-v-weston",
+      "test-duty-of-care-test",
+      "test-breach-reasonable-driver-test",
+      "test-causation-remoteness-test",
+      "procedure-pre-action-protocol-non-pi-motor",
+      "procedure-insurer-notification-and-negotiation",
+      "procedure-county-court-money-claim-rta",
+      "concept-negligence",
+      "concept-contributory-negligence"
+    ],
+    "eli5": [
+      "concept-negligence",
+      "concept-contributory-negligence"
+    ],
+    "references": [
+      "statute-rta-1988-s170",
+      "resource-citizens-advice",
+      "resource-legislation-gov-uk",
+      "resource-bailii",
+      "resource-gov-uk-money-claim"
+    ]
+  }
+}

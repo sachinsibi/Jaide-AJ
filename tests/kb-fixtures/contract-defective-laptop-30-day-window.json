@@ -1,0 +1,53 @@
+{
+  "name": "contract-defective-laptop-30-day-window",
+  "category": "contract-service",
+  "userInput": "I bought a £1,400 laptop from a high-street retailer 25 days ago. From day three the screen has been flickering and the keyboard backlight stopped working. I've taken it back twice. The first time they said it was a software issue and reset it; the problem came back the next day. The second time they said they'd send it for repair which would take 4 weeks. I want a full refund — I'm a freelancer and I've already lost a client deadline because the laptop keeps freezing.",
+  "caseData": {
+    "issue": "Brand-new laptop with persistent screen flicker and keyboard backlight failure within 25 days of purchase. Retailer refuses refund; first repair attempt failed; second repair would take 4 weeks.",
+    "evidence": "Purchase receipt dated 25 days ago; in-store diagnostic record from first visit; email confirming laptop sent for repair; photos and short videos showing screen flicker; emails to a freelance client referring to missed deadline.",
+    "communication": "Visited the store twice. Spoke to two managers. Both said repair was the only option. The retailer's stated 'returns policy' on the back of the receipt says 'refunds at manager discretion within 14 days'."
+  },
+  "expectedDocs": {
+    "overview": [
+      "statute-cra-2015-goods-quality",
+      "statute-cra-2015-rights-and-remedies",
+      "statute-limitation-act-1980-contract",
+      "procedure-pre-action-conduct-pd-contract",
+      "procedure-adr-and-ombudsman",
+      "procedure-county-court-money-claim-contract"
+    ],
+    "legalBreakdown": [
+      "statute-cra-2015-goods-quality",
+      "statute-cra-2015-rights-and-remedies",
+      "statute-cra-2015-unfair-terms",
+      "statute-limitation-act-1980-contract",
+      "case-hadley-v-baxendale",
+      "case-british-westinghouse",
+      "case-hong-kong-fir",
+      "case-bramhill-v-edwards",
+      "test-cra-satisfactory-quality-test",
+      "test-remoteness-and-mitigation-test",
+      "test-repudiation-test",
+      "procedure-pre-action-conduct-pd-contract",
+      "procedure-adr-and-ombudsman",
+      "procedure-county-court-money-claim-contract",
+      "concept-contract-formation",
+      "concept-implied-terms"
+    ],
+    "eli5": [
+      "statute-cra-2015-goods-quality",
+      "statute-cra-2015-rights-and-remedies",
+      "concept-contract-formation",
+      "concept-implied-terms"
+    ],
+    "references": [
+      "statute-cra-2015-goods-quality",
+      "statute-cra-2015-rights-and-remedies",
+      "resource-citizens-advice",
+      "resource-legislation-gov-uk",
+      "resource-bailii",
+      "resource-gov-uk-money-claim",
+      "resource-trading-standards"
+    ]
+  }
+}

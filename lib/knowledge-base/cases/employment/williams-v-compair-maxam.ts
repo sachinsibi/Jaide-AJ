@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'employment',
   title: 'Williams v Compair Maxam [1982] ICR 156 (EAT)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Williams v Compair Maxam Ltd [1982] ICR 156 (EAT)',
   url: 'https://www.bailii.org/uk/cases/UKEAT/1981/372_81_2210.html',
   inForce: true,

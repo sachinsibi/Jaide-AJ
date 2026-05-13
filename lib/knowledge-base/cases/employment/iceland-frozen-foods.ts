@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'employment',
   title: 'Iceland Frozen Foods v Jones [1983] ICR 17 (EAT)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Iceland Frozen Foods Ltd v Jones [1983] ICR 17 (EAT)',
   url: 'https://www.bailii.org/uk/cases/UKEAT/1982/277_82_1311.html',
   inForce: true,

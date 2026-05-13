@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'employment',
   title: 'ACAS Early Conciliation (mandatory pre-tribunal step)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Employment Tribunals Act 1996, s.18A; Early Conciliation Rules of Procedure',
   url: 'https://www.acas.org.uk/early-conciliation',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'general-civil',
   title: 'Limitation Act 1980 — civil limitation periods overview',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Limitation Act 1980, ss.2, 5, 14A, 32',
   url: 'https://www.legislation.gov.uk/ukpga/1980/58/contents',
   inForce: true,

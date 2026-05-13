@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'contract-service',
   title: 'Consumer Rights Act 2015, ss.19–24 — Consumer rights and remedies for goods',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Consumer Rights Act 2015, ss.19–24',
   url: 'https://www.legislation.gov.uk/ukpga/2015/15/part/1/chapter/2/crossheading/what-statutory-rights-are-there-under-a-goods-contract',
   inForce: true,

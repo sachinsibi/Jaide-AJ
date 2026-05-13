@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'tenancy',
   title: 'Southwark LBC v Mills [2001] 1 AC 1 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Southwark LBC v Mills [2001] 1 AC 1 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1999/40.html',
   inForce: true,

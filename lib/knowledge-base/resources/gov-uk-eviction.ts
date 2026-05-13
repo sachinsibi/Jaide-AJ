@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'gov.uk — Renting (tenant)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.gov.uk/private-renting',
   inForce: true,
   lastVerified: '2026-05-01',

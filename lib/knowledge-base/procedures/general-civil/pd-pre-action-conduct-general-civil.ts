@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'general-civil',
   title: 'Practice Direction on Pre-Action Conduct (general civil claims)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'CPR Practice Direction on Pre-Action Conduct and Protocols',
   url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/rules/pd_pre-action_conduct',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'test',
   category: 'general-civil',
   title: 'Misuse of Private Information Test',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

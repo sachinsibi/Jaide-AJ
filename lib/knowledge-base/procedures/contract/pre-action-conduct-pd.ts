@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'contract-service',
   title: 'Pre-Action Conduct PD — Letter Before Claim (consumer / contract)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'CPR Practice Direction on Pre-Action Conduct and Protocols',
   url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/rules/pd_pre-action_conduct',
   inForce: true,

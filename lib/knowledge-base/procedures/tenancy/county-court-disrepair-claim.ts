@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'tenancy',
   title: 'County Court Disrepair / Fitness Claim (CPR Part 7)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Civil Procedure Rules, Part 7; CPR 26 (track allocation); Pre-Action Protocol for Housing Conditions Claims',
   url: 'https://www.justice.gov.uk/courts/procedure-rules/civil',
   inForce: true,

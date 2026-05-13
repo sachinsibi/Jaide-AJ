@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Housing Act 2004, s.213 — Tenancy deposit protection',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Housing Act 2004, s.213',
   url: 'https://www.legislation.gov.uk/ukpga/2004/34/section/213',
   inForce: true,

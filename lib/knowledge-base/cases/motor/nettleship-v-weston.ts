@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'motor-accident',
   title: 'Nettleship v Weston [1971] 2 QB 691 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Nettleship v Weston [1971] 2 QB 691 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1971/6.html',
   inForce: true,

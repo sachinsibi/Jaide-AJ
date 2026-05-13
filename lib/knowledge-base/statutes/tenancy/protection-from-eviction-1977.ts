@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Protection from Eviction Act 1977',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Protection from Eviction Act 1977, ss.1, 3, 5',
   url: 'https://www.legislation.gov.uk/ukpga/1977/43/contents',
   inForce: true,

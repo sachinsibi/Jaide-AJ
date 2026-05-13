@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general-civil',
   title: 'Lachaux v Independent Print Ltd [2019] UKSC 27',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: '[2019] UKSC 27',
   url: 'https://www.bailii.org/uk/cases/UKSC/2019/27.html',
   inForce: true,

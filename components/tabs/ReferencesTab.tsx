@@ -29,7 +29,7 @@ export function ReferencesTab({ references }: ReferencesTabProps) {
       <div className="rounded-xl" style={{ background: 'rgba(7, 60, 101, 0.06)', padding: '1rem', border: '1px solid rgba(7, 60, 101, 0.12)', marginBottom: '2rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
         <Info style={{ width: '18px', height: '18px', flexShrink: 0, marginTop: '0.125rem', color: '#073C65' }} />
         <p style={{ fontSize: '0.8125rem', color: '#073C65', lineHeight: '1.6', fontWeight: 500 }}>
-          All resources relate to <strong>England & Wales</strong> law. Always verify information from official sources.
+          All resources relate to <strong>Barbados</strong> civil law. Always verify information from official sources.
         </p>
       </div>
 
@@ -73,17 +73,14 @@ export function ReferencesTab({ references }: ReferencesTabProps) {
         );
       })}
 
-      {/* SRA reminder */}
+      {/* Attorney reminder */}
       <div className="rounded-xl" style={{ background: 'rgba(7, 60, 101, 0.04)', padding: '1.25rem', border: '1px solid rgba(7, 60, 101, 0.1)' }}>
         <p style={{ fontSize: '0.875rem', color: '#6B7280', lineHeight: '1.7' }}>
-          <strong style={{ color: '#073C65' }}>Finding a solicitor:</strong> Use the{' '}
-          <a href="https://solicitors.lawsociety.org.uk/" target="_blank" rel="noopener noreferrer" style={{ color: '#073C65', fontWeight: 600 }}>
-            Law Society Find a Solicitor
+          <strong style={{ color: '#073C65' }}>Finding a lawyer:</strong> The{' '}
+          <a href="https://www.barbadosbar.org/" target="_blank" rel="noopener noreferrer" style={{ color: '#073C65', fontWeight: 600 }}>
+            Barbados Bar Association
           </a>{' '}
-          directory to find a regulated solicitor in England & Wales. Always verify their Solicitors Regulation Authority registration at{' '}
-          <a href="https://www.sra.org.uk/consumers/register/" target="_blank" rel="noopener noreferrer" style={{ color: '#073C65', fontWeight: 600 }}>
-            sra.org.uk
-          </a>.
+          maintains a directory of attorneys admitted to practise in Barbados. Always verify an attorney&apos;s standing before instructing them.
         </p>
       </div>
     </div>

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'contract-service',
   title: 'British Westinghouse v Underground Electric Railways [1912] AC 673 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'British Westinghouse Electric and Manufacturing Co Ltd v Underground Electric Railways Co of London Ltd [1912] AC 673 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1912/2.html',
   inForce: true,

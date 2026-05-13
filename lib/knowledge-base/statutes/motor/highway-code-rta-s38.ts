@@ -1,47 +1,37 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-highway-code-rta-s38',
+  id: 'statute-barbados-rta-road-traffic-regulations',
   type: 'statute',
   category: 'motor-accident',
-  title: 'Road Traffic Act 1988, s.38(7) — Highway Code as evidence',
-  jurisdiction: 'england-wales',
-  citation: 'Road Traffic Act 1988, s.38(7)',
-  url: 'https://www.legislation.gov.uk/ukpga/1988/52/section/38',
+  title: 'Road Traffic Act, Cap. 295 — Road Traffic Regulations as Evidence of the Standard of Care',
+  jurisdiction: 'barbados',
+  citation: 'Road Traffic Act, Cap. 295 (Barbados); Road Traffic Regulations (Barbados)',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['highway code', 'rule', 'speeding', 'mobile phone', 'red light', 'amber light', 'overtaking', 'tailgating', 'lane discipline'],
+  triggers: ['traffic rules', 'red light', 'speeding', 'overtaking', 'lane', 'road rules', 'traffic law', 'road safety'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'A failure to observe a Highway Code provision is not in itself an offence and does not of itself make a person liable to civil proceedings, but may be relied upon as tending to establish or to negative liability in any proceedings, civil or criminal.',
-  content: `Section 38(7) of the Road Traffic Act 1988 provides:
+    'Breach of Barbados road traffic rules and regulations is relevant evidence in establishing whether a driver fell below the standard of care required by the law of negligence. A breach does not automatically mean the driver is liable — civil liability depends on proving duty, breach, causation, and damage — but it is powerful evidence of negligence.',
+  content: `Road Traffic Act, Cap. 295 and the standard of care in Barbados motor accident claims
 
-"A failure on the part of a person to observe a provision of the Highway Code shall not of itself render that person liable to criminal proceedings of any kind but any such failure may in any proceedings (whether civil or criminal, and including proceedings for an offence under the Traffic Acts) be relied upon by any party to the proceedings as tending to establish or negative any liability which is in question in those proceedings."
+The Road Traffic Act, Cap. 295, together with Regulations made under it, governs the conduct of drivers on Barbados roads. These include requirements relating to speed, traffic signals, road markings, lane discipline, overtaking, and other aspects of road use.
 
-Effect in civil claims:
+Role in civil claims: breach of a statutory road traffic rule does not automatically give rise to civil liability. However, it constitutes significant evidence in the context of a negligence claim. A driver who contravenes an applicable traffic rule is likely to be found to have fallen below the standard of the reasonable driver, which is the civil standard of care.
 
-1. The Highway Code is not, of itself, a source of legal duty. A driver who breaches a Highway Code provision is not automatically negligent.
+Standard of care in motor negligence: the civil law standard for drivers in Barbados, as in other Commonwealth jurisdictions applying English common law principles, is that of the reasonably competent driver. The court considers how a reasonable driver would have conducted themselves in the same circumstances and whether the defendant's conduct fell short of that standard.
 
-2. But Highway Code breach is admissible evidence — and powerful evidence — in establishing or negativing the breach element of a negligence claim. Courts give significant weight to documented Highway Code rules because the Code captures the consensus of safe driving practice.
+Common traffic rule breaches relevant to civil claims:
+- Failing to stop at a red traffic signal
+- Failing to give way at a junction or roundabout
+- Exceeding the applicable speed limit
+- Using a mobile phone while driving
+- Failing to maintain a safe following distance
+- Overtaking where prohibited or where it was unsafe to do so
 
-3. The probative effect varies with the rule:
-   - Rules expressed as "MUST" / "MUST NOT" reflect underlying statutory or regulatory obligations (speed limits, red lights, mobile phone use, no insurance). Breach is also a criminal offence; in civil proceedings the breach is highly indicative of negligence.
-   - Rules expressed as "should" / "should not" / "do" / "do not" are advisory. Breach is evidence but does not establish negligence on its own; the court considers the circumstances.
-
-4. Highway Code breaches commonly cited in motor civil claims:
-   - Speeding (Rule 124 and the relevant TSRGD speed limit signage).
-   - Use of mobile phone while driving (Rule 149; offence under RVLR).
-   - Failure to give way at junctions (Rules 170, 211).
-   - Tailgating / failure to keep proper distance (Rule 126: at least 2 seconds; doubled in wet conditions).
-   - Failure to wear a seatbelt (Rule 99; offence under s.14 RTA 1988).
-   - Failure to use a child restraint (Rule 102).
-   - Lane discipline / overtaking on the inside (Rules 137, 268).
-
-5. Evidential procedure: a party relying on a Highway Code rule pleads the rule, identifies the conduct said to breach it, and relates it to the standard of the reasonable driver. The court takes judicial notice of the Code; printed extracts may be exhibited.
-
-This statute is the bridge between the Highway Code (regulatory and educational document) and the common-law standard of care in negligence.`,
-  tags: ['highway-code', 'RTA-1988', 'section-38', 'breach-as-evidence', 'standard-of-care'],
+Evidence of breach: where a traffic rule breach is in issue, relevant evidence includes the police report, witness accounts, photographic evidence, CCTV footage, and dashcam recordings. Where a driver has been charged with or convicted of a traffic offence arising from the same incident, this may be admissible and highly probative in the civil proceedings.`,
+  tags: ['Road-Traffic-Act', 'Cap-295', 'traffic-regulations', 'standard-of-care', 'negligence', 'Barbados'],
 };
 
 export default doc;

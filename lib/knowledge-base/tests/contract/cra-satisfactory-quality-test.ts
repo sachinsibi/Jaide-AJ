@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'test',
   category: 'contract-service',
   title: 'CRA 2015 Satisfactory Quality Test',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

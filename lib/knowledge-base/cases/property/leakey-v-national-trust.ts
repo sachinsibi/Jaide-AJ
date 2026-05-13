@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'property-damage',
   title: 'Leakey v National Trust [1980] QB 485 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Leakey v National Trust for Places of Historic Interest or Natural Beauty [1980] QB 485 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1979/5.html',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'property-damage',
   title: 'Party Wall etc. Act 1996',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Party Wall etc. Act 1996',
   url: 'https://www.legislation.gov.uk/ukpga/1996/40/contents',
   inForce: true,

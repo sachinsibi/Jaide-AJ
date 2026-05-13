@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'property-damage',
   title: 'Occupiers\' Liability Act 1957',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Occupiers\' Liability Act 1957',
   url: 'https://www.legislation.gov.uk/ukpga/Eliz2/5-6/31/contents',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'property-damage',
   title: 'Rylands v Fletcher (1868) LR 3 HL 330',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Rylands v Fletcher (1868) LR 3 HL 330',
   url: 'https://www.bailii.org/uk/cases/UKHL/1868/12.html',
   inForce: true,

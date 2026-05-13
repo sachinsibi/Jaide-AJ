@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'property-damage',
   title: 'Defective Premises Act 1972, s.4 — Landlord/occupier duty of care for defects',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Defective Premises Act 1972, s.4',
   url: 'https://www.legislation.gov.uk/ukpga/1972/35/section/4',
   inForce: true,

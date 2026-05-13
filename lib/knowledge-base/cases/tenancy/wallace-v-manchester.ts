@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'tenancy',
   title: 'Wallace v Manchester City Council (1998) 30 HLR 1111 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Wallace v Manchester City Council (1998) 30 HLR 1111 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1998/1166.html',
   inForce: true,

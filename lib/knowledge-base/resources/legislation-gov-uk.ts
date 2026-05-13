@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'legislation.gov.uk',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.legislation.gov.uk',
   inForce: true,
   lastVerified: '2026-05-01',

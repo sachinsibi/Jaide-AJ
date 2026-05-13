@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'test',
   category: 'motor-accident',
   title: 'Duty of Care Test (Caparo three-stage)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

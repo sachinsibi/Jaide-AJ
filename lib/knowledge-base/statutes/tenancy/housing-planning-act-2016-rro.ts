@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Housing and Planning Act 2016, ss.40–52 — Rent Repayment Orders',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Housing and Planning Act 2016, ss.40–52',
   url: 'https://www.legislation.gov.uk/ukpga/2016/22/part/2/chapter/4',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'employment',
   title: 'Western Excavating (ECC) Ltd v Sharp [1978] QB 761 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Western Excavating (ECC) Ltd v Sharp [1978] QB 761 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1977/2.html',
   inForce: true,

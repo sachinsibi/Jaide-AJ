@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'motor-accident',
   title: 'Motor Insurers\' Bureau (MIB)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.mib.org.uk',
   inForce: true,
   lastVerified: '2026-05-01',

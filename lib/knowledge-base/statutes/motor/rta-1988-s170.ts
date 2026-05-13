@@ -1,39 +1,33 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-rta-1988-s170',
+  id: 'statute-barbados-rta-cap-295-duty-to-stop',
   type: 'statute',
   category: 'motor-accident',
-  title: 'Road Traffic Act 1988, s.170 — Duty to stop, exchange details, and report',
-  jurisdiction: 'england-wales',
-  citation: 'Road Traffic Act 1988, s.170',
-  url: 'https://www.legislation.gov.uk/ukpga/1988/52/section/170',
+  title: 'Road Traffic Act, Cap. 295 — Duty to Stop and Report After an Accident',
+  jurisdiction: 'barbados',
+  citation: 'Road Traffic Act, Cap. 295 (Barbados)',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['motor-accident'],
   tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'After an accident causing personal injury or damage to another vehicle, animal, or property, a driver must stop and, if required by anyone with reasonable grounds, give name, address, vehicle owner\'s name and address, and registration number (s.170(2)). If those details are not exchanged at the scene, the accident must be reported to the police as soon as reasonably practicable and in any event within 24 hours (s.170(3)).',
-  content: `Section 170 Road Traffic Act 1988 imposes immediate post-accident duties on the driver of a mechanically propelled vehicle.
+    'Barbados road traffic legislation imposes a duty on a driver involved in an accident causing injury to any person or damage to any property to stop, remain at the scene, provide their name and address and the vehicle registration, and where required report the accident to the police. Failure to stop and report is a criminal offence and is relevant to civil liability.',
+  content: `The Road Traffic Act, Cap. 295 governs road traffic in Barbados and imposes duties on drivers involved in accidents.
 
-Trigger (s.170(1)): the section applies where, owing to the presence of a mechanically propelled vehicle on a road or other public place, an accident occurs by which:
-(a) personal injury is caused to a person other than the driver; or
-(b) damage is caused to a vehicle other than that vehicle or trailer drawn by it; or
-(c) damage is caused to an animal other than one in or on the vehicle (animal meaning horse, cattle, ass, mule, sheep, pig, goat or dog); or
-(d) damage is caused to property constructed on, fixed to, growing in or otherwise forming part of the land on which the road or place in question is situated, or land adjacent thereto.
+Duty to stop: a driver whose vehicle is involved in an accident causing personal injury to any person other than the driver, or damage to any other vehicle or property, is required to stop.
 
-Duty to stop and exchange (s.170(2)): the driver must stop and, if required by any person having reasonable grounds for so requiring, give:
-- the driver's name and address,
-- the name and address of the owner of the vehicle,
-- the identification marks of the vehicle (registration).
+Duty to exchange information: the driver must provide their name and address, and the vehicle identification details, to any person reasonably requiring that information.
 
-Duty to report (s.170(3)–(4)): if for any reason the driver does not give name and address under s.170(2), the driver must report the accident at a police station or to a constable as soon as reasonably practicable and in any case within 24 hours. Where personal injury has occurred, the driver must also produce, on request, the certificate of insurance — at the scene or, if not produced there, at a police station within seven days of the accident (s.170(5)–(6)).
+Duty to report: where the driver does not exchange details at the scene with all relevant parties, or where personal injury has been caused, the accident must be reported to the police within the time prescribed under the Act.
 
-Offences and penalties: failure to stop or to report is a summary offence punishable by fine and discretionary disqualification; mandatory endorsement of 5–10 penalty points (Sch.2 RTOA 1988). Failure to provide insurance details where personal injury has occurred is a separate offence (s.170(7)).
+Insurance certificate: where personal injury is involved, the driver may be required to produce evidence of insurance.
 
-Civil consequences: while s.170 itself is criminal, breach is highly relevant to a civil claim. Failure to stop or to provide details is strong evidence supporting an adverse inference on liability and may justify aggravated damages.`,
-  tags: ['RTA-1988', 'section-170', 'duty-to-stop', 'exchange-details', 'report-to-police'],
+Criminal and civil consequences: failure to stop, report, or exchange details constitutes a criminal offence under Cap. 295. In the context of a civil claim, failure to stop or exchange information is evidence that courts may consider in assessing the conduct of the at-fault driver. It does not of itself establish civil liability, which depends on proof of negligence and causation, but it is highly relevant to the credibility and strength of the opposing party's account.
+
+Police report: a police reference number is an important document in the insurance claims process. Insurers typically require it as part of the claims documentation, and it provides an independent contemporaneous record of the accident.`,
+  tags: ['Road-Traffic-Act', 'Cap-295', 'duty-to-stop', 'report-accident', 'Barbados', 'post-accident-duties'],
 };
 
 export default doc;

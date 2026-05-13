@@ -1,10 +1,23 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { LandingScreen } from '@/components/screens/LandingScreen';
+import { NoticeModal } from '@/components/ui/NoticeModal';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const router = useRouter();
+  const [noticeSeen, setNoticeSeen] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const seen = sessionStorage.getItem('noticeSeen') === 'true';
+    setNoticeSeen(seen);
+  }, []);
+
+  const handleAcknowledge = () => {
+    sessionStorage.setItem('noticeSeen', 'true');
+    setNoticeSeen(true);
+  };
 
   const handleContinue = async (input: string) => {
     sessionStorage.setItem('userInput', input);
@@ -24,5 +37,13 @@ export default function Home() {
     }
   };
 
-  return <LandingScreen onContinue={handleContinue} />;
+  // Avoid flash: render nothing until sessionStorage is read
+  if (noticeSeen === null) return null;
+
+  return (
+    <>
+      <LandingScreen onContinue={handleContinue} />
+      {!noticeSeen && <NoticeModal onAcknowledge={handleAcknowledge} />}
+    </>
+  );
 }

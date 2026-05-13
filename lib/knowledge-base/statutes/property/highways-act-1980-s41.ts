@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'property-damage',
   title: 'Highways Act 1980, s.41 — Highway authority duty to maintain',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Highways Act 1980, s.41',
   url: 'https://www.legislation.gov.uk/ukpga/1980/66/section/41',
   inForce: true,

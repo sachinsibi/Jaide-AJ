@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general-civil',
   title: 'Hayes v Willoughby [2013] UKSC 17',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: '[2013] UKSC 17',
   url: 'https://www.bailii.org/uk/cases/UKSC/2013/17.html',
   inForce: true,

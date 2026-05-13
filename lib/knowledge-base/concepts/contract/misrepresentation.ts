@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'contract-service',
   title: 'Misrepresentation',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

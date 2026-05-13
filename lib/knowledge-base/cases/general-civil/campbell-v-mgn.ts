@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general-civil',
   title: 'Campbell v MGN Ltd [2004] UKHL 22',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: '[2004] UKHL 22',
   url: 'https://www.bailii.org/uk/cases/UKHL/2004/22.html',
   inForce: true,

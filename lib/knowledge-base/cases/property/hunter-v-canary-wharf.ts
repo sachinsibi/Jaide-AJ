@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'property-damage',
   title: 'Hunter v Canary Wharf Ltd [1997] AC 655 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Hunter v Canary Wharf Ltd [1997] AC 655 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1997/14.html',
   inForce: true,

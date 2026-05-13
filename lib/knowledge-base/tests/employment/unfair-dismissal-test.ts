@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'test',
   category: 'employment',
   title: 'Unfair Dismissal Test (s.98 ERA 1996)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

@@ -14,7 +14,7 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
       <div className="rounded-xl" style={{ background: 'rgba(7, 60, 101, 0.06)', padding: '1rem', border: '1px solid rgba(7, 60, 101, 0.12)', marginBottom: '2.5rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
         <Info style={{ width: '18px', height: '18px', flexShrink: 0, marginTop: '0.125rem', color: '#073C65' }} />
         <p style={{ fontSize: '0.8125rem', color: '#073C65', lineHeight: '1.6', fontWeight: 500 }}>
-          <strong>Jurisdiction:</strong> All legal principles, case law, and procedures referenced apply to <strong>England & Wales only</strong>. This is general legal information, not legal advice.
+          <strong>Jurisdiction:</strong> All legal principles, case law, and procedures referenced apply to <strong>Barbados only</strong>. This is general legal information, not legal advice.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
       <div style={{ marginBottom: '2.5rem' }}>
         <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#073C65' }}>
           <Scale style={{ width: '18px', height: '18px', color: '#D49E37' }} />
-          Relevant Case Law (England & Wales)
+          Relevant Case Law (Barbados)
         </h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingLeft: '1.75rem' }}>
           {caselaw.map((c, i) => (
@@ -126,7 +126,7 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
         <div>
           <h4 style={{ color: '#991B1B', fontSize: '0.9375rem', fontWeight: 600, marginBottom: '0.5rem' }}>General Legal Information Only</h4>
           <p style={{ fontSize: '0.875rem', color: '#7F1D1D', lineHeight: '1.7' }}>
-            This legal breakdown provides <strong>general educational information</strong> about the law of England & Wales. It does <strong>NOT constitute legal advice</strong>. Application of legal principles to specific facts requires professional analysis by a qualified solicitor. This does not create a solicitor-client relationship.
+            This legal breakdown provides <strong>general educational information</strong> about the civil law of Barbados. It does <strong>NOT constitute legal advice</strong>. Application of legal principles to specific facts requires professional analysis by a qualified attorney. This does not create a lawyer-client relationship.
           </p>
         </div>
       </div>

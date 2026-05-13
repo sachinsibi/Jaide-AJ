@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'general-civil',
   title: 'Protection from Harassment Act 1997 — civil cause of action',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Protection from Harassment Act 1997, ss.1, 3, 3A, 7',
   url: 'https://www.legislation.gov.uk/ukpga/1997/40/contents',
   inForce: true,

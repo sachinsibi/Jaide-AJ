@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Housing Act 1988, s.21 — Notice of no-fault possession',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Housing Act 1988, s.21',
   url: 'https://www.legislation.gov.uk/ukpga/1988/50/section/21',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'property-damage',
   title: 'Delaware Mansions Ltd v Westminster CC [2001] UKHL 55',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Delaware Mansions Ltd v Westminster City Council [2001] UKHL 55, [2002] 1 AC 321',
   url: 'https://www.bailii.org/uk/cases/UKHL/2001/55.html',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'property-damage',
   title: 'Insurer Notification and Subrogation (property damage)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Insurance Act 2015; standard buildings/contents policy terms',
   url: 'https://www.gov.uk/guidance/buildings-and-contents-insurance-claims',
   inForce: true,

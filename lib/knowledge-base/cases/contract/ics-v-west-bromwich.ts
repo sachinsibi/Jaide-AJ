@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'contract-service',
   title: 'Investors Compensation Scheme v West Bromwich BS [1998] 1 WLR 896 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Investors Compensation Scheme Ltd v West Bromwich Building Society [1998] 1 WLR 896 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1997/28.html',
   inForce: true,

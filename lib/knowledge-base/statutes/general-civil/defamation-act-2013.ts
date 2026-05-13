@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'general-civil',
   title: 'Defamation Act 2013 — serious harm, defences, and remedies',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Defamation Act 2013, ss.1–8',
   url: 'https://www.legislation.gov.uk/ukpga/2013/26/contents',
   inForce: true,

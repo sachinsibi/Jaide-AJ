@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'tenancy',
   title: 'Retaliatory Eviction',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   inForceNote:
     'PENDING — verify against gov.uk. The s.33 Deregulation Act 2015 protection is anchored to s.21; if the Renters\' Rights Act 2024 has abolished s.21, the concept survives in different form under the new regime.',

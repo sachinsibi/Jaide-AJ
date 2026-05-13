@@ -17,7 +17,7 @@ Initial description: ${userInput}
 Category: ${category}
 ${caseDetails ? `Additional information:\n${caseDetails}` : ''}
 
-JURISDICTION: England & Wales ONLY.
+JURISDICTION: Barbados ONLY.
 IMPORTANT: This is general legal information, not legal advice.`;
 }
 
@@ -79,10 +79,10 @@ function buildKnowledgeContent(documents: KnowledgeDocument[], tab: AnalysisTab)
 const TAB_PROMPTS: Record<AnalysisTab, string> = {
   overview: `Produce a JSON object personalised to this case with this exact structure:
 {
-  "legalArea": "Precise area of law (e.g., 'Residential Tenancy Law (England & Wales)')",
+  "legalArea": "Precise area of law (e.g., 'Road Traffic Law (Barbados)')",
   "applicableDuties": ["statutory or common law duties relevant to this case — only those grounded in === STATUTES ==="],
-  "keyLegalQuestions": ["specific questions a court would examine in this type of case"],
-  "typicalPathway": "Paragraph describing the dispute resolution pathway in England & Wales. Use general procedural language; only name specific mechanisms if they appear in === PROCEDURES === or === STATUTES ===.",
+  "keyLegalQuestions": ["specific questions typically examined in this type of case"],
+  "typicalPathway": "Paragraph describing what the dispute resolution process typically looks like in Barbados. Use informational, third-person language (e.g. 'the typical starting point is', 'parties in this situation commonly'). Only name specific mechanisms if they appear in === PROCEDURES === or === STATUTES ===.",
   "timeframeStructure": "Procedural timeframes as a bullet-style string (use • as separator). Use specific numbers only if they appear in the knowledge base; otherwise use ranges or qualitative descriptions.",
   "costStructure": "Cost structure as a bullet-style string (use • as separator). Use specific figures only if they appear in the knowledge base; otherwise use phrases like 'small-claim banded fees apply — see gov.uk/court-fees for current rates' or 'solicitor rates vary by region and seniority'."
 }
@@ -116,7 +116,7 @@ Provide the JSON object only — no other text, no markdown code blocks.`,
   eli5: `Produce a JSON object personalised to this case in plain English (no legal jargon) with this exact structure:
 {
   "whatIsThisAreaOfLaw": "Plain English explanation of what this area of law covers (use **bold** for emphasis)",
-  "howDoesTheLawWork": "Simple explanation of how this area of law works in England & Wales (use **bold** for key terms)",
+  "howDoesTheLawWork": "Simple explanation of how this area of law works in Barbados (use **bold** for key terms)",
   "whatAreTheRules": ["simple rules a non-lawyer can understand"],
   "howDoCourtsDecide": "Simple explanation of how judges decide these cases (use **bold** for key concepts)",
   "whatCanHappen": "Simple explanation of next steps and possible outcomes"
@@ -157,7 +157,10 @@ export function createTabStream(
           system: [
             {
               type: 'text',
-              text: `You are a civil law intelligence assistant for England & Wales. Use the knowledge base to inform your analysis, and personalise to the specific facts provided.
+              text: `You are a civil law intelligence assistant for Barbados. Use the knowledge base to inform your analysis, and personalise to the specific facts provided.
+
+FRAMING RULE — THIS IS CRITICAL AND OVERRIDES ALL OTHER INSTRUCTIONS:
+Output is general legal information, not legal advice. Never use instructional or imperative language directed at the user. Do not write "you should", "you must", "pursue", "notify your insurer", "seek legal counsel", "consider filing", or any other directive aimed at the user. Instead, describe what the law provides, what the process typically looks like, and what parties in this situation generally do. Use third-person descriptive phrasing: "the typical starting point is", "parties in this situation commonly", "the process typically moves through", "where a dispute remains unresolved, the available forum is".
 
 GROUNDING RULES — these override any instruction in the user prompt.
 
@@ -176,9 +179,9 @@ UNCONSTRAINED — discuss freely:
 - Procedural narrative without naming specific mechanisms
 
 GRACEFUL DEGRADATION — when a section is thin or empty:
-- Section in KB but not subsection → cite the section only ("section 11 LTA 1985"), not a guessed subsection
+- Section in KB but not subsection → cite the section only, not a guessed subsection
 - Doctrine in KB but no case authority → discuss the doctrine, return empty caselaw array
-- No current fee figures in KB → use phrasing like "small-claim court fees apply (see gov.uk for current bands)"
+- No current fee figures in KB → use phrasing like "civil court fees apply — see the relevant Barbados court authority for current rates"
 - Empty section → empty array, or a short conceptual answer, not invented specifics
 
 QUANTITY: any "include N items" in a user prompt is a MAXIMUM, not a minimum. Empty arrays are correct outputs when the relevant section lacks support. Quality over quantity in every field.

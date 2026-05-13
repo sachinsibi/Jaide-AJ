@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'employment',
   title: 'National Minimum Wage Act 1998 and Working Time Regulations 1998',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'National Minimum Wage Act 1998; Working Time Regulations 1998 (SI 1998/1833); ERA 1996 ss.13, 23',
   url: 'https://www.legislation.gov.uk/ukpga/1998/39/contents',
   inForce: true,

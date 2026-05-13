@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'test',
   category: 'property-damage',
   title: 'Rylands v Fletcher Test (strict liability for escape)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

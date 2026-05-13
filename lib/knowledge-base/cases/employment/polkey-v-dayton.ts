@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'employment',
   title: 'Polkey v A E Dayton Services [1988] AC 344 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Polkey v A E Dayton Services Ltd [1988] AC 344 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1987/8.html',
   inForce: true,

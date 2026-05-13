@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'general-civil',
   title: 'Data Protection Act 2018 / UK GDPR — rights and civil claims',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Data Protection Act 2018, s.169; UK GDPR (retained EU law), Arts.15, 17, 82',
   url: 'https://www.legislation.gov.uk/ukpga/2018/12/contents',
   inForce: true,

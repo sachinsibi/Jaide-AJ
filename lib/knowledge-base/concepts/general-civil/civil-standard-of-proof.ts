@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'general-civil',
   title: 'Civil Standard of Proof (balance of probabilities)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

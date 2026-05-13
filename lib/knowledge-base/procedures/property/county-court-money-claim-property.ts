@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'property-damage',
   title: 'County Court Money Claim — Property Damage',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Civil Procedure Rules, Part 7; CPR 26 (track allocation); CPR 35 (experts)',
   url: 'https://www.gov.uk/make-court-claim-for-money',
   inForce: true,

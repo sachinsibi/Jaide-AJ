@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'BAILII — British and Irish Legal Information Institute',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.bailii.org',
   inForce: true,
   lastVerified: '2026-05-01',

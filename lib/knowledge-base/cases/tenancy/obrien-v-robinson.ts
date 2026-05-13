@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'tenancy',
   title: 'O\'Brien v Robinson [1973] AC 912 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'O\'Brien v Robinson [1973] AC 912 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1972/8.html',
   inForce: true,

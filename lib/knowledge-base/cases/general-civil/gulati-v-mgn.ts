@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general-civil',
   title: 'Gulati v MGN Ltd [2015] EWCA Civ 1291',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: '[2015] EWCA Civ 1291',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/2015/1291.html',
   inForce: true,

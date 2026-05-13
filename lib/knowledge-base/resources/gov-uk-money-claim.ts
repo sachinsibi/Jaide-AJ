@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'gov.uk — Make a Court Claim for Money',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.gov.uk/make-court-claim-for-money',
   inForce: true,
   lastVerified: '2026-05-01',

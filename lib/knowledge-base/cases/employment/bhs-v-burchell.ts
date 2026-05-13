@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'employment',
   title: 'British Home Stores v Burchell [1980] ICR 303 (EAT)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'British Home Stores v Burchell [1980] ICR 303 (EAT)',
   url: 'https://www.bailii.org/uk/cases/UKEAT/1978/2_77_2010.html',
   inForce: true,

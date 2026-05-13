@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'employment',
   title: 'Employment Tribunal Procedure',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Employment Tribunals Act 1996; Employment Tribunals Rules of Procedure 2013 (Sch.1 to SI 2013/1237)',
   url: 'https://www.gov.uk/employment-tribunals',
   inForce: true,

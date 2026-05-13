@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'employment',
   title: 'Equality Act 2010 — Discrimination at work',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Equality Act 2010, Pts 2 and 5; ss.13–27; ss.39–60; ss.136 (burden of proof)',
   url: 'https://www.legislation.gov.uk/ukpga/2010/15/contents',
   inForce: true,

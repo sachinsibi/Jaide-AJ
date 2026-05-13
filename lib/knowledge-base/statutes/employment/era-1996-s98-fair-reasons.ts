@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'employment',
   title: 'Employment Rights Act 1996, s.98 — Fair reasons and reasonableness',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Employment Rights Act 1996, s.98',
   url: 'https://www.legislation.gov.uk/ukpga/1996/18/section/98',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general',
   title: 'Donoghue v Stevenson [1932] AC 562 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Donoghue v Stevenson [1932] AC 562 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1932/100.html',
   inForce: true,

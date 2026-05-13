@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'tenancy',
   title: 'Quick v Taff-Ely BC [1986] QB 809 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Quick v Taff-Ely BC [1986] QB 809 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1985/8.html',
   inForce: true,

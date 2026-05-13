@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'Information Commissioner\'s Office (ICO)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://ico.org.uk',
   inForce: true,
   lastVerified: '2026-05-01',

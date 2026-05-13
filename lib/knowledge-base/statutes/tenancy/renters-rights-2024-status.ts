@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Renters\' Rights Act 2024 — commencement status placeholder',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Renters\' Rights Act 2024 (commencement status pending verification)',
   url: 'https://www.legislation.gov.uk/ukpga/2024',
   inForce: false,

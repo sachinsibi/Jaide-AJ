@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'motor-accident',
   title: 'Froom v Butcher [1976] QB 286 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Froom v Butcher [1976] QB 286 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1975/6.html',
   inForce: true,

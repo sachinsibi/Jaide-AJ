@@ -28,6 +28,8 @@ export function IntakeFlow() {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [currentAnswer, setCurrentAnswer] = useState('');
+  const [extracting, setExtracting] = useState(false);
+  const [unansweredIds, setUnansweredIds] = useState<string[] | null>(null);
 
   useEffect(() => {
     const stored = sessionStorage.getItem('userInput') ?? '';
@@ -142,7 +144,65 @@ export function IntakeFlow() {
   }
 
   // ── Onboarding step ─────────────────────────────────────────
-  const questions = getCategoryQuestions(selectedCategory, userInput);
+  const allQuestions = getCategoryQuestions(selectedCategory, userInput);
+
+  // Run extraction once when we reach the onboarding step
+  useEffect(() => {
+    if (step !== 'onboarding' || unansweredIds !== null || extracting || !userInput) return;
+    setExtracting(true);
+
+    const questionList = allQuestions.map(q => ({ id: q.id, question: q.question }));
+
+    fetch('/api/extract', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userInput, questions: questionList }),
+    })
+      .then(r => r.json())
+      .then(({ answered }: { answered: Record<string, string> }) => {
+        setAnswers(prev => ({ ...prev, ...answered }));
+        const remaining = allQuestions.map(q => q.id).filter(id => !answered[id]);
+        setUnansweredIds(remaining);
+        setExtracting(false);
+
+        if (remaining.length === 0) {
+          // All questions answered — go straight to analysis
+          const caseData = {
+            ...answered,
+            scenario: userInput,
+            initial: userInput,
+            category: selectedCategory,
+          };
+          sessionStorage.setItem('caseData', JSON.stringify(caseData));
+          router.push('/analysis');
+        }
+      })
+      .catch(() => {
+        setUnansweredIds(allQuestions.map(q => q.id));
+        setExtracting(false);
+      });
+  }, [step, userInput, selectedCategory]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Show extraction loading state
+  if (step === 'onboarding' && (extracting || unansweredIds === null)) {
+    return (
+      <div style={{ minHeight: '100vh', width: '100%', background: 'linear-gradient(to bottom, #E6F2FA 0%, #F5FAFD 40%, white 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: '#073C65', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
+            <span style={{ color: '#C9A84C', fontWeight: 800, fontSize: '1.25rem' }}>J</span>
+          </div>
+          <p style={{ color: '#073C65', fontWeight: 600, fontSize: '0.9375rem' }}>Reading your description…</p>
+        </div>
+      </div>
+    );
+  }
+
+  const questions = allQuestions.filter(q => (unansweredIds ?? allQuestions.map(x => x.id)).includes(q.id));
+
+  if (questions.length === 0) {
+    return null;
+  }
+
   const progress = ((questionIndex + 1) / questions.length) * 100;
   const q = questions[questionIndex];
   const isLast = questionIndex === questions.length - 1;

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'general-civil',
   title: 'Civil Mediation — ADR in general civil disputes',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'CPR PD Pre-Action Conduct; Halsey v Milton Keynes [2004]; PGF II SA v OMFS [2013]',
   url: 'https://www.civilmediation.org',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Landlord and Tenant Act 1985, s.11',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Landlord and Tenant Act 1985, s.11',
   url: 'https://www.legislation.gov.uk/ukpga/1985/70/section/11',
   inForce: true,

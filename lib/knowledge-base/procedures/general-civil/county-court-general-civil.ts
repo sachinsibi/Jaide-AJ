@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'general-civil',
   title: 'County Court — general civil claims (money and injunctions)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Civil Procedure Rules, Parts 7, 26, 35',
   url: 'https://www.gov.uk/make-court-claim-for-money',
   inForce: true,

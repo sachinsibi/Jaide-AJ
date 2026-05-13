@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'motor-accident',
   title: 'Barnett v Chelsea & Kensington Hospital [1969] 1 QB 428',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Barnett v Chelsea & Kensington Hospital Management Committee [1969] 1 QB 428',
   url: 'https://www.bailii.org/ew/cases/EWHC/QB/1968/1.html',
   inForce: true,

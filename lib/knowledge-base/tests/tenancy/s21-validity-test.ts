@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'test',
   category: 'tenancy',
   title: 'Section 21 Validity Test',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   inForceNote:
     'PENDING — verify against gov.uk. Tied to Housing Act 1988 s.21; if the Renters\' Rights Act 2024 has abolished s.21, this test no longer applies to new notices and may apply only to transitional cases.',

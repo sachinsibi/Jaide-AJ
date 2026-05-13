@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'employment',
   title: 'ACAS — Advisory, Conciliation and Arbitration Service',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.acas.org.uk',
   inForce: true,
   lastVerified: '2026-05-01',

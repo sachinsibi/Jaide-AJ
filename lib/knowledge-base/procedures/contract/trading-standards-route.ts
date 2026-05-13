@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'contract-service',
   title: 'Trading Standards / Consumer Protection Enforcement Route',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Consumer Protection from Unfair Trading Regulations 2008 (SI 2008/1277); Enterprise Act 2002, Pt 8',
   url: 'https://www.tradingstandards.uk/consumers',
   inForce: true,

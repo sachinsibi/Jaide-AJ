@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'motor-accident',
   title: 'Bolton v Stone [1951] AC 850 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Bolton v Stone [1951] AC 850 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1951/2.html',
   inForce: true,

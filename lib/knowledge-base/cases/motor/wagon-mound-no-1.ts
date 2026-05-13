@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general',
   title: 'Overseas Tankship (UK) Ltd v Morts Dock & Engineering Co (The Wagon Mound No 1) [1961] AC 388 (PC)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Overseas Tankship (UK) Ltd v Morts Dock & Engineering Co Ltd (The Wagon Mound No 1) [1961] AC 388 (PC)',
   url: 'https://www.bailii.org/uk/cases/UKPC/1961/1.html',
   inForce: true,

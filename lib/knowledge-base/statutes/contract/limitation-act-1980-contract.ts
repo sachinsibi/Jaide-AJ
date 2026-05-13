@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'contract-service',
   title: 'Limitation Act 1980, ss.5 and 8 — Limitation periods for contract claims',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Limitation Act 1980, ss.5 and 8',
   url: 'https://www.legislation.gov.uk/ukpga/1980/58',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'Shelter England',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://england.shelter.org.uk',
   inForce: true,
   lastVerified: '2026-05-01',

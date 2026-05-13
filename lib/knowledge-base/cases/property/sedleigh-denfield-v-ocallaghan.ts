@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'property-damage',
   title: 'Sedleigh-Denfield v O\'Callaghan [1940] AC 880 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Sedleigh-Denfield v O\'Callaghan [1940] AC 880 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1940/2.html',
   inForce: true,

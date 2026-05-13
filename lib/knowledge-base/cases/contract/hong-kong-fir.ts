@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'contract-service',
   title: 'Hong Kong Fir Shipping v Kawasaki [1962] 2 QB 26 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Hong Kong Fir Shipping Co Ltd v Kawasaki Kisen Kaisha Ltd [1962] 2 QB 26 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1961/7.html',
   inForce: true,

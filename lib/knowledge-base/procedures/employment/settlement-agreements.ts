@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'employment',
   title: 'Settlement Agreements (s.203 ERA 1996)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Employment Rights Act 1996, s.203(3); Equality Act 2010, s.147',
   url: 'https://www.acas.org.uk/settlement-agreements',
   inForce: true,

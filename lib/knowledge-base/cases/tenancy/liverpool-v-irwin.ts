@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'tenancy',
   title: 'Liverpool City Council v Irwin [1977] AC 239 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Liverpool City Council v Irwin [1977] AC 239 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1976/1.html',
   inForce: true,

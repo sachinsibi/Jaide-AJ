@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'contract-service',
   title: 'County Court Money Claim — Contract / Consumer',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Civil Procedure Rules, Part 7; CPR 26 (track allocation); CPR 27 (small claims)',
   url: 'https://www.gov.uk/make-court-claim-for-money',
   inForce: true,

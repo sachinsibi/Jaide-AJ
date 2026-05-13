@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'tenancy',
   title: 'CPR Part 55 — Possession Claims and Defence',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Civil Procedure Rules, Part 55',
   url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part55',
   inForce: true,

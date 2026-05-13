@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'contract-service',
   title: 'Hadley v Baxendale (1854) 9 Ex 341',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Hadley v Baxendale (1854) 9 Ex 341',
   url: 'https://www.bailii.org/ew/cases/EWHC/Exch/1854/J70.html',
   inForce: true,

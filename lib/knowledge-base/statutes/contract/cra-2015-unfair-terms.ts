@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'contract-service',
   title: 'Consumer Rights Act 2015, ss.61–76 — Unfair contract terms',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Consumer Rights Act 2015, Pt 2 (ss.61–76)',
   url: 'https://www.legislation.gov.uk/ukpga/2015/15/part/2',
   inForce: true,

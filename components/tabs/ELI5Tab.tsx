@@ -17,7 +17,7 @@ export function ELI5Tab({ eli5 }: ELI5TabProps) {
       <div className="rounded-xl" style={{ background: 'rgba(7, 60, 101, 0.06)', padding: '1rem', border: '1px solid rgba(7, 60, 101, 0.12)', marginBottom: '2rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
         <Info style={{ width: '18px', height: '18px', flexShrink: 0, marginTop: '0.125rem', color: '#073C65' }} />
         <p style={{ fontSize: '0.8125rem', color: '#073C65', lineHeight: '1.6', fontWeight: 500 }}>
-          This explains how the law works in <strong>England & Wales only</strong>. Different rules apply in Scotland, Northern Ireland, and other countries.
+          This explains how the law works in <strong>Barbados only</strong>. Different rules apply in other jurisdictions.
         </p>
       </div>
 
@@ -83,7 +83,7 @@ export function ELI5Tab({ eli5 }: ELI5TabProps) {
         <div>
           <h4 style={{ color: '#1E40AF', fontSize: '0.9375rem', fontWeight: 600, marginBottom: '0.5rem' }}>Remember!</h4>
           <p style={{ fontSize: '0.875rem', color: '#1E3A8A', lineHeight: '1.7' }}>
-            This explains how the <strong>law works</strong> in England & Wales in simple terms. It&apos;s not advice about what <strong>you</strong> should do. Every situation is different, so it&apos;s best to talk to a solicitor who can look at your specific details and give you proper advice. JAIDE helps you understand the legal world so you&apos;re ready to have that conversation. You can also get free advice from Citizens Advice.
+            This explains how the <strong>law works</strong> in Barbados in simple terms. It is not advice about what to do in any specific situation. Every situation is different — talking to a qualified attorney who can review the specific facts is the way to get personalised legal guidance. JAIDE helps you understand the legal landscape so you are better prepared for that conversation.
           </p>
         </div>
       </div>

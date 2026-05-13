@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'contract-service',
   title: 'ADR and Ombudsman Routes for Consumer Disputes',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Alternative Dispute Resolution for Consumer Disputes (Competent Authorities and Information) Regulations 2015 (SI 2015/542)',
   url: 'https://www.gov.uk/government/publications/alternative-dispute-resolution-for-consumers',
   inForce: true,

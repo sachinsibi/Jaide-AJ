@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'contract-service',
   title: 'Director General of Fair Trading v First National Bank [2001] UKHL 52',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Director General of Fair Trading v First National Bank plc [2001] UKHL 52, [2002] 1 AC 481',
   url: 'https://www.bailii.org/uk/cases/UKHL/2001/52.html',
   inForce: true,

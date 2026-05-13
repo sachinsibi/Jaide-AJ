@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'property-damage',
   title: 'Party Wall Act 1996 — Surveyor Procedure and Award',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Party Wall etc. Act 1996, ss.10, 7(2)',
   url: 'https://www.gov.uk/guidance/party-wall-etc-act-1996-guidance',
   inForce: true,

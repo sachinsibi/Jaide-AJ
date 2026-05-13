@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'property-damage',
   title: 'Cambridge Water Co v Eastern Counties Leather plc [1994] 2 AC 264 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Cambridge Water Co v Eastern Counties Leather plc [1994] 2 AC 264 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1993/12.html',
   inForce: true,

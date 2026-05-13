@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'employment',
   title: 'Employment Rights Act 1996, s.94 — Right not to be unfairly dismissed',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Employment Rights Act 1996, s.94',
   url: 'https://www.legislation.gov.uk/ukpga/1996/18/section/94',
   inForce: true,

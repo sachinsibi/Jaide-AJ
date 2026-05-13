@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Deregulation Act 2015, s.33 — Retaliatory eviction',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Deregulation Act 2015, s.33',
   url: 'https://www.legislation.gov.uk/ukpga/2015/20/section/33',
   inForce: true,

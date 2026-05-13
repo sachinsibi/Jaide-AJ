@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'property-damage',
   title: 'Limitation Act 1980, s.2 — Six-year limitation period for tort',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Limitation Act 1980, s.2',
   url: 'https://www.legislation.gov.uk/ukpga/1980/58/section/2',
   inForce: true,

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Housing Act 2004, Part 1 — Housing Health and Safety Rating System (HHSRS)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Housing Act 2004, Pt 1 (ss.1–54)',
   url: 'https://www.legislation.gov.uk/ukpga/2004/34/part/1',
   inForce: true,

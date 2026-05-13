@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'tenancy',
   title: 'Homes (Fitness for Human Habitation) Act 2018',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Homes (Fitness for Human Habitation) Act 2018; LTA 1985 s.9A (as inserted)',
   url: 'https://www.legislation.gov.uk/ukpga/2018/34/contents',
   inForce: true,

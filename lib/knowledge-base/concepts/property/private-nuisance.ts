@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'property-damage',
   title: 'Private Nuisance (the tort against land)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

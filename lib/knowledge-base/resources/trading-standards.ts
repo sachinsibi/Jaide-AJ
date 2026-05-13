@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'contract-service',
   title: 'Trading Standards / Citizens Advice consumer service',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.tradingstandards.uk/consumers',
   inForce: true,
   lastVerified: '2026-05-01',

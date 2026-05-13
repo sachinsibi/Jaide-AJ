@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'Citizens Advice',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.citizensadvice.org.uk',
   inForce: true,
   lastVerified: '2026-05-01',

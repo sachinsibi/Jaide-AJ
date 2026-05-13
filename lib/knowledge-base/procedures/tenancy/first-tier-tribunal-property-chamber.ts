@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'tenancy',
   title: 'First-tier Tribunal (Property Chamber) — Residential Property',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Tribunals, Courts and Enforcement Act 2007; Tribunal Procedure (First-tier Tribunal) (Property Chamber) Rules 2013 (SI 2013/1169)',
   url: 'https://www.gov.uk/courts-tribunals/first-tier-tribunal-property-chamber',
   inForce: true,

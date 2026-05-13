@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'employment',
   title: 'Internal Grievance and Disciplinary Procedure (ACAS Code)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'ACAS Code of Practice on Disciplinary and Grievance Procedures (2015); TULRCA 1992 s.207A; ERA 1999 s.10',
   url: 'https://www.acas.org.uk/acas-code-of-practice-on-disciplinary-and-grievance-procedures',
   inForce: true,

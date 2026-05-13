@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'tenancy',
   title: 'Pre-Action Protocol for Housing Conditions Claims (England)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Pre-Action Protocol for Housing Conditions Claims (England) — Civil Procedure Rules',
   url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/protocol/prot_hou',
   inForce: true,

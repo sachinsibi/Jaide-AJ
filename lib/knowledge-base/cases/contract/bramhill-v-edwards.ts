@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'contract-service',
   title: 'Bramhill v Edwards [2004] EWCA Civ 403',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Bramhill v Edwards [2004] EWCA Civ 403',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/2004/403.html',
   inForce: true,

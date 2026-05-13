@@ -14,7 +14,7 @@ export function OverviewTab({ overview }: OverviewTabProps) {
       <div className="rounded-xl" style={{ background: 'rgba(7, 60, 101, 0.06)', padding: '1rem', border: '1px solid rgba(7, 60, 101, 0.12)', marginBottom: '2rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
         <Info style={{ width: '18px', height: '18px', flexShrink: 0, marginTop: '0.125rem', color: '#073C65' }} />
         <p style={{ fontSize: '0.8125rem', color: '#073C65', lineHeight: '1.6', fontWeight: 500 }}>
-          <strong>Jurisdiction:</strong> All legal analysis relates to the law of <strong>England & Wales only</strong>. This does not apply to Scotland, Northern Ireland, or other jurisdictions.
+          <strong>Jurisdiction:</strong> All legal analysis relates to the civil law of <strong>Barbados only</strong>. This does not apply to other jurisdictions.
         </p>
       </div>
 
@@ -49,7 +49,7 @@ export function OverviewTab({ overview }: OverviewTabProps) {
       <div style={{ marginBottom: '2rem' }}>
         <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#073C65' }}>
           <HelpCircle style={{ width: '18px', height: '18px', color: '#D49E37' }} />
-          Key Legal Questions Courts Typically Examine
+          Key Legal Questions Typically Examined
         </h3>
         <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem', paddingLeft: '1.75rem' }}>
           {keyLegalQuestions.map((q, i) => (
@@ -65,7 +65,7 @@ export function OverviewTab({ overview }: OverviewTabProps) {
       <div style={{ marginBottom: '2rem' }}>
         <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#073C65' }}>
           <Gavel style={{ width: '18px', height: '18px', color: '#D49E37' }} />
-          Typical Dispute Resolution Pathway in England & Wales
+          Typical Dispute Resolution Pathway in Barbados
         </h3>
         <p style={{ fontSize: '0.9375rem', lineHeight: '1.7', paddingLeft: '1.75rem', color: '#6B7280' }}>{typicalPathway}</p>
       </div>
@@ -88,7 +88,7 @@ export function OverviewTab({ overview }: OverviewTabProps) {
       <div style={{ marginBottom: '2rem' }}>
         <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#073C65' }}>
           <BookOpen style={{ width: '18px', height: '18px', color: '#D49E37' }} />
-          Indicative Cost Structure (England & Wales)
+          Indicative Cost Structure (Barbados)
         </h3>
         <div className="rounded-xl" style={{ background: 'rgba(7, 60, 101, 0.04)', padding: '1.25rem', border: '1px solid rgba(7, 60, 101, 0.1)', marginLeft: '1.75rem' }}>
           <p style={{ fontSize: '0.9375rem', lineHeight: '1.7', color: '#6B7280' }}>{costStructure}</p>
@@ -104,7 +104,7 @@ export function OverviewTab({ overview }: OverviewTabProps) {
         <div>
           <h4 style={{ color: '#92400e', fontSize: '0.9375rem', fontWeight: 600, marginBottom: '0.5rem' }}>General Legal Information Only</h4>
           <p style={{ fontSize: '0.875rem', color: '#92400e', lineHeight: '1.7' }}>
-            This overview provides <strong>general legal information</strong> about the law of England & Wales. It is <strong>not legal advice</strong> and does not create a solicitor-client relationship. Application of legal principles to specific facts requires professional legal analysis by a qualified solicitor.
+            This overview provides <strong>general legal information</strong> about the civil law of Barbados. It is <strong>not legal advice</strong> and does not create a lawyer-client relationship. Application of legal principles to specific facts requires professional legal analysis by a qualified attorney.
           </p>
         </div>
       </div>

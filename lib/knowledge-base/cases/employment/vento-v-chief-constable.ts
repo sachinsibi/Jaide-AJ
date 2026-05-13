@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'employment',
   title: 'Vento v Chief Constable of West Yorkshire Police [2002] EWCA Civ 1871',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Vento v Chief Constable of West Yorkshire Police (No 2) [2002] EWCA Civ 1871',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/2002/1871.html',
   inForce: true,

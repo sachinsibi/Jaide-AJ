@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'employment',
   title: 'Employment Rights Act 1996, ss.135–162 — Redundancy',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Employment Rights Act 1996, ss.135, 139, 162; Trade Union and Labour Relations (Consolidation) Act 1992, s.188',
   url: 'https://www.legislation.gov.uk/ukpga/1996/18/part/XI',
   inForce: true,

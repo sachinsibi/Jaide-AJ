@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'statute',
   category: 'contract-service',
   title: 'Consumer Rights Act 2015, ss.49–56 — Services',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Consumer Rights Act 2015, ss.49–56',
   url: 'https://www.legislation.gov.uk/ukpga/2015/15/part/1/chapter/4',
   inForce: true,

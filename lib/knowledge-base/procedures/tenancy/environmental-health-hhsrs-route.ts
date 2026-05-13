@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'procedure',
   category: 'tenancy',
   title: 'Environmental Health / HHSRS Route',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Housing Act 2004, Pt 1; HHSRS Operating Guidance (ODPM 2006)',
   url: 'https://www.gov.uk/government/publications/housing-health-and-safety-rating-system-guidance-for-landlords-and-property-related-professionals',
   inForce: true,

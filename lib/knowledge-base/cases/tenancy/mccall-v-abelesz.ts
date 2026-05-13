@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'tenancy',
   title: 'McCall v Abelesz [1976] QB 585 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'McCall v Abelesz [1976] QB 585 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1976/2.html',
   inForce: true,

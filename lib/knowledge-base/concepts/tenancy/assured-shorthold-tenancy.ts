@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'tenancy',
   title: 'Assured Shorthold Tenancy (AST)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   inForceNote:
     'PENDING — verify against gov.uk. Under the Renters\' Rights Act 2024, ASTs are expected to be abolished and converted to a single periodic-tenancy form. Confirm current status before relying.',

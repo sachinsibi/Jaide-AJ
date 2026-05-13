@@ -9,12 +9,14 @@ export default function Home() {
   const router = useRouter();
   const [noticeSeen, setNoticeSeen] = useState(false);
   const [pendingInput, setPendingInput] = useState<string | null>(null);
+  const [classifying, setClassifying] = useState(false);
 
   useEffect(() => {
     setNoticeSeen(sessionStorage.getItem('noticeSeen') === 'true');
   }, []);
 
   const classify = async (input: string) => {
+    setClassifying(true);
     sessionStorage.setItem('userInput', input);
 
     const res = await fetch('/api/classify', {
@@ -49,6 +51,22 @@ export default function Home() {
       void classify(input);
     }
   };
+
+  if (classifying) {
+    return (
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+        background: '#FAFBFC',
+      }}>
+        <p style={{ color: '#073C65', fontSize: '1rem', fontFamily: 'inherit' }}>
+          Analysing your situation…
+        </p>
+      </div>
+    );
+  }
 
   return (
     <>

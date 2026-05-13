@@ -7,19 +7,14 @@ import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const router = useRouter();
-  const [noticeSeen, setNoticeSeen] = useState<boolean | null>(null);
+  const [noticeSeen, setNoticeSeen] = useState(false);
+  const [pendingInput, setPendingInput] = useState<string | null>(null);
 
   useEffect(() => {
-    const seen = sessionStorage.getItem('noticeSeen') === 'true';
-    setNoticeSeen(seen);
+    setNoticeSeen(sessionStorage.getItem('noticeSeen') === 'true');
   }, []);
 
-  const handleAcknowledge = () => {
-    sessionStorage.setItem('noticeSeen', 'true');
-    setNoticeSeen(true);
-  };
-
-  const handleContinue = async (input: string) => {
+  const classify = async (input: string) => {
     sessionStorage.setItem('userInput', input);
 
     const res = await fetch('/api/classify', {
@@ -37,13 +32,28 @@ export default function Home() {
     }
   };
 
-  // Avoid flash: render nothing until sessionStorage is read
-  if (noticeSeen === null) return null;
+  const handleContinue = async (input: string) => {
+    if (!noticeSeen) {
+      setPendingInput(input);
+      return;
+    }
+    await classify(input);
+  };
+
+  const handleAcknowledge = () => {
+    sessionStorage.setItem('noticeSeen', 'true');
+    setNoticeSeen(true);
+    if (pendingInput !== null) {
+      const input = pendingInput;
+      setPendingInput(null);
+      void classify(input);
+    }
+  };
 
   return (
     <>
       <LandingScreen onContinue={handleContinue} />
-      {!noticeSeen && <NoticeModal onAcknowledge={handleAcknowledge} />}
+      {pendingInput !== null && <NoticeModal onAcknowledge={handleAcknowledge} />}
     </>
   );
 }

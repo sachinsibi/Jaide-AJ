@@ -18,7 +18,7 @@ const doc: KnowledgeDocument = {
 
 Court jurisdiction by claim value:
 
-Magistrates' Court: has civil jurisdiction over claims where the amount in dispute does not exceed $10,000 BBD. A motor accident property damage claim for vehicle damage in that range — for example, a $8,000 BBD repair estimate — would typically be brought in the Magistrates' Court. The process is generally more accessible and less costly than High Court proceedings.
+Magistrates' Court: has civil jurisdiction over claims where the amount in dispute does not exceed $10,000 BBD. Claims for vehicle damage or other property loss at or below this threshold would typically be brought in the Magistrates' Court. Note that the $10,000 threshold is in Barbados Dollars (BBD); the BBD is pegged at approximately 2:1 to the US Dollar, so a claim expressed in USD should be converted to BBD to determine the appropriate court. The process is generally more accessible and less costly than High Court proceedings.
 
 High Court of Barbados: has jurisdiction over claims exceeding $10,000 BBD, or where the nature of the claim or the relief sought requires it. Vehicle damage claims in higher ranges, or claims combining property damage with other heads of loss, may fall in the High Court.
 

@@ -11,6 +11,7 @@ const doc: KnowledgeDocument = {
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
+  tabs: ['overview', 'legalBreakdown'],
   triggers: ['possession', 'evict', 'eviction', 'court date', 'court hearing', 'possession claim', 'arrears', 'notice to quit', 'defend eviction'],
   factSummary:
     'When a landlord in Barbados commences possession proceedings in the Magistrates\' Court or High Court, the tenant has the right to appear, contest the claim, and raise defences. Available defences include: invalidity of the notice to quit, disputes as to rent arrears, counterclaims for disrepair or breach of quiet enjoyment, and evidence of retaliatory intent. There is no CPR Part 55 in Barbados.',

@@ -12,27 +12,35 @@ const doc: KnowledgeDocument = {
   triggers: ['escape', 'reservoir', 'flood', 'fire spread', 'chemical', 'water tank', 'leak from neighbour', 'rylands'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Five-element test for liability under the rule in Rylands v Fletcher (now a sub-species of nuisance): (1) accumulation by the defendant on their land; (2) of something likely to do mischief if it escapes; (3) for a non-natural ("extraordinary and unusual") use of the land; (4) escape; (5) damage of a foreseeable type (Cambridge Water).',
-  content: `Rylands Test (post-Cambridge Water and Transco):
+    'Four-element test for strict liability under the principle in Rylands v Fletcher (persuasive common law authority applied in Barbados as a Commonwealth jurisdiction): (1) accumulation on land; (2) non-natural use; (3) escape from the defendant\'s land; (4) damage of a foreseeable type (Cambridge Water — persuasive authority). No fault or negligence is required.',
+  content: `Rylands v Fletcher — Four-Element Test (Barbados Common Law)
 
-Element 1 — Accumulation. The defendant brought onto, kept, or accumulated the thing on their land. Things naturally on the land (rocks, native vegetation, naturally occurring water) are not within Rylands; their escape gives rise to a Sedleigh-Denfield/Leakey-style nuisance instead.
+The Rylands v Fletcher principle (1868) LR 3 HL 330 is persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. It imposes strict liability (no requirement of fault or negligence) for damage caused by the escape of a dangerous accumulation from a defendant's land where the use was non-natural.
 
-Element 2 — Likely to do mischief if it escapes. Classic examples: large quantities of water (Rylands itself); fire from non-natural sources (LMS International v Styrene Packaging [2005]); accumulated chemicals (Cambridge Water); gas; explosives; sewage. Quantity matters — domestic water in pipes is not within Rylands (Transco v Stockport MBC [2003] UKHL 61).
+Element 1 — Accumulation on the defendant's land. The defendant brought onto, kept, or accumulated the thing on their land for their own purposes. Things that are naturally present on the land (naturally occurring rocks, native vegetation, naturally flowing water) are not within the principle; their escape or movement gives rise instead to a Sedleigh-Denfield or Leakey-style nuisance analysis.
 
-Element 3 — Non-natural use. The use must be "extraordinary and unusual" at the time and place in question (Transco). Domestic water supply, ordinary household waste, and normal commercial uses appropriate to the locality are NOT non-natural. Mass storage of water, storage of chemicals in quantity, or accumulation of explosives ARE non-natural. Heavy industry in an industrial estate may be ordinary; the same activity in a residential street is not.
+Element 2 — Non-natural use of the land. The use must be extraordinary or unusual at the time and place in question — going beyond ordinary domestic or commercial use appropriate to the locality. Examples:
 
-Element 4 — Escape. From a place over which the defendant has occupation or control to a place where the defendant does not have control. No escape, no Rylands liability — only negligence/occupiers' liability operates within the defendant's premises (Read v J Lyons & Co [1947] AC 156).
+Non-natural: mass storage of water (reservoirs, large tanks); storage of chemicals in substantial quantities; accumulation of explosives or highly flammable materials; industrial-scale activities in a residential area.
 
-Element 5 — Foreseeable type of damage. The TYPE (not the precise extent) of damage must have been reasonably foreseeable as a consequence of an escape of the relevant kind (Cambridge Water). Damage of an unforeseeable type is not recoverable.
+Not non-natural: domestic water supply pipes; ordinary household or garden use; small-scale commercial uses consistent with local character.
+
+The test is applied having regard to local conditions in Barbados and what constitutes ordinary land use in the relevant area.
+
+Element 3 — Escape from the defendant's land. There must be an escape from a place over which the defendant has occupation or control to a place outside their control. There is no liability under this principle for damage caused by an accumulation that injures persons while they remain on the defendant's land — that falls under negligence or the common law duty of care.
+
+Element 4 — Damage of a foreseeable type. The type (not necessarily the precise extent) of damage must have been reasonably foreseeable as a consequence of an escape of the relevant kind. (Cambridge Water Co v Eastern Counties Leather [1994] 2 AC 264 — persuasive authority in Barbados.) Damage of a wholly unforeseeable type is not recoverable even under the strict liability principle.
 
 What is NOT required: fault, negligence, or breach of duty in the conduct of the activity. Liability is strict.
 
-Defences: Act of God; act of a stranger the defendant could not reasonably have foreseen and prevented; statutory authority; consent; default of the claimant; contributory negligence under LR(CN)A 1945.
+Defences: act of God (an extraordinary and unforeseeable natural event); act of a third-party stranger that the defendant could not reasonably have foreseen and prevented; statutory authority; consent of the claimant; default of the claimant; contributory conduct by the claimant.
 
-Damages recoverable: physical property damage and consequential losses. Personal injury is NOT recoverable under Rylands (Transco). Pure economic loss is not recoverable.
+Damages recoverable: physical property damage and reasonably foreseeable consequential losses. Personal injury is not recoverable under the Rylands principle. Pure economic loss is not recoverable.
 
-Limitation: 6 years from the date of escape and damage (LA 1980 s.2).`,
-  tags: ['Rylands-Fletcher-test', 'strict-liability', 'escape', 'non-natural-use', 'foreseeability'],
+Limitation: the applicable Barbados limitation period (generally 6 years from the date of escape and damage).
+
+Forum: claims up to BBD $10,000 (approximately USD $5,000 at the 2:1 peg) are brought in the Magistrates' Court under Cap. 116A; claims above that threshold are brought in the High Court of Barbados under Cap. 117.`,
+  tags: ['Rylands-Fletcher-test', 'strict-liability', 'escape', 'non-natural-use', 'foreseeability', 'barbados'],
 };
 
 export default doc;

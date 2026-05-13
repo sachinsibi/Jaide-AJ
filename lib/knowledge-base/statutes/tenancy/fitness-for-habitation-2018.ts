@@ -1,34 +1,43 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-fitness-habitation-2018',
+  id: 'statute-barbados-tenancy-habitability',
   type: 'statute',
   category: 'tenancy',
-  title: 'Homes (Fitness for Human Habitation) Act 2018',
+  title: 'Implied Duty of Habitability — Barbados Residential Tenancies',
   jurisdiction: 'barbados',
-  citation: 'Homes (Fitness for Human Habitation) Act 2018; LTA 1985 s.9A (as inserted)',
-  url: 'https://www.legislation.gov.uk/ukpga/2018/34/contents',
+  citation: 'Common law duty of habitability; Landlord and Tenant Act, Cap. 230 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['tenancy'],
   tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
+  triggers: ['habitable', 'unfit', 'unsafe', 'damp', 'mould', 'mold', 'cold', 'health', 'condition'],
   factSummary:
-    'Inserts s.9A into the Landlord and Tenant Act 1985, requiring landlords of most residential tenancies in England to ensure the dwelling is fit for human habitation at the start of and throughout the tenancy. Gives tenants a direct cause of action without needing local authority involvement.',
+    'Barbados common law, applied as a Commonwealth jurisdiction, implies into every residential tenancy a duty on the landlord that the premises are fit for human habitation at the commencement of the tenancy and remain so throughout. This duty is independent of disrepair and encompasses conditions that render a home harmful to health or unsafe for occupation.',
   eli5Summary:
-    'A 2018 law says your rented home must actually be fit to live in — not just structurally repaired. If problems like serious damp, mould, or cold make the home unhealthy, you can take the landlord to court yourself, without waiting for the council.',
-  content: `The Homes (Fitness for Human Habitation) Act 2018 amends the Landlord and Tenant Act 1985 by inserting a new s.9A. It applies to most leases of dwellings in England granted on or after 20 March 2019 for a term of less than seven years (and to existing periodic tenancies from 20 March 2020).
+    'Every rented home in Barbados must be fit to live in. This is a basic rule under Barbados common law — it does not need to be written in the lease. If a home has serious problems like dangerous damp, no clean water, or unsafe electricity that make it unhealthy to live in, the landlord has an obligation to deal with it.',
+  content: `Implied Duty of Habitability — Barbados Residential Tenancies:
 
-Section 9A implies a covenant by the lessor that the dwelling:
-(a) is fit for human habitation at the time the lease is granted or otherwise created or, if later, at the beginning of the term, and
-(b) will remain fit for human habitation during the term.
+Barbados, as a Commonwealth jurisdiction with a common law heritage, recognises a well-established implied duty that landlords must ensure residential premises are fit for human habitation. This doctrine developed through English common law and is treated as persuasive authority by Barbados courts.
 
-Fitness for habitation is assessed by reference to the matters listed in s.10 LTA 1985, which incorporates the 29 hazards under the Housing Health and Safety Rating System (HHSRS), including damp and mould, excess cold, excess heat, structural collapse, fire, falls, crowding, and sanitation.
+Scope of the duty:
 
-The covenant is not breached where the unfitness is attributable to (i) the tenant's own breach of duty or failure to use the premises in a tenant-like manner, (ii) acts of God, fire, storm, or flood, (iii) the tenant's own goods, or (iv) where consent for the works is required and has not been obtained despite reasonable efforts.
+(a) Fitness at commencement: at the time a residential tenancy begins, the premises must be in a condition reasonably fit for habitation. Conditions that render the property immediately unfit — absence of clean water, sewage ingress, severe structural instability — may give rise to a claim from the outset of the tenancy.
 
-Crucially, s.9A gives tenants a direct route to the County Court for an injunction requiring the landlord to remedy the unfitness and/or damages, without needing the local authority to serve an improvement notice first. This is the lead statute for damp/mould cases involving health impact, working alongside s.11 (which addresses disrepair specifically).`,
-  tags: ['fitness-for-habitation', 'section-9A', 'LTA-1985', 'damp', 'mould', 'HHSRS'],
+(b) Continuing fitness during the tenancy: the duty is not limited to the start of the tenancy. Where conditions deteriorate and render the premises unfit for habitation — through, for example, persistent damp and mould, failure of sanitation, infestation, or dangerous electrical installation — the landlord bears responsibility to remedy those conditions on notice.
+
+(c) Independence from disrepair: the habitability duty is broader than a strict disrepair obligation. A property may be unfit for habitation without exhibiting structural disrepair — for example, where inherent design features cause health-threatening condensation, or where inadequate ventilation leads to harmful air quality. In Barbados, common law and the provisions of Cap. 230 together provide the framework for addressing such conditions.
+
+What is covered: conditions likely to render residential premises unfit include severe dampness and mould growth; defective or absent sanitation; absence of a reliable clean water supply; structurally dangerous ceilings, walls, or floors; electrical installations that present a fire or electrocution hazard; infestation by vermin; and defects that prevent normal safe use of the dwelling.
+
+Notice: the landlord's obligation to remedy habitability defects generally requires actual or constructive notice of the problem. A tenant who identifies a condition affecting habitability and communicates it in writing to the landlord places the landlord on notice, triggering the obligation to respond within a reasonable time.
+
+Remedies: a tenant may seek a civil claim in the Magistrates' Court (up to $10,000 BBD under Cap. 116A) or the High Court of Barbados (above $10,000 BBD under Cap. 117) for damages representing the loss suffered during the period of unfitness, and/or an order requiring the landlord to carry out the necessary remedial works.
+
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['habitability', 'fitness-for-habitation', 'Cap-230', 'common-law', 'Barbados', 'damp', 'mould'],
 };
 
 export default doc;

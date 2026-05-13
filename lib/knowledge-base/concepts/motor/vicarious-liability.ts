@@ -12,31 +12,31 @@ const doc: KnowledgeDocument = {
   triggers: ['employer', 'work vehicle', 'company car', 'driving for work', 'delivery driver', 'taxi', 'on duty'],
   tabs: ['legalBreakdown', 'eli5'],
   factSummary:
-    'An employer is strictly liable for the torts of an employee committed in the course of employment. In motor cases, this is engaged where the at-fault driver was driving in the course of work duties (delivery, business travel, work-provided vehicle in work use). Two-stage test: (1) is the relationship one of employment or akin to employment? (2) is the tort sufficiently connected to the employment to make liability fair?',
+    'In Barbados, an employer may be strictly liable for the torts of an employee committed in the course of employment. In motor cases, this is engaged where the at-fault driver was driving in the course of work duties. Two-stage inquiry: (1) is the relationship one of employment or akin to employment? (2) is the tort sufficiently connected to the employment? These principles apply in Barbados as inherited common law.',
   eli5Summary:
-    'If a delivery driver hits your car while doing their job, you can claim against their employer (the company), not just the driver. The law makes employers responsible for what their staff do at work. This often matters because employers have insurance and money to pay compensation, where individual drivers may not.',
-  content: `Vicarious Liability:
+    'If a delivery driver hits your car while doing their job, a claim may be brought against their employer (the company) as well as the driver. The law makes employers responsible for what their staff do at work. This often matters because employers typically have insurance and resources, where individual drivers may not.',
+  content: `Vicarious Liability in Barbados Motor Claims
 
-One person (typically the employer) is held liable for the tort of another (typically an employee) committed in the course of the relationship. It is strict — no fault on the employer's part is required.
+As a Commonwealth jurisdiction, Barbados applies the common law principles of vicarious liability. One person (typically the employer) may be held liable for the tort of another (typically an employee) committed in the course of the employment relationship. Liability is strict — no personal fault on the employer's part is required.
 
-Two-stage test (Various Claimants v Catholic Child Welfare Society [2012] UKSC 56; refined in WM Morrison Supermarkets [2020] UKSC 12):
+Two-stage inquiry (derived from principles articulated in Various Claimants v Catholic Child Welfare Society [2012] UKSC 56 and subsequent UK Supreme Court decisions — persuasive authority in Barbados):
 
-Stage 1 — Relationship. Employment, or akin to employment? True self-employed independent contractors generally do not engage vicarious liability. The court weighs control, integration, mutuality of obligation, who supplies equipment, and risk allocation. Modern law extends to some quasi-employment (charity volunteers, certain gig-platform workers).
+Stage 1 — Relationship. Is the relationship one of employment, or sufficiently akin to employment? A true independent contractor generally does not engage vicarious liability. The court weighs factors including: control, integration into the business, the mutual obligations between the parties, who supplies equipment, and how risk is allocated.
 
-Stage 2 — Close connection (Lister v Hesley Hall [2002] 1 AC 215). Was the tort sufficiently connected with authorised activities to make liability fair and just? In course of employment, or merely on the occasion of it? A "frolic of one's own" breaks the chain.
+Stage 2 — Sufficient connection. Was the tort sufficiently connected with the authorised activities of the employment to make it just and fair to impose liability? Conduct in the course of employment engages liability; a "frolic of one's own" — conduct purely for the employee's personal purposes and substantially outside the work context — generally does not.
 
-Application in motor cases:
+Application in Barbados motor accident cases:
 
-1. Engaged: employee driving employer's vehicle on company business (delivery, sales, site visits); employee driving own vehicle on authorised company business (mileage paid); company-provided vehicle within permitted use.
+1. Engaged — employer liable: employee driving the employer's vehicle on company business (deliveries, sales calls, site visits); employee driving their own vehicle on authorised company business; company-owned vehicle in use within its authorised scope.
 
-2. Not engaged: pure commuting (unless the journey is itself a work duty); personal frolics (substantial deviation); prohibited use (driving while suspended, racing, deliberate criminal use for personal motives).
+2. Not engaged — employer generally not liable: pure commuting to and from work (unless the journey is itself a work duty); substantial personal deviation from an authorised route; use of a vehicle in a way expressly prohibited by the employer.
 
-3. Insurance: employers carry Employers' Liability insurance (ELCIA 1969) and motor insurance for vehicles they own/control. Where vicarious liability engages, the employer's motor policy responds — claimants benefit from larger cover.
+3. Insurance relevance: employers in Barbados are required under applicable law to carry certain insurance. Where vicarious liability is established, the employer's insurance may respond, making the claim practically more recoverable.
 
-4. Procedural: plead the employer alongside the driver in suspected work-duty cases. Disclosure of the employee's contract, work schedule, and telematics tests vicarious liability.
+4. Procedural approach: where the at-fault driver may have been acting in the course of employment at the time of the accident, the employer should be identified and considered as a potential defendant or co-defendant. Evidence of the driver's employment, work schedule, and the purpose of the journey is relevant.
 
-5. Distinct routes: a keeper who knowingly permits uninsured use may face civil liability or s.143 RTA 1988 criminal liability — separate from vicarious liability for torts.`,
-  tags: ['vicarious-liability', 'employer-liability', 'course-of-employment', 'close-connection-test', 'akin-to-employment'],
+5. Keeper liability: where the registered owner of a vehicle permitted another to use it in circumstances where the owner knew or ought to have known that the user was unlicensed or uninsured, additional civil liability may arise. Barbados road traffic and insurance legislation governs the specific obligations — consult the relevant provisions under Cap. 166 and Cap. 295.`,
+  tags: ['vicarious-liability', 'employer-liability', 'course-of-employment', 'close-connection', 'Barbados'],
 };
 
 export default doc;

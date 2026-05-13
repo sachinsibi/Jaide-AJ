@@ -1,47 +1,70 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-county-court-money-claim-property',
+  id: 'procedure-civil-court-property-damage-barbados',
   type: 'procedure',
   category: 'property-damage',
-  title: 'County Court Money Claim — Property Damage',
+  title: 'Civil Court Proceedings for Property Damage Claims — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Civil Procedure Rules, Part 7; CPR 26 (track allocation); CPR 35 (experts)',
-  url: 'https://www.gov.uk/make-court-claim-for-money',
+  citation: 'Barbados Magistrates\' Court Act (Cap. 116A); Supreme Court of Judicature Act (Cap. 117)',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['property-damage'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'For unresolved property-damage claims, issue a Claim Form N1 at the County Court Money Claims Centre, or use Money Claim Online (MCOL) for liquidated sums up to £100,000. Most domestic claims fall on the small claims (≤£10,000) or fast track (£10,000–£25,000). Multi-track for complex/high-value matters. Expert evidence (surveyor, structural engineer) usually required and subject to court permission.',
-  content: `Forum: County Court Money Claims Centre (CCMCC) for issue; hearings at the local centre serving the defendant's address.
+    'Property damage claims in Barbados are brought in the Magistrates\' Court (claims up to BBD $10,000, approximately USD $5,000 at the 2:1 peg) or the High Court of Barbados (claims above BBD $10,000). Steps include: letter of claim, evidence gathering (photographs, repair estimates, expert reports), filing particulars of claim, and attending trial. Injunctive relief to restrain ongoing nuisance or trespass is available from the High Court.',
+  content: `Civil Court Proceedings for Property Damage Claims — Barbados
 
-Issue routes:
-(a) Money Claim Online (MCOL) — online liquidated sums up to £100,000 against up to two defendants. Suited to defined-sum claims (specified repair invoices already paid; insurer subrogation claims).
-(b) Form N1 — paper, for unspecified-sum claims, more than two defendants, or non-money relief (mandatory injunction to remove an encroachment, prohibitory injunction restraining a continuing nuisance).
+Forum selection:
 
-Issue fees are banded by claim value (gov.uk/court-fees). Help with Fees remission for low-income claimants.
+Magistrates' Court of Barbados (Cap. 116A — Magistrates' Court Act): civil claims up to BBD $10,000 (approximately USD $5,000 at the 2:1 peg). Appropriate for straightforward property damage claims of modest value — vehicle damage, minor flooding, smaller repair claims.
 
-Particulars of Claim: parties (with the proprietary interest establishing standing — Hunter v Canary Wharf); the property; the cause of action (negligence, private nuisance, Rylands, trespass, statutory duty); dates and mechanism of damage; itemised loss with documentary backing; mitigation steps; interest under s.69 County Courts Act 1984.
+High Court of Barbados (Cap. 117 — Supreme Court of Judicature Act): claims above BBD $10,000. Also the appropriate forum for all injunction applications regardless of quantum — prohibitory injunctions to restrain an ongoing nuisance or trespass, and mandatory injunctions requiring removal of encroaching structures.
 
-Track allocation (CPR 26):
-- Small claims — up to £10,000. Default for low-value property-damage claims. Limited disclosure, simplified evidence, hearings in chambers, very limited cost recovery. Single joint expert sometimes permitted for low-value technical questions.
-- Fast track — £10,000–£25,000. Standard cost recovery; single trial day; usually a single joint expert for surveyor/engineering issues.
-- Multi-track — over £25,000 or where complex (multiple defendants, complex causation, large consequential losses). Detailed case management, more extensive expert evidence permitted.
+Step 1 — Letter of claim (letter before action). A formal written letter to the responsible party setting out:
+- The identity of the claimant and their proprietary interest in the affected land (freehold, leasehold, or other).
+- A factual account: date(s), location, and mechanism of the damage.
+- The legal basis: negligence; private nuisance (unreasonable interference with use and enjoyment of land); the Rylands v Fletcher principle (escape of a dangerous accumulation from non-natural use); trespass to land.
+- Itemised loss and quantum: repair cost with supporting estimates; diminution in market value with supporting valuation; consequential losses (alternative accommodation, hire of substitute vehicle, survey fees, business interruption).
+- Copies of key documents: photographs with date and location information, repair quotes, expert reports.
+- A reasonable period for the other party to respond — typically 14–28 days for straightforward claims; longer for complex matters.
 
-Expert evidence (CPR 35): court permission required. Typical experts for property-damage claims: building surveyor / structural engineer (cause and remedial cost); arboriculturist (tree-root or tree-fall claims); valuer (diminution-in-value head); highway engineer (s.41 Highways Act claims, occasional).
+Step 2 — Evidence gathering. Evidence preserved before issuing proceedings:
+- Photographs of the damage, taken as soon as possible after the event, with date and location metadata.
+- Repair estimates from qualified contractors.
+- Expert report from a building surveyor or structural engineer where the cause or cost of damage is contested.
+- Records of any prior warnings, complaints, or notifications given to the responsible party (important for continuing nuisance or failure-to-abate claims).
+- Witness statements from persons who observed the damage or its cause.
+- Any documentary evidence of the defendant's knowledge (correspondence, inspection records, prior complaints).
 
-Defence: 14 days to acknowledge or defend; with acknowledgment, defence in 28 days. Default judgment for non-response.
+Step 3 — Filing the claim. Where proceedings are necessary:
+- Magistrates' Court: file a complaint and particulars of claim at the relevant Magistrates' Court. Court filing fees are payable.
+- High Court: file a claim by way of fixed date claim form or writ (as appropriate under current Barbados High Court practice), with particulars of claim attached or served separately.
 
-Small Claims Mediation Service: free telephone mediation once a defence is filed; resolves a meaningful proportion of low-value property claims.
+Step 4 — Particulars of claim. The particulars should set out:
+- Parties (with the claimant's proprietary interest identified — required to establish standing in nuisance).
+- Factual narrative of the events.
+- Legal basis: negligence; private nuisance (locality/character; continuing or one-off interference; standing); Rylands v Fletcher principle (accumulation, non-natural use, escape, foreseeable damage type); trespass to land.
+- Damage and quantum, itemised.
+- Any contributory negligence defence anticipated.
+- The remedy sought: damages (amount); injunction (terms); or both.
 
-Trial (small claims): informal, judge-led; relaxed evidence rules; reasoned decision and costs ruling on the day.
+Step 5 — Defence and response. The defendant has the opportunity to file a defence. Common defences in property damage cases include: denial of causation, contributory negligence by the claimant, act of God (for Rylands claims), statutory authority, and consent.
 
-Enforcement: warrant of control; attachment of earnings; third-party debt order; charging order on the defendant's property — particularly relevant where the defendant is a neighbouring owner.
+Step 6 — Expert evidence. For technical disputes about the cause and cost of property damage, the court may receive evidence from:
+- Building surveyors or structural engineers (cause of damage, extent, reasonable repair cost).
+- Arboriculturists (tree-root and tree-fall claims).
+- Valuers (diminution in value).
 
-Strategy: under £10,000 self-represent with insurer / surveyor support. Exhaust ADR before issue. For continuing nuisance, consider injunctive relief in addition to damages — small-claims track is typically not used for injunctions.`,
-  tags: ['CPR-Part-7', 'County-Court', 'small-claims', 'fast-track', 'expert-evidence', 'property-damage'],
+Step 7 — Trial and judgment. The matter proceeds to a hearing before a magistrate (Magistrates' Court) or judge (High Court). Judgment may include an award of damages, an injunction, or both.
+
+Step 8 — Enforcement. Where a money judgment is obtained and not paid:
+- Magistrates' Court enforcement mechanisms under Cap. 116A.
+- High Court enforcement options including execution against goods, charging orders over property, and attachment of earnings.
+
+Practical note: the Barbados Bar Association (barbadosbar.org) maintains a directory of qualified legal practitioners. The Laws of Barbados portal (laws.barbados.gov.bb) provides access to current court procedure legislation.`,
+  tags: ['magistrates-court', 'high-court', 'barbados', 'property-damage', 'civil-proceedings', 'particulars-of-claim'],
 };
 
 export default doc;

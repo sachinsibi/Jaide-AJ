@@ -11,30 +11,34 @@ const doc: KnowledgeDocument = {
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['damages', 'compensation', 'diminution', 'rent reduction', 'discomfort', 'disrepair'],
+  triggers: ['damages', 'compensation', 'diminution', 'rent reduction', 'discomfort', 'disrepair', 'quantum', 'how much'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Damages for breach of repairing obligations are assessed either by (a) the diminution in value of the tenancy to the tenant, or (b) by aggregating notional rent reduction with general damages for inconvenience and discomfort. The two methods should not be combined to avoid double recovery, and the result should reflect the true loss to the tenant.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. Damages for breach of landlord repairing obligations may be assessed either by the diminution in value of the tenancy during the period of disrepair, or by aggregating a notional rent reduction with general damages for inconvenience and discomfort. The two methods should not be combined.',
   content: `Wallace v Manchester City Council (1998) 30 HLR 1111 (Court of Appeal).
 
-Facts: The tenant of a Manchester council flat suffered prolonged disrepair (damp, broken heating, structural issues). She claimed damages under s.11 LTA 1985 for the period of disrepair.
+Status: persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. This is an English Court of Appeal decision and is not binding Barbados law; it is applied as a statement of common law principle for the assessment of damages in landlord repair cases.
 
-Held: Morritt LJ identified the two principal methods of assessing tenant damages for breach of the repairing covenant:
+Facts: the tenant of a council flat suffered prolonged disrepair (damp, broken heating, structural issues). She claimed damages for breach of the implied repairing obligation for the period of disrepair.
 
-(1) Diminution in value method — the difference between the rental value of the flat in repair and the rental value in disrepair, multiplied by the period of disrepair. This is sometimes called "global award by reference to rent."
+Held: Morritt LJ identified two principal methods of assessing damages for breach of a landlord's repairing obligation:
 
-(2) Aggregate method — a sum representing notional rent abatement for the period of disrepair, plus general damages for the discomfort, inconvenience and ill-health suffered by the tenant and household.
+(1) Diminution in value method — the difference between the rental value of the premises in proper repair and the rental value in the condition of disrepair, multiplied by the period during which the disrepair persisted.
 
-Either method may be used; they should not be combined (to avoid double-counting). In modern practice, particularly in the County Court, judges frequently use the second (aggregate) method because it tracks the tenant's actual experience more transparently.
+(2) Aggregate method — a sum representing a notional rent abatement for the period of disrepair, plus general damages for the discomfort, inconvenience, and ill-health suffered by the tenant and members of the household.
 
-Quantum guidance:
-- Awards typically range from a small percentage to (rarely) 100% of the rent for the period, depending on severity.
-- Severe disrepair affecting habitability has supported awards approaching or exceeding the full rent.
-- Aggravated and exemplary damages are available where the landlord's conduct has been high-handed or oppressive (Drane v Evangelou [1978] 1 WLR 455).
-- Special damages are available for proven loss (damaged possessions, increased heating costs, medical expenses).
+Either method may be used; they should not be combined, as this would result in double recovery. In practice, courts frequently use the aggregate method because it more transparently reflects the tenant's actual experience.
 
-Application: Wallace remains the standard reference for quantification of tenant disrepair damages, applied across s.11 LTA 1985 and (since 2019/20) s.9A LTA 1985 fitness claims. It guides both negotiation and judicial assessment.`,
-  tags: ['Wallace-v-Manchester', 'damages', 'diminution-in-value', 'section-11', 'quantum'],
+Quantum guidance: awards typically represent a percentage of the rent for the period of disrepair, calibrated to the severity and nature of the conditions. Severe disrepair substantially affecting habitability may support higher awards. Special damages are also available for proven financial loss directly caused by the disrepair, such as damage to personal belongings, increased utility costs, and medical expenses.
+
+Application in Barbados: the Wallace approach to damages is the relevant persuasive authority for Barbados courts assessing compensation in a landlord disrepair or habitability case. A claimant in the Magistrates' Court or High Court of Barbados may seek:
+
+(a) general damages assessed by the diminution-in-value or aggregate method;
+(b) special damages for specific proven losses;
+(c) where the landlord's conduct has been oppressive or high-handed, aggravated damages may also be available.
+
+All monetary amounts in claims before Barbados courts are expressed in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['Wallace-v-Manchester', 'damages', 'diminution-in-value', 'quantum', 'Barbados', 'persuasive-authority', 'disrepair'],
 };
 
 export default doc;

@@ -1,40 +1,50 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-defamation-act-2013',
+  id: 'statute-barbados-general-civil-defamation',
   type: 'statute',
   category: 'general-civil',
-  title: 'Defamation Act 2013 — serious harm, defences, and remedies',
+  title: 'Defamation — Barbados Common Law and Statute',
   jurisdiction: 'barbados',
-  citation: 'Defamation Act 2013, ss.1–8',
-  url: 'https://www.legislation.gov.uk/ukpga/2013/26/contents',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   triggers: ['defamation', 'libel', 'slander', 'published about me', 'post about me', 'article about me', 'written about me', 'lies about me'],
   tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'The Defamation Act 2013 requires claimants to prove "serious harm" to reputation before a statement is actionable. It replaces the common-law presumption with an evidential requirement. Key defences codified: truth (s.2), honest opinion (s.3), publication on matter of public interest (s.4). Limitation: 1 year from first publication.',
-  content: `s.1 — Serious harm: a statement is not defamatory unless its publication has caused or is likely to cause serious harm to the claimant's reputation. For bodies trading for profit, serious harm requires serious financial loss. The claimant must prove serious harm by evidence — publication date, readership, actual consequences (Lachaux v Independent Print [2019] UKSC 27).
+    'Defamation in Barbados is governed by the common law and potentially specific Barbados legislation (consult laws.barbados.gov.bb). The common law elements are: a defamatory statement, published to a third party, that identifies the claimant. Key defences include truth (justification), honest/fair comment, and privilege (absolute and qualified). Civil remedies are damages and an injunction from the High Court of Barbados.',
+  content: `Defamation law in Barbados is rooted in the common law inherited as a Commonwealth jurisdiction. Barbados may also have specific defamation legislation — the Laws of Barbados portal (laws.barbados.gov.bb) should be consulted for current statutory provisions. The English Defamation Act 2013 does not apply in Barbados.
 
-s.2 — Truth: a complete defence if the imputation conveyed by the statement is substantially true. Evidence of truth must relate to the meaning found by the court, not a more benign meaning the defendant prefers.
+Common law elements of a defamation claim:
 
-s.3 — Honest opinion: defence requires (1) statement was opinion, not fact; (2) it was indicated as opinion (explicitly or by context); (3) based on facts which were true or privileged. Malice defeats the defence.
+1. Defamatory statement. A statement is defamatory if it tends to lower the claimant in the estimation of right-thinking members of society generally, or causes them to be shunned or avoided, or exposes them to hatred, contempt, or ridicule. Both libel (permanent or written form, including online publications) and slander (spoken or transient form) are actionable, though the rules on proof of damage may differ.
 
-s.4 — Publication on matter of public interest: defence if (1) the statement was or formed part of a statement on a matter of public interest; and (2) the defendant reasonably believed that publishing it was in the public interest. Replaces Reynolds privilege.
+2. Publication to at least one third party. The statement must be communicated to someone other than the claimant. Each separate act of publication may give rise to a separate cause of action.
 
-s.5 — Website operators: operator not liable if did not post the statement; defence where operator complies with regulations for notification of complaints.
+3. Identification. The statement must refer to the claimant. The claimant must be identifiable to a reasonable reader or listener as the person to whom the statement refers. A fictitious name or changed detail may still satisfy this element if readers who know the claimant would identify them.
 
-s.8 — Single publication rule: limitation runs from the first publication, not from each subsequent viewing or republication (overturning Duke of Brunswick). Limitation period: 1 year from first publication (s.4A Limitation Act 1980, as amended).
+4. Defamatory meaning. The natural and ordinary meaning of the words, understood by a reasonable reader in context, must be defamatory. A statement may also be defamatory by innuendo where extrinsic facts known to recipients give it a defamatory meaning.
 
-s.9 — Jurisdiction: court must be satisfied that England and Wales is clearly the most appropriate place to bring the claim (anti-libel tourism).
+Defences under common law:
 
-Defences under prior law preserved: absolute privilege (parliamentary proceedings, court proceedings); qualified privilege (common interest communications without malice).
+Justification (truth): a complete defence if the imputation conveyed by the statement is substantially true. The defendant bears the burden of proving the truth of the statement.
 
-Remedies: damages (general + aggravated); injunction (high threshold for interim — Bonnard v Perryman); summary disposal (s.8 Defamation Act 1996); take-down.
+Honest/fair comment: a defence where the statement is comment (not a statement of fact), on a matter of public interest, based on facts that are true, and represents an honestly held opinion. Malice defeats this defence.
 
-Defamation protocol: pre-action Letter of Claim required specifying the words complained of, meaning alleged, and harm caused; 14-day response period.`,
-  tags: ['defamation', 'libel', 'slander', 'serious-harm', 'truth-defence', 'honest-opinion', 'DA-2013'],
+Absolute privilege: statements made in parliamentary proceedings and court proceedings attract absolute privilege — no action in defamation can be brought for such statements regardless of motive.
+
+Qualified privilege: statements made on occasions of qualified privilege (where the maker has a legal, social, or moral duty to make the statement and the recipient has a corresponding interest in receiving it) are protected unless made with malice. This covers, for example, employment references and complaints to regulatory authorities.
+
+Note on Barbados legislation: Barbados may have enacted specific defamation legislation. Practitioners and litigants should verify current statutory provisions at laws.barbados.gov.bb.
+
+Civil remedies:
+
+Damages: general damages for harm to reputation (assessed by the court); special damages for quantifiable pecuniary loss; aggravated damages where the defendant's conduct was particularly high-handed. At common law, damage is presumed for libel.
+
+Injunction: the High Court of Barbados has jurisdiction to grant a prohibitory injunction restraining further publication. The threshold for a pre-trial injunction in defamation cases is high — courts are cautious about restraining publication before the defendant has had the opportunity to plead a defence of truth or honest comment.
+
+Limitation: Barbados limitation legislation applies. The applicable limitation period for defamation claims should be verified under Barbados law; the period may be shorter than the general six-year period for tort.`,
+  tags: ['defamation', 'libel', 'slander', 'justification', 'honest-comment', 'privilege', 'Barbados-common-law'],
 };
 
 export default doc;

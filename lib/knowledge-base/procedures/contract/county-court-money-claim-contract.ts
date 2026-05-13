@@ -1,45 +1,56 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-county-court-money-claim-contract',
+  id: 'procedure-civil-court-money-claim-contract-barbados',
   type: 'procedure',
   category: 'contract-service',
-  title: 'County Court Money Claim — Contract / Consumer',
+  title: 'Civil Court Money Claims for Contract Disputes — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Civil Procedure Rules, Part 7; CPR 26 (track allocation); CPR 27 (small claims)',
-  url: 'https://www.gov.uk/make-court-claim-for-money',
+  citation: 'Magistrates\' Court Act, Cap. 116A; Supreme Court of Judicature Act, Cap. 117 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['contract-service'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'For unresolved consumer / contract disputes, issue a Claim Form N1 at the County Court Money Claims Centre, or use Money Claim Online (MCOL) for liquidated sums up to £100,000. Most consumer claims fall on the small claims track (≤£10,000), with very limited cost recovery — favouring self-representation or the small-claims mediation service.',
-  content: `Forum: County Court Money Claims Centre (CCMCC) at Salford; hearings allocated to a local hearing centre.
+    'Civil money claims for contract disputes in Barbados are brought in the Magistrates\' Court (claims up to $10,000 BBD) or the High Court (claims above $10,000 BBD). There is no equivalent to England\'s County Court Online (MCOL). Proceedings are commenced by filing a claim or plaint at the relevant court, setting out the parties, the contract, the breach, and the loss claimed.',
+  content: `Civil Court Money Claims for Contract Disputes — Barbados.
 
-Issue routes:
-(a) Money Claim Online (MCOL) — online liquidated sums up to £100,000 against up to two defendants. Best for refunds, defined damages, retained deposits, unpaid invoices.
-(b) Form N1 — paper, for unspecified-sum claims, >2 defendants, or non-money relief (specific performance, injunction).
+Forum selection by claim value.
 
-Issue fees are banded by claim value (gov.uk/court-fees). Fee remission via Help with Fees for claimants on benefits or low income.
+Magistrates' Court — claims up to $10,000 BBD. The civil jurisdiction of the Magistrates' Court of Barbados is governed by the Magistrates' Court Act, Cap. 116A. For contract and consumer money claims where the amount in dispute does not exceed $10,000 BBD (approximately $5,000 USD at the fixed 2:1 exchange rate), the Magistrates' Court is the appropriate forum. Proceedings in the Magistrates' Court are generally less formal and more accessible to unrepresented parties than High Court proceedings.
 
-Particulars of Claim: parties; contract (date, subject matter, key terms); implied terms relied on (CRA 2015 ss.9–11 / s.49); breach with dates and specifics; itemised loss (refund, repair/replacement, consequential losses with remoteness justification); mitigation steps; interest under s.69 County Courts Act 1984; costs.
+High Court of Barbados — claims above $10,000 BBD. For contract claims exceeding $10,000 BBD, proceedings are brought in the High Court of Barbados under the Supreme Court of Judicature Act, Cap. 117. High Court proceedings are formal and governed by the applicable Barbados civil procedure rules. Legal representation is strongly advisable. Claims in the High Court may involve disclosure of documents, witness statements, expert evidence, and formal trial.
 
-Track allocation (CPR 26):
-- Small claims — up to £10,000. Default for most consumer claims. Limited disclosure, simplified evidence, hearings in chambers, very limited cost recovery.
-- Fast track — £10,000–£25,000. Standard cost recovery; one-day trial; usually a single joint expert.
-- Multi-track — over £25,000 or where complex.
+There is no equivalent to England's Money Claim Online (MCOL), County Court, or small-claims track in Barbados. All civil claims must be commenced at the relevant Barbados court.
 
-Defence: 14 days to acknowledge or defend; with acknowledgment, defence in 28 days. Default judgment available.
+Commencing a claim.
 
-Small Claims Mediation Service: free telephone mediation once a defence is filed; often resolves in a single hour-long call. Recommended before any contested hearing.
+1. Pre-claim steps. Before issuing a claim, a claimant ordinarily sends a letter of demand to the defendant setting out the basis of the claim, the loss or amount sought, and a reasonable period for the defendant to respond. This pre-claim step facilitates resolution without court proceedings and documents the claimant's position.
 
-Trial (small claims): informal, judge-led; relaxed evidence rules; reasoned decision and costs ruling.
+2. Filing the claim. In the Magistrates' Court, a claim is commenced by filing a plaint or claim form at the court registry, setting out:
+   - The full names and addresses of the claimant and defendant.
+   - A description of the contract — date, subject matter, and key agreed terms.
+   - The implied terms relied on (for example, satisfactory quality under Cap. 318, or reasonable care and skill at common law for services).
+   - The breach — what the defendant failed to do, with dates and particulars.
+   - The loss or damage claimed — itemised amounts including any refund, repair cost, replacement cost, and consequential losses.
+   - The total amount claimed in BBD.
 
-Enforcement: warrant of control; attachment of earnings; third-party debt order; charging order. Statutory demand / winding-up rarely proportionate for consumer debts.
+3. Service. The claim form is served on the defendant, who is given a period to respond or defend the claim.
 
-Strategy: under £10,000, legal representation rarely cost-effective; self-represent with Citizens Advice / Trading Standards support. Exhaust ADR/ombudsman first. Limitation: 6 years from breach (LA 1980 s.5).`,
-  tags: ['CPR-Part-7', 'County-Court', 'small-claims', 'MCOL', 'consumer-claim', 'small-claims-mediation'],
+4. Defence. A defendant who disputes the claim must file a defence within the time specified by the court. Failure to file a defence may result in a default judgment.
+
+Evidence. Documentary evidence supporting the claim should be assembled and retained: written contract, purchase receipts, invoices, photographs of defective goods, communications between the parties, evidence of attempts to resolve the dispute, and evidence of loss. Witness evidence may be required for disputed facts.
+
+Conduct of the hearing. In the Magistrates' Court, hearings for contract disputes are conducted before a magistrate. The parties present their evidence and submissions; the magistrate gives a reasoned decision. Legal representation is permitted but not required for Magistrates' Court proceedings.
+
+Judgment and enforcement. A successful claimant obtains a judgment for the sum awarded. Enforcement of a judgment against a non-paying defendant requires further steps (for example, execution against assets). Legal advice on enforcement options may be obtained through the Barbados Bar Association at barbadosbar.org.
+
+Limitation period. A claim for breach of contract in Barbados must be brought within the applicable limitation period — generally 6 years from the date of breach under the applicable Barbados limitation legislation. A claim brought after the expiry of the limitation period will be time-barred.
+
+Currency note. All claims are denominated in BBD. The BBD is pegged at 2 BBD to 1 USD.`,
+  tags: ['Magistrates-Court', 'High-Court', 'civil-claim', 'contract-dispute', 'Cap-116A', 'Cap-117', 'barbados'],
 };
 
 export default doc;

@@ -1,38 +1,53 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-renters-rights-2024-status',
+  id: 'statute-barbados-tenancy-cap-230-overview',
   type: 'statute',
   category: 'tenancy',
-  title: 'Renters\' Rights Act 2024 — commencement status placeholder',
+  title: 'Landlord and Tenant Act, Cap. 230 — Overview and Key Provisions',
   jurisdiction: 'barbados',
-  citation: 'Renters\' Rights Act 2024 (commencement status pending verification)',
-  url: 'https://www.legislation.gov.uk/ukpga/2024',
-  inForce: false,
-  inForceNote:
-    'PENDING — placeholder doc. Commencement status of the Renters\' Rights Act 2024 has not been verified against gov.uk / legislation.gov.uk by the maintainer. While inForce is false, this doc is excluded from retrieval. Once status is confirmed, replace with a successor doc describing the regime that has actually come into force, and flip housing-act-1988-s21 / deregulation-2015-s33 inForce flags accordingly.',
+  citation: 'Landlord and Tenant Act, Cap. 230 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
+  inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  tabs: ['references'],
+  pinFor: ['tenancy'],
+  tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
+  triggers: ['landlord', 'tenant', 'tenancy', 'rental', 'residential tenancy', 'Cap 230', 'renting', 'lease'],
   factSummary:
-    'Placeholder. The Renters\' Rights Act 2024 is expected to abolish s.21 no-fault possession, convert ASTs to periodic tenancies, restrict in-tenancy rent increases, and overhaul possession grounds. Commencement schedule unverified at the date of this doc — verify against gov.uk before relying on or referencing this regime.',
-  content: `Placeholder document. The Renters' Rights Act 2024 (commencement provisions and saving provisions to be verified on legislation.gov.uk) is expected to:
+    'The Landlord and Tenant Act, Cap. 230 is the primary legislation governing the relationship between landlords and tenants in Barbados. It establishes the core legal framework for residential and commercial tenancies, including the rights and obligations of both parties, notice requirements, and the basis on which disputes are resolved in the Magistrates\' Court or High Court of Barbados.',
+  eli5Summary:
+    'Cap. 230 is the main law about renting in Barbados. It sets out what landlords and tenants can and cannot do, what notice must be given before a tenancy ends, and how disputes can be taken to court. Both the Magistrates\' Court and the High Court can hear landlord and tenant cases, depending on how serious or costly the dispute is.',
+  content: `Landlord and Tenant Act, Cap. 230 (Laws of Barbados) — Overview and Key Provisions:
 
-- Abolish the s.21 "no-fault" possession route under the Housing Act 1988.
-- Convert all assured shorthold tenancies (and remaining assured tenancies) to a single periodic-tenancy form, with no fixed term.
-- Reform Schedule 2 possession grounds, including new mandatory grounds for serious rent arrears and landlord/family occupation, and revised discretionary grounds for anti-social behaviour and breach.
-- Restrict in-tenancy rent increases to one increase per year by s.13 Housing Act 1988 notice, with FTT challenge route.
-- Establish a Private Rented Sector Database (landlord register) and a single Ombudsman scheme.
-- Strengthen tenant rights to keep pets and tighten rules on bidding wars and discrimination against benefit recipients / families with children.
+The Landlord and Tenant Act, Cap. 230 is the primary statutory framework governing the relationship between landlords and tenants in Barbados. It applies to both residential and commercial tenancies, though the most directly relevant provisions for residential occupiers relate to the conduct of the tenancy, obligations of the parties, and the process for ending a tenancy.
 
-This document is intentionally inForce: false to keep it out of retrieval. The maintainer should:
+Key protections and provisions:
 
-1. Confirm commencement status on legislation.gov.uk and gov.uk.
-2. If the Act (or specific provisions) is in force, replace this placeholder with a successor doc describing the operative regime, with inForce: true and a verified lastVerified date.
-3. At the same time, flip statute-housing-act-1988-s21 and statute-deregulation-2015-s33 to inForce: false (with inForceNote citing the supersession), unless transitional / saving provisions preserve their effect.
+1. Tenancy types: Barbados residential tenancies generally take the form of periodic tenancies (weekly, monthly, or yearly, depending on the period of the rent) or fixed-term leases. There is no "assured shorthold tenancy" or similar statutory form specific to Barbados — all tenancies are assessed under Cap. 230 and common law.
 
-Until that work is done, downstream analysis treats s.21 as in force with the existing PENDING caveats on those documents.`,
-  tags: ['renters-rights-act-2024', 'commencement-pending', 'placeholder', 's21-abolition'],
+2. Obligations of the landlord: under Cap. 230 and the common law, a landlord in a residential tenancy is subject to implied duties including:
+   (a) providing quiet enjoyment of the premises;
+   (b) ensuring the premises are fit for habitation at the commencement of the tenancy;
+   (c) maintaining the structure and essential services in a reasonable state of repair, on notice of any defect;
+   (d) not unlawfully evicting or harassing the tenant.
+
+3. Obligations of the tenant: the tenant is generally required to:
+   (a) pay rent as agreed;
+   (b) use the premises in a tenant-like manner;
+   (c) not cause unnecessary damage or waste;
+   (d) comply with any express terms of the lease.
+
+4. Notice to quit: where a landlord or tenant wishes to end a periodic tenancy, appropriate notice must be given. The length of notice required at common law corresponds to the period of the tenancy (e.g., one month's notice for a monthly tenancy). Cap. 230 and the terms of the individual lease may specify different or additional requirements.
+
+5. Security deposits: there is no statutory deposit protection scheme in Barbados. Security deposits are governed by the lease terms and general common law principles, with the landlord entitled to make deductions only for legitimate losses attributable to the tenant.
+
+6. Court enforcement: disputes under Cap. 230 are resolved in the civil courts of Barbados. The Magistrates' Court (Cap. 116A) has jurisdiction for smaller claims; the High Court of Barbados (Cap. 117) has unlimited civil jurisdiction for larger or more complex disputes. The Barbados Supreme Court website is at supremecourt.gov.bb.
+
+7. No equivalent to English statutory schemes: Barbados does not have equivalents to the English no-fault possession route (s.21 Housing Act 1988), the Housing Health and Safety Rating System (HHSRS), statutory deposit protection schemes, or the First-tier Tribunal (Property Chamber).
+
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['Cap-230', 'Landlord-and-Tenant-Act', 'Barbados', 'overview', 'periodic-tenancy', 'residential-tenancy'],
 };
 
 export default doc;

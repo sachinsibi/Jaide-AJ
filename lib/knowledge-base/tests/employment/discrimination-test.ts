@@ -4,60 +4,82 @@ const doc: KnowledgeDocument = {
   id: 'test-discrimination-test',
   type: 'test',
   category: 'employment',
-  title: 'Discrimination Test (Equality Act 2010)',
+  title: 'Discrimination Test — Barbados Employment Law',
   jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['discrimination', 'discriminated', 'harassment', 'harassed', 'victimised', 'victimisation', 'less favourable', 'protected characteristic', 'race', 'sex', 'disability', 'age', 'religion', 'sexual orientation', 'pregnancy', 'maternity'],
+  triggers: ['discrimination', 'discriminated', 'harassment', 'harassed', 'victimised', 'victimisation', 'less favourable treatment', 'protected characteristic', 'race', 'sex', 'disability', 'religion', 'pregnancy', 'maternity'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Test depends on the form of conduct alleged: (1) direct (s.13) — less favourable treatment because of a protected characteristic; (2) indirect (s.19) — neutral PCP that disadvantages a group, not justified as proportionate; (3) harassment (s.26) — unwanted conduct related to a characteristic; (4) victimisation (s.27) — detriment for a protected act; (5) reasonable adjustments (s.20, disability only). Burden shifts under s.136 once a prima facie case is shown.',
-  content: `Discrimination Test (Equality Act 2010):
+    'The discrimination test under Barbados employment law applies according to the form of conduct alleged. The main forms of prohibited conduct are: (1) direct discrimination — less favourable treatment because of a protected characteristic; (2) indirect discrimination — a neutral requirement or practice that disadvantages a protected group and cannot be justified; (3) harassment — unwanted conduct related to a protected characteristic; (4) victimisation — detriment for having raised a discrimination complaint. The exact protected characteristics under current Barbados law should be confirmed at laws.barbados.gov.bb.',
+  content: `Discrimination Test under Barbados Employment Law:
 
-Five forms of prohibited conduct in employment, each with its own elements.
+Barbados employment law prohibits several forms of discriminatory conduct in the workplace. The applicable protected characteristics are defined by Barbados legislation — parties should confirm the current scope at laws.barbados.gov.bb. The following test structure reflects the forms of prohibited conduct recognised under Barbados anti-discrimination law and common law principles applied in the jurisdiction.
 
-Section 13 — Direct discrimination:
+Important: the nine protected characteristics listed in the English Equality Act 2010 do not automatically apply in Barbados. The protected grounds under Barbados law should be verified from current Barbados legislation.
+
+Form 1 — Direct discrimination:
 
 (a) Less favourable treatment.
 (b) Of the claimant.
-(c) Because of a protected characteristic.
-(d) Compared to a real or hypothetical comparator in the same material circumstances apart from the characteristic.
+(c) Because of a protected characteristic recognised under Barbados law.
+(d) Compared to a real or hypothetical comparator in the same or similar material circumstances, but without the protected characteristic.
 
-Test of causation: would the claimant have been treated this way if not for the protected characteristic? Even unconscious motivation suffices. Stereotyped assumptions count.
+Causation: the question is whether the claimant would have been treated in the same way if not for the protected characteristic. Unconscious motivation or stereotyped assumptions may be sufficient. There is no requirement that the employer intended to discriminate.
 
-Section 19 — Indirect discrimination:
+Form 2 — Indirect discrimination:
 
-(a) Provision, criterion, or practice (PCP) applied generally.
-(b) That puts (or would put) persons of a shared characteristic at a particular disadvantage.
-(c) That puts the claimant at that disadvantage.
-(d) Cannot be shown to be a proportionate means of achieving a legitimate aim.
+(a) A requirement, condition, or practice is applied generally to the workforce.
+(b) It puts, or would put, persons sharing a protected characteristic at a particular disadvantage compared to those who do not share that characteristic.
+(c) The claimant is put at that disadvantage.
+(d) The requirement, condition, or practice cannot be objectively justified as a proportionate means of achieving a legitimate aim.
 
-Statistical or qualitative evidence of group disadvantage; objective justification by employer.
+Statistical or qualitative evidence of disproportionate impact on the relevant group is relevant. An employer can defend indirect discrimination by establishing objective justification — a legitimate aim and a response that is proportionate to achieving it.
 
-Section 26 — Harassment:
+Form 3 — Harassment:
 
 (a) Unwanted conduct.
-(b) Related to a relevant protected characteristic (or, separately, of a sexual nature, or relating to gender reassignment / sex resulting in less favourable treatment).
-(c) Has the purpose OR effect of (i) violating the claimant's dignity, OR (ii) creating an intimidating, hostile, degrading, humiliating, or offensive environment.
+(b) Related to a protected characteristic recognised under Barbados law (or, where applicable, of a sexual nature).
+(c) Which has the purpose or effect of:
+   (i) violating the claimant's dignity; or
+   (ii) creating an intimidating, hostile, degrading, humiliating, or offensive working environment.
 
-Effect is judged taking account of the claimant's perception, the other circumstances, and whether it is reasonable for the conduct to have that effect (s.26(4)).
+The effect of the conduct is assessed taking account of the claimant's perception, the context, and whether it is reasonable for the conduct to have had that effect. Intention is not determinative — conduct may amount to harassment even if not intended to cause offence.
 
-Section 27 — Victimisation:
+Form 4 — Victimisation:
 
 (a) Subjecting the claimant to a detriment.
-(b) Because the claimant has done a "protected act" — bringing proceedings; giving evidence; making an allegation of contravention; doing any other thing for the purposes of or in connection with the Act.
+(b) Because the claimant has done a "protected act" — such as raising a discrimination complaint, giving evidence in another person's complaint, or asserting rights under anti-discrimination provisions of Barbados law.
 
-Section 20 — Reasonable adjustments (disability only):
+Detriment includes any adverse treatment, not limited to dismissal — for example, disciplinary action, demotion, exclusion, or denial of opportunities.
 
-Where a PCP, a physical feature, or the absence of an auxiliary aid puts a disabled person at a substantial disadvantage compared with non-disabled persons, the employer must take such steps as it is reasonable to take to avoid the disadvantage.
+Disability accommodation:
 
-Burden of proof (s.136): Stage 1 — claimant proves facts from which contravention could be inferred. Stage 2 — burden shifts to respondent to prove non-contravention on balance of probabilities.
+Where a protected characteristic is disability, an employer may also be required to take reasonable steps to accommodate the employee's disability. See the separate disability accommodation document for the applicable principles under Barbados law.
 
-Time limit (s.123): 3 months less 1 day, subject to EC extension; just-and-equitable extension available.
+Burden of proof:
 
-No qualifying period. Compensation uncapped (Vento bands; financial loss; aggravated damages).`,
-  tags: ['discrimination-test', 'Equality-Act-2010', 'direct-discrimination', 'indirect-discrimination', 'harassment', 'victimisation', 'reasonable-adjustments', 'burden-shift'],
+Where an employee or claimant can show facts that give rise to an inference of discriminatory treatment, it is for the employer to provide a satisfactory non-discriminatory explanation for the treatment. This burden-shifting principle is applied in Barbados civil courts, consistent with common law practice across Commonwealth jurisdictions.
+
+No qualifying period:
+
+Anti-discrimination protections in employment in Barbados generally apply from the commencement of employment — no qualifying period is required to bring a discrimination claim.
+
+Compensation:
+
+Compensation for unlawful discrimination in Barbados is assessed on compensatory principles and may include:
+- Financial loss caused by the discriminatory act.
+- Compensation for non-financial harm, including injury to feelings and loss of dignity.
+- Aggravated damages where the employer's conduct was particularly high-handed or oppressive.
+
+Note: the Vento bands, which provide fixed guidance on injury-to-feelings awards in English Employment Tribunals, have no equivalent in Barbados. Barbados civil courts assess non-financial harm on general compensatory principles.
+
+Forum for claims:
+- Labour Department (Chief Labour Officer): conciliation and administrative assistance.
+- Magistrates' Court: claims up to $10,000 BBD (approximately $5,000 USD at the 2:1 BBD/USD peg).
+- High Court of Barbados: claims above $10,000 BBD.`,
+  tags: ['discrimination-test', 'Barbados', 'direct-discrimination', 'indirect-discrimination', 'harassment', 'victimisation', 'burden-shift', 'anti-discrimination', 'Cap-23'],
 };
 
 export default doc;

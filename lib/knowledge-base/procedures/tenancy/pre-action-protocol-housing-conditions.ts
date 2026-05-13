@@ -1,40 +1,65 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-pre-action-protocol-housing-conditions',
+  id: 'procedure-barbados-pre-claim-housing-disrepair',
   type: 'procedure',
   category: 'tenancy',
-  title: 'Pre-Action Protocol for Housing Conditions Claims (England)',
+  title: 'Pre-Claim Steps for Housing Disrepair — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Pre-Action Protocol for Housing Conditions Claims (England) — Civil Procedure Rules',
-  url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/protocol/prot_hou',
+  citation: 'Landlord and Tenant Act, Cap. 230 (Laws of Barbados); common law',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['tenancy'],
   tabs: ['overview', 'legalBreakdown'],
+  triggers: ['disrepair', 'repair', 'housing conditions', 'complaint', 'letter to landlord', 'pre-claim', 'notice of disrepair'],
   factSummary:
-    'Mandatory pre-action steps before issuing a tenant-led housing conditions claim in the County Court (disrepair under s.11 LTA 1985, unfitness under s.9A LTA 1985, statutory nuisance, and related claims). Renamed from the Housing Disrepair Protocol in 2003.',
-  content: `The Pre-Action Protocol for Housing Conditions Claims (England) governs what tenants and their advisers must do before issuing a housing conditions claim in the County Court. It applies to claims arising under s.11 Landlord and Tenant Act 1985, s.9A LTA 1985 (Homes (Fitness for Human Habitation) Act 2018), s.4 Defective Premises Act 1972, contractual terms, and common law nuisance.
+    'Before commencing civil proceedings in Barbados for housing disrepair or habitability defects, a tenant should follow a sequence of pre-claim steps: written notice to the landlord identifying the defects, a reasonable period for the landlord to respond and remedy, gathering of evidence, and (where applicable) approaching the relevant public health authority. These steps establish notice, preserve evidence, and demonstrate good faith.',
+  content: `Pre-Claim Steps for Housing Disrepair — Barbados:
 
-Required steps:
+Barbados does not have a formal Pre-Action Protocol equivalent to the English Civil Procedure Rules housing conditions protocol. However, courts in Barbados — consistent with civil procedure principles applicable as a Commonwealth jurisdiction — expect parties to make reasonable efforts to resolve disputes before commencing proceedings. Following a structured pre-claim sequence benefits the tenant by establishing notice and demonstrating good faith; it also gives the court a clear record of the landlord's response (or lack thereof).
 
-1. Early Notification Letter — Sent at the outset where the tenant has not previously notified the landlord. States the existence of the conditions complained of and asks the landlord to inspect.
+Recommended pre-claim sequence:
 
-2. Letter of Claim — If matters are not resolved, the tenant sends a Letter of Claim setting out: the history of the conditions, the defects, the effect on the tenant and household, details of any notification to the landlord, the proposed expert, draft expert instructions, and disclosure requested from the landlord (tenancy file, repair records, complaints, surveys, gas safety certificates).
+Step 1 — Written notice of disrepair to the landlord.
+The tenant (or the tenant's representative) sends a written notice to the landlord identifying:
+(a) the specific defects or conditions complained of, described with sufficient particularity;
+(b) the location of each defect;
+(c) the effect of each defect on the tenant and household (e.g., health effects, inability to use part of the property);
+(d) the date from which the tenant became aware of the condition;
+(e) a request that the landlord inspect and carry out the necessary repairs or remedial works within a stated reasonable period.
+Written notice should be sent in a form that creates a clear record — by registered post, courier, or email with delivery confirmation. The date of service is the date from which the landlord is on notice, and the landlord's obligation to remedy crystallises from that point.
 
-3. Landlord's Response — Within 20 working days the landlord must respond, stating whether liability is admitted in whole or part, and providing the requested disclosure.
+Step 2 — Reasonable period for the landlord to respond.
+The landlord should be given a reasonable opportunity to inspect and carry out repairs. What is reasonable depends on the severity and urgency of the defects:
+- Emergency or serious conditions (no water supply, sewage ingress, structural danger, dangerous electrics) warrant a short period — typically days, not weeks.
+- Serious but non-emergency conditions (persistent damp, failing heating) may allow two to four weeks.
+- Less urgent defects may allow a longer reasonable period.
+Where the landlord acknowledges the defects and provides a credible timetable for remedial works, the tenant should consider whether to allow that timetable before commencing proceedings.
 
-4. Joint Single Expert — The protocol expects a single joint expert (typically a chartered surveyor or environmental health practitioner) instructed by both parties where possible. Costs of the expert are shared until the court orders otherwise.
+Step 3 — Evidence gathering.
+During the pre-claim period, evidence should be gathered and preserved:
+(a) dated photographs and video of each defect;
+(b) a written record of how the conditions affect daily life and health;
+(c) copies of all correspondence with the landlord;
+(d) any medical records or reports linking the conditions to health effects on the tenant or household;
+(e) any relevant terms of the lease.
 
-5. Schedule of Works — The expert produces a schedule of necessary works with priorities and a timetable.
+Step 4 — Approach the relevant public health authority (where appropriate).
+Where the conditions raise a public health or safety concern, a complaint may be made to the relevant public health authority in Barbados — such as the Ministry responsible for Health or an Environmental Health Officer. An inspection and any resulting report or requirement for remedial action provides additional evidence of the defects and the landlord's obligations.
 
-6. Negotiation — Parties attempt to agree the works, timetable, and any compensation.
+Step 5 — Letter of claim.
+If the landlord fails to respond adequately or to carry out the repairs within the stated period, a formal letter of claim is sent setting out:
+(a) the basis of the claim (breach of implied duty of habitability and repair under Cap. 230 and common law);
+(b) the remedies sought (an order for works to be carried out and/or damages in BBD);
+(c) a final deadline for the landlord's substantive response before proceedings are commenced.
 
-7. Issue — Only if matters are not resolved is the claim issued, typically in the County Court under CPR Part 7 (claims for damages and an injunction requiring works).
+Step 6 — Commencement of proceedings.
+If the matter is not resolved following the above steps, the tenant may commence civil proceedings in the Magistrates' Court (for claims up to $10,000 BBD under Cap. 116A) or the High Court of Barbados (for claims above $10,000 BBD under Cap. 117). The pre-claim correspondence and evidence will be presented to support the claim.
 
-Costs and case management consequences follow non-compliance: the court may stay proceedings, order specific steps to be taken, or make adverse costs orders. The protocol is mandatory in spirit even where strict compliance is not possible (e.g., emergency injunctions), and any departure should be justified.`,
-  tags: ['pre-action-protocol', 'housing-conditions', 'disrepair', 'CPR', 'County-Court'],
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['pre-claim', 'housing-disrepair', 'notice', 'Cap-230', 'Barbados', 'evidence', 'Magistrates-Court', 'High-Court'],
 };
 
 export default doc;

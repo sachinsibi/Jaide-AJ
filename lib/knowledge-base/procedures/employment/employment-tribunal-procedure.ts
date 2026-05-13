@@ -1,63 +1,78 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-employment-tribunal',
+  id: 'procedure-civil-court-employment-barbados',
   type: 'procedure',
   category: 'employment',
-  title: 'Employment Tribunal Procedure',
+  title: 'Civil Court Proceedings for Employment Disputes — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Employment Tribunals Act 1996; Employment Tribunals Rules of Procedure 2013 (Sch.1 to SI 2013/1237)',
-  url: 'https://www.gov.uk/employment-tribunals',
+  citation: 'Magistrates\' Court Act, Cap. 116A; Supreme Court of Judicature Act, Cap. 117; Employment Rights Act, Cap. 23',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['employment'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'After ACAS Early Conciliation, claimant presents Form ET1 within the statutory time limit. Employer responds on Form ET3 within 28 days. Case management at preliminary hearing; full merits hearing 6–18 months later. Costs not normally awarded unless conduct unreasonable. No tribunal issue fee. Appeals to the Employment Appeal Tribunal on point of law.',
-  content: `Employment Tribunal Procedure:
+    'There is no Employment Tribunal in Barbados. Employment disputes in Barbados are resolved through the civil courts — the Magistrates\' Court (for claims up to $10,000 BBD) or the High Court of Barbados (for claims above $10,000 BBD) — or through conciliation by the Labour Department (Chief Labour Officer). Parties are strongly encouraged to attempt conciliation through the Labour Department before initiating civil proceedings.',
+  content: `Civil Court Proceedings for Employment Disputes in Barbados:
 
-Stage 1 — ACAS EC. Mandatory pre-claim step (separate doc). Claimant must obtain an EC certificate and quote it on the ET1.
+No Employment Tribunal in Barbados:
 
-Stage 2 — Issue (Form ET1). The claim form sets out:
-- Claimant and respondent details.
-- Type of claim (unfair dismissal, discrimination, unpaid wages, etc.).
-- Brief grounds — facts, dates, what the claimant says happened.
-- Remedy sought.
-- ACAS EC certificate number.
+Barbados does not operate an Employment Tribunal system. References to the Employment Tribunal, the Employment Appeal Tribunal (EAT), or ACAS as part of a dispute resolution process are references to English institutions that have no counterpart in Barbados. Employment claims in Barbados are brought before the civil courts of Barbados.
 
-Time limits: 3 months less 1 day from the act complained of, paused during EC (s.207B ERA 1996).
+The courts with jurisdiction over employment disputes:
 
-No issue fee — fees were abolished in R (UNISON) v Lord Chancellor [2017] UKSC 51.
+1. Magistrates' Court (Cap. 116A — Magistrates' Court Act). The Magistrates' Court has civil jurisdiction over employment claims where the amount in dispute does not exceed $10,000 BBD (approximately $5,000 USD at the BBD/USD 2:1 fixed peg). The Magistrates' Court is the appropriate forum for smaller employment claims, including claims for unpaid wages, severance, notice pay, and holiday pay within this limit.
 
-Stage 3 — Response (Form ET3). Respondent has 28 days from the date the ET1 was sent to file an ET3. Failure may result in default judgment.
+2. High Court of Barbados (Cap. 117 — Supreme Court of Judicature Act). The High Court has jurisdiction over employment claims exceeding $10,000 BBD and over all claims that raise complex legal issues regardless of quantum, including substantial unfair dismissal claims and discrimination claims.
 
-Stage 4 — Preliminary hearing. Case management directions; possible determination of preliminary issues (e.g., jurisdiction, time limit, employee status); strike-out applications.
+3. Court of Appeal. Appeals from the High Court lie to the Court of Appeal of Barbados on questions of law and fact.
 
-Stage 5 — Disclosure and witness statements. Standard disclosure of relevant documents; exchange of written witness statements.
+Pre-action step — Labour Department conciliation:
 
-Stage 6 — Full merits hearing. Tribunal composition:
-- Employment Judge alone for most unfair dismissal and unauthorised deduction claims.
-- Panel of three (Employment Judge + two lay members) for discrimination and certain other claims.
+Before commencing civil proceedings, parties are encouraged to attempt conciliation through the Labour Department (Chief Labour Officer). The conciliation service is free and may resolve the dispute without litigation. See the separate document on Labour Department Conciliation for the applicable process.
 
-Hearings are typically held in person; remote/hybrid hearings increasingly common. No formal rules of evidence — fairness and relevance govern. Cross-examination of witnesses; opening / closing submissions.
+Overview of civil proceedings for employment disputes:
 
-Stage 7 — Judgment. Issued in writing, normally within weeks. Liability and remedy may be addressed together or at separate hearings.
+Stage 1 — Pre-action. The claimant should make their position clear in writing to the employer before issuing proceedings — identifying the claim, the legal basis, and the remedy sought. A reasonable period should be allowed for a response. Attempting Labour Department conciliation is strongly advisable.
 
-Stage 8 — Remedy. For unfair dismissal:
-- Reinstatement / re-engagement (rare in practice).
-- Basic award (calculated like statutory redundancy pay).
-- Compensatory award (loss of earnings to date and future loss, capped at the lower of 12 months' pay or the statutory cap, reviewed annually).
-- ACAS Code uplift / reduction (up to ±25%).
-- Polkey reduction (0–100%).
-- Contributory fault reduction (s.123(6) ERA 1996).
+Stage 2 — Issuing a claim.
+- Magistrates' Court: the claimant files a complaint form at the Magistrates' Court with jurisdiction for the area. Filing fees are payable under the applicable Barbados court fee schedule.
+- High Court: the claimant issues a Claim Form (or Writ of Summons in appropriate cases) in the High Court of Barbados, accompanied by a Statement of Claim setting out the facts, the legal basis for the claim, and the remedy sought.
 
-For discrimination: uncapped — Vento bands + financial loss + aggravated damages.
+Stage 3 — Service. The claim documents must be formally served on the defendant (employer) in accordance with the civil procedure rules applicable in Barbados.
 
-Stage 9 — Costs. Unlike civil courts, Employment Tribunals do not award costs as a default. Costs may be awarded only where a party has acted vexatiously, abusively, disruptively, or otherwise unreasonably (Rule 76).
+Stage 4 — Defence. The defendant files a Defence within the period prescribed by the applicable Barbados civil procedure rules.
 
-Stage 10 — Appeal. To the Employment Appeal Tribunal (EAT) within 42 days. Limited to errors of law. Onward appeal to Court of Appeal and (rarely) Supreme Court.`,
-  tags: ['Employment-Tribunal', 'ET1', 'ET3', 'ET-procedure', 'no-fees', 'EAT-appeal', 'remedy'],
+Stage 5 — Case management. The court may give directions for the exchange of evidence, disclosure of documents, and preparation of the case for hearing.
+
+Stage 6 — Hearing. The matter is heard before a Magistrate (Magistrates' Court) or a Judge (High Court). Both parties may be represented by Barbados-qualified legal practitioners. Evidence is presented and witnesses may be cross-examined.
+
+Stage 7 — Judgment. The court delivers a judgment on liability and, where the claim is established, assesses the appropriate remedy.
+
+Remedies available:
+
+For unfair dismissal: reinstatement or re-engagement (in appropriate cases); compensation comprising lost wages and future financial loss; any statutory severance entitlement under Cap. 23.
+
+For unlawful discrimination: compensation for financial loss; compensation for non-financial harm including injury to feelings and loss of dignity (assessed on general compensatory principles under Barbados law — without the fixed Vento bands that apply in English Employment Tribunals); declarations.
+
+For unpaid wages or breach of contract: an order for payment of the sums owed.
+
+All monetary amounts in Barbados employment proceedings are expressed in Barbados dollars (BBD). Note the BBD/USD 2:1 fixed peg for context.
+
+Costs:
+
+Barbados civil courts may award costs against an unsuccessful party. Litigation costs are a factor to weigh when considering whether to pursue a claim through the courts as opposed to pursuing conciliation through the Labour Department.
+
+Limitation periods:
+
+Limitation periods for employment claims in Barbados are governed by applicable Barbados limitation legislation. Parties must not delay unreasonably before commencing proceedings, as limitation periods may extinguish the right to bring a claim. Specific periods should be confirmed with a Barbados-qualified legal practitioner.
+
+Legal representation:
+
+Legal representation is not mandatory in the Magistrates' Court but is advisable for all but the most straightforward claims. Legal representation is advisable in High Court proceedings. The Barbados Bar Association (barbadosbar.org) maintains a directory of qualified legal practitioners.`,
+  tags: ['civil-court', 'Magistrates-Court', 'High-Court', 'Barbados', 'employment-claim', 'no-Employment-Tribunal', 'Cap-116A', 'Cap-117', 'Cap-23'],
 };
 
 export default doc;

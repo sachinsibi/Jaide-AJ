@@ -1,33 +1,32 @@
 import type { KnowledgeDocument } from '../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'resource-ico',
+  id: 'resource-barbados-data-protection',
   type: 'resource',
   category: 'general',
-  title: 'Information Commissioner\'s Office (ICO)',
+  title: 'Data Protection Commissioner — Barbados',
   jurisdiction: 'barbados',
-  url: 'https://ico.org.uk',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['general-civil'],
   tabs: ['references'],
   factSummary:
-    'The ICO (ico.org.uk) is the UK\'s independent data protection regulator. It accepts free complaints from individuals about organisations that may have breached data protection law. An ICO complaint runs independently of any civil court claim and can result in enforcement action and fines against the organisation.',
-  content: `The Information Commissioner's Office (ICO) is the UK's supervisory authority for data protection under the Data Protection Act 2018 and UK GDPR.
+    'The Data Protection Act, 2019 (Barbados) established a supervisory authority responsible for overseeing compliance with data protection law in Barbados. Individuals who believe their data protection rights have been breached may file a complaint with the supervisory authority or pursue civil court proceedings.',
+  content: `Barbados Data Protection supervisory authority:
 
-Who can complain: any individual who believes an organisation has mishandled their personal data — including failure to respond to a Subject Access Request (SAR), unlawful disclosure, excessive retention, security breaches, or failure to comply with deletion requests.
+The Data Protection Act, 2019 (Barbados) established a supervisory authority — the Data Protection Commissioner or equivalent body — responsible for overseeing compliance with data protection law in Barbados. This is the relevant authority for data protection matters in Barbados; the UK Information Commissioner's Office (ICO) has no jurisdiction in Barbados.
 
-How to complain: submit online at ico.org.uk/make-a-complaint. The complaint is free. The ICO typically requires the complainant to have raised the issue with the organisation first and to have allowed 3 months for a response.
+Who can complain: individuals who believe that an organisation has mishandled their personal data in breach of the Data Protection Act, 2019 (Barbados) — for example, by failing to respond to an access request, by disclosing personal data without lawful basis, by retaining data longer than necessary, or by failing to maintain adequate security.
 
-What the ICO can do: investigate the complaint; issue enforcement notices requiring the organisation to comply with data protection law; issue fines (up to £17.5 million or 4% of global annual turnover for serious breaches); publish enforcement decisions (useful as evidence in civil proceedings).
+Regulatory complaint: individuals may file a complaint with the supervisory authority established under the Data Protection Act, 2019 (Barbados). The authority has powers to investigate complaints, issue enforcement notices, and take action against non-compliant organisations.
 
-What the ICO cannot do: award compensation to the individual complainant. The ICO is a regulator, not a court. For compensation, the individual must bring a civil claim under Article 82 UK GDPR / DPA 2018 s.169 in the County Court or High Court.
+Civil court proceedings: the supervisory authority does not award compensation to individual complainants. Where an individual seeks compensation for loss or harm caused by a breach of data protection law, civil proceedings in the High Court of Barbados are the appropriate route. Both a regulatory complaint and a civil claim may be pursued simultaneously.
 
-ICO and civil claims: an ICO complaint and a civil claim can run in parallel. An ICO enforcement notice or finding of a breach can support (but is not required for) a civil claim. The civil court makes its own findings independently.
+Note on contact details: the precise contact details and website for the Barbados data protection supervisory authority should be verified through official Barbados government sources and the Laws of Barbados portal (laws.barbados.gov.bb). The exact URL for the supervisory authority is not reproduced here to avoid providing an inaccurate link.
 
-Timeframe: ICO investigations can take several months. Where urgent relief is needed (e.g., ongoing unlawful processing causing harm), a civil injunction is the faster route.`,
-  tags: ['ICO', 'data-protection', 'UK-GDPR', 'DPA-2018', 'regulator', 'complaint'],
+Important: the UK ICO (ico.org.uk) is a UK authority and has no jurisdiction over data protection matters in Barbados. References to the ICO in the context of Barbados law are not applicable.`,
+  tags: ['data-protection', 'DPA-2019-Barbados', 'supervisory-authority', 'Data-Protection-Commissioner', 'Barbados', 'civil-remedy'],
 };
 
 export default doc;

@@ -14,7 +14,7 @@ const doc: KnowledgeDocument = {
   triggers: ['causation', 'but for', 'caused', 'would have happened anyway', 'inevitable', 'made no difference'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Establishes the "but-for" test of factual causation: the claimant must prove on the balance of probabilities that, but for the defendant\'s breach of duty, the damage would not have occurred. If the damage would have occurred regardless, causation is not made out and the claim fails — even where breach is admitted.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. Establishes the "but-for" test of factual causation: the claimant must prove on the balance of probabilities that, but for the defendant\'s breach of duty, the damage would not have occurred. If the damage would have occurred regardless, causation is not made out and the claim fails — even where breach is admitted.',
   content: `Barnett v Chelsea & Kensington Hospital Management Committee [1969] 1 QB 428.
 
 Facts: Three night-watchmen attended a hospital casualty department complaining of vomiting after drinking tea. The on-duty doctor, without examining them, told them to go home and consult their own GPs. Mr Barnett, one of the three, died about five hours later from arsenic poisoning. The hospital admitted negligence in failing to examine the men. Mrs Barnett sued for damages.

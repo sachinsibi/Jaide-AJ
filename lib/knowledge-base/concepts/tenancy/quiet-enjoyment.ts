@@ -11,36 +11,38 @@ const doc: KnowledgeDocument = {
   version: '2026-05-01',
   pinFor: ['tenancy'],
   tabs: ['legalBreakdown', 'eli5'],
+  triggers: ['quiet enjoyment', 'peaceful', 'interference', 'entering without permission', 'harassment', 'disturbing', 'landlord visits'],
   factSummary:
-    'An implied common-law covenant in every lease that the landlord (or anyone claiming under the landlord) will not substantially interfere with the tenant\'s possession or enjoyment of the demised premises during the term.',
+    'An implied common law covenant in every residential lease in Barbados that the landlord (or anyone claiming under the landlord) will not substantially interfere with the tenant\'s possession or enjoyment of the premises during the tenancy. This is a fundamental common law right applicable in Barbados as a Commonwealth jurisdiction.',
   eli5Summary:
-    'When you rent a home, the law gives you a right to live there peacefully without the landlord constantly bothering you. The landlord cannot turn up unannounced, harass you, or stop your gas and electricity to push you out. You don\'t get this right by signing anything — it\'s built into every tenancy automatically.',
-  content: `Quiet enjoyment is a fundamental tenant protection implied at common law into every lease (whether or not the written tenancy agreement mentions it). It is the lessor's covenant that the lessee shall be left in peaceful possession of the demised premises during the term, without substantial interference by the lessor or anyone lawfully claiming under the lessor.
+    'Every tenant in Barbados has the right to live in their rented home peacefully. The landlord cannot constantly come in unannounced, harass the tenant, cut off utilities to push them out, or do building works that make the home uninhabitable. This right is automatically part of every tenancy under Barbados common law — it does not need to be written into the lease.',
+  content: `Quiet Enjoyment — Barbados Residential Tenancies:
+
+The implied covenant for quiet enjoyment is a fundamental common law right recognised in Barbados as a Commonwealth jurisdiction. It is implied into every residential lease, whether or not the written tenancy agreement mentions it. The covenant provides that the landlord (and anyone lawfully claiming under the landlord) will not substantially interfere with the tenant's possession or enjoyment of the demised premises during the tenancy.
 
 Scope:
 
-- The covenant is prospective. It addresses interference during the term, not the inherent state of the premises at the start of the tenancy (Southwark LBC v Mills [2001] 1 AC 1).
+- The covenant is prospective. It addresses interference with the tenant's possession during the term, not the inherent state of the premises at the start of the tenancy. A tenant who takes premises in a particular pre-existing condition cannot rely on quiet enjoyment alone to complain about that pre-existing state (Southwark LBC v Mills [2001] 1 AC 1, persuasive common law authority).
 
-- The interference must be substantial. Trivial or de minimis interference is not actionable.
+- The interference must be substantial. Trivial or minor inconvenience does not breach the covenant. The question is whether the landlord's conduct, viewed objectively, substantially interferes with the tenant's reasonable enjoyment of the premises.
 
-- Conduct that breaches the covenant includes: unauthorised entry; persistent harassment, intimidation, or threats; cutting off utilities (McCall v Abelesz [1976] QB 585); building works rendering the premises uninhabitable; surveillance; persistent calls or visits at unreasonable times.
+- Conduct that may breach the covenant includes: persistent unauthorised entry; harassment, intimidation, or threats directed at the tenant; deliberate cutting off or interference with utilities such as water or electricity (McCall v Abelesz [1976] QB 585, persuasive common law authority); building or renovation works that render the premises uninhabitable; surveillance or persistent contact at unreasonable times.
 
-- The covenant binds the landlord and anyone claiming under the landlord (managing agent, employee, contractor) acting in scope, but does NOT extend to third parties (e.g., neighbours) over whom the landlord has no contractual or property control — unless the landlord has authorised, encouraged, or permitted the conduct.
+- The covenant binds the landlord and anyone acting under the landlord's authority (including managing agents and contractors acting within scope). It does not extend to entirely independent third parties — such as neighbours — over whom the landlord has no control, unless the landlord has authorised, encouraged, or unreasonably failed to prevent the conduct.
 
 Defences:
 
-- Lawful exercise of express rights of entry (with reasonable notice and at reasonable times) does not breach.
-- Statutory rights of entry (e.g., gas safety inspections under the Gas Safety (Installation and Use) Regulations 1998) do not breach.
+- Lawful exercise of express rights of entry included in the tenancy agreement (with reasonable notice and at reasonable times) does not breach the covenant.
+- Entry for genuine emergency purposes does not breach the covenant.
 
-Remedies:
+Remedies available in Barbados:
 
-- General damages for loss of enjoyment, distress, and inconvenience.
-- Aggravated and exemplary damages where the conduct is high-handed, oppressive, or motivated by gain (Drane v Evangelou [1978] 1 WLR 455).
-- Injunction restraining further interference.
-- Where the conduct also amounts to "unlawful eviction" or harassment under PEA 1977, statutory damages under HA 1988 ss.27–28 (calculated as the difference in value of the landlord's interest with vs without the occupier).
+- General damages for loss of enjoyment, distress, and inconvenience suffered during the period of breach.
+- Aggravated damages where the landlord's conduct has been high-handed or oppressive.
+- An injunction from the Magistrates' Court or the High Court of Barbados restraining further interference.
 
-Quiet enjoyment overlaps significantly with PEA 1977 s.1 harassment offences but is itself a civil cause of action available without need for a criminal prosecution.`,
-  tags: ['quiet-enjoyment', 'implied-covenant', 'common-law', 'derogation-from-grant', 'PEA-1977'],
+Relationship with other claims: quiet enjoyment overlaps with and complements the habitability and repair obligations under Barbados common law and Cap. 230. Where conduct also amounts to harassment or unlawful exclusion, it may give rise to additional civil and potentially criminal liability.`,
+  tags: ['quiet-enjoyment', 'implied-covenant', 'common-law', 'Barbados', 'harassment', 'interference'],
 };
 
 export default doc;

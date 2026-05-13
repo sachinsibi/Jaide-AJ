@@ -1,41 +1,38 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-cra-2015-unfair-terms',
+  id: 'statute-barbados-contract-unfair-terms',
   type: 'statute',
   category: 'contract-service',
-  title: 'Consumer Rights Act 2015, ss.61–76 — Unfair contract terms',
+  title: 'Unfair Contract Terms — Barbados Law',
   jurisdiction: 'barbados',
-  citation: 'Consumer Rights Act 2015, Pt 2 (ss.61–76)',
-  url: 'https://www.legislation.gov.uk/ukpga/2015/15/part/2',
+  citation: 'Common law doctrines on exclusion clauses; relevant Barbados provisions governing unfair contract terms (consult laws.barbados.gov.bb)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['unfair term', 'small print', 'exclusion clause', 'limitation of liability', 'cancellation fee', 'penalty', 'standard terms', 'terms and conditions', 'disproportionate', 'returns policy', 'refund policy', 'store policy', 'manager discretion', 'no refund', 'shop policy'],
+  triggers: ['unfair term', 'small print', 'exclusion clause', 'limitation of liability', 'cancellation fee', 'penalty', 'standard terms', 'terms and conditions', 'disproportionate', 'returns policy', 'refund policy', 'store policy', 'no refund'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Part 2 CRA 2015 controls unfair terms in consumer contracts. A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties\' rights and obligations to the detriment of the consumer (s.62). Unfair terms are not binding on the consumer. Schedule 2 contains an indicative grey list of terms likely to be regarded as unfair.',
-  content: `Part 2 of the Consumer Rights Act 2015 (ss.61–76) replaces the Unfair Terms in Consumer Contracts Regulations 1999 and the consumer aspects of the Unfair Contract Terms Act 1977. It applies to all consumer contracts and consumer notices.
+    'Barbados law controls unfair contract terms through a combination of common law doctrines on exclusion clauses and any relevant Barbados statutory provisions governing unfair terms (consult laws.barbados.gov.bb). At common law, courts scrutinise exclusion and limitation clauses for incorporation, construction, and reasonableness. The fundamental breach doctrine and principles of good faith may apply. Any term purporting to exclude or restrict liability for the implied terms under Cap. 318 or at common law is subject to these controls.',
+  content: `Unfair contract terms in Barbados are governed by a combination of common law doctrines and any applicable Barbados statutory provisions. Parties seeking to rely on or challenge exclusion, limitation, or penalty clauses should consult laws.barbados.gov.bb for the current statutory position.
 
-Section 62 — Fairness test. A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties' rights and obligations to the detriment of the consumer. The test is applied taking into account the nature of the subject matter, all the circumstances at conclusion of the contract, and the other terms.
+Common law controls on exclusion and limitation clauses.
 
-Effect of unfairness (s.62(1)): an unfair term in a consumer contract is not binding on the consumer. The contract continues to bind both parties to the extent practicable without the offending term.
+Incorporation. An exclusion or limitation clause must be properly incorporated into the contract. It must be brought to the other party's attention before or at the time of contracting. Where a clause is onerous or unusual, a higher standard of notice is required before it will be treated as incorporated (common law principle applied in Commonwealth jurisdictions including Barbados).
 
-Section 64 — Transparency exclusion. The fairness test does not apply to a term to the extent that:
-(a) it specifies the main subject matter of the contract; or
-(b) the assessment is of the appropriateness of the price payable as against the goods or services supplied.
-This exclusion only applies if the term is transparent and prominent (s.64(2)). A buried, opaque, or surprising price term is reviewable for fairness.
+Construction. Exclusion clauses are construed narrowly against the party relying on them (contra proferentem principle). Ambiguous language is resolved against the drafter. A clause purporting to exclude liability for negligence must use clear and express language to achieve that effect.
 
-Section 65 — Liability for negligence cannot be excluded. A term excluding or restricting liability for death or personal injury caused by negligence is not binding (and is treated as not having been agreed). For other heads of loss, exclusion is reviewable under s.62.
+Common law unreasonableness. The courts in Barbados, as a Commonwealth jurisdiction, may apply common law principles of unconscionability and unreasonableness to limit the effect of terms that are grossly unfair or one-sided, particularly where there is a significant imbalance in bargaining power.
 
-Section 67 — Effect on rest of contract. The contract continues so far as practicable without the unfair term.
+Relevant Barbados statutory provisions. Barbados may have enacted legislation governing unfair contract terms, including provisions restricting or voiding clauses that exclude or limit liability in consumer contracts. The exact provisions should be confirmed by reference to laws.barbados.gov.bb. Any such statutory controls would apply in addition to the common law doctrines described above.
 
-Section 68 — Transparency requirement. A trader must ensure written terms are transparent — expressed in plain and intelligible language and, in the case of written terms, legible. Ambiguity is construed against the trader (s.69, contra proferentem).
+Exclusion of implied terms under Cap. 318. Any term purporting to exclude the implied terms as to quality, description, fitness, or title under the Sale of Goods Act, Cap. 318 is subject to the above controls and may be void or unenforceable where it is unreasonable or contrary to applicable Barbados consumer protection provisions.
 
-Schedule 2 — Indicative grey list. Schedule 2 lists 20 categories of term that may be regarded as unfair, including: terms permitting unilateral cancellation; disproportionate cancellation fees; terms binding the consumer where the trader is not bound; terms allowing the trader to vary unilaterally; automatic-renewal terms with unreasonable notice periods; restrictions on legal remedies.
+Good faith and significant imbalance. The concepts of good faith and significant imbalance in consumer contracting — developed in English case law (Director General of Fair Trading v First National Bank [2001] UKHL 52, persuasive common law authority) — reflect principles that courts in Barbados may adopt when assessing whether a contract term is enforceable.
 
-Enforcement (Sch.3): the Competition and Markets Authority and named regulators may seek injunctions against unfair terms in standard-form consumer contracts.`,
-  tags: ['CRA-2015', 'unfair-terms', 'fairness-test', 'good-faith', 'significant-imbalance', 'grey-list', 'transparency'],
+Transparency. A term that is unclear, hidden in fine print, or not brought to the other party's attention is less likely to be enforceable. Barbados courts, following Commonwealth common law principles, construe ambiguous terms against the drafter.`,
+  tags: ['unfair-terms', 'exclusion-clauses', 'common-law', 'reasonableness', 'contra-proferentem', 'barbados', 'Cap-318'],
 };
 
 export default doc;

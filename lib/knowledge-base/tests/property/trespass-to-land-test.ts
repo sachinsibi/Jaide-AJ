@@ -12,25 +12,37 @@ const doc: KnowledgeDocument = {
   triggers: ['trespass', 'unauthorised entry', 'on my land', 'over my land', 'overhanging', 'encroaching structure', 'crossed boundary'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Trespass to land is the intentional, direct, unjustified physical interference with land in another\'s possession. Three elements: (1) intentional act; (2) direct (not consequential) interference; (3) without lawful justification. Actionable per se — no proof of damage required.',
-  content: `Element 1 — Intentional act. The defendant must have intended the act constituting the entry (not necessarily intended to trespass — ignorance of the boundary is no defence). Involuntary entry — being thrown onto another's land, sleepwalking — is not trespass (Conway v George Wimpey [1951] 2 KB 266).
+    "Trespass to land is the intentional, direct, unjustified physical interference with land in another's possession. Three elements: (1) intentional act; (2) direct (not consequential) interference with the land; (3) without lawful justification. Actionable per se — no proof of damage required. These principles apply in Barbados as inherited common law.",
+  content: `Trespass to Land — Three-Element Test (Barbados Common Law)
 
-Element 2 — Direct interference. The interference must be the immediate result of the defendant's act, not consequential. Throwing a stone over the boundary is direct trespass; water flowing under the boundary from an opened tap is more naturally indirect (nuisance/Rylands).
+Element 1 — Intentional act. The defendant must have intended the act constituting the entry (not necessarily intended to trespass — ignorance of the boundary is no defence to liability). Involuntary entry — being physically forced onto another's land, or entry during unconsciousness — is not trespass.
 
-Forms: (a) physical entry by the person; (b) causing things to enter (planting roots, dumping, throwing objects, parking); (c) structures protruding over airspace (Anchor Brewhouse v Berkley House [1987] 38 BLR 82 — tower-crane oversail is trespass); (d) tunnelling beneath (Bocardo v Star Energy [2010] UKSC 35); (e) continued presence after permission expires or is revoked.
+Element 2 — Direct interference with the land. The interference must be the immediate result of the defendant's act, not consequential. Throwing a stone over a boundary is direct trespass; water seeping gradually under a boundary from a nearby source is more naturally addressed in nuisance or under the Rylands v Fletcher principle.
 
-Element 3 — Without lawful justification. No licence, easement, statutory power, or other authority. Common authorisations: implied licence to approach the front door for ordinary purposes (revocable by clear notice); easements (right of way, right of drainage); statutory powers (utilities, emergency services).
+Forms of trespass in Barbados:
+(a) Physical entry by the person (walking, driving, parking on the land without permission).
+(b) Causing things to enter the land (planting roots across a boundary, dumping materials, throwing objects).
+(c) Structures protruding over airspace — crane jibs, overhanging eaves or balconies (Anchor Brewhouse v Berkley House [1987] — persuasive authority in Barbados).
+(d) Sub-surface intrusion — tunnelling or drilling beneath the land without authority (Bocardo v Star Energy [2010] — persuasive authority in Barbados).
+(e) Continuing presence after permission is revoked or expires.
 
-NOT required: damage (trespass is actionable per se — nominal damages even without tangible loss); knowledge of trespass (honest belief in a right is no defence to liability, only relevant to costs/damages); continuing harm (a momentary entry creates a complete cause of action).
+Element 3 — Without lawful justification. No licence, easement, statutory power, or other recognised authority to be on or over the land. Common authorisations: implied licence to approach the front of a property for ordinary purposes (revocable by clear notice); formally granted easements (right of way, right of drainage); statutory powers conferred on utilities or emergency services.
 
-Standing: claimant must be in actual or constructive possession — owner-occupier, tenant, person with exclusive possession. Bare licensees lack standing.
+NOT required: proof of damage (trespass is actionable per se — nominal damages are available even without tangible loss); knowledge that the entry constitutes a trespass (honest mistake as to the boundary is no defence to liability, though relevant to costs and quantum); continuation of harm (a momentary entry creates a complete cause of action).
 
-Continuing trespass: where the defendant remains, or leaves objects on the land, every day of continuance is a fresh cause of action. Limitation does not bar damages for continuance within 6 years (LA 1980 s.2).
+Standing: the claimant must be in actual or constructive possession — owner-occupier, tenant, or person with exclusive possession. Bare licensees do not ordinarily have standing in trespass.
 
-Remedies: damages (nominal where no loss; substantive where loss caused; "user damages" measured by reasonable hire-fee equivalent — Stadium Capital Holdings v St Marylebone Property [2010] EWCA Civ 952; aggravated/exemplary in cases of wilful or contumelious conduct); injunction (prohibitory or mandatory, including to remove encroaching structures); self-help (re-entry; reasonable removal of trespassing chattels).
+Continuing trespass: where the defendant remains on the land or leaves objects there, every day of continuance is a fresh cause of action. The applicable Barbados limitation period does not bar damages for continuance within 6 years of the claim.
 
-Defences: lawful authority; consent; necessity (narrow); statutory authority.`,
-  tags: ['trespass-to-land', 'actionable-per-se', 'direct-interference', 'encroachment', 'continuing-trespass'],
+Remedies:
+- Damages: nominal where no loss; substantive where loss caused; user damages measured by the reasonable hire-fee equivalent for unauthorised use even without actual loss (Stadium Capital Holdings v St Marylebone Property [2010] — persuasive authority); aggravated or exemplary damages in cases of wilful or contumelious conduct.
+- Injunction (prohibitory or mandatory, including requiring removal of encroaching structures) — available from the High Court of Barbados.
+- Self-help: re-entry by the person with the right to possession; reasonable removal of trespassing objects in appropriate circumstances.
+
+Defences: lawful authority; consent; necessity (narrow); statutory authority.
+
+Forum: claims up to BBD $10,000 (approximately USD $5,000 at the 2:1 peg) are brought in the Magistrates' Court under Cap. 116A; claims above that threshold are brought in the High Court of Barbados under Cap. 117. Injunctive relief is sought in the High Court.`,
+  tags: ['trespass-to-land', 'actionable-per-se', 'direct-interference', 'encroachment', 'continuing-trespass', 'barbados'],
 };
 
 export default doc;

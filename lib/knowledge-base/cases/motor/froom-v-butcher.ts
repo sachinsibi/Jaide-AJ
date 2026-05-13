@@ -14,12 +14,12 @@ const doc: KnowledgeDocument = {
   triggers: ['seatbelt', 'seat belt', 'helmet', 'contributory negligence', 'apportionment', 'reduction'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Standard tariff for contributory negligence on failure to wear a seatbelt: 25% reduction where a seatbelt would have prevented the injury entirely; 15% where it would have made a substantial difference; nil where it would have made no difference. Applied by analogy to motorcycle helmets and other safety equipment.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. Establishes a practical tariff for contributory negligence arising from failure to wear a seatbelt: 25% reduction where a seatbelt would have prevented the injury entirely; 15% where it would have made a substantial difference; nil where it would have made no difference.',
   content: `Froom v Butcher [1976] QB 286 (Court of Appeal).
 
-Facts: The claimant was a passenger in a car involved in a collision caused by the defendant's negligence. The claimant was not wearing a seatbelt. He suffered head and chest injuries that, the trial judge found, would have been substantially less severe had he been wearing a seatbelt. (Wearing seatbelts was lawful but not yet compulsory at the time.)
+Facts: The claimant was a passenger in a car involved in a collision caused by the defendant's negligence. The claimant was not wearing a seatbelt. He suffered head and chest injuries that, the trial judge found, would have been substantially less severe had he been wearing a seatbelt.
 
-Held (CA): The Court of Appeal held that failure to wear a seatbelt was contributory negligence and reduced the damages. Lord Denning MR delivered the leading judgment, articulating a workable tariff to be applied as a matter of practice:
+Held (CA): The Court of Appeal held that failure to wear a seatbelt was contributory negligence and reduced the damages. Lord Denning MR articulated a practical tariff to be applied consistently:
 
 (1) Where the seatbelt would have prevented the injury altogether — 25% reduction.
 
@@ -29,18 +29,12 @@ Held (CA): The Court of Appeal held that failure to wear a seatbelt was contribu
 
 Lord Denning emphasised that this was a tariff designed to produce consistency, not a rule that admitted no exceptions. The court should consider the actual medical evidence on whether the seatbelt would have made a difference and apply the tariff with common sense.
 
-Application and extensions:
+Application in Barbados: Froom v Butcher is persuasive common law authority applicable in Barbados as a Commonwealth jurisdiction. Where a claimant failed to wear a seatbelt and road traffic law or regulations in Barbados required or encouraged seatbelt use, the Barbados courts may apply similar apportionment principles. The actual effect on quantum depends on the medical evidence about what difference the seatbelt would have made.
 
-1. Seatbelts are now compulsory (Road Traffic Act 1988 s.14; Motor Vehicles (Wearing of Seat Belts) Regulations 1993). The Froom tariff continues to apply to civil quantification of contributory negligence.
+Extensions by analogy: the same principle — that failure to use available safety equipment may constitute contributory negligence reducing recovery in proportion to the difference that equipment would have made — applies to motorcycle helmets and other safety devices where their use is required or would be expected of the reasonable driver or passenger.
 
-2. Motorcycle helmets — analogous tariff applied: failure to wear, or failure to fasten correctly, may attract up to 25% reduction (Capps v Miller [1989] 1 WLR 839 — chinstrap unfastened, helmet came off in collision; 10% reduction).
-
-3. Cycle helmets — no statutory obligation to wear; but failure may amount to contributory negligence on the same principles where the helmet would have made a material difference (Smith v Finch [2009] EWHC 53).
-
-4. Child restraints — failure to use an appropriate child restraint, where it would have prevented or reduced injury, attracts contributory-negligence reduction against the responsible adult (parent / driver), not against the child claimant directly.
-
-The Froom tariff is reflected in standard practice and underpins most negotiated settlement positions on contributory-negligence reductions in motor cases involving safety-equipment failure.`,
-  tags: ['Froom-v-Butcher', 'seatbelt', 'contributory-negligence', 'tariff', 'apportionment-25-percent'],
+Note on persuasive status: Froom v Butcher is an English Court of Appeal decision. It is not binding on Barbados courts but is treated as a highly persuasive statement of common law principles on the intersection of safety-equipment failure and contributory negligence apportionment, widely applied in Commonwealth jurisdictions.`,
+  tags: ['Froom-v-Butcher', 'seatbelt', 'contributory-negligence', 'tariff', 'apportionment', 'Barbados'],
 };
 
 export default doc;

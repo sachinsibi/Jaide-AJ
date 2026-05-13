@@ -1,44 +1,38 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-protection-from-harassment-act-1997',
+  id: 'statute-barbados-general-civil-harassment',
   type: 'statute',
   category: 'general-civil',
-  title: 'Protection from Harassment Act 1997 — civil cause of action',
+  title: 'Civil Harassment Remedies — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Protection from Harassment Act 1997, ss.1, 3, 3A, 7',
-  url: 'https://www.legislation.gov.uk/ukpga/1997/40/contents',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   triggers: ['harassment', 'stalking', 'course of conduct', 'pestering', 'following me', 'repeatedly contacting', 'repeated messages', 'online harassment'],
   tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'The Protection from Harassment Act 1997 creates a civil cause of action (s.3) allowing claimants to obtain damages (including for anxiety) and an injunction. The tort requires a "course of conduct" — at least two related occasions — which the defendant knew or ought to have known amounts to harassment.',
-  content: `s.1(1) — Prohibition: a person must not pursue a course of conduct which amounts to harassment of another, and which they know or ought to know amounts to harassment.
+    'The Protection from Harassment Act 1997 (England) does not apply in Barbados. Civil remedies for harassment-like conduct in Barbados are available through the common law and equity. The High Court of Barbados can grant an injunction to restrain harassing conduct and award damages for distress and loss. Whether a specific Barbados harassment statute exists is uncertain — the civil court route remains available.',
+  content: `The Protection from Harassment Act 1997 is an English statute and has no application in Barbados. Civil remedies for conduct amounting to harassment are nonetheless available to claimants in Barbados through common law and equitable principles.
 
-s.1(2) — Objective standard: the defendant "ought to know" if a reasonable person in possession of the same information would think the course of conduct amounted to harassment.
+Civil remedies available in Barbados:
 
-s.7(3) — Course of conduct: conduct on at least two occasions. The occasions must be related. No minimum time gap between them is specified. A single incident, however distressing, is not sufficient.
+Injunction from the High Court: the High Court of Barbados, exercising its equitable jurisdiction, can grant a prohibitory injunction restraining a defendant from continuing conduct that causes alarm or distress to the claimant. This is the primary civil remedy for ongoing or threatened harassment. The claimant must establish that there is a serious question to be tried and that the balance of convenience favours the grant of an injunction. In urgent circumstances, an application may be made without notice to the defendant.
 
-s.7(4) — "Harassment" includes alarming the person or causing them distress. The conduct must be oppressive and unacceptable by an objective standard.
+Damages: a claimant who has suffered loss or harm (including psychiatric or emotional harm) as a result of harassing conduct may be entitled to damages at common law. The basis for the claim may include private nuisance (where the conduct affects enjoyment of land or property), intentional infliction of nervous shock (where the defendant intended to cause harm), or an equitable claim for breach of confidence where private information is involved.
 
-s.3 — Civil remedy: the claimant may bring civil proceedings seeking: (a) damages, including for anxiety caused by the harassment and any financial loss; (b) an injunction restraining the defendant from conduct that amounts to harassment.
+Course of conduct: while no Barbados statute expressly defines "harassment" for civil purposes, courts considering civil claims for harassment-like conduct typically require a pattern of behaviour rather than a single incident — repeated, targeted, and oppressive conduct directed at the claimant.
 
-s.3A — Breach of injunction: a criminal offence, punishable by up to 5 years' imprisonment (indictment). This makes a civil injunction unusually powerful.
+Objective standard: the conduct must be judged objectively. Normal social or professional communication does not constitute civil harassment. The conduct must be such that a reasonable person in the claimant's position would find it oppressive or distressing.
 
-Defences (s.1(3)): (a) preventing or detecting crime; (b) pursued under any enactment or rule of law; (c) pursuit of the course of conduct was reasonable in the particular circumstances.
+Specific Barbados legislation: whether Barbados has enacted specific legislation addressing harassment (civil or criminal) should be verified at laws.barbados.gov.bb. Any applicable Barbados statute would take precedence and may modify the civil analysis.
 
-Reasonableness: Hayes v Willoughby [2013] UKSC 17 — the defendant must have a rational basis for the belief that their conduct was reasonable; irrational or obsessive conduct cannot be "reasonable" under s.1(3)(c).
+Criminal law: harassing conduct may also constitute a criminal offence under Barbados criminal law (outside JAIDE's civil scope). Where the conduct is serious, a complaint to the Barbados Police Force may be appropriate alongside or instead of civil proceedings.
 
-Interim injunctions: available urgently, including without notice to the defendant, where there is an immediate risk of further harassment.
+Forum: the High Court of Barbados has jurisdiction for civil claims involving harassment, injunctions, and substantial damages. The Magistrates' Court may have jurisdiction for smaller money claims but cannot grant injunctions in the same circumstances.
 
-Limitation: 6 years from the last act of harassment (LA 1980 s.2).
-
-Workplace harassment: vicarious liability applies — employers may be liable for harassment by employees (Majrowski v Guy's and St Thomas's NHS Trust [2006] UKHL 34).
-
-Damages: anxiety and distress are recoverable without proof of a recognised psychiatric illness.`,
-  tags: ['harassment', 'PHA-1997', 'course-of-conduct', 'injunction', 'civil-remedy', 'stalking'],
+Limitation: the applicable limitation period under Barbados law for civil claims of this type should be verified. The general tort period is consistent with six years in Commonwealth jurisdictions, running from the last act of harassment where the cause of action is continuing in nature.`,
+  tags: ['harassment', 'civil-remedy', 'injunction', 'course-of-conduct', 'equitable-remedy', 'Barbados'],
 };
 
 export default doc;

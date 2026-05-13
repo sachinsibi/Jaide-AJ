@@ -1,60 +1,81 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-first-tier-tribunal-property-chamber',
+  id: 'procedure-barbados-tenancy-court-forums',
   type: 'procedure',
   category: 'tenancy',
-  title: 'First-tier Tribunal (Property Chamber) — Residential Property',
+  title: 'Court Forums for Tenancy Disputes — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Tribunals, Courts and Enforcement Act 2007; Tribunal Procedure (First-tier Tribunal) (Property Chamber) Rules 2013 (SI 2013/1169)',
-  url: 'https://www.gov.uk/courts-tribunals/first-tier-tribunal-property-chamber',
+  citation: 'Magistrates\' Court Act, Cap. 116A; Supreme Court of Judicature Act, Cap. 117; Landlord and Tenant Act, Cap. 230 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
+  pinFor: ['tenancy'],
+  tabs: ['overview', 'legalBreakdown'],
   triggers: [
+    'court',
     'tribunal',
-    'first-tier',
-    'rent repayment',
-    'rro',
-    'service charge',
-    'lease extension',
-    'leasehold',
-    'improvement notice appeal',
-    'banning order',
+    'where to go',
+    'which court',
+    'magistrates court',
+    'high court',
+    'rent board',
+    'rent tribunal',
+    'dispute',
+    'claim',
   ],
-  tabs: ['legalBreakdown'],
   factSummary:
-    'The FTT (Property Chamber) is a specialist tribunal with a defined jurisdiction: rent repayment orders, leasehold service charge / management disputes, lease extension valuations, banning orders, and appeals against improvement notices and prohibition orders. It is NOT the front-line forum for tenant-led disrepair (that is the County Court). Improvement notices are issued by the local authority, not the FTT.',
-  content: `First-tier Tribunal (Property Chamber) — Residential Property:
+    'Tenancy disputes in Barbados are resolved in the civil courts. The Magistrates\' Court (Cap. 116A) handles smaller claims up to $10,000 BBD. The High Court of Barbados (Cap. 117) has unlimited civil jurisdiction for larger or more complex disputes. There is no First-tier Tribunal (Property Chamber) or County Court in Barbados. Where a rent assessment mechanism exists, it operates separately from the civil courts.',
+  content: `Court Forums for Tenancy Disputes — Barbados:
 
-The FTT (Property Chamber) is a specialist tribunal whose jurisdiction is defined by statute. Its caseload is technical and bounded; it is essential not to misroute tenant claims into it that belong elsewhere.
+Barbados has no First-tier Tribunal (Property Chamber), no County Court, and no specialist housing tribunal equivalent to those found in England. Tenancy disputes in Barbados are resolved through the civil court system established by Cap. 116A and Cap. 117.
 
-Jurisdiction (key heads):
+1. Magistrates' Court (Cap. 116A — Magistrates' Court Act):
 
-1. Rent Repayment Orders (Housing and Planning Act 2016, ss.40–52). Tenant or local authority applies to recover up to 12 months' rent / housing benefit where the landlord has committed one of seven qualifying offences (unlicensed HMO, illegal eviction, breach of improvement notice, breach of banning order, etc.). RROs are the FTT's most common housing matter for tenants.
+The Magistrates' Court has civil jurisdiction for claims where the amount in dispute falls within the applicable monetary limit (currently up to $10,000 BBD under Cap. 116A). This court is the appropriate forum for:
+(a) smaller claims for damages arising from disrepair, habitability defects, or breach of the tenancy agreement;
+(b) possession proceedings where the value of the claim and the circumstances fall within the Magistrates' Court jurisdiction;
+(c) security deposit disputes where the amount in issue does not exceed $10,000 BBD;
+(d) other tenancy-related civil claims within the monetary threshold.
 
-2. Leasehold service charge and management disputes (Landlord and Tenant Act 1985, s.27A; Commonhold and Leasehold Reform Act 2002).
+Procedure in the Magistrates' Court is generally less formal and less costly than High Court proceedings. Parties may appear in person or be represented by a lawyer.
 
-3. Lease extension and right-to-buy valuations (Leasehold Reform Act 1967; Leasehold Reform, Housing and Urban Development Act 1993).
+2. High Court of Barbados (Cap. 117 — Supreme Court of Judicature Act):
 
-4. Banning orders (Housing and Planning Act 2016, s.16).
+The High Court has unlimited civil jurisdiction and is the appropriate forum for:
+(a) claims for damages, injunctions, or other relief where the amount at issue exceeds $10,000 BBD;
+(b) possession proceedings and associated counterclaims where the complexity or value of the matter warrants High Court proceedings;
+(c) applications for mandatory injunctions requiring the landlord to carry out specified works;
+(d) complex disputes involving multiple causes of action, large quantum, or significant legal issues.
 
-5. Appeals against:
-   - Improvement notices and prohibition orders (Housing Act 2004, Sch.1) — landlord appeal against a local authority enforcement notice.
-   - Civil penalty notices (Housing and Planning Act 2016, s.126 and Sch.9).
-   - Selective and additional licensing decisions.
+The Barbados Supreme Court website is at supremecourt.gov.bb.
 
-What the FTT does NOT do:
+3. Court of Appeal:
 
-- It does NOT issue improvement notices itself. Improvement notices are issued by the local authority's Environmental Health team under HA 2004 Pt 1; the FTT only sees them on landlord appeal.
-- It does NOT hear tenant-led disrepair claims under s.11 / s.9A LTA 1985. Those proceed in the County Court under CPR Part 7.
-- It does NOT order the landlord to do works at the request of the tenant (that is a County Court mandatory injunction).
-- It does NOT decide possession claims (CPR Part 55, County Court).
+A party dissatisfied with the judgment of the Magistrates' Court or High Court may appeal to the Court of Appeal of Barbados in accordance with the applicable appellate procedure. The Privy Council is the final appellate court for Barbados.
 
-Procedure: applications by paper form (specific to the application type), payable application fee (typically £100; £300 for some matters), case-management directions, hearing, written decision. No costs orders save in limited circumstances (rule 13). Appeals lie to the Upper Tribunal (Lands Chamber).
+4. Rent Assessment Mechanisms (where applicable):
 
-Practical implication: a tenant whose primary complaint is damp, mould, or disrepair routes via Environmental Health (council) and, in parallel, a County Court Pre-Action Protocol claim — not the FTT.`,
-  tags: ['first-tier-tribunal', 'property-chamber', 'jurisdiction', 'rent-repayment-order', 'service-charge', 'appeals'],
+Where a rent assessment mechanism or Rent Board exists under Barbados law for certain categories of residential tenancy, disputes about the level of rent — including claims that rent is excessive or unfair — may be referred to that body in accordance with its applicable procedures. Parties should consult the Laws of Barbados portal (laws.barbados.gov.bb) or seek legal advice to confirm whether such a mechanism applies to their tenancy.
+
+5. What Barbados courts do NOT have:
+
+- There is no First-tier Tribunal (Property Chamber): improvement notices, rent repayment orders, and leasehold service charge disputes of the kind heard by that English tribunal do not have an exact equivalent forum in Barbados.
+- There is no CPR Part 55 accelerated possession procedure: all possession proceedings follow the applicable rules of the Magistrates' Court or High Court.
+- There is no statutory rent repayment order regime: civil claims for recovery of unlawfully charged rent are pursued as ordinary contractual or restitutionary claims before the civil courts.
+
+Routing guide:
+
+- Disrepair or habitability claim, damages up to $10,000 BBD: Magistrates' Court.
+- Disrepair or habitability claim with mandatory injunction or damages above $10,000 BBD: High Court.
+- Possession proceedings — all: Magistrates' Court or High Court depending on the claim.
+- Security deposit dispute up to $10,000 BBD: Magistrates' Court.
+- Rent dispute — court: Magistrates' Court (within jurisdiction) or High Court.
+- Rent dispute — possible rent board: confirm under Laws of Barbados.
+
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD). Further information: laws.barbados.gov.bb; Barbados Bar Association at barbadosbar.org.`,
+  tags: ['court-forums', 'Magistrates-Court', 'High-Court', 'Court-of-Appeal', 'Barbados', 'tenancy-disputes', 'Cap-116A', 'Cap-117'],
 };
 
 export default doc;

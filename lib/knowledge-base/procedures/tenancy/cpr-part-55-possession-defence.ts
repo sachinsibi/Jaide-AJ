@@ -1,49 +1,55 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-cpr-part-55-possession-defence',
+  id: 'procedure-barbados-possession-defence',
   type: 'procedure',
   category: 'tenancy',
-  title: 'CPR Part 55 — Possession Claims and Defence',
+  title: 'Defence to Possession Proceedings — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Civil Procedure Rules, Part 55',
-  url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part55',
+  citation: 'Landlord and Tenant Act, Cap. 230; Magistrates\' Court Act, Cap. 116A; Supreme Court of Judicature Act, Cap. 117 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['possession', 'evict', 'eviction', 'court order', 'court date', 'hearing', 'section 21', 'section 8', 'arrears'],
-  tabs: ['legalBreakdown'],
+  triggers: ['possession', 'evict', 'eviction', 'court date', 'court hearing', 'possession claim', 'arrears', 'notice to quit', 'defend eviction'],
   factSummary:
-    'CPR Part 55 governs landlord possession claims. Two procedures: standard (Pt 55.III) for s.8 grounds and rent arrears claims, with a hearing; accelerated (Pt 55.II) for compliant s.21 notices, paper-only unless the defendant raises a defence requiring a hearing. Tenants may counterclaim for disrepair within possession proceedings.',
-  content: `CPR Part 55 — Possession Claims (Civil Procedure Rules):
+    'When a landlord in Barbados commences possession proceedings in the Magistrates\' Court or High Court, the tenant has the right to appear, contest the claim, and raise defences. Available defences include: invalidity of the notice to quit, disputes as to rent arrears, counterclaims for disrepair or breach of quiet enjoyment, and evidence of retaliatory intent. There is no CPR Part 55 in Barbados.',
+  content: `Defence to Possession Proceedings — Barbados:
 
-Part 55 is the procedural code for all residential possession claims in the County Court. Two streams operate:
+In Barbados, all possession of residential premises requires a court order. There is no CPR Part 55 or accelerated possession procedure equivalent to English law. Possession proceedings are governed by the applicable rules of the Magistrates' Court (Cap. 116A) or the High Court of Barbados (Cap. 117).
 
-Standard procedure (CPR 55.II — rr.55.3–55.11):
-- Used for Housing Act 1988 s.8 ground claims (rent arrears, anti-social behaviour, breach of tenancy, etc.) and any contested possession claim involving disputed facts.
-- Claim issued on Form N5 with Particulars of Claim on Form N119.
-- Defendant must file a defence on Form N11R within 14 days of service.
-- First hearing listed within 8 weeks of issue (CPR 55.5(3)).
-- Mandatory and discretionary grounds applied per Sch.2 HA 1988.
-- Court may adjourn (e.g., to give tenant time to clear arrears under discretionary Ground 8 if accrued post-issue).
+When possession proceedings are served on a tenant:
 
-Accelerated procedure (CPR 55.II [55.II is shared; "accelerated" is in 55.III] / Practice Direction 55A — rr.55.11–55.19):
-- Used only for compliant s.21 notices on assured shorthold tenancies. Subject to the s.21 status caveat following the Renters' Rights Act 2024 (verify against current legislation).
-- Claim issued on Form N5B; particulars are pre-printed.
-- Defendant returns Form N11B within 14 days.
-- Determined on paper without a hearing unless the defendant raises a substantive defence (e.g., deposit non-protection, prescribed-information failure, retaliatory eviction under Deregulation Act 2015 s.33, lack of HMO licence, late Gas Safety Certificate, missing How to Rent booklet).
-- If a defence is raised, the case is transferred to the standard procedure.
+A tenant served with a possession claim has the right to respond to the proceedings, file a defence, and appear before the court. The court will consider the landlord's claim and the tenant's response before making any determination.
 
-Tenant defences and counterclaims:
+Available defences:
 
-1. Procedural defects — failure on any of the eight s.21 prerequisites (see test-s21-validity-test).
-2. Retaliatory eviction — Deregulation Act 2015 s.33.
-3. Counterclaim for disrepair — under CPR Part 20, the tenant may counterclaim within the possession proceedings for damages and an injunction under s.11 / s.9A LTA 1985. Where the counterclaim raises a substantial credit or set-off against arrears, the court may dismiss the possession claim or grant a postponed possession order.
-4. Set-off — equitable set-off of disrepair damages against alleged rent arrears (British Anzani (Felixstowe) Ltd v International Marine Management (UK) Ltd [1980] QB 137).
-5. Section 8 specific defences — denying the ground (e.g., disputing the arrears figure), public-law defences (Hounslow LBC v Powell), Equality Act 2010 reasonable-adjustment defences for disabled tenants.
+1. Invalidity of the notice to quit. A possession claim that follows a notice to quit may be contested on the basis that the notice was defective — for example:
+(a) the notice gave insufficient notice (less than one period of the tenancy, or less than any longer period required by Cap. 230 or the lease);
+(b) the notice was not in writing;
+(c) the notice did not expire at the end of a period of the tenancy;
+(d) the notice was not properly served on the tenant.
+A defective notice to quit may render the subsequent possession proceedings premature or invalid.
 
-Track allocation: small-claims track does not apply to possession claims; these run on a bespoke Pt 55 timetable.`,
-  tags: ['CPR-Part-55', 'possession', 'accelerated-procedure', 'standard-procedure', 'set-off', 'counterclaim'],
+2. Disputed grounds for possession. A tenant may contest the factual basis of the landlord's claim:
+(a) where possession is sought on the basis of rent arrears, the tenant may dispute the amount alleged to be outstanding, demonstrate that rent was paid, or show that lawful set-offs apply;
+(b) where possession is based on alleged breach of tenancy terms, the tenant may dispute that any breach occurred or demonstrate that the breach was remedied;
+(c) where possession is sought at the expiry of a fixed-term tenancy, the tenant may contest whether the term has in fact expired or whether any agreement to renew applies.
+
+3. Counterclaim for disrepair or breach of quiet enjoyment. A tenant who has suffered disrepair, habitability defects, or interference with quiet enjoyment may counterclaim within the possession proceedings for damages and/or a remedial order. Where disrepair damages constitute a substantial credit against alleged rent arrears, this may affect the court's assessment of whether a possession order is appropriate. The court may set off damages owed by the landlord against any rent arrears, potentially reducing or eliminating the arrears that form the basis of the possession claim.
+
+4. Retaliatory eviction. A tenant may adduce evidence that the possession proceedings are brought in bad faith — in direct retaliation for the tenant having made a legitimate complaint about housing conditions. The temporal connection between the complaint and the commencement of proceedings, together with any relevant landlord communications, may support this argument.
+
+5. Procedural irregularities. Possession proceedings commenced without following the proper procedural requirements — including failure to commence in the correct court, failure to properly serve the claim, or other procedural defects — may be challenged on that basis.
+
+Court process:
+
+The claim will be listed before a judge (in the Magistrates' Court) or a judge of the High Court, as applicable. Both parties have the right to present evidence and make submissions. The court will determine whether a possession order is to be made, and on what terms (including any date for possession, any postponement of that date, or any conditions).
+
+Where a tenant has counterclaims that are not yet ready to be determined at the possession hearing, the court may direct that those claims be heard separately or at a subsequent hearing.
+
+The Barbados Supreme Court website is at supremecourt.gov.bb. Further information about the legal framework can be found at laws.barbados.gov.bb.`,
+  tags: ['possession-defence', 'notice-to-quit', 'Magistrates-Court', 'High-Court', 'Barbados', 'Cap-230', 'counterclaim', 'set-off'],
 };
 
 export default doc;

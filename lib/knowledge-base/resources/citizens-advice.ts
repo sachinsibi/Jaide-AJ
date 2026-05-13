@@ -1,40 +1,31 @@
 import type { KnowledgeDocument } from '../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'resource-citizens-advice',
+  id: 'resource-barbados-legal-aid',
   type: 'resource',
   category: 'general',
-  title: 'Citizens Advice',
+  title: 'Legal Aid and Legal Advice in Barbados',
   jurisdiction: 'barbados',
-  url: 'https://www.citizensadvice.org.uk',
+  url: 'https://www.barbadosbar.org',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['tenancy', 'employment', 'contract-service', 'general-civil', 'motor-accident', 'property-damage'],
   tabs: ['references'],
   factSummary:
-    'Citizens Advice provides free, independent, confidential advice across the full breadth of civil law: housing, employment, consumer, debt, family, benefits, and immigration. Both online (citizensadvice.org.uk) and in person at local CABx.',
-  content: `Citizens Advice (https://www.citizensadvice.org.uk) is the largest free legal-information network in England and Wales. It operates as a federation of independent local Citizens Advice Bureaux (CABx) backed by a national charity that publishes online guidance.
+    'Barbados has legal aid provisions for qualifying individuals. The Barbados Bar Association (barbadosbar.org) maintains a directory of licensed attorneys. Individuals with limited means should enquire about legal aid eligibility through the court system or the Bar Association.',
+  content: `Legal aid and legal advice in Barbados:
 
-Online guidance areas relevant across civil categories:
-- Housing — tenancy rights, eviction, deposits, disrepair, homelessness.
-- Work — pay, holidays, dismissal, redundancy, discrimination, whistleblowing.
-- Consumer — faulty goods, services, refunds, contracts, scams.
-- Debt and money — managing debt, county court judgments, bailiffs, bankruptcy.
-- Family — relationships, children, divorce, domestic abuse.
-- Immigration — visas, asylum, settlement, citizenship.
-- Benefits — Universal Credit, housing benefit, ESA, PIP, appeals.
-- Health — NHS rights, complaints, mental health.
-- Law and courts — small claims, mediation, court fees, legal aid.
+Barbados Bar Association (https://www.barbadosbar.org): the professional association for attorneys admitted to practise law in Barbados. The Bar Association maintains a directory of licensed attorneys that can be used by individuals seeking legal representation across all areas of civil law, including tenancy, employment, contract disputes, defamation, and personal matters.
 
-Channels:
-- Adviceline (England) 0800 144 8848; Wales 0800 702 2020.
-- Webchat through the website during opening hours.
-- Email and in-person via local CABx (location finder on the website).
-- Specialist support via Money Advice Service, Pension Wise, etc.
+Legal aid: Barbados has legal aid provisions for individuals who qualify based on financial means. Eligibility criteria and the scope of legal aid available should be verified through the Barbados court system or the Barbados Bar Association. Individuals with limited financial means should enquire about legal aid availability before engaging private legal representation.
 
-Limits: Citizens Advice provides information and assisted self-help, not litigation representation. For court representation, the user should be referred to a solicitor (legal aid where eligible), Law Centre, or pro bono scheme.`,
-  tags: ['citizens-advice', 'free-advice', 'cross-category', 'CAB', 'helpline'],
+What legal advice can provide: a qualified Barbados attorney can advise on the legal merits of a civil claim, assist in drafting letters before action, represent a party in court proceedings before the Magistrates' Court or High Court of Barbados, negotiate settlements, and advise on procedural requirements.
+
+Self-representation: individuals may represent themselves in the Magistrates' Court and the High Court of Barbados. However, legal proceedings involve procedural requirements and rules of evidence that can affect the outcome; legal advice is recommended wherever possible.
+
+Note: Citizens Advice (England) does not operate in Barbados and has no relevance to civil claims in the Barbados jurisdiction.`,
+  tags: ['legal-aid', 'Barbados-Bar-Association', 'attorney', 'legal-advice', 'Barbados', 'cross-category'],
 };
 
 export default doc;

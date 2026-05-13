@@ -1,16 +1,18 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-protection-from-eviction-1977',
+  id: 'statute-barbados-tenancy-unlawful-eviction',
   type: 'statute',
   category: 'tenancy',
-  title: 'Protection from Eviction Act 1977',
+  title: 'Protection Against Unlawful Eviction — Barbados',
   jurisdiction: 'barbados',
-  citation: 'Protection from Eviction Act 1977, ss.1, 3, 5',
-  url: 'https://www.legislation.gov.uk/ukpga/1977/43/contents',
+  citation: 'Landlord and Tenant Act, Cap. 230; common law protections against unlawful eviction (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
+  pinFor: ['tenancy'],
+  tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
   triggers: [
     'eviction',
     'evict',
@@ -25,25 +27,32 @@ const doc: KnowledgeDocument = {
     'thrown out',
     'changed the locks',
   ],
-  tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'Criminalises unlawful eviction and harassment of residential occupiers (s.1), requires a court order before evicting most residential occupiers (s.3), and prescribes minimum 4 weeks\' written notice to quit containing prescribed information (s.5).',
-  content: `The Protection from Eviction Act 1977 (PEA 1977) is the principal statute protecting residential occupiers from being removed without due process.
+    'In Barbados, a residential tenant cannot be evicted without a court order. Self-help eviction — changing locks, removing the tenant\'s belongings, cutting off utilities, or physically excluding the tenant — is not lawful. Both civil remedies (damages, injunction) and potentially criminal liability may arise from unlawful eviction or harassment of a residential occupier.',
+  eli5Summary:
+    'In Barbados, a landlord cannot just throw a tenant out or change the locks. The landlord must go to court first and get a court order before the tenant can be required to leave. If a landlord tries to force a tenant out without a court order — by locking them out, removing their things, or cutting off water or electricity — this is unlawful and the tenant can take legal action.',
+  content: `Protection Against Unlawful Eviction — Barbados:
 
-Section 1 — Unlawful eviction and harassment offences:
-- s.1(2): it is a criminal offence to unlawfully deprive the residential occupier of any premises of his occupation, unless the person can prove a reasonable belief that the occupier had ceased to reside.
-- s.1(3) and (3A): it is a criminal offence to do acts likely to interfere with the peace or comfort of the residential occupier (or members of his household), or persistently to withdraw or withhold services reasonably required for occupation, with intent (or, under s.1(3A), knowing or having reasonable cause to believe) that the conduct will cause the occupier to give up occupation or refrain from exercising any right or remedy.
+Barbados law, drawing on both the Landlord and Tenant Act, Cap. 230 and the common law tradition applicable as a Commonwealth jurisdiction, provides that a residential tenant is entitled to protection against being removed from the premises without lawful authority.
 
-Liability is criminal (prosecution by local authority or CPS) and civil (damages under Housing Act 1988 ss.27–28, calculated by reference to the difference in value of the landlord's interest with and without the occupier in possession — often substantial).
+Requirement for a court order: a landlord who wishes to recover possession of residential premises occupied by a tenant must obtain an order of the Magistrates' Court (Cap. 116A) or the High Court of Barbados (Cap. 117) before the tenant can be lawfully required to vacate. The court will only make such an order after considering the facts and giving the tenant an opportunity to be heard.
 
-Section 3 — Court order required:
-- Where any premises have been let as a dwelling under a tenancy that is neither a statutorily protected tenancy nor an excluded tenancy, the right to recover possession is enforceable only by court proceedings. Self-help eviction (changing locks, removing belongings, physically removing the occupier) is therefore unlawful even where the tenancy has technically expired.
+Unlawful eviction — what is not permitted: a landlord commits an unlawful act by:
 
-Section 5 — Notice to quit:
-- A notice to quit by either landlord or tenant of premises let as a dwelling is invalid unless it is in writing, gives at least four weeks' notice expiring at the end of a period of the tenancy, and contains the information prescribed by the Notices to Quit etc. (Prescribed Information) Regulations 1988 (SI 1988/2201).
+(a) physically excluding the tenant from the premises without a court order — including by changing locks, removing doors, or otherwise preventing access;
+(b) removing or disposing of the tenant's belongings without consent and without a court order;
+(c) persistently harassing, intimidating, or threatening the tenant with the purpose or effect of compelling the tenant to leave;
+(d) deliberately withdrawing or interfering with services — such as water, electricity, or access — that are necessary for reasonable occupation of the premises, with the purpose or effect of making the premises uninhabitable or compelling the tenant to vacate.
 
-Excluded tenancies/licences (s.3A) — primarily lodgers sharing accommodation with the owner — fall outside the s.3 court-order requirement, but the s.1 harassment offences still apply.`,
-  tags: ['unlawful-eviction', 'harassment', 'PEA-1977', 'notice-to-quit', 'court-order'],
+Civil remedies: a tenant who suffers unlawful eviction or harassment by the landlord may bring a civil claim for:
+(a) damages for any loss suffered, including loss of accommodation, costs of alternative accommodation, and distress and inconvenience;
+(b) an injunction requiring the landlord to restore access to and quiet enjoyment of the premises;
+(c) damages for breach of the implied covenant for quiet enjoyment.
+
+Criminal liability: conduct amounting to harassment or forcible exclusion of a residential occupier may also give rise to criminal liability under the applicable provisions of Barbados law.
+
+Notice to quit: the proper process for a landlord who lawfully wishes to end a tenancy is to serve a valid notice to quit giving reasonable notice as required by the terms of the tenancy and the relevant provisions of Cap. 230, and thereafter — if the tenant does not vacate — to apply to the court for a possession order.`,
+  tags: ['unlawful-eviction', 'harassment', 'Cap-230', 'court-order', 'Barbados', 'quiet-enjoyment', 'possession'],
 };
 
 export default doc;

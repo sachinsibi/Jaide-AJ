@@ -7,6 +7,7 @@ const doc: KnowledgeDocument = {
   title: 'Road Traffic Act, Cap. 295 — Duty to Stop and Report After an Accident',
   jurisdiction: 'barbados',
   citation: 'Road Traffic Act, Cap. 295 (Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

@@ -37,7 +37,7 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
       <div style={{ marginBottom: '2.5rem' }}>
         <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#073C65' }}>
           <Scale style={{ width: '18px', height: '18px', color: '#D49E37' }} />
-          Relevant Case Law (Barbados)
+          Applicable Common Law Precedents
         </h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingLeft: '1.75rem' }}>
           {caselaw.map((c, i) => (
@@ -72,13 +72,20 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
           <Gavel style={{ width: '18px', height: '18px', color: '#D49E37' }} />
           Procedural Framework
         </h3>
-        <ol style={{ display: 'flex', flexDirection: 'column', gap: '1rem', paddingLeft: '1.75rem' }}>
+        <ol style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingLeft: '1.75rem' }}>
           {procedures.map((p, i) => (
             <li key={i} style={{ display: 'flex', gap: '0.875rem' }}>
-              <div className="rounded-full" style={{ flexShrink: 0, width: '28px', height: '28px', background: '#073C65', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.875rem', fontWeight: 600, color: 'white' }}>
+              <div className="rounded-full" style={{ flexShrink: 0, width: '28px', height: '28px', background: '#073C65', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.875rem', fontWeight: 600, color: 'white', marginTop: '0.125rem' }}>
                 {i + 1}
               </div>
-              <p style={{ color: '#6B7280', fontSize: '0.9375rem', paddingTop: '0.25rem', lineHeight: '1.7' }}>{p}</p>
+              <div>
+                <p style={{ color: '#073C65', fontSize: '0.9375rem', fontWeight: 700, marginBottom: '0.375rem' }}>
+                  {typeof p === 'string' ? p : p.title}
+                </p>
+                {typeof p !== 'string' && p.detail && (
+                  <p style={{ color: '#6B7280', fontSize: '0.875rem', lineHeight: '1.7' }}>{p.detail}</p>
+                )}
+              </div>
             </li>
           ))}
         </ol>

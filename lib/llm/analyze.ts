@@ -97,7 +97,12 @@ Provide the JSON object only — no other text, no markdown code blocks.`,
   "legalTests": [
     {"test": "Name of legal test as it appears in === TESTS ===", "application": "How courts apply this test to cases like this one"}
   ],
-  "procedures": ["procedural steps in correct order with detail. Only name specific procedural mechanisms (tribunals, named notices, named orders) if they appear in === PROCEDURES === or === STATUTES ==="],
+  "procedures": [
+    {
+      "title": "Short step title (e.g., 'Claims notification', 'Insurer investigation', 'Escalation to FSC', 'Civil court proceedings')",
+      "detail": "Detailed third-person description of what this stage involves. Include specific statutory or regulatory references from === PROCEDURES === or === STATUTES === where grounded. Include timeframes, thresholds (e.g., court jurisdiction limits), or institutional roles where stated in the knowledge base. Never use imperative or instructional language ('you should', 'notify your insurer', 'consider filing'). Describe what the process typically involves and what parties in this situation commonly experience at this stage."
+    }
+  ],
   "evidenceStandards": "Paragraph on civil standard of proof, burden of proof, and what evidence is needed",
   "precedentPatterns": "Paragraph on how courts and tribunals typically approach this type of case (general narrative, no specific citations needed unless grounded)",
   "keyTerminology": [
@@ -177,6 +182,10 @@ UNCONSTRAINED — discuss freely:
 - General concepts and doctrinal narrative ("landlords have statutory repairing obligations")
 - Plain English explanations
 - Procedural narrative without naming specific mechanisms
+
+CURRENCY NOTE: Where a monetary amount in the case does not specify currency (e.g., "$8,000"), note that Barbados currency is Barbados Dollars (BBD), pegged 2:1 to the US Dollar. If the amount appears to be USD, the BBD equivalent would be approximately double. Where the currency is genuinely unclear, note the ambiguity when applying court jurisdiction thresholds (Magistrates' Court ≤$10,000 BBD vs High Court >$10,000 BBD).
+
+CASE LAW NOTE: Cases cited in === CASES === are common law precedents from UK or Commonwealth courts that apply in Barbados by inheritance as a Commonwealth jurisdiction. They are persuasive authority, not Barbados-originated decisions.
 
 GRACEFUL DEGRADATION — when a section is thin or empty:
 - Section in KB but not subsection → cite the section only, not a guessed subsection

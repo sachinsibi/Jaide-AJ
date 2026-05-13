@@ -7,6 +7,7 @@ const doc: KnowledgeDocument = {
   title: 'Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166 — Compulsory Third-Party Insurance',
   jurisdiction: 'barbados',
   citation: 'Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',

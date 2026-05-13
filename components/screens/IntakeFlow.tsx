@@ -40,6 +40,44 @@ export function IntakeFlow() {
   const current = CATEGORIES.find(c => c.id === selectedCategory);
   const CurrentIcon = current?.icon ?? Scale;
 
+  // Hoisted above conditional returns to satisfy Rules of Hooks
+  const allQuestions = getCategoryQuestions(selectedCategory, userInput);
+
+  useEffect(() => {
+    if (step !== 'onboarding' || unansweredIds !== null || extracting || !userInput) return;
+    setExtracting(true);
+
+    const questionList = allQuestions.map(q => ({ id: q.id, question: q.question }));
+
+    fetch('/api/extract', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userInput, questions: questionList }),
+    })
+      .then(r => r.json())
+      .then(({ answered }: { answered: Record<string, string> }) => {
+        setAnswers(prev => ({ ...prev, ...answered }));
+        const remaining = allQuestions.map(q => q.id).filter(id => !answered[id]);
+        setUnansweredIds(remaining);
+        setExtracting(false);
+
+        if (remaining.length === 0) {
+          const caseData = {
+            ...answered,
+            scenario: userInput,
+            initial: userInput,
+            category: selectedCategory,
+          };
+          sessionStorage.setItem('caseData', JSON.stringify(caseData));
+          router.push('/analysis');
+        }
+      })
+      .catch(() => {
+        setUnansweredIds(allQuestions.map(q => q.id));
+        setExtracting(false);
+      });
+  }, [step, userInput, selectedCategory]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // ── Confirm step ────────────────────────────────────────────
   if (step === 'confirm') {
     return (
@@ -144,44 +182,6 @@ export function IntakeFlow() {
   }
 
   // ── Onboarding step ─────────────────────────────────────────
-  const allQuestions = getCategoryQuestions(selectedCategory, userInput);
-
-  // Run extraction once when we reach the onboarding step
-  useEffect(() => {
-    if (step !== 'onboarding' || unansweredIds !== null || extracting || !userInput) return;
-    setExtracting(true);
-
-    const questionList = allQuestions.map(q => ({ id: q.id, question: q.question }));
-
-    fetch('/api/extract', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userInput, questions: questionList }),
-    })
-      .then(r => r.json())
-      .then(({ answered }: { answered: Record<string, string> }) => {
-        setAnswers(prev => ({ ...prev, ...answered }));
-        const remaining = allQuestions.map(q => q.id).filter(id => !answered[id]);
-        setUnansweredIds(remaining);
-        setExtracting(false);
-
-        if (remaining.length === 0) {
-          // All questions answered — go straight to analysis
-          const caseData = {
-            ...answered,
-            scenario: userInput,
-            initial: userInput,
-            category: selectedCategory,
-          };
-          sessionStorage.setItem('caseData', JSON.stringify(caseData));
-          router.push('/analysis');
-        }
-      })
-      .catch(() => {
-        setUnansweredIds(allQuestions.map(q => q.id));
-        setExtracting(false);
-      });
-  }, [step, userInput, selectedCategory]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Show extraction loading state
   if (step === 'onboarding' && (extracting || unansweredIds === null)) {

@@ -35,7 +35,7 @@ Rules:
 - Only include a question id if the answer is clearly and explicitly stated in the description.
 - Do not infer or assume. If the answer is ambiguous or only implied, do not include it.
 - Values should be short, direct summaries of what the user stated — not quotes.
-- For date questions: extract the date as written (e.g. "March 12th"). Do not force into YYYY-MM-DD format.
+- For date questions (id contains "when" or "date"): only extract if the user stated a specific calendar date or month+year (e.g. "March 2025", "12th January"). Relative phrases like "3 months ago", "last year", "recently" do NOT count — leave those out.
 - Return a JSON object only — no markdown, no explanation.`,
       messages: [
         {

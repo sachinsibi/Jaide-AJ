@@ -10,6 +10,7 @@ export default function Home() {
   const [noticeSeen, setNoticeSeen] = useState(false);
   const [pendingInput, setPendingInput] = useState<string | null>(null);
   const [classifying, setClassifying] = useState(false);
+  const [inputError, setInputError] = useState<string | null>(null);
 
   useEffect(() => {
     setNoticeSeen(sessionStorage.getItem('noticeSeen') === 'true');
@@ -17,6 +18,7 @@ export default function Home() {
 
   const classify = async (input: string) => {
     setClassifying(true);
+    setInputError(null);
     sessionStorage.setItem('userInput', input);
 
     const res = await fetch('/api/classify', {
@@ -25,7 +27,13 @@ export default function Home() {
       body: JSON.stringify({ userInput: input }),
     });
 
-    const { category } = await res.json();
+    const { category, hint } = await res.json();
+
+    if (category === 'unclear') {
+      setClassifying(false);
+      setInputError(hint ?? "Please describe your situation in more detail — for example, what happened, who was involved, and what outcome you're looking for.");
+      return;
+    }
 
     if (category === 'personal-injury') {
       router.push('/personal-injury');
@@ -70,7 +78,7 @@ export default function Home() {
 
   return (
     <>
-      <LandingScreen onContinue={handleContinue} />
+      <LandingScreen onContinue={handleContinue} inputError={inputError} onInputChange={() => setInputError(null)} />
       {pendingInput !== null && <NoticeModal onAcknowledge={handleAcknowledge} />}
     </>
   );

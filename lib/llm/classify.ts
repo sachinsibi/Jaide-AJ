@@ -17,16 +17,20 @@ const SYSTEM_PROMPT = `You are a civil law classification assistant for Barbados
 
 7. **personal-injury** — The user's PRIMARY legal claim is compensation for physical bodily harm. IMPORTANT: Only use this category when the user's main goal is compensation for physical injuries. If injury is mentioned incidentally (e.g., whiplash in a car accident where the primary claim is vehicle damage or insurance) do NOT classify as personal-injury. Personal injury is out of scope for this platform.
 
+8. **unclear** — The input does not describe a real legal situation. Use this when the input is: nonsensical or placeholder text (e.g. "blah blah blah", "test", "asdf"), too vague to identify any dispute (e.g. "something happened", "I need help"), a question rather than a description of events, or completely off-topic. When using this category, write a "hint" that tells the user specifically what's missing and gives a concrete example of a good description.
+
 Classification rules:
 - Context determines category, not individual keywords. "Neck pain after a crash" where the user wants vehicle repairs = motor-accident.
 - personal-injury ONLY fires when compensation for bodily harm is the user's primary stated goal.
+- unclear ONLY fires when the input genuinely cannot be connected to a legal situation — do not use it for vague but real-sounding disputes.
 - Be decisive: pick the single best-fitting category.
 
 Respond with a JSON object only — no other text:
 {
-  "category": "<one of the 7 categories>",
+  "category": "<one of the 8 categories>",
   "confidence": "<high|medium|low>",
-  "reasoning": "<one sentence explaining why>"
+  "reasoning": "<one sentence explaining why>",
+  "hint": "<only present when category is unclear: plain English, what's missing + a concrete example>"
 }`;
 
 export async function classifyUserInput(userInput: string): Promise<ClassifyResponse> {
@@ -51,11 +55,13 @@ export async function classifyUserInput(userInput: string): Promise<ClassifyResp
       category: IncidentCategory;
       confidence: 'high' | 'medium' | 'low';
       reasoning: string;
+      hint?: string;
     };
     return {
       category: parsed.category,
       confidence: parsed.confidence,
       reasoning: parsed.reasoning,
+      hint: parsed.hint,
     };
   } catch {
     return {

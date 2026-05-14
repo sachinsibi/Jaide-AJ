@@ -6,9 +6,11 @@ import { HowToDescribeModal } from '@/components/ui/HowToDescribeModal';
 
 interface LandingScreenProps {
   onContinue: (input: string) => void;
+  inputError?: string | null;
+  onInputChange?: () => void;
 }
 
-export function LandingScreen({ onContinue }: LandingScreenProps) {
+export function LandingScreen({ onContinue, inputError, onInputChange }: LandingScreenProps) {
   const [userInput, setUserInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [showHowTo, setShowHowTo] = useState(false);
@@ -107,7 +109,7 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
             <input
               ref={inputRef}
               value={userInput}
-              onChange={e => setUserInput(e.target.value)}
+              onChange={e => { setUserInput(e.target.value); onInputChange?.(); }}
               onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); handleSubmit(); } }}
               placeholder="Describe your legal situation…"
               style={{
@@ -131,6 +133,23 @@ export function LandingScreen({ onContinue }: LandingScreenProps) {
               <Mic style={{ width: '18px', height: '18px', color: '#9CA3AF' }} />
             </button>
           </div>
+
+          {/* Input error hint */}
+          {inputError && (
+            <div style={{
+              marginTop: '0.875rem',
+              padding: '0.875rem 1.125rem',
+              borderRadius: '0.875rem',
+              background: 'rgba(201, 168, 76, 0.08)',
+              border: '1px solid rgba(201, 168, 76, 0.35)',
+              display: 'flex', alignItems: 'flex-start', gap: '0.625rem',
+            }}>
+              <span style={{ fontSize: '1rem', lineHeight: 1, flexShrink: 0, marginTop: '0.1rem' }}>💡</span>
+              <p style={{ fontSize: '0.875rem', color: '#073C65', lineHeight: 1.55, margin: 0 }}>
+                {inputError}
+              </p>
+            </div>
+          )}
 
           {/* GO button */}
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.25rem' }}>

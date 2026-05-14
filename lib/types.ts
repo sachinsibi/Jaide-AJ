@@ -5,7 +5,8 @@ export type IncidentCategory =
   | 'employment'
   | 'property-damage'
   | 'general-civil'
-  | 'personal-injury';
+  | 'personal-injury'
+  | 'unclear';
 
 export interface CaseData extends Record<string, string> {
   scenario: string;
@@ -20,6 +21,7 @@ export interface ClassifyResponse {
   category: IncidentCategory;
   confidence: 'high' | 'medium' | 'low';
   reasoning: string;
+  hint?: string;
 }
 
 export type AnalysisTab = 'overview' | 'legalBreakdown' | 'eli5' | 'references';

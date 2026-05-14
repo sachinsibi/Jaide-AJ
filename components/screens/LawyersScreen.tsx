@@ -71,7 +71,7 @@ export function LawyersScreen() {
           </h1>
           <p style={{ fontSize: '0.9375rem', lineHeight: 1.6, opacity: 0.85 }}>
             These solicitors specialise in <strong>{category.replace('-', ' ')}</strong> law in England & Wales.
-            Contact them directly — their details are provided below.
+            Contact them directly. Their details are provided below.
           </p>
         </div>
 

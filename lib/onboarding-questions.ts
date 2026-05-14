@@ -144,7 +144,7 @@ export function getCategoryQuestions(
         {
           id: 'communication',
           question: 'Have you contacted them about this? What did they say?',
-          placeholder: 'Email, phone call, in-person — describe their response',
+          placeholder: 'Email, phone call, in-person: describe their response',
           type: 'textarea',
         },
         {

@@ -40,7 +40,7 @@ export function NoticeModal({ onAcknowledge }: NoticeModalProps) {
         boxShadow: '0 20px 60px rgba(7, 60, 101, 0.3)',
         overflow: 'hidden',
       }}>
-        {/* Header — no close button: acknowledgement is mandatory */}
+        {/* Header: no close button, acknowledgement is mandatory */}
         <div style={{
           background: '#073C65', padding: '1.25rem 1.5rem',
           display: 'flex', alignItems: 'center', gap: '0.875rem',
@@ -124,7 +124,7 @@ export function NoticeModal({ onAcknowledge }: NoticeModalProps) {
               fontFamily: 'inherit',
             }}
           >
-            I Understand — Continue
+            I Understand, Continue
           </button>
         </div>
       </div>

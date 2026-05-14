@@ -83,7 +83,7 @@ export function ELI5Tab({ eli5 }: ELI5TabProps) {
         <div>
           <h4 style={{ color: '#1E40AF', fontSize: '0.9375rem', fontWeight: 600, marginBottom: '0.5rem' }}>Remember!</h4>
           <p style={{ fontSize: '0.875rem', color: '#1E3A8A', lineHeight: '1.7' }}>
-            This explains how the <strong>law works</strong> in Barbados in simple terms. It is not advice about what to do in any specific situation. Every situation is different — talking to a qualified attorney who can review the specific facts is the way to get personalised legal guidance. JAIDE helps you understand the legal landscape so you are better prepared for that conversation.
+            This explains how the <strong>law works</strong> in Barbados in simple terms. It is not advice about what to do in any specific situation. Every situation is different. Talking to a qualified attorney who can review the specific facts is the way to get personalised legal guidance. JAIDE helps you understand the legal landscape so you are better prepared for that conversation.
           </p>
         </div>
       </div>

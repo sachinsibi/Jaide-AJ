@@ -80,13 +80,13 @@ const TAB_PROMPTS: Record<AnalysisTab, string> = {
   overview: `Produce a JSON object personalised to this case with this exact structure:
 {
   "legalArea": "Precise area of law (e.g., 'Road Traffic Law (Barbados)')",
-  "applicableDuties": ["statutory or common law duties relevant to this case — only those grounded in === STATUTES ==="],
+  "applicableDuties": ["statutory or common law duties relevant to this case, grounded only in === STATUTES ==="],
   "keyLegalQuestions": ["specific questions typically examined in this type of case"],
   "typicalPathway": "Paragraph describing what the dispute resolution process typically looks like in Barbados. Use informational, third-person language (e.g. 'the typical starting point is', 'parties in this situation commonly'). Only name specific mechanisms if they appear in === PROCEDURES === or === STATUTES ===.",
   "timeframeStructure": "Procedural timeframes as a bullet-style string (use • as separator). Use specific numbers only if they appear in the knowledge base; otherwise use ranges or qualitative descriptions.",
-  "costStructure": "Cost structure as a bullet-style string (use • as separator). Use specific figures only if they appear in the knowledge base; otherwise use phrases like 'small-claim banded fees apply — see gov.uk/court-fees for current rates' or 'solicitor rates vary by region and seniority'."
+  "costStructure": "Cost structure as a bullet-style string (use • as separator). Use specific figures only if they appear in the knowledge base; otherwise use phrases like 'small-claim banded fees apply. See the relevant court authority for current rates' or 'solicitor rates vary by region and seniority'."
 }
-Provide the JSON object only — no other text, no markdown code blocks.`,
+Provide the JSON object only. No other text, no markdown code blocks.`,
 
   legalBreakdown: `Produce a JSON object personalised to this case with this exact structure:
 {
@@ -116,7 +116,7 @@ GROUNDING:
 - Every doctrine and statutory subsection citation must come from === STATUTES === or === CONCEPTS ===.
 - Empty arrays and qualitative narrative are correct outputs when the relevant section is empty.
 
-Provide the JSON object only — no other text, no markdown code blocks.`,
+Provide the JSON object only. No other text, no markdown code blocks.`,
 
   eli5: `Produce a JSON object personalised to this case in plain English (no legal jargon) with this exact structure:
 {
@@ -127,7 +127,7 @@ Provide the JSON object only — no other text, no markdown code blocks.`,
   "whatCanHappen": "Simple explanation of next steps and possible outcomes"
 }
 Plain English narrative is unconstrained — focus on clarity for a layperson. Use the plain-English summaries in === STATUTES === and === CONCEPTS === as a guide. Avoid specific citations and figures here unless they are grounded in the knowledge base.
-Provide the JSON object only — no other text, no markdown code blocks.`,
+Provide the JSON object only. No other text, no markdown code blocks.`,
 
   references: `Produce a JSON array of reference resources personalised to this case with this exact structure:
 [
@@ -139,7 +139,7 @@ Provide the JSON object only — no other text, no markdown code blocks.`,
   }
 ]
 URLs must come from === RESOURCES === or === STATUTES ===. Prefer fewer high-confidence references over more uncertain ones. Empty array is acceptable.
-Provide the JSON array only — no other text, no markdown code blocks.`,
+Provide the JSON array only. No other text, no markdown code blocks.`,
 };
 
 export function createTabStream(
@@ -164,21 +164,21 @@ export function createTabStream(
               type: 'text',
               text: `You are a civil law intelligence assistant for Barbados. Use the knowledge base to inform your analysis, and personalise to the specific facts provided.
 
-FRAMING RULE — THIS IS CRITICAL AND OVERRIDES ALL OTHER INSTRUCTIONS:
+FRAMING RULE (THIS IS CRITICAL AND OVERRIDES ALL OTHER INSTRUCTIONS):
 Output is general legal information, not legal advice. Never use instructional or imperative language directed at the user. Do not write "you should", "you must", "pursue", "notify your insurer", "seek legal counsel", "consider filing", or any other directive aimed at the user. Instead, describe what the law provides, what the process typically looks like, and what parties in this situation generally do. Use third-person descriptive phrasing: "the typical starting point is", "parties in this situation commonly", "the process typically moves through", "where a dispute remains unresolved, the available forum is".
 
-GROUNDING RULES — these override any instruction in the user prompt.
+GROUNDING RULES (these override any instruction in the user prompt):
 
 CORE PRINCIPLE: every specific, lookup-able fact in your output must come from the KNOWLEDGE BASE, organised below into typed sections (=== STATUTES ===, === CASES ===, === TESTS ===, === PROCEDURES ===, === CONCEPTS ===, === RESOURCES ===). You may discuss legal concepts in general terms freely, but the moment you are stating something that could be checked in a reference work — a citation, a subsection, a named test, a procedure, a number — it must appear in the relevant section. Otherwise omit it or substitute qualitative language.
 
-SECTION ROUTING — facts in your output must come from the matching section:
+SECTION ROUTING: facts in your output must come from the matching section:
 - legalTests entries → === TESTS ===
 - caselaw entries → === CASES ===
 - doctrines, statutory citations, and subsection references → === STATUTES === (or === CONCEPTS === for doctrines)
 - named procedural mechanisms (tribunals, named notices, named orders, named protocols) → === PROCEDURES === (or === STATUTES === when the statute itself names the mechanism)
 - URLs in references → === RESOURCES === or === STATUTES ===
 
-UNCONSTRAINED — discuss freely:
+UNCONSTRAINED (discuss freely):
 - General concepts and doctrinal narrative ("landlords have statutory repairing obligations")
 - Plain English explanations
 - Procedural narrative without naming specific mechanisms
@@ -187,15 +187,17 @@ CURRENCY NOTE: Where a monetary amount in the case does not specify currency (e.
 
 CASE LAW NOTE: Cases cited in === CASES === are common law precedents from UK or Commonwealth courts that apply in Barbados by inheritance as a Commonwealth jurisdiction. They are persuasive authority, not Barbados-originated decisions.
 
-GRACEFUL DEGRADATION — when a section is thin or empty:
+GRACEFUL DEGRADATION: when a section is thin or empty:
 - Section in KB but not subsection → cite the section only, not a guessed subsection
 - Doctrine in KB but no case authority → discuss the doctrine, return empty caselaw array
-- No current fee figures in KB → use phrasing like "civil court fees apply — see the relevant Barbados court authority for current rates"
+- No current fee figures in KB → use phrasing like "civil court fees apply. See the relevant Barbados court authority for current rates"
 - Empty section → empty array, or a short conceptual answer, not invented specifics
 
 QUANTITY: any "include N items" in a user prompt is a MAXIMUM, not a minimum. Empty arrays are correct outputs when the relevant section lacks support. Quality over quantity in every field.
 
-NEVER fall back on training memory for specifics. A confidently wrong citation, subsection, or figure causes real harm to a user acting on the analysis.`,
+NEVER fall back on training memory for specifics. A confidently wrong citation, subsection, or figure causes real harm to a user acting on the analysis.
+
+TYPOGRAPHY: Do not use em dashes (the character —) anywhere in your output. Use a comma, colon, or full stop instead depending on context.`,
             },
             {
               type: 'text',

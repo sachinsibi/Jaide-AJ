@@ -47,7 +47,7 @@ export default function PersonalInjuryPage() {
           </h1>
           <p style={{ color: '#6B7280', fontSize: '0.9375rem', lineHeight: 1.7, marginBottom: '1rem' }}>
             JAIDE handles <strong style={{ color: '#073C65' }}>civil disputes</strong> in England & Wales. Personal
-            injury compensation claims — where the primary goal is damages for bodily harm — require
+            injury compensation claims (where the primary goal is damages for bodily harm) require
             specialist personal injury solicitors and fall outside what we can responsibly help with.
           </p>
           <p style={{ color: '#6B7280', fontSize: '0.9375rem', lineHeight: 1.7 }}>
@@ -65,8 +65,8 @@ export default function PersonalInjuryPage() {
             Free Personal Injury Resources
           </h2>
           {[
-            { label: 'Citizens Advice — Accidents & injuries', url: 'https://www.citizensadvice.org.uk/law-and-courts/making-a-personal-injury-claim/' },
-            { label: 'Law Society — Find a personal injury solicitor', url: 'https://solicitors.lawsociety.org.uk/' },
+            { label: 'Citizens Advice: Accidents and injuries', url: 'https://www.citizensadvice.org.uk/law-and-courts/making-a-personal-injury-claim/' },
+            { label: 'Law Society: Find a personal injury solicitor', url: 'https://solicitors.lawsociety.org.uk/' },
           ].map(link => (
             <a
               key={link.url}

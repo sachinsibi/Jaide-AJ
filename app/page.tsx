@@ -31,7 +31,7 @@ export default function Home() {
 
     if (category === 'unclear') {
       setClassifying(false);
-      setInputError(hint ?? "Please describe your situation in more detail — for example, what happened, who was involved, and what outcome you're looking for.");
+      setInputError(hint ?? "Please describe your situation in more detail. For example: what happened, who was involved, and what outcome you're looking for.");
       return;
     }
 

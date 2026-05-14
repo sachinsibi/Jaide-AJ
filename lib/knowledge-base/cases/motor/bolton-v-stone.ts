@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'motor-accident',
   title: 'Bolton v Stone [1951] AC 850 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Bolton v Stone [1951] AC 850 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1951/2.html',
   inForce: true,
@@ -14,7 +14,7 @@ const doc: KnowledgeDocument = {
   triggers: ['foreseeable', 'foreseeability', 'reasonably foreseeable', 'unforeseeable', 'remote', 'unlikely', 'risk'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'A defendant is liable in negligence only for risks that are reasonably foreseeable. The mere possibility of harm is not enough; the risk must be substantial enough that a reasonable person in the defendant\'s position would take precautions against it.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. A defendant is liable in negligence only for risks that are reasonably foreseeable. The mere possibility of harm is not enough; the risk must be substantial enough that a reasonable person in the defendant\'s position would take precautions against it.',
   content: `Bolton v Stone [1951] AC 850 (House of Lords).
 
 Facts: The claimant, Miss Stone, was struck and injured by a cricket ball hit out of the defendant cricket club's ground while she was standing on the road outside her house. Evidence showed that balls had been hit out of the ground only on six occasions in the previous 30 years, and no one had previously been struck.

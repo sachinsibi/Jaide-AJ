@@ -5,30 +5,34 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'tenancy',
   title: 'Quick v Taff-Ely BC [1986] QB 809 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Quick v Taff-Ely BC [1986] QB 809 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1985/8.html',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['damp', 'mould', 'condensation', 'disrepair', 'section 11', 'repair', 'cold', 'wet'],
+  triggers: ['damp', 'mould', 'mold', 'condensation', 'disrepair', 'repair', 'cold', 'design defect', 'inherent defect'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Section 11 LTA 1985 obligations attach to disrepair, not to inherent design defects. Condensation dampness arising solely from poor original design (single glazing, no insulation), without any element of physical disrepair to the structure, is not actionable under s.11.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. The implied landlord duty of repair attaches to disrepair — damage to or deterioration of the premises — not to inherent design defects. Condensation dampness arising solely from poor original design, without physical disrepair, is not actionable under the repairing obligation alone.',
   content: `Quick v Taff-Ely BC [1986] QB 809 (Court of Appeal).
 
-Facts: The tenant of a council house suffered severe condensation dampness caused by inadequate insulation, single-glazed metal-framed windows, and inefficient heating — all features of the original design. The walls, plaster, and decoration were extensively damaged, but the underlying structure was not in disrepair.
+Status: persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. This is an English Court of Appeal decision and is not binding Barbados law; it is applied as a statement of common law principle recognised across Commonwealth jurisdictions.
 
-Held: The Court of Appeal held that s.11 LTA 1985 is concerned with disrepair, not with making premises fit or upgrading them to modern standards. For an obligation to repair to arise, there must first be damage to or deterioration of the thing to be repaired. Where condensation arises from inherent design defects without any physical deterioration of the structure or installations, s.11 does not bite.
+Facts: the tenant of a council house suffered severe condensation dampness caused by inadequate insulation, single-glazed metal-framed windows, and inefficient heating — all features of the original design. The walls, plaster, and decoration were extensively damaged by condensation, but the underlying structure was not in disrepair.
 
-The court drew a distinction between:
-(a) installations that have deteriorated and require repair — within s.11; and
-(b) original design features that perform poorly but are not damaged — outside s.11.
+Held: the Court of Appeal held that the implied repairing obligation is concerned with disrepair — damage to or deterioration of something that was previously in a sound state. Where condensation arises from inherent design defects without any physical deterioration of the structure or installations, the repairing obligation does not arise. The court drew a distinction between:
+(a) installations that have deteriorated and require repair — within the repairing obligation; and
+(b) original design features that perform poorly but are not damaged — outside the repairing obligation.
 
-Application: Quick is the leading authority limiting s.11 in damp and condensation cases. Tenants whose damp arises from inherent design (rather than disrepair) generally now bring claims under the Homes (Fitness for Human Habitation) Act 2018 (s.9A LTA 1985), which imports the broader HHSRS standard and is not constrained by the disrepair gateway.
+Application in Barbados: the principle from Quick v Taff-Ely is relevant in Barbados when a disrepair claim is brought under the common law implied duty of repair. In a Barbados context:
 
-Note: Quick must be read alongside Staves v Leeds City Council (1992) 29 EG 119 (plaster falling away from walls is disrepair) and Issa v Hackney LBC [1997] 1 WLR 956 (limits on tort recovery for inherent defects).`,
-  tags: ['Quick-v-Taff-Ely', 'section-11', 'condensation', 'disrepair', 'inherent-defect'],
+(a) Disrepair gateway: a Barbados court considering a landlord's liability for damp or moisture-related damage would apply the principle that the repairing obligation requires physical deterioration from a previously sound state. Condensation or moisture problems caused purely by the design of the building — rather than by physical disrepair — may fall outside the strict repairing obligation.
+
+(b) Habitability claim: however, even where a repairing obligation does not arise, a habitability claim under Barbados common law may still be available where the condition of the premises — however caused — renders them unfit for human habitation. A Barbados court may distinguish between the repairing obligation and the broader duty of habitability, such that design-defect moisture problems causing health risks can still be the subject of a civil claim.
+
+(c) Evidence: in practice, conditions involving damp, mould, or moisture will often involve a combination of design features and physical deterioration, meaning the disrepair element is frequently present. Expert evidence from a suitably qualified surveyor or engineer assists in separating the two.`,
+  tags: ['Quick-v-Taff-Ely', 'condensation', 'disrepair', 'inherent-defect', 'Barbados', 'persuasive-authority', 'repair'],
 };
 
 export default doc;

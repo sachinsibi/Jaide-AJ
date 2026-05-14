@@ -1,19 +1,22 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-housing-act-2004-pt1-hhsrs',
+  id: 'statute-barbados-tenancy-fitness-standards',
   type: 'statute',
   category: 'tenancy',
-  title: 'Housing Act 2004, Part 1 — Housing Health and Safety Rating System (HHSRS)',
-  jurisdiction: 'england-wales',
-  citation: 'Housing Act 2004, Pt 1 (ss.1–54)',
-  url: 'https://www.legislation.gov.uk/ukpga/2004/34/part/1',
+  title: 'Habitability and Fitness Standards — Barbados Residential Tenancies',
+  jurisdiction: 'barbados',
+  citation: 'Common law; Landlord and Tenant Act, Cap. 230; applicable Barbados public health legislation (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
+  pinFor: ['tenancy'],
+  tabs: ['overview', 'legalBreakdown', 'references'],
   triggers: [
     'damp',
     'mould',
+    'mold',
     'cold',
     'hazard',
     'environmental health',
@@ -24,35 +27,28 @@ const doc: KnowledgeDocument = {
     'pest',
     'fire',
     'electrical',
-    'gas',
-    'asbestos',
-    'overcrowd',
+    'infestation',
+    'overcrowded',
+    'overcrowding',
   ],
-  tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'Part 1 establishes the Housing Health and Safety Rating System (HHSRS) under which local housing authorities assess 29 hazards and may serve improvement notices, prohibition orders, hazard awareness notices, or emergency remedial action notices. Authority lies with local authorities; the First-tier Tribunal (Property Chamber) sees these matters only on landlord appeal.',
-  content: `Part 1 of the Housing Act 2004 (ss.1–54) replaced the older "fitness for human habitation" standard with the Housing Health and Safety Rating System (HHSRS), a risk-based assessment of 29 prescribed hazards in residential premises. The 29 hazards include damp and mould growth, excess cold, excess heat, asbestos, biocides, carbon monoxide, lead, radiation, uncombusted fuel gas, structural collapse, fire, falls, and crowding.
+    'Barbados has no equivalent to England\'s Housing Health and Safety Rating System (HHSRS). Habitability and fitness standards for residential premises in Barbados are governed by common law implied duties, the relevant provisions of Cap. 230, and applicable Barbados public health legislation. Where a dwelling presents serious health or safety hazards, the relevant public health authority may have powers to require remedial action.',
+  content: `Habitability and Fitness Standards — Barbados Residential Tenancies:
 
-The HHSRS rates each hazard by likelihood and severity to produce a numerical score; scores are banded into ten bands (A–J). Band A–C scores are Category 1 hazards; Band D–J scores are Category 2 hazards.
+Barbados does not operate the Housing Health and Safety Rating System (HHSRS) used in England under the Housing Act 2004. There is no equivalent 29-hazard risk-scoring scheme administered by a local housing authority, and there is no First-tier Tribunal (Property Chamber) in Barbados. Instead, habitability and fitness standards for residential premises in Barbados are addressed through three overlapping frameworks:
 
-Authority and enforcement (held by the local housing authority, not the tenant):
+1. Common law implied duty of habitability: Barbados common law, as a Commonwealth jurisdiction, recognises an implied landlord obligation that residential premises are fit for human habitation. This duty is not limited to structural disrepair; it extends to conditions that render the dwelling harmful to the health or safety of occupants. Relevant hazards include serious damp and mould, defective sanitation, the absence of clean water, dangerous electrical installations, structural instability, and vermin infestation.
 
-- s.5 — duty to take "appropriate enforcement action" where a Category 1 hazard exists.
-- s.7 — power (not duty) to take action in respect of a Category 2 hazard.
+2. Landlord and Tenant Act, Cap. 230: the primary Barbados tenancy legislation provides the framework within which habitability obligations are enforced and disputes resolved. Where a premises falls short of an acceptable standard of habitation, the relevant provisions of Cap. 230 — together with common law — provide the basis for a civil claim.
 
-Available enforcement options:
-- Improvement notice (ss.11–12): requires the landlord to take specified remedial action within a specified time.
-- Prohibition order (ss.20–22): prohibits use of all or part of the premises.
-- Hazard awareness notice (ss.28–29): formally notifies the landlord of the hazard without requiring action.
-- Emergency remedial action (s.40): the authority itself does the work where the hazard poses imminent risk, and recovers cost from the landlord.
-- Demolition order or clearance area (ss.46, 289–298 HA 1985 routes).
+3. Public health and housing legislation: Barbados has public health legislation that may empower the relevant government authority (such as the Ministry responsible for Health or an Environmental Health Officer) to inspect residential premises and, where serious health or safety hazards are identified, to require the owner or landlord to take remedial action. A tenant who considers that the condition of residential premises poses a significant public health risk may approach the relevant public health authority to request an inspection.
 
-Tenant route: a tenant who suspects a Category 1 or 2 hazard contacts the local authority's environmental health department. The authority inspects, scores, and decides which (if any) action to take.
+Conditions likely to engage habitability and fitness concerns include: persistent and severe dampness or mould causing health risks; failure of sanitation facilities; absence of or contamination of water supply; infestation by vermin or insects; structural defects creating a risk of collapse or serious injury; electrical installations in a dangerous condition; and serious overcrowding.
 
-Appeals: a landlord aggrieved by an improvement notice or prohibition order appeals to the First-tier Tribunal (Property Chamber) under s.45 / Sch.1. The FTT does not issue HHSRS notices itself — its role is appellate.
+Private civil route: in addition to any public health enforcement route, a tenant may bring a civil claim before the Magistrates' Court (claims up to $10,000 BBD under Cap. 116A) or the High Court of Barbados (claims above $10,000 BBD under Cap. 117) seeking damages and/or an order requiring the landlord to remedy the conditions.
 
-This is parallel and complementary to private tenant-led claims under s.11 LTA 1985 and s.9A LTA 1985 (Fitness for Habitation Act 2018), which proceed in the County Court.`,
-  tags: ['HHSRS', 'Housing-Act-2004', 'improvement-notice', 'prohibition-order', 'category-1-hazard', 'environmental-health'],
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['fitness-standards', 'habitability', 'public-health', 'Cap-230', 'Barbados', 'damp', 'mould', 'environmental-health'],
 };
 
 export default doc;

@@ -1,56 +1,59 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-era-1996-s94',
+  id: 'statute-barbados-employment-cap23-unfair-dismissal',
   type: 'statute',
   category: 'employment',
-  title: 'Employment Rights Act 1996, s.94 — Right not to be unfairly dismissed',
-  jurisdiction: 'england-wales',
-  citation: 'Employment Rights Act 1996, s.94',
-  url: 'https://www.legislation.gov.uk/ukpga/1996/18/section/94',
+  title: 'Employment Rights Act, Cap. 23 — Right Not to be Unfairly Dismissed',
+  jurisdiction: 'barbados',
+  citation: 'Employment Rights Act, Cap. 23',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['employment'],
   tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
   factSummary:
-    'Section 94 ERA 1996 confers on employees the right not to be unfairly dismissed by their employer. The right normally requires 2 years\' continuous service (s.108) — but several "automatically unfair" categories (whistleblowing, trade-union activity, pregnancy, asserting a statutory right) attract day-one protection regardless of service.',
+    'The Employment Rights Act, Cap. 23 is the primary employment legislation in Barbados and confers on employees the right not to be unfairly dismissed. A qualifying period of continuous employment is generally required before the ordinary right to claim unfair dismissal arises, though certain categories of dismissal are treated as automatically unfair and attract protection from the first day of employment regardless of service.',
   eli5Summary:
-    'In England and Wales, once you have worked somewhere for two years, your employer cannot just fire you on a whim. They need a real reason and they must follow a fair process. For some types of unfair treatment — for example whistleblowing or being sacked while pregnant — you are protected from day one of the job, with no two-year qualifying period.',
-  content: `Section 94 Employment Rights Act 1996 is the foundation of unfair-dismissal law in England and Wales:
+    'In Barbados, the Employment Rights Act protects employees from being dismissed without a fair reason and a fair process. Most employees need to have worked for their employer for a qualifying period before they can bring an unfair dismissal claim. However, if an employee is dismissed for certain serious reasons — such as pregnancy, raising safety concerns, or union activity — the law protects them from day one of employment with no qualifying period required.',
+  content: `The Employment Rights Act, Cap. 23 is the foundational employment statute in Barbados.
 
-"An employee has the right not to be unfairly dismissed by his employer."
+Right not to be unfairly dismissed:
+
+Cap. 23 provides employees with the right not to be unfairly dismissed by their employer. This is a fundamental protection in Barbados employment law.
 
 Eligibility:
 
-1. Employee status. The right belongs to "employees" (defined s.230(1) ERA 1996), not to genuine self-employed contractors. Disputed status is decided by the multi-factor test (Ready Mixed Concrete v Minister of Pensions [1968] 2 QB 497; Pimlico Plumbers v Smith [2018] UKSC 29).
+1. Employee status. The right belongs to employees in an employment relationship recognised under Barbados law. The distinction between an employee and an independent contractor is determined by the overall circumstances of the working relationship, including control, integration, and the terms on which work is performed.
 
-2. Two years' continuous service. Section 108 ERA 1996 requires two years' continuous employment as the qualifying period for the ordinary right not to be unfairly dismissed.
+2. Qualifying period. The ordinary right to claim unfair dismissal generally requires a period of continuous employment. The specific qualifying period is set out in the relevant provisions of Cap. 23 — parties should consult the current text of the legislation at laws.barbados.gov.bb for the applicable period.
 
-3. Day-one protection — automatically unfair categories. Section 108 does NOT apply where the dismissal is "automatically unfair." These categories require no qualifying period:
+3. Day-one protection — certain categories of dismissal. For certain categories, protection applies from the first day of employment with no qualifying period. Under Barbados employment law, dismissal connected to the following is generally treated as automatically unfair:
 
-(a) Pregnancy or maternity leave (s.99).
-(b) Health and safety reasons (s.100).
-(c) Working time rights (s.101A).
-(d) Trade union membership / activity (s.152 TULRCA 1992).
-(e) Whistleblowing / protected disclosures (s.103A; ERA 1996 Pt IVA).
-(f) Asserting a statutory right (s.104).
-(g) Family leave (s.99 — paternity, adoption, parental, dependants).
-(h) Jury service (s.98B).
-(i) Pension auto-enrolment (s.104D).
+   (a) Pregnancy or maternity-related reasons.
+   (b) Trade union membership or activity.
+   (c) Whistleblowing or raising legitimate concerns about workplace matters.
+   (d) Asserting rights under Cap. 23 or other employment legislation.
+   (e) Health and safety-related activity.
 
-For "automatically unfair" reasons, the dismissal is unfair without need to consider the s.98(4) reasonableness test.
+   Parties should consult Cap. 23 and any related Barbados legislation for the current list of automatically unfair categories.
 
-What counts as "dismissal" (s.95 ERA 1996):
+What counts as dismissal:
 
 (a) Termination by the employer with or without notice.
 (b) Expiry of a fixed-term contract not renewed.
-(c) Constructive dismissal — where the employee resigns in response to the employer's repudiatory breach.
+(c) Constructive dismissal — where the employee resigns in response to a fundamental breach of contract by the employer (a common law principle applied in Barbados).
 
-Time limit: claims must be presented to the Employment Tribunal within 3 months less 1 day of the effective date of termination (s.111 ERA 1996), subject to ACAS Early Conciliation extension. Extension beyond strict time limit only where not reasonably practicable (s.111(2)(b)) — narrow.
+Remedies:
 
-Remedies (s.112 onwards): reinstatement; re-engagement; compensation (basic award + compensatory award, statutory cap on the compensatory award reviewed annually).`,
-  tags: ['ERA-1996', 'section-94', 'unfair-dismissal', 'two-year-qualifying-period', 'automatically-unfair'],
+Where an unfair dismissal is established, remedies include reinstatement, re-engagement, or compensation. Claims may be pursued through the Labour Department (Chief Labour Officer) for conciliation or through the civil courts. Specifically:
+
+- Claims up to $10,000 BBD (approximately $5,000 USD at the 2:1 BBD/USD peg) are within the jurisdiction of the Magistrates' Court (Cap. 116A).
+- Claims above $10,000 BBD are brought in the High Court of Barbados (Cap. 117).
+
+Time limits for bringing claims are governed by the applicable limitation provisions under Barbados law. Parties should confirm current limitation periods with a Barbados-qualified legal practitioner or through the Labour Department.`,
+  tags: ['Cap-23', 'unfair-dismissal', 'Barbados', 'employment-rights', 'qualifying-period', 'automatically-unfair'],
 };
 
 export default doc;

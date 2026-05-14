@@ -35,11 +35,66 @@ const INITIAL_STATE: TabsState = {
   references: { status: 'loading' },
 };
 
+const LOADING_MESSAGES = [
+  'Reviewing applicable Barbados law…',
+  'Identifying relevant statutes…',
+  'Preparing your legal overview…',
+  'Cross-referencing case law…',
+  'Building your analysis…',
+];
+
+function LoadingScreen() {
+  const [msgIndex, setMsgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setMsgIndex(i => (i + 1) % LOADING_MESSAGES.length);
+    }, 2200);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div style={{
+      minHeight: '100vh', background: 'linear-gradient(to bottom, #E6F2FA 0%, #F5FAFD 60%, white 100%)',
+      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+      gap: '1.5rem',
+    }}>
+      <div style={{
+        width: '64px', height: '64px', borderRadius: '1rem',
+        background: '#073C65', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        boxShadow: '0 8px 24px rgba(7, 60, 101, 0.3)',
+        animation: 'pulse-scale 2s ease-in-out infinite',
+      }}>
+        <span style={{ color: '#C9A84C', fontWeight: 900, fontSize: '1.75rem', letterSpacing: '-0.02em' }}>J</span>
+      </div>
+      <div style={{ textAlign: 'center' }}>
+        <p style={{ color: '#073C65', fontWeight: 700, fontSize: '1.0625rem', marginBottom: '0.5rem' }}>
+          {LOADING_MESSAGES[msgIndex]}
+        </p>
+        <p style={{ color: '#9CA3AF', fontSize: '0.875rem' }}>This usually takes 10–20 seconds</p>
+      </div>
+      <div style={{ display: 'flex', gap: '0.5rem' }}>
+        {[0, 1, 2].map(i => (
+          <div key={i} style={{
+            width: '8px', height: '8px', borderRadius: '50%', background: '#073C65',
+            animation: `bounce 1.2s ease-in-out ${i * 0.2}s infinite`,
+          }} />
+        ))}
+      </div>
+      <style>{`
+        @keyframes pulse-scale { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); opacity: 0.4; } 50% { transform: translateY(-6px); opacity: 1; } }
+      `}</style>
+    </div>
+  );
+}
+
 export function AnalysisScreen() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<AnalysisTab>('overview');
   const [tabs, setTabs] = useState<TabsState>(INITIAL_STATE);
   const [caseData, setCaseData] = useState<Record<string, string>>({});
+  const [isInitialising, setIsInitialising] = useState(true);
   const startedRef = useRef(false);
 
   useEffect(() => {
@@ -63,6 +118,7 @@ export function AnalysisScreen() {
       const cached = sessionStorage.getItem(cacheKey);
       if (cached) {
         setTabs(s => ({ ...s, [tab]: { status: 'ready', data: JSON.parse(cached) } }));
+        setIsInitialising(false);
         return;
       }
 
@@ -87,9 +143,11 @@ export function AnalysisScreen() {
         const data = JSON.parse(jsonText);
         sessionStorage.setItem(cacheKey, JSON.stringify(data));
         setTabs(s => ({ ...s, [tab]: { status: 'ready', data } }));
+        setIsInitialising(false);
       } catch (err) {
         console.error(`[analysis:${tab}]`, err);
         setTabs(s => ({ ...s, [tab]: { status: 'error' } }));
+        setIsInitialising(false);
       }
     };
 
@@ -100,6 +158,8 @@ export function AnalysisScreen() {
       fetchTab('references'),
     ]);
   }, [router]);
+
+  if (isInitialising) return <LoadingScreen />;
 
   const scenario = caseData.scenario ?? caseData.initial ?? '';
   const category = (caseData.category ?? 'general-civil') as IncidentCategory;

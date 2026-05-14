@@ -10,14 +10,16 @@ import govUkMoneyClaim from './resources/gov-uk-money-claim';
 import tradingStandards from './resources/trading-standards';
 import acas from './resources/acas';
 import ico from './resources/ico';
+import barbadosLegalResources from './resources/barbados-legal-resources';
 
 export const resourceDocuments: KnowledgeDocument[] = [
+  barbadosLegalResources,
+  mib,
+  bailii,
   shelter,
   citizensAdvice,
   govUkEviction,
   legislationGovUk,
-  bailii,
-  mib,
   govUkMoneyClaim,
   tradingStandards,
   acas,

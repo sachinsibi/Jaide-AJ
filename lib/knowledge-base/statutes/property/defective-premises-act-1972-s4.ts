@@ -1,36 +1,46 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-defective-premises-act-1972-s4',
+  id: 'statute-barbados-property-landlord-defective-premises',
   type: 'statute',
   category: 'property-damage',
-  title: 'Defective Premises Act 1972, s.4 — Landlord/occupier duty of care for defects',
-  jurisdiction: 'england-wales',
-  citation: 'Defective Premises Act 1972, s.4',
-  url: 'https://www.legislation.gov.uk/ukpga/1972/35/section/4',
+  title: "Landlord's Duty Regarding Defective Premises — Barbados Common Law",
+  jurisdiction: 'barbados',
+  citation: 'Common law duty of care; Barbados inherited common law',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['property-damage'],
   tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'Where a landlord has an obligation or right (express or implied) to repair or maintain the premises, s.4 imposes a duty to all persons who might reasonably be expected to be affected by defects in the state of the premises to take reasonable care to see they are reasonably safe from personal injury or damage to property caused by relevant defects.',
-  content: `Section 4 of the Defective Premises Act 1972 imposes a statutory duty of care on a landlord (or any person with a power or obligation to repair or maintain the premises) for the benefit of "all persons who might reasonably be expected to be affected by defects in the state of the premises". The duty arises where the landlord knew, or ought in all the circumstances to have known, of the defect (s.4(2)).
+    'In Barbados, a landlord may owe a duty of care at common law where defective premises cause damage to third parties or adjacent property. There is no confirmed statutory equivalent in Barbados to the English Defective Premises Act 1972 s.4. The common law duty, inherited as part of Barbados law as a Commonwealth jurisdiction, applies to landlords who retain a right or obligation to repair or maintain premises. Parties are advised to consult laws.barbados.gov.bb for any relevant Barbados statute governing landlord duties.',
+  content: `In Barbados, the duty of care owed by a landlord in respect of defective premises is governed by the inherited common law of negligence, as applied in Barbados as a Commonwealth jurisdiction. There is no confirmed statutory provision in Barbados equivalent to the English Defective Premises Act 1972 s.4.
 
-Trigger (s.4(1) and (4)): the duty applies where the landlord either is under an obligation to the tenant to repair or maintain the premises, or has a right (whether under the lease or otherwise) to enter to carry out repair or maintenance. A "relevant defect" means a defect in the state of the premises arising from, or continuing because of, the landlord's failure to perform that repairing obligation or right.
+Common law duty — general principles:
 
-Standard: the landlord must take such care as is reasonable in all the circumstances to see that those affected are reasonably safe from personal injury or damage to property caused by a relevant defect.
+Where a landlord retains an obligation or a right (whether express or implied) to repair or maintain premises, the common law may impose a duty of care for the benefit of persons who might reasonably be expected to be affected by defects in those premises. This duty can extend to:
 
-Beneficiaries: the duty extends beyond the tenant to anyone reasonably expected to be affected — visitors, the tenant's family, contractors, guests, neighbours, passers-by struck by falling masonry. It is not confined to those with a contractual or proprietary connection.
+- Tenants and their household members
+- Visitors to the demised premises
+- Neighbouring landowners and occupiers who suffer damage caused by the escape of a hazard from the defective premises
+- Passers-by affected by structural failure (falling masonry, collapsing boundary walls)
 
-Property damage: although s.4 is most commonly invoked in personal-injury cases, the section in terms covers "damage to property" caused by a relevant defect. A neighbouring owner whose property is damaged by, for example, a falling wall or escape of water from poorly maintained pipes may have a s.4 claim against the landlord-owner of the source premises in addition to nuisance and Rylands v Fletcher.
+The duty requires the landlord to take such care as is reasonable in all the circumstances to ensure that the premises do not present an unreasonable risk of harm. Knowledge of the defect (actual or constructive) is a relevant factor — a landlord who knew or ought to have known of a defect and failed to remedy it is more readily exposed to liability.
 
-Knowledge requirement (s.4(2)): liability arises where the landlord knew or ought to have known of the defect. Constructive knowledge is assessed by reference to what a reasonable landlord would have discovered through proper inspection cycles.
+Property damage:
 
-Limits and overlaps: s.4 does not displace common-law duties in negligence or nuisance. Where the tenant is the source of the defect and the landlord has a right to enter and remedy it, the landlord may still be exposed.
+A neighbouring owner whose property is damaged by, for example, a falling wall, leaking pipes, or the escape of water from poorly maintained premises on the landlord's side may have a claim in negligence against the landlord in addition to potential claims in nuisance or under the principle in Rylands v Fletcher (persuasive common law authority applied in Barbados).
 
-Limitation: 6 years for property damage (LA 1980 s.2).`,
-  tags: ['DPA-1972', 'section-4', 'landlord-duty', 'property-damage', 'statutory-duty'],
+Overlapping causes of action:
+
+Common law negligence does not exclude nuisance or strict liability principles. Where the defect causes an ongoing hazard, a nuisance claim may run concurrently. Where the landlord has accumulated something on the premises that escapes because of the defect, the Rylands v Fletcher principle (as persuasive authority in Barbados) may also be relevant.
+
+Limitation:
+
+Claims in tort (including negligence) are subject to the applicable Barbados limitation period, generally 6 years from when the cause of action accrues. Parties should consult current Barbados legislation — available at laws.barbados.gov.bb — for the precise limitation period and any relevant landlord and tenant provisions.
+
+Note: Barbados may have building, housing, or property maintenance legislation that imposes additional obligations on landlords. The laws.barbados.gov.bb portal should be consulted for current statutory provisions.`,
+  tags: ['landlord-duty', 'defective-premises', 'common-law-negligence', 'property-damage', 'barbados'],
 };
 
 export default doc;

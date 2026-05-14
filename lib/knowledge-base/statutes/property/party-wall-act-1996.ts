@@ -1,39 +1,52 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-party-wall-act-1996',
+  id: 'statute-barbados-property-boundary-disputes',
   type: 'statute',
   category: 'property-damage',
-  title: 'Party Wall etc. Act 1996',
-  jurisdiction: 'england-wales',
-  citation: 'Party Wall etc. Act 1996',
-  url: 'https://www.legislation.gov.uk/ukpga/1996/40/contents',
+  title: 'Boundary and Neighbour Disputes — Barbados Civil Law',
+  jurisdiction: 'barbados',
+  citation: 'Common law; Barbados Supreme Court of Judicature Act (Cap. 117); Barbados civil courts',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['party wall', 'neighbour building', 'extension next door', 'foundations', 'shared wall', 'boundary wall', 'excavation'],
+  triggers: ['party wall', 'neighbour building', 'extension next door', 'foundations', 'shared wall', 'boundary wall', 'excavation', 'neighbour works'],
   tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'Governs notifiable works to party walls, party structures, boundary walls, and excavations near neighbouring buildings. Building owners must serve statutory notice; where the adjoining owner dissents or fails to respond, a "dispute" arises that is resolved by party wall surveyors who issue a binding award. The Act imposes liability for damage caused by notifiable works.',
-  content: `The Party Wall etc. Act 1996 regulates works to (a) party walls and party structures (s.2), (b) new walls at or astride the line of junction (s.1), and (c) excavations within 3 m or 6 m of a neighbouring building below specified depths (s.6).
+    'Barbados has no equivalent to the English Party Wall etc. Act 1996. Where a neighbour carries out works affecting a shared boundary or party structure, the affected party\'s remedies lie in the civil courts — through injunction (sought from the High Court of Barbados) or damages in negligence or nuisance. Parties are encouraged to resolve boundary disputes through negotiation or mediation before commencing proceedings.',
+  content: `Boundary and Neighbour Disputes — Barbados Civil Law
 
-Notice requirements:
-- Section 1 (line-of-junction): 1 month's notice to the adjoining owner.
-- Section 2 (works to existing party walls / structures — cutting in, raising, underpinning, removing chimney breasts, inserting beams): 2 months' notice.
-- Section 6 (excavations near neighbouring buildings): 1 month's notice with section drawings.
+No Party Wall Act equivalent:
 
-The notice must describe the proposed works, indicate start date, and offer particulars. The adjoining owner has 14 days to respond. Silence after 14 days is treated as dissent (s.5), and a dispute is deemed to arise.
+Barbados does not have a statutory equivalent to the English Party Wall etc. Act 1996. There is no prescribed notice procedure, no party wall surveyor mechanism, and no statutory award process for works affecting shared boundaries or party structures. Parties whose interests are affected by a neighbour's building works must rely on the civil law of negligence, nuisance, and trespass, and on the jurisdiction of the civil courts.
 
-Dispute resolution (s.10): where a dispute arises, parties either (a) agree on a single "agreed surveyor", or (b) each appoint their own surveyor, who together select a third surveyor as referee. The surveyor(s) issue a written "award" determining the right to do the work, the time and manner of execution, and any matter incidental to or arising out of the dispute (including security for expenses, working hours, protection of the adjoining property, and compensation).
+Available remedies through the civil courts:
 
-Awards are binding subject to a 14-day right of appeal to the County Court (s.10(17)). The award is conclusive and not, save on appeal, open to challenge.
+1. Injunction (High Court of Barbados). Where a neighbour proposes or has commenced works that threaten damage to or interference with the affected party's property, an application may be made to the High Court of Barbados for an injunction to restrain those works. An injunction may be granted on an urgent (without notice) basis where immediate damage is threatened. Claims above BBD $10,000 (approximately USD $5,000 at the 2:1 peg) are brought in the High Court of Barbados under Cap. 117 (Supreme Court of Judicature Act).
 
-Liability and damage: s.7(2) imposes a statutory obligation on the building owner to compensate the adjoining owner for any loss or damage which may result from notifiable works. This is a strict liability for damage caused by the works — the adjoining owner does not need to prove negligence. Cost of repair, loss of rental income during reinstatement, and surveyor fees fall within compensable loss.
+2. Damages in negligence. Where a neighbour's works have been carried out negligently and have caused damage to the affected party's property — for example, undermining foundations, damaging shared walls, or causing subsidence — a claim in negligence may lie. The affected party must show that the neighbour owed a duty of care, breached it, and caused foreseeable damage.
 
-Failure to serve notice: working without notice is a breach actionable in trespass and in common-law nuisance/negligence; the adjoining owner can apply for an injunction restraining further works (Roadrunner Properties v Dean [2003] EWCA Civ 1816).
+3. Damages in private nuisance. Where the works constitute an unreasonable interference with the affected party's use and enjoyment of land, a claim in private nuisance may lie. This includes vibration cracking walls, interference with drainage, and encroachment of structures. Private nuisance principles derived from the inherited common law apply in Barbados as a Commonwealth jurisdiction.
 
-Surveyor fees: the building owner ordinarily pays both surveyors' reasonable fees (s.10(13)). This makes the Act the cheapest neighbour-construction-dispute pathway and the route of first resort.`,
-  tags: ['party-wall', 'PWA-1996', 'notifiable-works', 'surveyor-procedure', 'compensation'],
+4. Trespass to land. Where building works physically encroach on the affected party's land without consent — scaffolding, cranes, materials placed on or overhanging the property — a claim in trespass to land may arise. Trespass is actionable per se without proof of damage.
+
+Magistrates' Court and High Court:
+
+Claims for property damage up to BBD $10,000 (approximately USD $5,000) may be brought in the Magistrates' Court of Barbados under Cap. 116A (Magistrates' Court Act). Claims above that threshold are brought in the High Court of Barbados.
+
+Practical approach:
+
+Before commencing proceedings, parties are encouraged to:
+
+1. Communicate concerns to the neighbour in writing, identifying the works at issue and the harm threatened or caused.
+2. Attempt to negotiate an agreed solution or commission an independent building assessment.
+3. Consider mediation through a recognised Barbados mediation service.
+4. Seek advice from the Barbados Bar Association (barbadosbar.org) if negotiation fails.
+
+Evidence:
+
+Pre-works photographic record and independent survey (building surveyor or structural engineer) are important for establishing the baseline condition of the affected property and attributing any subsequent damage to the neighbour's works.`,
+  tags: ['boundary-disputes', 'neighbour-works', 'no-party-wall-act', 'barbados', 'high-court', 'nuisance', 'injunction'],
 };
 
 export default doc;

@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general',
   title: 'Overseas Tankship (UK) Ltd v Morts Dock & Engineering Co (The Wagon Mound No 1) [1961] AC 388 (PC)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Overseas Tankship (UK) Ltd v Morts Dock & Engineering Co Ltd (The Wagon Mound No 1) [1961] AC 388 (PC)',
   url: 'https://www.bailii.org/uk/cases/UKPC/1961/1.html',
   inForce: true,
@@ -14,7 +14,7 @@ const doc: KnowledgeDocument = {
   triggers: ['remoteness', 'too remote', 'unforeseeable damage', 'consequential', 'type of damage', 'extent of damage', 'foreseeable'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Damages for negligence are recoverable only if the type (kind) of damage was reasonably foreseeable. The exact extent need not be foreseeable — the thin-skull rule survives — but damage of a different kind is too remote and not recoverable.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. Damages for negligence are recoverable only if the type (kind) of damage was reasonably foreseeable. The exact extent need not be foreseeable — the thin-skull rule survives — but damage of a different kind is too remote and not recoverable.',
   content: `Overseas Tankship (UK) Ltd v Morts Dock & Engineering Co Ltd (The Wagon Mound No 1) [1961] AC 388 (Privy Council, on appeal from New South Wales — adopted as English law by the House of Lords in subsequent cases).
 
 Facts: The defendants negligently spilt a quantity of furnace oil from their ship into Sydney Harbour. The oil drifted to the claimants' wharf, where welding work was being undertaken. The claimants were initially advised that the oil could not be ignited by welding sparks on cold water. Two days later, the oil ignited (after molten metal fell on a piece of cotton waste floating in the oil) and a serious fire damaged the wharf and ships under repair.

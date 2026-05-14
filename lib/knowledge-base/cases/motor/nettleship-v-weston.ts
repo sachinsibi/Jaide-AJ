@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'motor-accident',
   title: 'Nettleship v Weston [1971] 2 QB 691 (CA)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Nettleship v Weston [1971] 2 QB 691 (CA)',
   url: 'https://www.bailii.org/ew/cases/EWCA/Civ/1971/6.html',
   inForce: true,
@@ -14,7 +14,7 @@ const doc: KnowledgeDocument = {
   pinFor: ['motor-accident'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'The standard of care expected of a driver is the objective standard of the reasonably competent and experienced driver. A learner, novice, or otherwise inexperienced driver is held to the same standard as a fully competent driver. A driver\'s subjective lack of skill is not a defence.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. The standard of care expected of a driver is the objective standard of the reasonably competent and experienced driver. A learner, novice, or otherwise inexperienced driver is held to the same standard as a fully competent driver. A driver\'s subjective lack of skill is not a defence.',
   content: `Nettleship v Weston [1971] 2 QB 691 (Court of Appeal).
 
 Facts: The defendant, Mrs Weston, was a learner driver receiving instruction from a friend, Mr Nettleship. On her third lesson, she lost control of the car, mounted the kerb, and struck a lamp post. Mr Nettleship suffered a broken kneecap. She admitted the failure was due to inexperience but argued she should be judged by the standard of a reasonable learner, not a fully competent driver.

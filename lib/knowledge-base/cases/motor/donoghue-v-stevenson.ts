@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'general',
   title: 'Donoghue v Stevenson [1932] AC 562 (HL)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   citation: 'Donoghue v Stevenson [1932] AC 562 (HL)',
   url: 'https://www.bailii.org/uk/cases/UKHL/1932/100.html',
   inForce: true,
@@ -14,7 +14,7 @@ const doc: KnowledgeDocument = {
   pinFor: ['motor-accident', 'property-damage', 'general-civil'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Foundational authority for the modern tort of negligence. Lord Atkin\'s "neighbour principle": one must take reasonable care to avoid acts or omissions that one can reasonably foresee would be likely to injure one\'s neighbour — i.e., persons so closely and directly affected by the act that one ought reasonably to have them in contemplation.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. Foundational case for the modern tort of negligence. Lord Atkin\'s "neighbour principle": one must take reasonable care to avoid acts or omissions that one can reasonably foresee would be likely to injure one\'s neighbour — i.e., persons so closely and directly affected by the act that one ought reasonably to have them in contemplation.',
   content: `Donoghue v Stevenson [1932] AC 562 (House of Lords).
 
 Facts: Mrs Donoghue was given a bottle of ginger beer at a café in Paisley. The bottle was opaque. After drinking part of it, she discovered the decomposed remains of a snail in the bottle. She fell ill. Because she had not bought the drink herself, she had no contract with either the café or the manufacturer (Stevenson) and could not sue in contract. She sued the manufacturer in negligence.

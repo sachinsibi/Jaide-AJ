@@ -1,47 +1,70 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-environmental-health-hhsrs',
+  id: 'procedure-barbados-public-health-housing-inspection',
   type: 'procedure',
   category: 'tenancy',
-  title: 'Environmental Health / HHSRS Route',
-  jurisdiction: 'england-wales',
-  citation: 'Housing Act 2004, Pt 1; HHSRS Operating Guidance (ODPM 2006)',
-  url: 'https://www.gov.uk/government/publications/housing-health-and-safety-rating-system-guidance-for-landlords-and-property-related-professionals',
+  title: 'Public Health and Housing Inspection Route — Barbados',
+  jurisdiction: 'barbados',
+  citation: 'Applicable Barbados public health legislation; Landlord and Tenant Act, Cap. 230 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['tenancy'],
   tabs: ['overview', 'legalBreakdown'],
+  triggers: [
+    'damp',
+    'mould',
+    'mold',
+    'environmental health',
+    'public health',
+    'unfit',
+    'unsafe',
+    'rats',
+    'mice',
+    'pest',
+    'infestation',
+    'inspection',
+    'government',
+  ],
   factSummary:
-    'Tenant route via the local authority\'s Environmental Health team: complain in writing → officer inspects under the HHSRS → authority decides whether to serve an improvement notice, prohibition order, hazard awareness notice, or take emergency remedial action. Parallel and complementary to a private County Court claim under s.11 / s.9A LTA 1985.',
-  content: `Environmental Health / HHSRS route (Housing Act 2004, Part 1):
+    'Where residential premises in Barbados present conditions raising public health or safety concerns, a complaint may be made to the relevant public health authority — such as the Ministry responsible for Health or an Environmental Health Officer. There is no HHSRS equivalent in Barbados; the applicable enforcement powers are those conferred by the relevant Barbados public health legislation. This route runs parallel to, not instead of, a private civil claim.',
+  content: `Public Health and Housing Inspection Route — Barbados:
 
-This is the local-authority enforcement track for unfit or hazardous housing, run in parallel to (not instead of) a tenant's private claim. Authority lies with the local authority — not the tenant, and not the First-tier Tribunal (which only sees these matters on landlord appeal).
+Barbados does not operate the Housing Health and Safety Rating System (HHSRS) used in England under the Housing Act 2004. There is no equivalent 29-hazard risk-scoring scheme or specialist housing authority in Barbados with the specific enforcement powers that English local authorities have under that Act. However, Barbados public health and housing legislation provides for government oversight of housing conditions where those conditions present public health or safety risks.
 
-Step-by-step:
+The relevant authority:
 
-1. Tenant complains in writing to the landlord, identifying the conditions and asking for action. Keep proof of receipt — this is foundational both for the s.11 notice requirement and for s.33 retaliatory-eviction protection.
+In Barbados, the relevant public health authority — which may include the Ministry responsible for Health, Environmental Health Officers (EHOs), or another competent authority designated under applicable Barbados legislation — may have powers to inspect residential premises and to require remedial action where conditions are found to present a public health risk.
 
-2. If the landlord does not respond adequately within 14 days, the tenant complains to the local housing authority's Environmental Health team. (Most councils have a "report a housing problem" web form.)
+Tenants who believe residential premises present a significant health or safety hazard — including severe damp and mould, structural dangers, defective sanitation, dangerous electrical installations, or serious vermin infestation — may approach the relevant public health authority to request an inspection.
 
-3. An Environmental Health Officer (EHO) inspects the dwelling and assesses each potential hazard against the 29 prescribed hazards under the HHSRS. Each hazard is scored on likelihood and severity to produce a numerical band:
-   - Bands A–C → Category 1 hazard.
-   - Bands D–J → Category 2 hazard.
+Recommended steps:
 
-4. The authority decides what enforcement action (if any) to take:
-   - Improvement notice (HA 2004 ss.11–12): requires specified works within a specified time. Mandatory for Category 1; discretionary for Category 2.
-   - Prohibition order (ss.20–22): prohibits use of all or part of the premises.
-   - Hazard awareness notice (ss.28–29): formal notification, no compulsion.
-   - Emergency remedial action (s.40): authority does the work itself for imminent risk; recovers cost from landlord.
-   - Demolition order or clearance area (rare).
+Step 1 — Written complaint to the relevant public health authority.
+A written complaint identifying the address of the premises and describing the conditions is the appropriate starting point. The complaint should be supported, where possible, by photographs, a description of health effects experienced, and a summary of prior correspondence with the landlord.
 
-5. Service of an improvement notice or s.40 emergency notice triggers the s.33 Deregulation Act 2015 retaliatory-eviction protection — any s.21 notice given within 6 months is invalid (subject to s.34 exceptions and verification of current s.21 status).
+Step 2 — Inspection.
+An Environmental Health Officer or equivalent official may inspect the premises and assess the conditions against the applicable public health and housing standards under Barbados law.
 
-6. Landlord appeal route: a landlord aggrieved by an improvement notice or prohibition order may appeal to the First-tier Tribunal (Property Chamber) within 21 days under HA 2004 Sch.1. The FTT may confirm, vary, or quash the notice.
+Step 3 — Enforcement action (if applicable).
+If the inspector identifies conditions that breach the applicable public health or housing standards, the relevant authority may:
+(a) require the landlord (formally or informally) to carry out specified remedial works within a stated period;
+(b) issue a formal notice or order under the applicable statutory powers;
+(c) take other enforcement steps available under Barbados public health legislation.
 
-This track is free to the tenant. It is parallel and complementary to a private claim in the County Court under s.11 / s.9A LTA 1985 and the Pre-Action Protocol for Housing Conditions Claims; both can run at once.`,
-  tags: ['environmental-health', 'HHSRS', 'improvement-notice', 'category-1-hazard', 'local-authority'],
+Step 4 — Report and evidence.
+Any inspection report or official findings produced by the public health authority constitute valuable independent evidence for a civil claim. A tenant who subsequently brings proceedings before the Magistrates' Court or High Court of Barbados for disrepair or habitability defects should obtain copies of all inspection findings and official correspondence.
+
+Relationship to civil proceedings:
+
+The public health enforcement route is parallel to, not a substitute for, a private civil claim. Both routes may run simultaneously. A landlord who fails to comply with a public health authority requirement may also face separate civil liability to the tenant for breach of the implied duty of habitability and repair.
+
+Note: the precise enforcement powers of the relevant Barbados public health authority depend on the applicable legislation in force. Parties seeking specific information about the enforcement regime should consult the Laws of Barbados portal at laws.barbados.gov.bb.
+
+Currency note: all monetary amounts in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['public-health', 'environmental-health', 'inspection', 'Barbados', 'Cap-230', 'habitability', 'housing-standards'],
 };
 
 export default doc;

@@ -1,41 +1,48 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-county-court-general-civil',
+  id: 'procedure-civil-court-proceedings-barbados',
   type: 'procedure',
   category: 'general-civil',
-  title: 'County Court — general civil claims (money and injunctions)',
-  jurisdiction: 'england-wales',
-  citation: 'Civil Procedure Rules, Parts 7, 26, 35',
-  url: 'https://www.gov.uk/make-court-claim-for-money',
+  title: 'Civil Court Proceedings — Barbados',
+  jurisdiction: 'barbados',
+  citation: 'Cap. 116A — Magistrates\' Court Act (Barbados); Cap. 117 — Supreme Court of Judicature Act (Barbados)',
+  url: 'https://supremecourt.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['general-civil'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'General civil claims for money and/or injunctions are issued in the County Court. Money Claim Online (MCOL) for liquidated sums ≤£100,000; Form N1 for unliquidated or injunctive claims. Track allocation: small claims (≤£10,000); fast track (£10,000–£25,000); multi-track (£25,000+). Defamation: typically multi-track; high-value cases may go to the Media and Communications List in the King\'s Bench Division.',
-  content: `Forum: County Court Money Claims Centre (CCMCC) for money claims. Local County Court hearing centre for hearings and injunctions.
+    'Civil money claims in Barbados are brought in the Magistrates\' Court (up to $10,000 BBD) or the High Court of Barbados (above $10,000 BBD). The Court of Appeal hears appeals from the High Court. The High Court also has exclusive jurisdiction over injunctions and complex civil matters. Currency is BBD, pegged approximately 2:1 to the US Dollar.',
+  content: `Forum for civil claims in Barbados:
 
-Issue routes:
-(a) Money Claim Online (MCOL): liquidated sums ≤£100,000 against up to 2 defendants. Suitable for defined-sum harassment damages or data breach compensation.
-(b) Form N1: unspecified-sum claims (harassment, defamation, privacy where damages not yet quantified), more than 2 defendants, or where injunctive relief is also sought.
+Magistrates' Court (Cap. 116A — Magistrates' Court Act): the Magistrates' Court has jurisdiction over civil money claims up to $10,000 BBD. Procedure is generally more informal and less expensive than the High Court. Representation by an attorney is not mandatory but is advisable. The Magistrates' Court does not have the same broad jurisdiction as the High Court to grant injunctions in civil matters.
 
-Track allocation (CPR 26):
-- Small claims — ≤£10,000. Informal hearings in chambers; no legal cost recovery. Low-value harassment or contract disputes.
-- Fast track — £10,000–£25,000. Standard cost recovery; single trial day; expert evidence by permission.
-- Multi-track — £25,000+ or complex. Full disclosure, witness statements, expert evidence, case management conferences. Most defamation, privacy, and data protection cases will be multi-track regardless of value due to legal complexity.
+High Court of Barbados (Cap. 117 — Supreme Court of Judicature Act): the High Court has general civil jurisdiction over all claims above $10,000 BBD, and exclusive jurisdiction for injunctions, complex civil matters, and claims requiring substantial equitable relief. The High Court is the appropriate forum for defamation, privacy, harassment (injunction), and data protection claims regardless of value, given the legal complexity involved.
 
-High Court option: defamation and privacy claims may be issued in the King's Bench Division / Media and Communications List where the claim is of sufficient importance or involves a High Court point. Minimum value not specified but costs exposure is high — appropriate only for substantial claims.
+Court of Appeal: the appellate court for decisions of the High Court of Barbados. Further appeal may lie to the Caribbean Court of Justice or, in appropriate cases, the Privy Council, depending on Barbados's current appellate structure.
 
-Injunctions (County Court jurisdiction, s.38 County Courts Act 1984): the County Court can grant prohibitory injunctions (restraining harassment, publication) and mandatory injunctions. For anti-harassment injunctions under PHA 1997 s.3, the County Court has full jurisdiction.
+General procedure for civil claims (High Court):
 
-Interim injunctions: American Cyanamid test — serious question to be tried; damages would not be an adequate remedy; balance of convenience. Applicant gives undertaking in damages.
+Commencement: a civil claim is commenced by filing a claim form (or originating process in the appropriate form) with the High Court Registry, accompanied by a statement of claim setting out the facts relied on, the legal basis for the claim, and the remedy sought.
 
-Defence: 14 days to acknowledge service; 28 days to serve defence (with acknowledgment). Default judgment available for non-response.
+Service: the claim form and statement of claim are served on the defendant. The defendant has a specified period within which to acknowledge service and file a defence.
 
-Enforcement: warrant of control; attachment of earnings; third-party debt order; charging order.`,
-  tags: ['County-Court', 'CPR', 'small-claims', 'fast-track', 'multi-track', 'injunction', 'general-civil'],
+Defence: the defendant files a defence addressing each allegation and identifying contested issues. A defendant may also file a counter-claim where they assert a claim against the claimant arising from the same facts.
+
+Case management: the court manages the timetable for the proceedings, including directions for exchange of evidence, witness statements, and expert reports where required.
+
+Trial: the parties present their evidence and legal arguments. The judge determines the facts on the balance of probabilities and applies the relevant law.
+
+Judgment and enforcement: where judgment is entered for the claimant, enforcement mechanisms include seizure and sale of the defendant's assets, garnishment of bank accounts, and charging orders over property.
+
+Currency: monetary claims and judgments in Barbados civil proceedings are expressed in Barbados Dollars (BBD). The BBD is pegged at approximately 2:1 to the US Dollar.
+
+Injunctions: only the High Court of Barbados can grant injunctions in civil proceedings. Interim injunctions (pending trial) may be applied for urgently, including without notice to the defendant in cases of urgency. The applicant gives an undertaking in damages.
+
+Note: specific procedural rules for Barbados civil proceedings, court fees, and filing requirements should be verified at the Barbados Supreme Court website (supremecourt.gov.bb) and the Laws of Barbados portal (laws.barbados.gov.bb).`,
+  tags: ['civil-procedure', 'Magistrates-Court', 'High-Court-Barbados', 'injunction', 'money-claim', 'BBD', 'Barbados'],
 };
 
 export default doc;

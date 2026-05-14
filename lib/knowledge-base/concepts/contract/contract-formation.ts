@@ -5,32 +5,34 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'contract-service',
   title: 'Contract Formation (offer, acceptance, consideration, intention)',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['contract-service'],
   tabs: ['legalBreakdown', 'eli5'],
   factSummary:
-    'A binding contract requires four elements: (1) offer (a definite proposal capable of acceptance); (2) acceptance (unqualified agreement to its terms); (3) consideration (something of value moving from each party); and (4) intention to create legal relations. In consumer contracts, intention is presumed; for social/domestic agreements, the presumption is reversed.',
+    'A binding contract in Barbados requires four elements under the inherited common law: (1) offer — a definite proposal capable of acceptance; (2) acceptance — unqualified agreement to the offer terms; (3) consideration — something of value moving from each party; and (4) intention to create legal relations. In commercial and consumer contracts, intention to create legal relations is presumed. For purely social or domestic arrangements, the presumption is reversed.',
   eli5Summary:
-    'A contract is formed when one person makes a clear offer ("I\'ll fix your boiler for £200"), the other agrees to it exactly, both give something of value (you pay, they work), and both intend the deal to be legally binding. In ordinary commerce that intention is taken for granted. Once formed, both sides are legally bound to do what they promised.',
-  content: `Contract Formation:
+    'A contract is formed in Barbados when one person makes a clear offer, the other accepts it without conditions, both give something of value, and both intend the arrangement to be legally binding. In everyday commerce — a shop sale, a service booking, a hire of a contractor — that intention is assumed automatically. Once formed, both parties are legally bound to do what was agreed.',
+  content: `Contract Formation — Barbados common law.
 
-English law requires four elements for a valid contract.
+The common law of contract, as inherited and applied in Barbados, requires four elements for a valid and binding contract.
 
-1. Offer. A definite proposal capable of acceptance without further negotiation. Distinguished from invitation to treat (shop displays, advertisements, catalogues — Pharmaceutical Society v Boots [1953] 1 QB 401; Partridge v Crittenden [1968] 1 WLR 1204), mere statements of intention, and requests for information. Revocable any time before acceptance unless consideration has been paid for an option.
+1. Offer. A definite proposal, capable of acceptance without further negotiation, made by the offeror to the offeree. An offer must be distinguished from an invitation to treat — a mere indication that a party is willing to receive offers. Displaying goods for sale, placing an advertisement, or issuing a price list is generally an invitation to treat, not an offer: the contract is concluded when the buyer presents the goods at a point of sale and the seller accepts the payment. An offer may be revoked by the offeror at any time before acceptance, provided revocation is communicated to the offeree. An offer lapses on the death of either party, on the expiry of any stated time limit, or after a reasonable time.
 
-2. Acceptance. Unqualified, communicated agreement to the exact offer terms (mirror-image). Counter-offers destroy the original (Hyde v Wrench (1840)). Express or by conduct. Silence is generally not acceptance (Felthouse v Bindley (1862)). Battle of forms (commercial) usually resolved by the "last shot" doctrine.
+2. Acceptance. Acceptance must be unqualified agreement to the exact terms of the offer (the mirror-image rule). A purported acceptance that introduces new or different terms is a counter-offer, not an acceptance; a counter-offer destroys the original offer and substitutes new terms which the original offeror may then accept or reject. Acceptance must be communicated to the offeror; silence is not acceptance. Acceptance may be by words (oral or written) or by conduct. Where the parties deal on standard-form terms, the question of which party's terms govern the contract is determined by the common law principles on offer and acceptance applied to the sequence of their communications.
 
-3. Consideration. Quid pro quo: sufficient (Chappell v Nestle [1960] — chocolate wrappers were consideration); need not be adequate; not past (Re McArdle [1951]); must move from the promisee (subject to Contracts (Rights of Third Parties) Act 1999). Promissory estoppel may protect promises to forgo rights without fresh consideration but only as a shield, not a sword (High Trees [1947]).
+3. Consideration. Each party to a contract must provide consideration — something of value — in exchange for the other's promise. Consideration must be sufficient (it must have some value in law, even if it is not commercially adequate) but need not be adequate (courts do not police the fairness of the exchange under the consideration doctrine). Consideration must move from the promisee: the person seeking to enforce a promise must show that they provided something of value. Past consideration (an act done before the promise was made, and not in exchange for it) does not count. The doctrine of promissory estoppel may protect a party who has relied on a promise to forgo existing rights, but it generally operates as a defence rather than as a basis for an independent claim.
 
-4. Intention to create legal relations. Commercial/consumer contracts — presumed bound; rebuttable only by clear language ("subject to contract"). Social/domestic — presumption reversed; intention must be proved (Balfour v Balfour [1919]; Merritt v Merritt [1970]).
+4. Intention to create legal relations. The parties must intend that their agreement be legally enforceable. In commercial and consumer transactions — including the purchase of goods, the hiring of services, and commercial agreements — this intention is presumed and need not be established by evidence; it can only be displaced by clear language to the contrary (for example, "subject to contract"). In purely social or domestic arrangements — agreements between family members or friends — the presumption is reversed: intention must be positively demonstrated.
 
-Formalities: sale of land (s.2 LP(MP)A 1989); guarantees (Statute of Frauds 1677 s.4); consumer credit (CCA 1974) require writing/deed. Most contracts can be oral or by conduct.
+Formality requirements. Most contracts in Barbados may be made orally, in writing, or by conduct; no writing is required as a matter of general contract law. However, certain transactions require writing or other formalities to be valid or enforceable — for example, transfers of land and interests in land, and certain credit or guarantee arrangements. Parties to contracts involving land, credit, or significant guarantees should consult laws.barbados.gov.bb for the applicable Barbados statutory requirements.
 
-Capacity: minors, intoxicated, and mentally incapacitated persons have special protections.`,
-  tags: ['contract-formation', 'offer', 'acceptance', 'consideration', 'intention-to-create-legal-relations'],
+Capacity. Minors (persons below the age of majority), persons whose mental capacity is impaired, and persons who are intoxicated at the time of contracting have limited capacity to enter binding contracts. Certain contracts entered into by minors may be voidable at the minor's election; others may bind the minor (contracts for necessaries). The applicable Barbados provisions on capacity should be consulted for specific situations.
+
+Foundational common law authorities applied in Barbados. The principles above reflect the inherited common law of contract applied in Barbados as a Commonwealth jurisdiction. Leading cases include: Carlill v Carbolic Smoke Ball Co [1893] 1 QB 256 (offer and acceptance; binding nature of public offers meeting specified conditions) — persuasive common law authority; and Balfour v Balfour [1919] 2 KB 571 (domestic arrangements lack presumed intention to be legally binding) — persuasive common law authority.`,
+  tags: ['contract-formation', 'offer', 'acceptance', 'consideration', 'intention-to-create-legal-relations', 'barbados', 'common-law'],
 };
 
 export default doc;

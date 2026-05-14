@@ -1,39 +1,37 @@
 import type { KnowledgeDocument } from '../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'resource-gov-uk-eviction',
+  id: 'resource-barbados-housing-tenancy',
   type: 'resource',
   category: 'general',
-  title: 'gov.uk — Renting (tenant)',
-  jurisdiction: 'england-wales',
-  url: 'https://www.gov.uk/private-renting',
+  title: 'Housing and Tenancy Resources — Barbados',
+  jurisdiction: 'barbados',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['tenancy'],
   tabs: ['references'],
   factSummary:
-    'Official UK government guidance for private tenants in England: rights and responsibilities, eviction procedures, deposit protection, How to Rent guide, and links to council services. The first port of call for current procedural guidance.',
-  content: `gov.uk Renting pages (https://www.gov.uk/private-renting) are the official government information source for private tenants in England. They are kept up to date with current procedural rules and notice periods, and link to the canonical "How to Rent" booklet that landlords must serve as a precondition of any valid s.21 notice.
+    'Tenancy disputes in Barbados are resolved through the civil courts — the Magistrates\' Court for smaller claims and the High Court for larger ones. The Laws of Barbados portal (laws.barbados.gov.bb) provides access to the Landlord and Tenant Act, Cap. 230 and related legislation.',
+  content: `Tenancy and housing disputes in Barbados:
 
-Key sub-pages:
-- Renting from a private landlord — overview of tenant rights and obligations.
-- "How to Rent" booklet (current version) — the document a landlord must serve to comply with s.21 prerequisites.
-- Eviction procedures — what landlords must do, what notice is required, accelerated and standard possession routes.
-- Deposit protection — the three authorised schemes, the 30-day rule, and prescribed information.
-- Repairs — landlord and tenant responsibilities, and routes to escalate.
-- Council enforcement — how to contact Environmental Health.
-- Rent increases — s.13 notice mechanics.
-- Renters' Rights Act — commencement updates and transitional guidance (when published).
+Governing legislation: tenancy matters in Barbados are governed principally by the Landlord and Tenant Act, Cap. 230 (Laws of Barbados) and related provisions. The full text of applicable legislation is available at the Laws of Barbados portal (https://laws.barbados.gov.bb).
 
-Adjacent gov.uk resources useful in tenancy matters:
-- gov.uk/find-court-tribunal — locate the relevant County Court hearing centre.
-- gov.uk/court-fees — current banded fees for County Court issue.
-- gov.uk/courts-tribunals/first-tier-tribunal-property-chamber — FTT contact and forms.
-- gov.uk/legal-aid — eligibility for legal aid in housing matters.
+Civil courts for tenancy disputes:
+- Magistrates' Court (Cap. 116A): handles civil tenancy matters where the amount in dispute is up to $10,000 BBD. This includes smaller rent arrears claims, disputes about deposits, and related money claims.
+- High Court of Barbados (Cap. 117): the appropriate forum for tenancy disputes involving amounts above $10,000 BBD, claims for possession, injunctions, and complex landlord and tenant matters.
 
-For canonical legislation, link onward to legislation.gov.uk; for case law to bailii.org.`,
-  tags: ['gov-uk', 'private-renting', 'how-to-rent', 'official-guidance', 'eviction-procedures'],
+Common tenancy disputes: non-payment of rent; unlawful eviction or harassment by a landlord; failure to carry out repairs and maintenance; disputes about security deposits; unlawful entry by the landlord; disputes about the terms of the tenancy agreement.
+
+Unlawful eviction: a landlord who seeks to evict a tenant without following the proper legal process may be liable in civil proceedings. Tenants facing eviction should seek legal advice from a Barbados attorney (barbadosbar.org) as soon as possible.
+
+Repairs: landlords have obligations under Barbados law to maintain the property in a habitable condition. Tenants with repair issues should document the problem in writing and allow the landlord a reasonable time to carry out repairs before taking further action.
+
+Laws of Barbados portal (https://laws.barbados.gov.bb): the authoritative source for Barbados legislation, including the Landlord and Tenant Act, Cap. 230, and all subsidiary legislation relevant to housing and tenancy.
+
+Note: gov.uk housing guidance applies only to England and has no relevance to tenancy disputes in Barbados.`,
+  tags: ['tenancy', 'housing', 'landlord-tenant', 'Barbados', 'Landlord-and-Tenant-Act', 'Cap-230', 'laws-portal'],
 };
 
 export default doc;

@@ -14,7 +14,7 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
       <div className="rounded-xl" style={{ background: 'rgba(7, 60, 101, 0.06)', padding: '1rem', border: '1px solid rgba(7, 60, 101, 0.12)', marginBottom: '2.5rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
         <Info style={{ width: '18px', height: '18px', flexShrink: 0, marginTop: '0.125rem', color: '#073C65' }} />
         <p style={{ fontSize: '0.8125rem', color: '#073C65', lineHeight: '1.6', fontWeight: 500 }}>
-          <strong>Jurisdiction:</strong> All legal principles, case law, and procedures referenced apply to <strong>England & Wales only</strong>. This is general legal information, not legal advice.
+          <strong>Jurisdiction:</strong> All legal principles, case law, and procedures referenced apply to <strong>Barbados only</strong>. This is general legal information, not legal advice.
         </p>
       </div>
 
@@ -37,7 +37,7 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
       <div style={{ marginBottom: '2.5rem' }}>
         <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#073C65' }}>
           <Scale style={{ width: '18px', height: '18px', color: '#D49E37' }} />
-          Relevant Case Law (England & Wales)
+          Applicable Common Law Precedents
         </h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingLeft: '1.75rem' }}>
           {caselaw.map((c, i) => (
@@ -72,13 +72,20 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
           <Gavel style={{ width: '18px', height: '18px', color: '#D49E37' }} />
           Procedural Framework
         </h3>
-        <ol style={{ display: 'flex', flexDirection: 'column', gap: '1rem', paddingLeft: '1.75rem' }}>
+        <ol style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', paddingLeft: '1.75rem' }}>
           {procedures.map((p, i) => (
             <li key={i} style={{ display: 'flex', gap: '0.875rem' }}>
-              <div className="rounded-full" style={{ flexShrink: 0, width: '28px', height: '28px', background: '#073C65', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.875rem', fontWeight: 600, color: 'white' }}>
+              <div className="rounded-full" style={{ flexShrink: 0, width: '28px', height: '28px', background: '#073C65', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.875rem', fontWeight: 600, color: 'white', marginTop: '0.125rem' }}>
                 {i + 1}
               </div>
-              <p style={{ color: '#6B7280', fontSize: '0.9375rem', paddingTop: '0.25rem', lineHeight: '1.7' }}>{p}</p>
+              <div>
+                <p style={{ color: '#073C65', fontSize: '0.9375rem', fontWeight: 700, marginBottom: '0.375rem' }}>
+                  {typeof p === 'string' ? p : p.title}
+                </p>
+                {typeof p !== 'string' && p.detail && (
+                  <p style={{ color: '#6B7280', fontSize: '0.875rem', lineHeight: '1.7' }}>{p.detail}</p>
+                )}
+              </div>
             </li>
           ))}
         </ol>
@@ -126,7 +133,7 @@ export function LegalBreakdownTab({ legalBreakdown }: LegalBreakdownTabProps) {
         <div>
           <h4 style={{ color: '#991B1B', fontSize: '0.9375rem', fontWeight: 600, marginBottom: '0.5rem' }}>General Legal Information Only</h4>
           <p style={{ fontSize: '0.875rem', color: '#7F1D1D', lineHeight: '1.7' }}>
-            This legal breakdown provides <strong>general educational information</strong> about the law of England & Wales. It does <strong>NOT constitute legal advice</strong>. Application of legal principles to specific facts requires professional analysis by a qualified solicitor. This does not create a solicitor-client relationship.
+            This legal breakdown provides <strong>general educational information</strong> about the civil law of Barbados. It does <strong>NOT constitute legal advice</strong>. Application of legal principles to specific facts requires professional analysis by a qualified attorney. This does not create a lawyer-client relationship.
           </p>
         </div>
       </div>

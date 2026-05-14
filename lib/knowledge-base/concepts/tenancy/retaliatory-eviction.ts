@@ -5,54 +5,36 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'tenancy',
   title: 'Retaliatory Eviction',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
-  inForceNote:
-    'PENDING — verify against gov.uk. The s.33 Deregulation Act 2015 protection is anchored to s.21; if the Renters\' Rights Act 2024 has abolished s.21, the concept survives in different form under the new regime.',
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['retaliatory', 'retaliation', 'complained', 'after I complained', 'evict', 'eviction'],
+  triggers: ['retaliatory', 'retaliation', 'complained', 'after I complained', 'evict', 'eviction', 'punish for complaining'],
   tabs: ['legalBreakdown', 'eli5'],
   factSummary:
-    'A landlord serving a possession notice in response to a tenant\'s legitimate complaint about disrepair, where the local authority subsequently serves an improvement or emergency remedial action notice. Statutorily restricted by Deregulation Act 2015 s.33: any s.21 notice within 6 months of the local-authority notice is invalid.',
+    'Retaliatory eviction occurs when a landlord attempts to remove or threaten a tenant in direct response to the tenant having made a legitimate complaint about housing conditions. In Barbados, common law principles treat such conduct as bad faith, relevant to possession proceedings before the Magistrates\' Court or High Court, and potentially actionable as a breach of the implied covenant for quiet enjoyment.',
   eli5Summary:
-    'If you complain to your landlord about a serious problem with the home (like damp or unsafe wiring) and they try to evict you because of your complaint, the law steps in. Once the council inspects and tells the landlord to fix the problem, the landlord cannot use the no-fault eviction route for 6 months.',
-  content: `Retaliatory Eviction:
+    'If a tenant in Barbados complains about a serious problem with the property — like a broken roof or unsafe electrics — the landlord cannot try to evict the tenant just because they made the complaint. Barbados common law treats this kind of retaliatory behaviour as acting in bad faith. A tenant who faces this situation can raise it as part of their defence in court.',
+  content: `Retaliatory Eviction — Barbados:
 
-The concept addresses the imbalance of power that arises when a tenant who complains about housing conditions risks losing the home for raising the complaint. English law has a partial statutory protection in Deregulation Act 2015 s.33 (subject to verification of current status given the Renters' Rights Act 2024).
+Retaliatory eviction refers to a landlord seeking to remove a tenant, or to create conditions that pressure the tenant to leave, in direct response to the tenant having exercised a legal right or made a legitimate complaint — most commonly a complaint about disrepair, habitability defects, or other failures of the landlord's obligations.
 
-The s.33 mechanism (England, AST tenancies):
+Position in Barbados: Barbados does not have a specific statute equivalent to England's Deregulation Act 2015 s.33, which provided a mechanism for automatically invalidating a no-fault possession notice served within six months of a local authority improvement notice. There is no no-fault possession route in Barbados, and all possession requires a court order. Nevertheless, common law principles relevant to retaliatory conduct operate in the following ways:
 
-A s.21 notice is invalidated where:
+(a) Bad faith in possession proceedings: where a landlord commences possession proceedings in direct response to a tenant's legitimate complaint about the condition of the premises, the court may consider the timing and circumstances of the proceedings in assessing whether the claim is brought in good faith. A judge in the Magistrates' Court or High Court of Barbados has the power to take account of the landlord's motivation in determining the outcome of possession proceedings.
 
-(a) the tenant first complains in writing to the landlord about the condition of the dwelling or any common parts; AND
+(b) Breach of quiet enjoyment: where a landlord's retaliatory conduct takes the form of harassment, threats, interference with services, or other acts designed to compel the tenant to vacate, this may amount to a breach of the implied covenant for quiet enjoyment, entitling the tenant to damages and potentially an injunction.
 
-(b) the landlord either (i) fails to respond within 14 days with a description of action proposed and a reasonable timescale; (ii) gives an inadequate response; or (iii) responds by serving a s.21 notice; AND
+(c) Implied covenant not to derogate from grant: the landlord is under a common law obligation not to act in a manner that substantially undermines the tenant's lawful enjoyment of the premises, including through retaliatory or punitive conduct.
 
-(c) the tenant subsequently complains to the local housing authority about substantially the same matter; AND
+Practical indicators of retaliatory intent:
 
-(d) the local authority serves a "relevant notice":
-   - an improvement notice under HA 2004 ss.11 or 12, or
-   - a notice under HA 2004 s.40(7) of emergency remedial action.
+- The close temporal connection between a tenant's written complaint about housing conditions and the landlord's commencement of possession proceedings.
+- A pattern of landlord conduct — escalating pressure, refusal to carry out repairs, threats of eviction — following the complaint.
+- Communications from the landlord explicitly linking the complaint to the decision to seek possession.
 
-Effect: any s.21 notice served within 6 months beginning with the day the relevant notice is served is invalid (s.33(1)). A pre-existing s.21 notice on which possession proceedings have not yet been issued is similarly invalidated by service of the relevant notice (s.33(2)).
-
-Limits and exceptions (s.34):
-
-- Property genuinely on the market for sale.
-- Tenant's own breach has caused the disrepair complained of.
-- Landlord is a private registered provider of social housing.
-
-Practical sequence for the tenant:
-
-1. Put the complaint in writing to the landlord (email, letter — keep proof).
-2. Allow at least 14 days for response.
-3. If the response is missing or inadequate, complain to the local authority's Environmental Health team.
-4. Cooperate with the council inspection.
-5. If a relevant notice is served, the s.33 protection bites for 6 months.
-
-Conceptually broader than the s.33 mechanism: even outside its strict scope, deliberate retaliation may surface as evidence of bad faith (relevant to discretionary grounds under s.8 HA 1988, public-law defences against social landlords, and Equality Act 2010 reasonable-adjustment defences).`,
-  tags: ['retaliatory-eviction', 'section-33', 'Deregulation-Act-2015', 'improvement-notice', 'tenant-protection'],
+Available responses: a tenant who identifies retaliatory conduct may raise it as part of a defence to possession proceedings, counterclaim for breach of quiet enjoyment, or claim damages before the Magistrates' Court or the High Court of Barbados depending on the value and nature of the claim.`,
+  tags: ['retaliatory-eviction', 'bad-faith', 'common-law', 'Barbados', 'quiet-enjoyment', 'possession', 'Cap-230'],
 };
 
 export default doc;

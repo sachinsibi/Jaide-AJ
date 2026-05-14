@@ -5,7 +5,7 @@ const doc: KnowledgeDocument = {
   type: 'resource',
   category: 'general',
   title: 'BAILII — British and Irish Legal Information Institute',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   url: 'https://www.bailii.org',
   inForce: true,
   lastVerified: '2026-05-01',
@@ -13,29 +13,29 @@ const doc: KnowledgeDocument = {
   pinFor: ['tenancy', 'employment', 'contract-service', 'general-civil', 'motor-accident', 'property-damage'],
   tabs: ['references'],
   factSummary:
-    'Free, open-access database of judgments and decisions from courts and tribunals across the United Kingdom and Ireland. The standard reference for case law citations in legal-information contexts.',
-  content: `BAILII (https://www.bailii.org) is the principal free, open-access database of legal materials for the United Kingdom, Ireland, and the European jurisdictions. Operated by a registered charity, it publishes the full text of judgments handed down by the courts and tribunals it covers.
+    'BAILII (British and Irish Legal Information Institute) hosts judgments from UK courts and Commonwealth jurisdictions. Barbados courts may refer to UK decisions as persuasive common law authority. BAILII is a useful resource for identifying relevant common law precedents applicable in Barbados.',
+  content: `BAILII (https://www.bailii.org) is the principal free, open-access database of legal materials for the United Kingdom, Ireland, and related jurisdictions. Operated by a registered charity, it publishes the full text of judgments handed down by UK courts and selected Commonwealth courts.
 
-Coverage relevant to civil practice in England & Wales:
-- Supreme Court of the United Kingdom (and historic House of Lords decisions).
-- Court of Appeal (Civil Division).
-- High Court (Queen's/King's Bench Division, Chancery Division, Family Division, Administrative Court).
-- Specialist courts (Patents Court, Technology and Construction Court, Commercial Court).
-- First-tier Tribunal and Upper Tribunal (selected decisions).
-- Employment Tribunal and Employment Appeal Tribunal.
-- Older case law including significant House of Lords decisions back to the 19th century in selected coverage.
+Relevance to Barbados: Barbados is a Commonwealth jurisdiction whose courts apply the common law inherited from English law and may refer to decisions of UK courts (particularly the House of Lords, UK Supreme Court, Court of Appeal, and Privy Council) as persuasive authority. BAILII is a useful resource for identifying common law precedents that may be applied or referred to in Barbados proceedings.
+
+Coverage relevant to Barbados civil practice:
+- UK Supreme Court and historic House of Lords decisions — the highest level of persuasive common law authority.
+- Court of Appeal (Civil Division) — extensive coverage of common law and equitable principles.
+- Privy Council decisions — particularly relevant as the Privy Council has historically been the final appellate court for many Commonwealth jurisdictions, including Barbados.
+- High Court decisions (Queen's/King's Bench Division, Chancery Division).
+- Older case law, including foundational common law decisions applicable across Commonwealth jurisdictions.
 
 Searching and citation:
-- The standard URL pattern uses neutral citations: bailii.org/uk/cases/UKHL/[year]/[number].html, bailii.org/ew/cases/EWCA/Civ/[year]/[number].html, etc.
+- The standard URL pattern uses neutral citations: bailii.org/uk/cases/UKHL/[year]/[number].html, bailii.org/ew/cases/UKSC/[year]/[number].html, etc.
 - BAILII supports keyword search across full judgment text.
 - Most BAILII pages include both the neutral citation (official) and the Law Reports citation where one exists.
 
 Limits:
-- BAILII is not a fully consolidated archive — coverage of older county-court and lower-tribunal decisions is patchy.
-- It does not provide editorial commentary; for that, paid services (Westlaw, LexisNexis, Practical Law) are needed.
-- For a binding case the user intends to rely on at hearing, always check the latest version against BAILII or another authoritative source for any subsequent appeal or distinguishing.
+- BAILII does not cover Barbados court decisions directly. For Barbados case law, the Barbados Supreme Court (supremecourt.gov.bb) and official Barbados legal databases should be consulted.
+- UK decisions cited from BAILII are persuasive, not binding, in Barbados courts.
+- BAILII does not provide editorial commentary; for that, paid services are needed.
 
-In a JAIDE-style triage context, BAILII is the appropriate citation for case law links — both because it is free and because the URL pattern is stable.`,
+In a JAIDE Barbados context, BAILII is the appropriate citation source for common law case law from UK courts referenced as persuasive authority.`,
   tags: ['bailii', 'case-law', 'judgments', 'free-access', 'neutral-citation'],
 };
 

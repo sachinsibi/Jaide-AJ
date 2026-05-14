@@ -1,40 +1,42 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-pd-pre-action-conduct-general-civil',
+  id: 'procedure-pre-claim-steps-general-civil-barbados',
   type: 'procedure',
   category: 'general-civil',
-  title: 'Practice Direction on Pre-Action Conduct (general civil claims)',
-  jurisdiction: 'england-wales',
-  citation: 'CPR Practice Direction on Pre-Action Conduct and Protocols',
-  url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/rules/pd_pre-action_conduct',
+  title: 'Pre-Claim Steps for Civil Disputes — Barbados',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['general-civil'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'Most general civil claims (harassment, defamation, data protection, privacy) have no dedicated protocol — the general PD on Pre-Action Conduct applies. The claimant must send a letter before claim, consider ADR, and give the defendant a reasonable time to respond before issuing. Non-compliance is a costs and case-management risk.',
-  content: `The general Practice Direction on Pre-Action Conduct and Protocols applies where no specific protocol exists for the type of claim.
+    'Barbados does not have a CPR Practice Direction on Pre-Action Conduct. However, taking steps before commencing civil proceedings — including sending a letter before action, gathering evidence, and allowing the defendant a reasonable time to respond — is good practice in all civil disputes and can affect costs and the court\'s assessment of the conduct of the parties.',
+  content: `There is no equivalent in Barbados to the CPR Practice Direction on Pre-Action Conduct and Protocols (England). The Civil Procedure Rules of England and Wales do not apply in Barbados. Barbados civil procedure is governed by its own rules, which should be verified at laws.barbados.gov.bb and supremecourt.gov.bb.
 
-Note: defamation has its own Pre-Action Protocol (PAP for Defamation) requiring a specified Letter of Claim and a 14-day response period. Harassment and data protection claims use the general PD.
+Nonetheless, the following pre-claim steps represent good practice in all civil disputes in Barbados and are likely to be viewed favourably by a court:
 
-Objectives (PD 3): understand the other party's position; consider settlement; consider ADR; reduce costs; support efficient litigation if unavoidable.
+Step 1 — Letter before action (letter of claim). A claimant who intends to bring civil proceedings should generally send a formal letter to the proposed defendant before issuing proceedings. The letter should:
+- Identify the parties clearly.
+- Set out the factual background of the dispute, including dates and relevant events.
+- State the legal basis for the claim (for example, defamation, breach of contract, harassment, data protection).
+- Quantify the loss or harm suffered and itemise the remedy sought.
+- Give the defendant a reasonable period to respond (typically 14 to 28 days for straightforward claims, longer for complex matters).
+- State that proceedings will be commenced if a satisfactory response is not received.
 
-Required steps (PD 6):
+Step 2 — Evidence gathering. Before commencing proceedings, a claimant should gather and preserve all available evidence: screenshots of online publications, copies of communications, financial records, medical evidence, and witness accounts. Evidence can be lost or altered over time.
 
-1. Letter before claim. Sent by the claimant, setting out: parties; factual narrative; legal basis (cause of action, relevant statute); itemised loss and supporting evidence; remedy sought; a reasonable time to respond (14 days acknowledgment; 21–90 days substantive depending on complexity).
+Step 3 — Defendant's response. The defendant should be given a reasonable opportunity to respond, accept the claim, offer compensation, or identify their position on the disputed issues. An offer of settlement at this stage may be preferable to litigation for both parties.
 
-2. Defendant's response. Accepts or disputes; identifies contested issues; provides defendant's documents; makes any counter-offer.
+Step 4 — Consider alternative dispute resolution. Mediation or other ADR is available as a pre-litigation option in Barbados. It is often faster and less expensive than court proceedings. The Barbados Bar Association (barbadosbar.org) can assist in identifying mediators.
 
-3. ADR. The parties must consider alternative dispute resolution before issue. Refusal to engage, without good reason, is a costs risk: Halsey v Milton Keynes General NHS Trust [2004] EWCA Civ 576; PGF II SA v OMFS Co [2013] EWCA Civ 1288 — silence in the face of an ADR invitation is itself unreasonable refusal.
+Step 5 — Reassess before issue. Having received the defendant's response (or in its absence), a claimant should reassess whether litigation is necessary, proportionate, and likely to achieve the desired outcome, having regard to the costs and time involved.
 
-4. Stocktake before issue. Reassess whether the dispute can be resolved without litigation.
+Consequences of failing to engage: while Barbados courts do not operate the same formal costs sanctions as the English CPR for failure to follow pre-action protocols, a claimant who commences proceedings without giving the defendant a reasonable opportunity to respond, or a defendant who fails to engage with a pre-claim letter, may be viewed adversely by the court in the exercise of its discretion on costs.
 
-Defamation PAP specifics: the Letter of Claim must identify the words complained of; the meaning alleged; why they are defamatory; the harm caused; and what remedy is sought. The defendant has 14 days to respond with a Letter of Response.
-
-Sanctions (PD 13–16): the court may stay proceedings to allow pre-action compliance; award adverse costs; reduce costs recovery. Unreasonable refusal to engage in ADR is a standalone costs factor even on a successful claim.`,
-  tags: ['pre-action-conduct', 'PD-pre-action', 'letter-before-claim', 'ADR', 'general-civil'],
+Limitation: pre-claim steps and any negotiations do not suspend the running of limitation periods in Barbados unless the parties expressly agree otherwise. A claimant must not allow the limitation period to expire while waiting for a response to a letter before action.`,
+  tags: ['pre-action', 'letter-before-claim', 'Barbados', 'civil-procedure', 'ADR', 'evidence-gathering'],
 };
 
 export default doc;

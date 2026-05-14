@@ -1,39 +1,42 @@
 import type { KnowledgeDocument } from '../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'resource-legislation-gov-uk',
+  id: 'resource-barbados-laws-portal',
   type: 'resource',
   category: 'general',
-  title: 'legislation.gov.uk',
-  jurisdiction: 'england-wales',
-  url: 'https://www.legislation.gov.uk',
+  title: 'Laws of Barbados Portal',
+  jurisdiction: 'barbados',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['tenancy', 'employment', 'contract-service', 'general-civil', 'motor-accident', 'property-damage'],
   tabs: ['references'],
   factSummary:
-    'The official UK government source for legislation. Provides full text of Acts of Parliament, Statutory Instruments, and Welsh and Northern Ireland legislation, with as-enacted, current, and version-history views.',
-  content: `legislation.gov.uk (https://www.legislation.gov.uk) is the UK government's official online database of legislation, managed by The National Archives. It is the canonical source for the text of any UK statute or statutory instrument.
+    'The Laws of Barbados portal (laws.barbados.gov.bb) is the official online repository for Barbados legislation, including all Chapters (Cap.) of the Laws of Barbados. Users can search for specific Acts by Cap. number or subject matter.',
+  content: `The Laws of Barbados portal (https://laws.barbados.gov.bb) is the official online database of legislation of Barbados, managed by the Government of Barbados. It is the authoritative source for the text of Barbados statutes and subsidiary legislation.
 
 What it provides:
-- Full text of Acts of Parliament (UK, England, Wales, Scotland, Northern Ireland).
-- Full text of Statutory Instruments (regulations made under Act-conferred powers).
-- "As enacted" version (the original text passed by Parliament).
-- "Latest available" version (current text as in force, incorporating amendments — coverage is good but not 100% real-time; the site marks where consolidation is incomplete).
-- Schedules and section-by-section navigation.
-- Tables of contents for long statutes.
-- Commencement information for newer Acts (the dates on which provisions come into force).
-- Historical versions (point-in-time view for many statutes).
+- Full text of Acts of Parliament of Barbados, organised by Chapter (Cap.) number.
+- Subsidiary legislation (regulations, rules, and orders made under Act-conferred powers).
+- Revised Laws of Barbados, incorporating amendments into consolidated versions of legislation.
+- Subject-matter search and Cap. number navigation for locating specific statutes.
+
+Key statutes available (examples relevant to civil matters):
+- Magistrates' Court Act, Cap. 116A — jurisdiction and procedure for the Magistrates' Court.
+- Supreme Court of Judicature Act, Cap. 117 — jurisdiction and procedure for the High Court and Court of Appeal.
+- Landlord and Tenant Act, Cap. 230 — landlord and tenant rights and obligations.
+- Employment Rights Act, Cap. 23 — employment protections and rights.
+- Data Protection Act, 2019 — data protection framework for Barbados.
+- Motor Vehicles and Road Traffic Act, Cap. 295 — motor vehicle licensing and road traffic regulation.
 
 How to use:
-- Cite a statute by its short title and year ("Landlord and Tenant Act 1985"), then a section number ("s.11").
-- The URL pattern is predictable: legislation.gov.uk/ukpga/[year]/[chapter]/section/[n] for UK Public General Acts.
-- For statutory instruments: legislation.gov.uk/uksi/[year]/[number].
-- The "Show timeline of changes" link provides amendment history.
+- Search by subject matter (for example, "landlord", "employment", "defamation") to identify the applicable Act and Cap. number.
+- Navigate directly using the Cap. number where known.
+- The portal provides the revised (consolidated) text of legislation.
 
-Caveat: while legislation.gov.uk consolidates most amendments, it is occasionally behind for very recent commencements. Where the precise current state matters (e.g., commencement of the Renters' Rights Act 2024), cross-check against gov.uk and against the originating department's pages.`,
-  tags: ['legislation-gov-uk', 'official-statute', 'statutory-instrument', 'as-enacted', 'national-archives'],
+This portal is the Barbados equivalent of legislation.gov.uk (England). legislation.gov.uk is a UK resource and has no relevance to Barbados statutory law.`,
+  tags: ['laws-barbados', 'legislation', 'official-statute', 'Barbados', 'laws-portal', 'Cap-number'],
 };
 
 export default doc;

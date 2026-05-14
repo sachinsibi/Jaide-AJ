@@ -1,36 +1,44 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-lta-1985-s11',
+  id: 'statute-barbados-tenancy-cap-230-repair',
   type: 'statute',
   category: 'tenancy',
-  title: 'Landlord and Tenant Act 1985, s.11',
-  jurisdiction: 'england-wales',
-  citation: 'Landlord and Tenant Act 1985, s.11',
-  url: 'https://www.legislation.gov.uk/ukpga/1985/70/section/11',
+  title: 'Landlord and Tenant Act, Cap. 230 — Repairing Obligations and Habitability',
+  jurisdiction: 'barbados',
+  citation: 'Landlord and Tenant Act, Cap. 230 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['tenancy'],
   tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
+  triggers: ['repair', 'repairs', 'disrepair', 'broken', 'leak', 'leaking', 'heating', 'water', 'structure', 'landlord fix'],
   factSummary:
-    'Implies into tenancies of less than seven years a landlord covenant to keep in repair the structure and exterior of the dwelling, and to keep in repair and proper working order the installations for the supply of water, gas, electricity, sanitation, space heating, and water heating.',
+    'The Landlord and Tenant Act, Cap. 230 is the primary legislation governing residential tenancies in Barbados. In addition to Cap. 230, common law implies into residential tenancies a duty on the landlord to keep the premises in a habitable state of repair. This duty covers the structure, exterior, and essential installations of the dwelling.',
   eli5Summary:
-    'For most short rental homes, the law makes the landlord responsible for keeping the building itself, and the basics like heating, water, and electrics, working properly. They are not responsible for things you broke yourself.',
-  content: `Section 11 of the Landlord and Tenant Act 1985 implies into any lease of a dwelling-house granted on or after 24 October 1961 for a term of less than seven years a covenant by the lessor:
+    'In Barbados, the law requires landlords to keep rented homes in good repair. If a roof leaks, plumbing fails, or essential services break down, the landlord is generally responsible for fixing these under both the Landlord and Tenant Act (Cap. 230) and long-standing common law rules that apply in Barbados as a Commonwealth country.',
+  content: `The Landlord and Tenant Act, Cap. 230 (Laws of Barbados) provides the principal statutory framework for the relationship between landlords and tenants in Barbados.
 
-(1)(a) to keep in repair the structure and exterior of the dwelling-house (including drains, gutters and external pipes);
-(1)(b) to keep in repair and proper working order the installations in the dwelling-house for the supply of water, gas and electricity and for sanitation (including basins, sinks, baths and sanitary conveniences, but not other fixtures, fittings and appliances for making use of the supply of water, gas or electricity);
-(1)(c) to keep in repair and proper working order the installations in the dwelling-house for space heating and heating water.
+Repairing obligations under Cap. 230: the Act addresses the obligations of landlords and tenants in respect of the condition and maintenance of residential premises. Where Cap. 230 is silent on a particular aspect of repair, the common law fills the gap.
 
-The standard of repair is determined having regard to the age, character and prospective life of the dwelling-house and the locality in which it is situated.
+Common law implied duty of habitability and repair: Barbados courts, operating in the common law tradition inherited as a Commonwealth jurisdiction, recognise an implied obligation on the landlord that residential premises are fit for habitation at the commencement of the tenancy and maintained in a condition fit for the purpose for which they are let. This duty encompasses:
 
-The covenant does not require the lessor to (a) carry out works for which the lessee is liable by virtue of his duty to use the premises in a tenant-like manner, (b) rebuild or reinstate in the case of destruction by fire, tempest, flood or other inevitable accident, or (c) keep in repair anything which the lessee is entitled to remove.
+(a) the structure and exterior of the dwelling (roof, walls, floors, foundations, external drainage, gutters and external pipes);
+(b) installations for the supply of water and sanitation (pipework, basins, sinks, baths, sanitary conveniences);
+(c) installations for the supply of electricity;
+(d) any heating or hot-water installation forming part of the premises.
 
-The duty arises only when the lessor has notice (actual or constructive) of the defect and a reasonable time has elapsed for repair (O'Brien v Robinson [1973] AC 912).
+Standard of repair: the standard is assessed by reference to the age, character, and condition of the premises in the locality. A landlord is not required to deliver premises in a perfect state; the obligation is to keep them in repair appropriate to their type.
 
-The covenant cannot be excluded or limited by agreement, except with the approval of the County Court (s.12).`,
-  tags: ['section-11', 'LTA-1985', 'repairing-obligations', 'structure', 'installations'],
+Notice requirement: following the persuasive common law principle established in O'Brien v Robinson [1973] AC 912 (House of Lords, persuasive authority in Barbados), the landlord's duty to repair crystallises only when the landlord has actual or constructive notice of the defect. The landlord is then obliged to carry out the repair within a reasonable time having regard to the nature and urgency of the defect.
+
+No duty to inspect: there is no general implied duty on the landlord to inspect the premises in search of latent defects. The obligation arises upon notice.
+
+Enforcement: a tenant seeking to enforce repairing obligations may bring a civil claim in the Magistrates' Court (claims up to $10,000 BBD under Cap. 116A) or the High Court of Barbados (claims above $10,000 BBD under Cap. 117 — Supreme Court of Judicature Act). The court may order the landlord to carry out the necessary works and/or award damages for the period of disrepair.
+
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['Cap-230', 'Landlord-and-Tenant-Act', 'repairing-obligations', 'habitability', 'Barbados', 'common-law'],
 };
 
 export default doc;

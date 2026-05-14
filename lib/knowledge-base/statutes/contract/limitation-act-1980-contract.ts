@@ -1,41 +1,41 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-limitation-act-1980-contract',
+  id: 'statute-barbados-limitation-contract',
   type: 'statute',
   category: 'contract-service',
-  title: 'Limitation Act 1980, ss.5 and 8 — Limitation periods for contract claims',
-  jurisdiction: 'england-wales',
-  citation: 'Limitation Act 1980, ss.5 and 8',
-  url: 'https://www.legislation.gov.uk/ukpga/1980/58',
+  title: 'Limitation Period for Contract Claims — Barbados',
+  jurisdiction: 'barbados',
+  citation: 'Barbados Limitation of Actions Act or equivalent applicable Barbados limitation legislation',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['contract-service'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'A claim for breach of a simple contract must be brought within 6 years of the date of breach (s.5). For a contract under deed, the period is 12 years (s.8). The clock runs from breach (not discovery), subject to fraud, deliberate concealment, and mistake exceptions (s.32).',
-  content: `Section 5 Limitation Act 1980 sets a six-year limitation period for actions founded on a simple contract:
+    'The applicable Barbados limitation period for simple contract claims is generally 6 years, consistent with the Barbados Limitation of Actions Act or equivalent Commonwealth limitation legislation. Specialist claims such as those under a deed may carry longer periods. The limitation period runs from the date of breach, not from when the claimant discovers the breach, subject to exceptions for fraud, deliberate concealment, or latent damage.',
+  content: `The limitation period for bringing a civil claim for breach of contract in Barbados is governed by the applicable Barbados limitation legislation — the Limitation of Actions Act or equivalent statute. Parties should consult laws.barbados.gov.bb to confirm the current provisions.
 
-"An action founded on simple contract shall not be brought after the expiration of six years from the date on which the cause of action accrued."
+General limitation period. For simple contract claims, the applicable Barbados limitation period is generally 6 years. This is consistent with the Commonwealth norm for limitation of contract actions and reflects the position under equivalent limitation legislation across Commonwealth Caribbean jurisdictions.
 
-Section 8 sets a longer twelve-year period for actions on a deed (a contract under seal). To qualify, the document must be made as a deed (signed, witnessed, and delivered as a deed under the formalities of s.1 Law of Property (Miscellaneous Provisions) Act 1989).
+Specialist claims. Claims arising under a deed or specialty contract may carry a longer limitation period than the general 6-year period. The exact position should be confirmed by reference to the applicable Barbados legislation at laws.barbados.gov.bb.
 
-When does time run? The cause of action accrues at the date of breach itself, not the date of loss or discovery. This contrasts with tort negligence (clock from damage).
+When does time run? The limitation period runs from the date on which the cause of action accrues — that is, the date of the breach of contract itself, not the date on which the claimant discovers the loss or identifies the breach. This differs from limitation in tort where time may run from the date of damage.
 
-Examples: defective goods delivered 1 May 2020 — limitation expires 1 May 2026. Service performed negligently — six years from the last act of breach. Anticipatory repudiation — six years from acceptance.
+Example. A contract for services is performed defectively in January 2020. The applicable 6-year limitation period would generally expire in January 2026. A claim brought after that date would be time-barred, absent an applicable extension.
 
-Exceptions extending time (s.32):
-(a) Fraud — period runs from discovery (or when discoverable with reasonable diligence).
-(b) Deliberate concealment — period runs from discovery of the concealment.
-(c) Mistake — period runs from discovery of the mistake.
+Exceptions extending time. The applicable Barbados limitation legislation may provide for extension of the limitation period in cases of:
+(a) Fraud — where the defendant's fraud has concealed the cause of action, time may run from when the claimant discovered or could with reasonable diligence have discovered the fraud.
+(b) Deliberate concealment — where the defendant has deliberately concealed facts relevant to the claim.
+(c) Latent damage — where the loss was not and could not reasonably have been discovered at the time of breach.
 
-Acknowledgment / part payment (s.29): time restarts when the debtor acknowledges the debt or makes a part payment.
+Acknowledgment or part payment. As a matter of common law and consistent with Commonwealth limitation principles, an unequivocal acknowledgment of the debt or a part payment by the debtor may restart the limitation period.
 
-Personal injury arising from breach of contract has a shorter 3-year period (s.11) — relevant for holiday/treatment contracts that cause injury.
+Currency note. All monetary amounts in Barbados are denominated in Barbados dollars (BBD). The BBD is pegged to the United States dollar at a fixed rate of 2 BBD to 1 USD.
 
-Practical implication: identify the date of breach and check whether six (or twelve) years have expired. After expiry the defence is absolute, unless an exception applies.`,
-  tags: ['Limitation-Act-1980', 'six-year-limit', 'twelve-year-limit', 'deed', 'fraud', 'concealment'],
+Practical importance. A party whose limitation period has expired loses the right to bring a civil claim for breach of contract, regardless of the merits. Identifying the date of breach and calculating whether the applicable period has elapsed is therefore a threshold question in any contract dispute.`,
+  tags: ['limitation-period', 'barbados', 'six-year-limit', 'contract-claims', 'fraud-exception', 'Commonwealth-limitation'],
 };
 
 export default doc;

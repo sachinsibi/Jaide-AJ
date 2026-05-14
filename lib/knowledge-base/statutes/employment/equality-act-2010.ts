@@ -1,55 +1,78 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-equality-act-2010',
+  id: 'statute-barbados-employment-anti-discrimination',
   type: 'statute',
   category: 'employment',
-  title: 'Equality Act 2010 — Discrimination at work',
-  jurisdiction: 'england-wales',
-  citation: 'Equality Act 2010, Pts 2 and 5; ss.13–27; ss.39–60; ss.136 (burden of proof)',
-  url: 'https://www.legislation.gov.uk/ukpga/2010/15/contents',
+  title: 'Anti-Discrimination Protections in Barbados Employment Law',
+  jurisdiction: 'barbados',
+  citation: 'Employment Rights Act, Cap. 23',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['employment'],
   tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
   factSummary:
-    'Equality Act 2010 protects nine characteristics: age; disability; gender reassignment; marriage and civil partnership; pregnancy and maternity; race; religion or belief; sex; sexual orientation. Five forms of prohibited conduct: direct discrimination (s.13); indirect discrimination (s.19); harassment (s.26); victimisation (s.27); and (for disability) failure to make reasonable adjustments (s.20). No qualifying period; compensation uncapped; burden shifts under s.136.',
+    'Barbados employment law prohibits discrimination in the workplace on certain grounds. The specific protected characteristics recognised under current Barbados legislation should be confirmed by consulting the relevant statutes at laws.barbados.gov.bb, as the scope of protected grounds under Barbados law differs from other jurisdictions. Remedies for unlawful discrimination are available through the Labour Department and the civil courts.',
   eli5Summary:
-    'The Equality Act 2010 makes it unlawful for an employer to treat you worse because of who you are — your age, disability, race, religion, sex, sexual orientation, gender reassignment, marriage status, or being pregnant. You don\'t need any minimum service to claim. If you can show facts that point to discrimination, the employer must explain why it wasn\'t. Compensation is not capped.',
-  content: `The Equality Act 2010 consolidates and replaces previous discrimination statutes. In employment (Pt 5), it protects against five forms of conduct in respect of nine protected characteristics.
+    'In Barbados, the law protects employees from being treated unfairly at work because of certain personal characteristics. The exact list of protected grounds is set out in Barbados legislation — it is important to check the current law rather than assume the protections mirror those of other countries. An employee who believes they have been discriminated against can seek assistance from the Labour Department or pursue a claim through the civil courts.',
+  content: `Anti-Discrimination Protections in Barbados Employment Law:
 
-Protected characteristics (s.4 and ss.5–12):
-1. Age — s.5.
-2. Disability — s.6 (long-term physical or mental impairment with substantial adverse effect on day-to-day activities).
-3. Gender reassignment — s.7.
-4. Marriage and civil partnership — s.8.
-5. Pregnancy and maternity — s.18 (specific section in employment).
-6. Race — s.9 (including colour, nationality, ethnic or national origin).
-7. Religion or belief — s.10.
-8. Sex — s.11.
-9. Sexual orientation — s.12.
+Barbados employment law prohibits discrimination in the employment context. The primary legislative source governing employment relationships is the Employment Rights Act, Cap. 23, together with any related Barbados legislation addressing equality and non-discrimination in the workplace.
 
-Prohibited conduct:
+Important note on the scope of protected characteristics:
 
-Section 13 — Direct discrimination. Treating someone less favourably because of a protected characteristic. The comparator (real or hypothetical) is in the same circumstances apart from the characteristic.
+The grounds on which discrimination is prohibited under Barbados law are defined by Barbados legislation. Parties should not assume that the protected characteristics listed under the law of other jurisdictions — including the nine protected characteristics of the English Equality Act 2010 — apply in Barbados. The current and authoritative position is set out in the relevant statutes accessible at laws.barbados.gov.bb.
 
-Section 19 — Indirect discrimination. Applying a provision, criterion, or practice (PCP) that puts or would put persons sharing a protected characteristic at a particular disadvantage compared to others, where the PCP cannot be shown to be a proportionate means of achieving a legitimate aim.
+Subject to confirmation from current Barbados legislation, the following grounds are generally understood to attract anti-discrimination protection in Barbados employment law, though this list is not exhaustive and should be verified:
 
-Section 26 — Harassment. Unwanted conduct related to a protected characteristic (or of a sexual nature) which has the purpose or effect of violating dignity or creating an intimidating, hostile, degrading, humiliating, or offensive environment.
+- Sex / gender.
+- Race, colour, or national origin.
+- Disability.
+- Religion or belief.
+- Pregnancy and maternity.
+- Trade union membership or activity.
 
-Section 27 — Victimisation. Subjecting someone to a detriment because they have done a "protected act" (made a discrimination complaint, given evidence in someone else's complaint, made an allegation of contravention).
+Forms of prohibited conduct:
 
-Section 20 — Reasonable adjustments (disability only). Where a PCP, physical feature, or absence of an auxiliary aid puts a disabled person at a substantial disadvantage, the employer must take reasonable steps to remove or compensate for the disadvantage.
+The following forms of conduct are generally recognised as unlawful under Barbados employment law and common law principles applied in the jurisdiction:
 
-Section 39 — Employment scope. Discrimination prohibited in arrangements for offering employment, terms, opportunities, dismissal, and detriments.
+Direct discrimination: treating an employee or job applicant less favourably than a comparable person in similar circumstances because of a protected characteristic.
 
-Burden of proof — s.136. Once the claimant establishes facts from which the tribunal could decide, in the absence of any other explanation, that contravention occurred, the burden shifts to the respondent to prove it did not contravene the Act.
+Indirect discrimination: applying a requirement, condition, or practice that, while neutral on its face, has the effect of disadvantaging a group sharing a protected characteristic and cannot be justified by a legitimate aim proportionate to that aim.
 
-Time limit (s.123): 3 months less 1 day from the act complained of (or last act of a continuing course of conduct), subject to ACAS Early Conciliation extension. Extension where "just and equitable" — broader than the unfair-dismissal "not reasonably practicable" test.
+Harassment: unwanted conduct related to a protected characteristic that has the purpose or effect of violating dignity or creating an intimidating, hostile, degrading, humiliating, or offensive working environment.
 
-Remedy: declaration; recommendation; compensation. Compensation is uncapped, includes injury to feelings (Vento bands).`,
-  tags: ['Equality-Act-2010', 'protected-characteristics', 'direct-discrimination', 'indirect-discrimination', 'harassment', 'victimisation', 'reasonable-adjustments', 'burden-of-proof'],
+Victimisation: subjecting an employee to a detriment because they have raised a discrimination complaint, given evidence in another person's complaint, or otherwise asserted their rights under anti-discrimination provisions.
+
+Dismissal connected to a protected characteristic: a dismissal that is wholly or partly motivated by a protected characteristic is treated as unlawful under Cap. 23 and applicable Barbados law.
+
+Reasonable accommodation (disability):
+
+Where an employee has a disability, Barbados employment law — consistent with common law principles applied across Commonwealth jurisdictions — recognises an obligation on employers to consider reasonable accommodations to remove barriers affecting the employee's ability to perform their role. The extent of this obligation under current Barbados legislation should be confirmed with reference to Cap. 23 and any related disability or human rights legislation in Barbados.
+
+Burden of proof:
+
+Where an employee can show facts that give rise to an inference of discriminatory treatment, it is for the employer to provide a satisfactory non-discriminatory explanation. This burden-shifting principle is applied in Barbados courts consistent with common law practice in Commonwealth jurisdictions.
+
+No qualifying period:
+
+Anti-discrimination protections in employment generally apply from the first day of employment — no qualifying period is required to bring a discrimination claim.
+
+Remedies:
+
+Remedies for unlawful discrimination in Barbados employment may include:
+- Compensation for financial loss caused by the discrimination.
+- Compensation for injury to feelings or dignity (assessed on compensatory principles without fixed bands under Barbados law — contrast with the Vento bands applicable in English Employment Tribunals, which have no equivalent in Barbados).
+- Declarations and recommendations.
+
+Claims may be pursued through the Labour Department (Chief Labour Officer) for conciliation or through the civil courts:
+- Magistrates' Court: claims up to $10,000 BBD (approximately $5,000 USD at the 2:1 BBD/USD peg).
+- High Court of Barbados: claims above $10,000 BBD.
+
+Parties seeking precise guidance on the current scope of anti-discrimination protections in Barbados should consult the Barbados Bar Association (barbadosbar.org) or access the Laws of Barbados portal at laws.barbados.gov.bb.`,
+  tags: ['anti-discrimination', 'Barbados', 'Cap-23', 'protected-characteristics', 'harassment', 'victimisation', 'disability-accommodation'],
 };
 
 export default doc;

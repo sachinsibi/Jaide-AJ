@@ -1,44 +1,58 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'test-s21-validity-test',
+  id: 'test-possession-proceedings-test',
   type: 'test',
   category: 'tenancy',
-  title: 'Section 21 Validity Test',
-  jurisdiction: 'england-wales',
+  title: 'Possession Proceedings Test — Barbados',
+  jurisdiction: 'barbados',
   inForce: true,
-  inForceNote:
-    'PENDING — verify against gov.uk. Tied to Housing Act 1988 s.21; if the Renters\' Rights Act 2024 has abolished s.21, this test no longer applies to new notices and may apply only to transitional cases.',
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['section 21', 's.21', 's21', 'no-fault', 'eviction', 'evict', 'possession notice', 'two months notice'],
+  triggers: ['eviction', 'evict', 'possession', 'notice to quit', 'court order', 'leave the property', 'terminate tenancy', 'end tenancy'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Eight-stage validity test for a Housing Act 1988 s.21 notice: (1) deposit protected within 30 days; (2) prescribed information served (separate from protection); (3) Gas Safety Certificate served before occupation; (4) EPC provided; (5) How to Rent booklet provided; (6) HMO licensing in place where required; (7) at least 2 months\' notice on Form 6A; (8) not within first 4 months of tenancy and no s.33 retaliatory-eviction bar.',
-  content: `The Section 21 Validity Test (applied by County Court judges hearing accelerated possession claims under CPR Part 55):
+    'In Barbados, a landlord seeking possession of residential premises must satisfy a four-stage test: (1) valid grounds or basis for seeking possession; (2) proper notice to quit served in accordance with the tenancy terms and Cap. 230; (3) court proceedings commenced in the appropriate court (Magistrates\' Court or High Court); (4) a possession order obtained from the court after the tenant has had an opportunity to be heard.',
+  content: `Possession Proceedings Test — Barbados Residential Tenancies:
 
-A s.21 notice is invalid unless ALL eight prerequisites are satisfied:
+There is no equivalent to the English s.21 no-fault possession route in Barbados. All possession of residential premises requires a court order, obtained through proceedings before the Magistrates' Court (Cap. 116A) or the High Court of Barbados (Cap. 117). The following four-stage assessment applies.
 
-1. Deposit protected within 30 days of receipt (Housing Act 2004, s.213(1) and (3)) — held in DPS, MyDeposits, or TDS.
+Stage 1 — Grounds or basis for possession. Does the landlord have a valid basis for seeking to recover possession?
 
-2. Prescribed information served on the tenant within 30 days of receipt of the deposit (HA 2004 s.213(5)–(6); SI 2007/797). This is a SEPARATE requirement from protection itself; protecting the deposit but failing to serve prescribed information is non-compliance.
+For possession before the expiry of a fixed-term tenancy: the landlord must establish a ground for early termination, typically a breach of the tenancy terms — such as persistent non-payment of rent, serious damage to the property, or other conduct entitling the landlord to treat the tenancy as forfeited or terminated. The particular grounds available depend on the terms of the lease and the applicable provisions of Cap. 230.
 
-3. Gas Safety Certificate (CP12) served on the tenant before they took occupation, and renewed annually thereafter (Gas Safety (Installation and Use) Regulations 1998 reg.36; Trecarrell House Ltd v Rouncefield [2020] EWCA Civ 760 — late-served pre-occupation certificate may still bar s.21 retroactively).
+For possession at or after the end of a tenancy: at the expiry of a fixed term, the landlord may seek possession on the basis that the term has ended. For a periodic tenancy, the landlord must first serve a valid notice to quit to bring the tenancy to an end, and if the tenant does not vacate, may then commence possession proceedings.
 
-4. Energy Performance Certificate (EPC) provided to the tenant free of charge (Energy Performance of Buildings Regulations 2012 reg.6).
+Stage 2 — Valid notice to quit (where required). Has a valid notice to quit been served on the tenant?
 
-5. "How to Rent: the checklist for renting in England" booklet (the version current at grant of tenancy or relevant renewal) provided to the tenant. Hard-copy or email is acceptable; tenant must have actually received it.
+For periodic tenancies, common law requires notice of at least one full period of the tenancy (e.g., one month's notice for a monthly tenancy). Cap. 230 and the lease may specify longer notice. The notice must:
+(a) be in writing;
+(b) identify the premises;
+(c) state the date on which possession is required, which must correspond to the end of a period of the tenancy; and
+(d) be served on the tenant in accordance with any notice provisions in the lease or the applicable provisions of Cap. 230.
 
-6. HMO licensing in place where the dwelling is a licensable HMO (Housing Act 2004 Part 2 mandatory licensing; or any additional / selective licensing scheme adopted by the local authority under Parts 2/3).
+Failure to serve a valid notice to quit — or premature service — may render subsequent possession proceedings defective.
 
-7. At least two months' written notice on the prescribed Form 6A (s.21(1)(b) and (4)(a)).
+Stage 3 — Court proceedings in the correct forum. Have proceedings been commenced in the appropriate court?
 
-8. Notice not served in the first four months of the original (not renewed) tenancy (Deregulation Act 2015 s.41); and no retaliatory-eviction bar in place (Deregulation Act 2015 s.33: 6-month moratorium following an improvement notice or emergency remedial action notice from the local authority).
+(a) Magistrates' Court (Cap. 116A): appropriate for possession claims and related money claims within the Magistrates' Court civil jurisdiction. The tenant must be served with the claim and given an opportunity to respond and attend the hearing.
 
-Application: a single failure on any prerequisite renders the notice invalid. The court has no discretion to overlook non-compliance — accelerated possession is mandatory if compliant, refused if not. The landlord must serve a fresh, compliant notice once the breach is cured.
+(b) High Court of Barbados (Cap. 117): appropriate for possession claims involving amounts or legal issues exceeding the Magistrates' Court jurisdiction, or where the complexity of the case warrants it.
 
-Common failure points: deposit protected late or in a non-compliant scheme; prescribed information not served (often confused with protection); Gas Safety Certificate not served before occupation; HMO licence not held; notice served too early in the tenancy.`,
-  tags: ['section-21-test', 'eight-prerequisites', 'deposit', 'prescribed-information', 'gas-safety', 'EPC', 'how-to-rent'],
+A landlord who evicts a tenant without obtaining a court order — by changing locks, removing belongings, cutting off services, or physically excluding the tenant — acts unlawfully, regardless of the merits of the underlying possession claim.
+
+Stage 4 — Court order for possession. Has the court made a possession order after hearing the parties?
+
+The tenant has the right to appear before the court, contest the grounds for possession, raise any defences (including counterclaims for disrepair, breach of quiet enjoyment, or retaliatory eviction), and put their case to the judge. A possession order takes effect only if the court is satisfied that the grounds and procedure are made out and the tenant has had an opportunity to be heard.
+
+Tenant defences available:
+(a) Invalidity of the notice to quit — wrong period, wrong form, or failure to comply with Cap. 230 or lease requirements.
+(b) Dispute as to the grounds — e.g., denial of rent arrears, or evidence that the alleged breach has been remedied.
+(c) Counterclaim for disrepair — a tenant may counterclaim within possession proceedings for damages and remedial orders arising from the landlord's breach of repairing or habitability obligations.
+(d) Retaliatory intent — evidence that possession proceedings are brought in bad faith in direct response to the tenant's legitimate complaint about housing conditions.
+
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['possession-proceedings-test', 'notice-to-quit', 'court-order', 'Barbados', 'Cap-230', 'Magistrates-Court', 'High-Court'],
 };
 
 export default doc;

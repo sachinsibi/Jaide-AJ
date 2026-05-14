@@ -1,46 +1,38 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-cra-2015-rights-and-remedies',
+  id: 'statute-barbados-sale-of-goods-remedies',
   type: 'statute',
   category: 'contract-service',
-  title: 'Consumer Rights Act 2015, ss.19–24 — Consumer rights and remedies for goods',
-  jurisdiction: 'england-wales',
-  citation: 'Consumer Rights Act 2015, ss.19–24',
-  url: 'https://www.legislation.gov.uk/ukpga/2015/15/part/1/chapter/2/crossheading/what-statutory-rights-are-there-under-a-goods-contract',
+  title: "Buyer's Remedies for Defective Goods — Barbados",
+  jurisdiction: 'barbados',
+  citation: 'Sale of Goods Act, Cap. 318 (Laws of Barbados); common law of contract',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['contract-service'],
   tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
   factSummary:
-    'Sets out the consumer\'s tiered remedies for breach of ss.9–11: short-term right to reject within 30 days for full refund (s.22); right to repair or replacement (s.23); right to price reduction or final right to reject (s.24). After one failed repair/replacement attempt, the consumer can move to price reduction or final rejection.',
+    'Under the Sale of Goods Act, Cap. 318 and the common law of contract as applied in Barbados, a buyer whose goods do not conform to the implied terms as to quality, description, or fitness may reject the goods and recover the price where the right to reject has not been lost, or claim damages for breach of the implied term. Consequential losses are recoverable subject to the remoteness principle in Hadley v Baxendale, which is persuasive common law authority applied in Barbados.',
   eli5Summary:
-    'When you buy faulty goods, the law gives you tiered rights. Within 30 days, you can return the item for a full refund — no questions about repair. After 30 days, the shop must first try to repair or replace it. If one repair or replacement does not solve the problem, you can demand a price reduction (up to 100%) or your money back. The shop pays for postage, labour, and any reasonable costs.',
-  content: `Sections 19–24 Consumer Rights Act 2015 establish the consumer's remedy structure for breach of the implied terms in ss.9–11.
+    'If goods bought in Barbados are defective, the buyer has legal remedies. Where the defect is discovered promptly and the right to reject has not been lost, the buyer may return the goods and recover the price. Where rejection is no longer available, the buyer may claim damages for the loss caused by the defect. Additional losses caused by the defect may also be claimable, provided they were a reasonably foreseeable result of the breach.',
+  content: `Buyer's remedies for defective goods under Barbados law arise under the Sale of Goods Act, Cap. 318 and the general common law of contract.
 
-Section 19 — Hierarchy and gateway. Where the goods do not conform to the contract because of breach of s.9, 10 or 11 (or s.13 for digital content / s.18 for description on a sale by sample), the consumer has the rights described in ss.20–24.
+Rejection and recovery of the price. Cap. 318 classifies the implied terms as to quality, description, fitness, and title as conditions. Breach of a condition entitles the buyer to treat the contract as repudiated and reject the goods. Upon valid rejection, the buyer is entitled to recover the price paid. Note: Cap. 318 may contain specific provisions on when the right to reject is lost (acceptance, lapse of time, or inconsistent act) — consult laws.barbados.gov.bb for the exact provisions.
 
-Section 20–22 — Short-term right to reject (within 30 days):
-- The consumer may reject the goods within 30 days of (a) ownership transferring, (b) delivery, and (c) (if later) the trader notifying the consumer that any installation/setup the trader is required to do has been completed.
-- On rejection, the trader must give a full refund without undue delay and in any event within 14 days of the trader agreeing the consumer is entitled to it.
-- The 30-day period is paused while the trader is being given time to repair/replace under s.23.
-- For perishable goods, the period is the goods' reasonable expected life.
+Damages for breach of implied term (warranty measure). Where the buyer has accepted the goods, or the right to reject has otherwise been lost, Cap. 318 converts the breach of condition into a breach of warranty sounding in damages. The measure of damages is generally the difference between the value of the goods as delivered and their value if they had conformed to the contract (diminution in value).
 
-Section 23 — Right to repair or replacement (after the 30 days, or chosen instead of rejection):
-- The consumer may require the trader to repair or replace the goods.
-- The trader must do so within a reasonable time and without significant inconvenience, and must bear the costs (including labour, postage, etc.).
-- The trader can refuse one branch (e.g., replacement) only if it is impossible or disproportionate compared to the other.
+Damages for consequential loss. Common law damages for breach of contract extend to consequential losses, subject to the remoteness test in Hadley v Baxendale (1854) 9 Ex 341 — persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. Losses are recoverable if they arose naturally from the breach in the usual course of things, or were within the reasonable contemplation of both parties at the time of the contract as the probable result of breach.
 
-Section 24 — Right to price reduction or final right to reject:
-The consumer can demand a price reduction (up to 100%) or the final right to reject the goods if:
-(a) one repair or one replacement has not solved the lack of conformity; or
-(b) the consumer is entitled to repair/replacement but it is impossible, disproportionate, or has not been provided within a reasonable time and without significant inconvenience.
+Repair costs. Where the buyer has the goods repaired rather than rejecting them, the reasonable cost of repair is recoverable as damages for breach of the implied quality term.
 
-If the consumer exercises the final right to reject after more than 6 months, the trader may make a deduction for use (subject to specified categories).
+Duty to mitigate. As a matter of common law applied in Barbados, a buyer must take reasonable steps to mitigate loss following the seller's breach. A buyer who fails to take reasonable mitigation steps may not recover the avoidable portion of the loss.
 
-Reverse burden of proof under s.19(14): if the lack of conformity manifests within 6 months of delivery, it is presumed to have existed at delivery unless the trader proves otherwise. After 6 months, the consumer must prove the defect was inherent.`,
-  tags: ['CRA-2015', 'right-to-reject', 'tiered-remedies', '30-day-rule', 'repair', 'replacement', 'price-reduction'],
+Currency note. All monetary amounts in Barbados are denominated in Barbados dollars (BBD). The BBD is pegged to the United States dollar at a fixed rate of 2 BBD to 1 USD.
+
+Authoritative source: Laws of Barbados portal at laws.barbados.gov.bb. Cap. 318 should be consulted directly to confirm current provisions on acceptance, rejection, and damages.`,
+  tags: ['Cap-318', 'sale-of-goods', 'rejection', 'buyer-remedies', 'damages', 'consequential-loss', 'barbados'],
 };
 
 export default doc;

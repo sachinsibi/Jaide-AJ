@@ -8,7 +8,7 @@ export interface KnowledgeDocument {
   type: DocType;
   category: IncidentCategory | 'general';
   title: string;
-  jurisdiction: 'england-wales';
+  jurisdiction: 'barbados';
 
   citation?: string;
   url?: string;

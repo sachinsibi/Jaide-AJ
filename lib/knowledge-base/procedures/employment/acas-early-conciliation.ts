@@ -1,51 +1,56 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-acas-early-conciliation',
+  id: 'procedure-labour-department-conciliation',
   type: 'procedure',
   category: 'employment',
-  title: 'ACAS Early Conciliation (mandatory pre-tribunal step)',
-  jurisdiction: 'england-wales',
-  citation: 'Employment Tribunals Act 1996, s.18A; Early Conciliation Rules of Procedure',
-  url: 'https://www.acas.org.uk/early-conciliation',
+  title: 'Labour Department Conciliation — Barbados Employment Disputes',
+  jurisdiction: 'barbados',
+  citation: 'Employment Rights Act, Cap. 23',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['employment'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'Mandatory step before issuing an Employment Tribunal claim. Notify ACAS via the EC notification form; ACAS contacts the employer and attempts conciliated settlement. Period up to 6 weeks (extendable by 14 days). The limitation clock pauses during EC. ACAS issues a certificate enabling tribunal issue, whether or not settlement reached.',
-  content: `ACAS Early Conciliation (EC) is a mandatory pre-claim step under s.18A Employment Tribunals Act 1996. A prospective claimant must notify ACAS before presenting a claim to the Employment Tribunal — failure to do so renders the claim inadmissible.
+    'The Labour Department (Chief Labour Officer) in Barbados is the primary authority for employment dispute conciliation. Before or alongside civil court proceedings, parties to an employment dispute may seek conciliation through the Labour Department. The Labour Department facilitates discussion between employer and employee with a view to reaching a negotiated resolution without the need for court proceedings. This service is available at no cost to the parties.',
+  content: `Labour Department Conciliation — Barbados Employment Disputes:
 
-Process:
+The Labour Department and the Chief Labour Officer:
 
-1. Notification. The prospective claimant submits an EC notification form (online at acas.org.uk, by post, or by phone). Free.
+The Labour Department, headed by the Chief Labour Officer, is the Barbados government body responsible for employment regulation, labour relations, and dispute resolution. The Labour Department provides conciliation services for employment disputes as part of its statutory and administrative functions.
 
-2. Conciliator allocated. ACAS allocates a conciliator within a few working days. The conciliator contacts the prospective respondent (the employer) to explain EC and gauge willingness to engage.
+There is no Employment Tribunal in Barbados. Unlike in England and Wales, where ACAS Early Conciliation is a mandatory pre-tribunal step, Barbados employment disputes that are not resolved through internal or Labour Department processes are pursued through the civil courts — the Magistrates' Court or the High Court of Barbados.
 
-3. Conciliation period. Up to 6 weeks from the date of notification, extendable by 14 days where there is reasonable prospect of agreement and both parties consent.
+The conciliation process:
+
+1. Complaint to the Labour Department. An employee with a grievance relating to their employment — including unfair dismissal, discrimination, unpaid wages, or redundancy entitlement — may lodge a complaint with the Labour Department. The complaint is typically made in writing, setting out the nature of the dispute and the parties involved.
+
+2. Labour Officer involvement. A Labour Officer is allocated to the matter and contacts both parties. The officer explains the conciliation process and invites both sides to engage in facilitated discussion.
+
+3. Conciliation. The Labour Department facilitates discussions between employer and employee. The conciliator does not adjudicate on the merits of the dispute — the role is to assist the parties in communicating and exploring whether a mutually acceptable resolution can be reached. Conciliation is non-binding and without prejudice to either party's position in any subsequent civil proceedings.
 
 4. Outcome:
-   (a) Settlement reached — recorded on a COT3 agreement signed by both parties. The COT3 is a statutory binding settlement that prevents the claimant bringing tribunal proceedings on the same matter.
-   (b) No settlement — ACAS issues an EC Certificate. The certificate carries a unique reference number. The claimant must include this number on the ET1 claim form.
-   (c) Either party declines to engage — ACAS terminates and issues the certificate.
+   (a) Settlement reached: where the parties reach agreement through conciliation, the terms are recorded in writing. A conciliated settlement is binding as a contractual agreement between the parties.
+   (b) No settlement: where conciliation is unsuccessful, the Labour Department confirms that the process has been exhausted. Either party is then free to pursue the matter through the civil courts.
 
-5. Limitation effect. The limitation period is paused during EC (the "stop the clock" rule under s.207B ERA 1996). Calculate as follows:
-- Original limitation: 3 months less 1 day from the relevant act.
-- Day A = the date EC notification was received by ACAS (clock stops).
-- Day B = the date the EC certificate was deemed received (clock restarts).
-- The claimant has at least one month from Day B to present the ET1, or the original limitation if longer.
+5. Civil court proceedings. Following unsuccessful conciliation, the claimant may bring proceedings in:
+   - The Magistrates' Court (Cap. 116A): for employment claims up to $10,000 BBD (approximately $5,000 USD at the 2:1 BBD/USD peg).
+   - The High Court of Barbados (Cap. 117): for claims above $10,000 BBD.
 
-Strategic considerations:
+Limitation periods:
 
-- Early Conciliation is non-binding — the conciliator does not advise on merits or impose settlement.
-- Most settlements involve a financial payment plus an agreed reference and/or non-disparagement clause.
-- COT3 settlements are confidential and generally cover all employment-tribunal claims arising from the matters notified — read the wording carefully.
-- Solicitor representation is helpful but not required.
-- If the employer refuses to engage, the claimant simply receives the certificate and proceeds to tribunal.
+Limitation periods for employment claims in Barbados are governed by the applicable Barbados limitation legislation. Parties should not allow an employment dispute to go unaddressed for an extended period, as limitation periods may affect the ability to bring a civil claim. Specific periods should be confirmed with a Barbados-qualified legal practitioner or through the Labour Department.
 
-Cost: free to both parties. ACAS is funded by government as an independent statutory body.`,
-  tags: ['ACAS', 'Early-Conciliation', 'EC-certificate', 'COT3', 'mandatory-pre-claim', 'limitation-pause'],
+Cost:
+
+The Labour Department conciliation service is provided free of charge to both parties as a public service. Legal representation is not required but may be advisable, particularly for complex disputes or where significant sums are at stake.
+
+Contact:
+
+The Labour Department is a department of the Barbados government. Contact details and further information on the complaint and conciliation process may be obtained from the relevant Barbados government ministry responsible for labour affairs or through the Laws of Barbados portal at laws.barbados.gov.bb.`,
+  tags: ['Labour-Department', 'Chief-Labour-Officer', 'conciliation', 'Barbados', 'employment-dispute', 'pre-court', 'Cap-23'],
 };
 
 export default doc;

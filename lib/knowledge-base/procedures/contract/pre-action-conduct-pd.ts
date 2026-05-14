@@ -1,63 +1,65 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-pre-action-conduct-pd-contract',
+  id: 'procedure-pre-claim-steps-contract-barbados',
   type: 'procedure',
   category: 'contract-service',
-  title: 'Pre-Action Conduct PD — Letter Before Claim (consumer / contract)',
-  jurisdiction: 'england-wales',
-  citation: 'CPR Practice Direction on Pre-Action Conduct and Protocols',
-  url: 'https://www.justice.gov.uk/courts/procedure-rules/civil/rules/pd_pre-action_conduct',
+  title: 'Pre-Claim Steps for Contract Disputes — Barbados',
+  jurisdiction: 'barbados',
+  citation: 'Common practice in Barbados civil litigation; laws.barbados.gov.bb for applicable procedural rules',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['contract-service'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'For consumer and contract disputes there is no specific protocol; the general Practice Direction on Pre-Action Conduct and Protocols applies. The claimant must send a clear letter before claim setting out the basis of the claim, the loss, and a reasonable response period (typically 14 days for an acknowledgment and 14–30 days for a substantive response). Non-compliance is a costs and case-management consideration.',
-  content: `Practice Direction on Pre-Action Conduct and Protocols:
+    'Barbados does not have a statutory Pre-Action Protocol system equivalent to the CPR Practice Direction on Pre-Action Conduct (England and Wales). In Barbados, the recognised pre-claim practice is to send a letter of demand setting out the breach and loss, assemble an evidence bundle, allow a reasonable period for response, and consider mediation before issuing court proceedings. Unreasonable failure to engage prior to litigation may be relevant to the court\'s assessment of costs.',
+  content: `Pre-Claim Steps for Contract Disputes — Barbados.
 
-For most consumer / contract disputes there is no dedicated protocol (unlike housing or personal injury). The general Practice Direction sets out conduct expected of parties before issuing a County Court claim.
+Barbados does not have a statutory Pre-Action Protocol regime equivalent to the Civil Procedure Rules Practice Direction on Pre-Action Conduct and Protocols used in England and Wales. There are no CPR Pre-Action Protocols in Barbados. The steps described below reflect accepted pre-litigation practice in Barbados civil proceedings.
 
-Underlying objectives (PD 3):
-(a) Understand each other's positions.
-(b) Make decisions about how to proceed.
-(c) Try to settle without proceedings.
-(d) Consider a form of ADR.
-(e) Support efficient management of proceedings if litigation is unavoidable.
-(f) Reduce costs.
+Step 1 — Letter of demand (letter before claim).
 
-Required steps (PD 6):
+Before commencing court proceedings, a claimant ordinarily sends a letter of demand to the other party. The letter should set out:
 
-1. Letter before claim from the claimant. Sets out concisely:
-   - The factual basis of the claim.
-   - The legal basis (cause of action — breach of contract, breach of CRA s.9 / s.49, etc.).
-   - The remedy sought (specified sum, repair, replacement, refund, damages).
-   - A list of essential documents the claimant relies on.
-   - A reasonable period for the defendant to respond.
+(a) The identity of the claimant and the defendant.
+(b) A clear description of the contract — when it was made, what was agreed, and by whom.
+(c) The specific breach — what the defendant failed to do or did wrongly, with dates.
+(d) The loss or damage caused by the breach — itemised amounts in BBD, with supporting figures.
+(e) The legal basis for the claim — for example, breach of the implied conditions under the Sale of Goods Act, Cap. 318; breach of the common law implied term of reasonable care and skill in a services contract; or misrepresentation.
+(f) The remedy sought — refund, repair cost, replacement cost, or damages.
+(g) A reasonable time for the defendant to respond — typically 14 days for a straightforward consumer dispute, longer for more complex commercial matters.
+(h) Notice that court proceedings will be commenced if a satisfactory response is not received.
 
-2. Defendant's response. Within a reasonable time (typically 14 days for a simple consumer claim; 30 days for more complex; up to 90 days for very complex commercial). The response should:
-   - Confirm whether the claim is accepted in whole or in part.
-   - Identify what is in dispute and why.
-   - Provide documents the defendant relies on.
-   - Make any counter-offer.
+Step 2 — Evidence bundle.
 
-3. ADR consideration. The parties should consider mediation, ombudsman schemes, or other ADR before issuing. PD 9: parties may be required to give evidence of why ADR was not used.
+A claimant should assemble and retain all documents supporting the claim before sending the letter of demand:
+- A copy of the contract, receipt, invoice, or other documentary record of the agreement.
+- Any written descriptions, quotations, or specifications relied on.
+- Photographs of defective goods or incomplete work.
+- All correspondence between the parties.
+- Records of any amounts paid.
+- Evidence of the loss claimed (for example, repair invoices, quotes for alternative services, or records of consequential financial loss).
 
-4. Pre-action disclosure. Parties exchange documents necessary for the other to understand the position.
+Step 3 — Defendant's response.
 
-5. Stocktake. Before issuing, the claimant reviews the position and confirms that proceedings remain necessary and proportionate.
+The defendant should respond within the period specified in the letter of demand. A reasonable response acknowledges receipt of the letter, confirms whether the claim is accepted (in whole or in part), identifies the matters in dispute and the reasons for any disagreement, and makes any counter-offer. Where the claim is rejected, the defendant should explain why and provide any supporting documents.
 
-Sanctions for non-compliance (PD 13–16):
+Step 4 — Consideration of mediation.
 
-The court may, at its discretion:
-- Stay proceedings until the steps are taken.
-- Impose costs orders against a non-compliant party.
-- Take non-compliance into account when allocating costs at the end of the case.
-- Treat unjustified refusal to engage in ADR as a cost-relevant factor (Halsey v Milton Keynes [2004] EWCA Civ 576; PGF II SA v OMFS [2013] EWCA Civ 1288).
+Before issuing court proceedings, the parties should consider whether mediation or another form of alternative dispute resolution could resolve the dispute. Mediation is a confidential, voluntary process facilitated by a neutral third party. In Barbados, mediation services are available through the Barbados Bar Association (barbadosbar.org) and private practitioners. Where court proceedings are ultimately issued, a court may take into account whether the parties engaged reasonably in attempts to settle the dispute before litigation.
 
-For consumer claims under £10,000 (small claims track), the protocol expectations are calibrated — extensive disclosure is not expected — but a clear letter before claim is still required, and unreasonable refusal to engage with consumer ADR (e.g., a sectoral ombudsman the trader is required to participate in) is a serious cost concern.`,
-  tags: ['pre-action-conduct', 'PD-pre-action', 'letter-before-claim', 'consumer-claim', 'ADR'],
+Step 5 — Failure to engage — consequences.
+
+Where one party unreasonably fails to respond to a letter of demand, refuses to engage in any form of pre-claim communication, or takes an entirely unsupported position in response to a clearly valid claim, that conduct is a relevant factor in any subsequent court proceedings. The court may, in its discretion, reflect unreasonable pre-litigation conduct in its award of costs.
+
+Step 6 — Issuing proceedings.
+
+If pre-claim steps do not resolve the dispute, the claimant may commence proceedings in the Magistrates' Court (claims up to $10,000 BBD) or the High Court of Barbados (claims above $10,000 BBD). Completing the pre-claim steps described above is good practice and prepares the claimant's evidence bundle for court proceedings.
+
+Currency note. All monetary amounts in Barbados are denominated in Barbados dollars (BBD), pegged at 2 BBD to 1 USD.`,
+  tags: ['pre-claim-steps', 'letter-of-demand', 'pre-action', 'contract-dispute', 'barbados', 'Magistrates-Court', 'High-Court'],
 };
 
 export default doc;

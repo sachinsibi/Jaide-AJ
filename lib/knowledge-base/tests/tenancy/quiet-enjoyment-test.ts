@@ -4,29 +4,35 @@ const doc: KnowledgeDocument = {
   id: 'test-quiet-enjoyment-test',
   type: 'test',
   category: 'tenancy',
-  title: 'Quiet Enjoyment Breach Test',
-  jurisdiction: 'england-wales',
+  title: 'Quiet Enjoyment Breach Test — Barbados',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['quiet enjoyment', 'interference', 'access', 'entered', 'visit', 'noise', 'harassment', 'derogation'],
+  triggers: ['quiet enjoyment', 'interference', 'access', 'entered', 'visit', 'noise', 'harassment', 'derogation', 'disturbing'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Three-stage objective test for breach of the implied covenant for quiet enjoyment: (1) substantial interference with the tenant\'s possession or enjoyment, (2) by the landlord or someone claiming under the landlord, (3) amounting to derogation from grant. Pre-existing physical conditions of the demised premises do not breach the covenant (Southwark v Mills).',
-  content: `The Quiet Enjoyment Breach Test (applied by County Court judges in tenant claims for breach of the implied covenant for quiet enjoyment):
+    'Three-stage test for breach of the implied covenant for quiet enjoyment in Barbados residential tenancies: (1) substantial interference with the tenant\'s possession or enjoyment, (2) caused by the landlord or someone acting under the landlord\'s authority, (3) amounting to derogation from grant during the tenancy. Pre-existing physical conditions at the start of the tenancy do not breach the covenant.',
+  content: `Quiet Enjoyment Breach Test — Barbados Residential Tenancies:
 
-Stage 1 — Substantial interference. Was there substantial interference with the tenant's possession or enjoyment of the demised premises? The threshold is meaningful: trivial inconvenience does not breach the covenant. Examples meeting the threshold: persistent unannounced entry; persistent shouting or threats by the landlord; cutting off utilities (McCall v Abelesz [1976] QB 585); building works rendering the premises uninhabitable; persistent surveillance.
+The implied covenant for quiet enjoyment is part of Barbados common law, applied as a Commonwealth jurisdiction. The following three-stage test is applied in assessing whether a breach of the covenant has occurred.
 
-Stage 2 — Attribution. Was the interference caused by the landlord, someone claiming under the landlord (e.g., a managing agent acting in scope), or someone for whom the landlord is responsible? The covenant does not extend to third-party interference (e.g., another tenant in the building) unless the landlord has authorised, encouraged, or failed to take reasonable steps to prevent it where the landlord has the contractual or property right to act.
+Stage 1 — Substantial interference. Was there substantial interference with the tenant's possession or enjoyment of the demised premises? The threshold is meaningful: trivial or minor inconvenience does not breach the covenant. The assessment is objective — whether the conduct, viewed objectively, substantially interfered with the tenant's reasonable enjoyment of the premises. Examples of conduct likely to meet the threshold: persistent unannounced entry into the premises; persistent threats, intimidation, or verbal harassment directed at the tenant; deliberate cutting off or interference with utilities such as water or electricity (McCall v Abelesz [1976] QB 585, persuasive common law authority); building or renovation works that render the premises uninhabitable; persistent surveillance.
 
-Stage 3 — Derogation from grant. Did the conduct amount to derogation from grant — i.e., the landlord taking back, in substance, what the tenant was granted? The covenant is prospective, not retrospective: pre-existing physical conditions of the premises at the start of the tenancy cannot breach quiet enjoyment (Southwark LBC v Mills [2001] 1 AC 1). The covenant addresses the landlord's conduct during the term, not the inherent state of the premises.
+Stage 2 — Attribution to the landlord. Was the interference caused by the landlord, someone acting under the landlord's authority (such as a managing agent or contractor within the scope of their engagement), or someone for whom the landlord is responsible? The covenant does not extend to independent third parties — such as neighbouring tenants — over whom the landlord has no contractual or property control, unless the landlord has authorised, encouraged, or unreasonably failed to prevent the conduct when having the means to do so.
 
-The test is objective: the question is whether the landlord's conduct, viewed objectively, substantially interfered with the tenant's reasonable enjoyment, not whether the particular tenant subjectively felt aggrieved.
+Stage 3 — Derogation from grant. Did the conduct amount to derogation from grant — that is, did the landlord substantially take back, by conduct, what was granted to the tenant under the tenancy? The covenant is prospective, not retrospective: it addresses the landlord's acts and conduct during the term, not the physical condition of the premises as they existed when the tenancy was granted. Pre-existing conditions present at the start of the tenancy are not themselves a breach of quiet enjoyment (Southwark LBC v Mills [2001] 1 AC 1, persuasive common law authority applied in Barbados).
 
-Defences: lawful exercise of express rights of entry (e.g., to inspect under a properly drafted clause, with reasonable notice and at reasonable times) does not breach the covenant. Statutory rights of entry (e.g., for gas safety inspections) likewise.
+Defences: the lawful exercise of express rights of entry contained in the tenancy agreement — exercised with reasonable notice and at reasonable times — does not constitute a breach. Entry in genuine emergency circumstances likewise.
 
-Remedies: damages (general damages for loss of enjoyment and discomfort; aggravated/exemplary damages where the conduct is high-handed or oppressive — Drane v Evangelou [1978] 1 WLR 455); injunction; in serious cases, statutory damages under Housing Act 1988 ss.27–28.`,
-  tags: ['quiet-enjoyment-test', 'three-stage-test', 'derogation-from-grant', 'objective-test', 'substantial-interference'],
+Remedies available in Barbados:
+- General damages for loss of enjoyment, distress, and inconvenience.
+- Aggravated damages where the landlord's conduct has been high-handed or oppressive.
+- An injunction from the Magistrates' Court (Cap. 116A) or the High Court of Barbados (Cap. 117) to restrain further interference.
+- Where the conduct also amounts to harassment or unlawful exclusion, additional civil and potentially criminal remedies may arise.
+
+Currency note: all monetary amounts in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['quiet-enjoyment-test', 'three-stage-test', 'derogation-from-grant', 'objective-test', 'Barbados', 'substantial-interference'],
 };
 
 export default doc;

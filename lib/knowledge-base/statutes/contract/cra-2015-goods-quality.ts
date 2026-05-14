@@ -1,36 +1,40 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-cra-2015-goods-quality',
+  id: 'statute-barbados-sale-of-goods-cap318-quality',
   type: 'statute',
   category: 'contract-service',
-  title: 'Consumer Rights Act 2015, ss.9–11 — Implied terms in contracts for goods',
-  jurisdiction: 'england-wales',
-  citation: 'Consumer Rights Act 2015, ss.9, 10 and 11',
-  url: 'https://www.legislation.gov.uk/ukpga/2015/15/part/1/chapter/2',
+  title: 'Sale of Goods Act, Cap. 318 — Implied Terms: Quality and Fitness',
+  jurisdiction: 'barbados',
+  citation: 'Sale of Goods Act, Cap. 318 (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['contract-service'],
   tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
   factSummary:
-    'Sections 9–11 imply into every consumer contract for the supply of goods three statutory terms: that the goods are of satisfactory quality (s.9), fit for any particular purpose made known to the trader (s.10), and as described (s.11). These terms cannot be excluded or restricted against a consumer (s.31).',
+    'The Sale of Goods Act, Cap. 318 of the Laws of Barbados implies into contracts for the sale of goods terms as to title, description, satisfactory quality, and fitness for purpose. These implied terms operate as a matter of law regardless of whether the parties have addressed them expressly. A seller who delivers goods in breach of these implied terms is liable to the buyer in damages and, where the right has not been lost, the buyer may reject the goods and recover the price paid.',
   eli5Summary:
-    'When you buy something from a shop or trader, the law builds three promises into the deal automatically: the item must be of decent quality, must do the particular job you said you needed it for, and must match how it was described. These rights are yours by law — the shop cannot remove them in the small print.',
-  content: `Sections 9, 10, and 11 of the Consumer Rights Act 2015 imply three statutory terms into every contract for the supply of goods between a trader and a consumer. They apply to new goods, second-hand goods, and digital content supplied on a tangible medium.
+    'When goods are sold in Barbados, the law automatically builds certain promises into the sale. The goods must be of decent quality, must do what they were described as doing, and must be fit for the purpose the buyer made known to the seller. These protections come from Cap. 318 and cannot simply be written away in the fine print of a receipt.',
+  content: `The Sale of Goods Act, Cap. 318 of the Laws of Barbados governs contracts for the sale of goods and implies several terms into such contracts as a matter of law.
 
-Section 9 — Satisfactory quality. The goods must be of satisfactory quality. The standard is that which a reasonable person would regard as satisfactory, taking account of (a) any description of the goods, (b) the price (if relevant), and (c) all other relevant circumstances (s.9(2)). The aspects of quality include fitness for all the purposes for which goods of that kind are commonly supplied, appearance and finish, freedom from minor defects, safety, and durability (s.9(3)).
+Implied term as to title. Cap. 318 implies a condition that the seller has the right to sell the goods. A buyer who acquires goods from a seller without good title may return those goods and recover the price.
 
-A defect specifically drawn to the consumer's attention before the contract, or that the consumer should reasonably have noticed on examination, is excluded (s.9(4)).
+Implied term as to description. Where goods are sold by description, Cap. 318 implies a condition that the goods correspond with that description. This applies to oral representations, written descriptions, labels, catalogues, and advertised specifications.
 
-Section 10 — Fit for particular purpose. Where the consumer has made known to the trader (expressly or by implication) any particular purpose for which the goods are being bought, there is an implied term that the goods are reasonably fit for that purpose. Engaged where the consumer's stated purpose goes beyond the goods' common purpose (e.g., "I need this paint for outdoor use").
+Implied term as to satisfactory quality. Cap. 318 implies a condition that goods sold in the course of a business are of satisfactory quality. The standard is that which a reasonable person would regard as satisfactory, taking account of the description, price, and all relevant circumstances. Aspects of quality include fitness for all the purposes for which goods of that kind are commonly supplied, appearance and finish, freedom from minor defects, safety, and durability.
 
-Section 11 — As described. Where goods are supplied by reference to a description, the goods must match that description. Includes information given orally, in advertising, on packaging, in the contract, or about the model on display.
+A defect specifically drawn to the buyer's attention before the contract is made, or that the buyer should have discovered upon examination of the goods, is not covered by this implied term.
 
-Cannot be excluded against a consumer. Section 31 prevents any term in a consumer contract that would exclude or restrict liability for breach of ss.9, 10, or 11. Such a term is not binding on the consumer.
+Implied term as to fitness for particular purpose. Where the buyer makes known to the seller (expressly or by implication) any particular purpose for which the goods are required, Cap. 318 implies a condition that the goods are reasonably fit for that purpose, unless the circumstances show the buyer did not rely, or it was unreasonable to rely, on the seller's skill or judgment.
 
-Reverse burden of proof. Section 19(14): if goods do not conform to the contract within six months of delivery, they are presumed not to have conformed at delivery, unless the trader proves otherwise (or the lack of conformity is incompatible with that presumption).`,
-  tags: ['CRA-2015', 'satisfactory-quality', 'fit-for-purpose', 'as-described', 'section-9', 'section-10', 'section-11'],
+Seller's liability. A seller who delivers goods in breach of any of the above implied terms is in breach of condition, entitling the buyer to treat the contract as repudiated and reject the goods. Where the right to reject has been lost (for example, by acceptance), the buyer may claim damages for breach of warranty.
+
+Exclusion of implied terms. Any attempt to exclude or restrict the implied terms under Cap. 318 in a consumer contract is subject to the general requirements of fairness and reasonableness under Barbados law. Consult laws.barbados.gov.bb for the applicable Barbados provisions governing unfair contract terms.
+
+Authoritative source: Laws of Barbados portal at laws.barbados.gov.bb. The exact text of Cap. 318 should be consulted to confirm current provisions.`,
+  tags: ['Cap-318', 'sale-of-goods', 'implied-terms', 'satisfactory-quality', 'fit-for-purpose', 'as-described', 'barbados'],
 };
 
 export default doc;

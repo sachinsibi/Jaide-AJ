@@ -1,45 +1,31 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-rta-1988-s151',
+  id: 'statute-mvit-cap-166-insurer-obligations',
   type: 'statute',
   category: 'motor-accident',
-  title: 'Road Traffic Act 1988, s.151 — Insurer\'s duty to satisfy third-party judgments',
-  jurisdiction: 'england-wales',
-  citation: 'Road Traffic Act 1988, ss.151–152',
-  url: 'https://www.legislation.gov.uk/ukpga/1988/52/section/151',
+  title: 'Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166 — Insurer\'s Obligations to Third Parties',
+  jurisdiction: 'barbados',
+  citation: 'Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166; Insurance Act, Cap. 310',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['insurer dispute', 'insurer refused', 'policy void', 'misrepresentation', 'third party rights', 'judgment'],
+  triggers: ['insurer dispute', 'insurer refused', 'policy void', 'denied claim', 'third party rights', 'judgment'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Where a third-party judgment is obtained against an insured driver in respect of a liability required to be covered by a s.145 policy, the insurer must pay the judgment to the third party — even where the insurer would otherwise be entitled to avoid the policy against its own insured (e.g., for misrepresentation), subject only to specified statutory exclusions.',
-  content: `Section 151 Road Traffic Act 1988 protects the third-party victim of a road traffic accident against the consequences of disputes between the at-fault driver and their insurer.
+    'Cap. 166 requires that a third-party motor insurer satisfy judgments obtained against an insured in respect of liabilities covered by compulsory insurance, subject to the terms of the Act. Disputes about insurer conduct may be escalated to the Financial Services Commission of Barbados, which regulates the insurance sector under the Insurance Act, Cap. 310, though the Commission\'s role is supervisory rather than adjudicative.',
+  content: `Under the Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166, insurers are subject to obligations to third parties that limit the extent to which policy defences can be used to defeat third-party claims.
 
-Trigger: a judgment obtained against any person in respect of a liability that is required to be covered by a policy of insurance under s.145 (compulsory third-party cover).
+Insurer's obligation to third parties: where a liability falls within the scope of compulsory cover under Cap. 166, an insurer that has issued a compliant policy is generally required to satisfy a judgment obtained against the insured, even if the insurer has grounds to dispute the policy with its own insured.
 
-Insurer's obligation (s.151(5)): the insurer must pay to the person in whose favour the judgment was given:
+This principle reflects the purpose of Cap. 166: to ensure that third-party victims are not left without recourse because of disputes internal to the insurer-insured relationship.
 
-(a) any sum payable under the judgment in respect of the liability, including any sum awarded by way of interest on that sum; and
+Financial Services Commission: the insurance sector in Barbados is regulated by the Financial Services Commission under the Insurance Act, Cap. 310. Where an insurer disputes liability or is alleged to have acted improperly, a complaint may be directed to the FSC. The FSC's functions are primarily supervisory and regulatory — it can investigate and take regulatory action against insurers — but it does not operate as an independent adjudicative complaints body in the way that a financial ombudsman service would. Regulatory complaints and civil claims are separate routes.
 
-(b) any amount payable in respect of costs.
+Insurer denial of liability: where an insurer denies a third-party claim on the basis that the accident was the fault of the claimant, or on the basis of contributory negligence, those disputes are determined by the civil courts applying the law of negligence and contributory negligence. The insurer stands in the position of the at-fault driver for the purpose of the civil dispute.
 
-This obligation arises notwithstanding that the insurer may be entitled to avoid or cancel, or may have avoided or cancelled, the policy as against its own insured (e.g., on grounds of material non-disclosure or misrepresentation under the Consumer Insurance (Disclosure and Representations) Act 2012, or breach of policy condition).
-
-Statutory exclusions to s.151 obligation (s.151(2)–(4)):
-
-- The judgment must relate to a liability the policy was required to cover. Excluded use cases (private vehicle used commercially, deliberate criminal use, etc.) may fall outside.
-- The third party must have given the insurer notice of the proceedings before or within 7 days of issue (s.152(1)(a)).
-- The judgment must not have been wholly satisfied within 7 days of being given.
-- Proceedings to recover the sum must be commenced within the time prescribed.
-
-Recovery (s.151(8)): where the insurer pays under s.151 in circumstances where it would have been entitled to avoid the policy against its insured, it may recover the amount from the insured.
-
-Notification trap: a third-party claimant who fails to notify the insurer within 7 days of issuing proceedings against the at-fault driver may forfeit the s.151 protection. Pre-action correspondence to the insurer is essential and should be confirmed in writing.
-
-Where the at-fault driver is uninsured outright, s.151 has no insurer to bind; recovery is via the Motor Insurers' Bureau (Uninsured Drivers' Agreement).`,
-  tags: ['RTA-1988', 'section-151', 'third-party-rights', 'insurer-obligation', 'judgment-satisfaction'],
+Where there is no insurance at all: where the at-fault driver is uninsured, Cap. 166 cannot bind an insurer that has no policy. In that situation, the claim is brought directly against the at-fault driver as an individual in the civil courts.`,
+  tags: ['Cap-166', 'insurer-obligations', 'third-party-rights', 'FSC', 'Insurance-Act-Cap-310', 'Barbados'],
 };
 
 export default doc;

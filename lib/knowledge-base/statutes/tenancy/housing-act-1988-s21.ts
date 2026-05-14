@@ -1,44 +1,43 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-housing-act-1988-s21',
+  id: 'statute-barbados-tenancy-possession-proceedings',
   type: 'statute',
   category: 'tenancy',
-  title: 'Housing Act 1988, s.21 — Notice of no-fault possession',
-  jurisdiction: 'england-wales',
-  citation: 'Housing Act 1988, s.21',
-  url: 'https://www.legislation.gov.uk/ukpga/1988/50/section/21',
+  title: 'Court-Ordered Possession Proceedings — Barbados Tenancy Law',
+  jurisdiction: 'barbados',
+  citation: 'Landlord and Tenant Act, Cap. 230; Supreme Court of Judicature Act, Cap. 117; Magistrates\' Court Act, Cap. 116A (Laws of Barbados)',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
-  inForceNote:
-    'PENDING — verify against gov.uk before relying on this. The Renters\' Rights Act 2024 is expected to abolish s.21 no-fault possession; commencement status as of this doc\'s lastVerified is unconfirmed and may have changed.',
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['section 21', 's.21', 's21', 'no-fault', 'eviction', 'evict', 'notice to quit', 'possession'],
-  tabs: ['legalBreakdown'],
+  pinFor: ['tenancy'],
+  tabs: ['overview', 'legalBreakdown', 'eli5', 'references'],
+  triggers: ['eviction', 'evict', 'possession', 'notice to quit', 'leave the property', 'end tenancy', 'terminate tenancy'],
   factSummary:
-    'Section 21 Housing Act 1988 enables a landlord of an assured shorthold tenancy to recover possession after the fixed term without proving fault, provided strict prerequisites are met (deposit protection, prescribed information served, Gas Safety Certificate, EPC, How to Rent booklet, HMO licensing where required, ≥2 months\' notice, after first 4 months of tenancy).',
-  content: `Section 21 Housing Act 1988 provides a "no-fault" route to possession of an assured shorthold tenancy (AST). The landlord need not allege any breach by the tenant; instead the court must make a possession order if the prescribed procedural and statutory prerequisites are met.
+    'In Barbados, there is no equivalent to the English no-fault possession route. A landlord seeking to recover possession of residential premises must obtain a court order. Possession proceedings are brought before the Magistrates\' Court (where appropriate by value and nature) or the High Court of Barbados, and the tenant has the right to contest the claim before a judge.',
+  eli5Summary:
+    'In Barbados, a landlord cannot simply tell a tenant to leave and change the locks. The landlord must go to court — either the Magistrates\' Court or the High Court — and get a judge to order the tenant to leave. The tenant has the right to appear and give their side of the story before the court makes any decision.',
+  content: `Court-Ordered Possession Proceedings — Barbados Tenancy Law:
 
-Eight prerequisites for a valid s.21 notice (each independent — failure on any one renders the notice invalid):
+Unlike England, Barbados has no statutory "no-fault" possession route whereby a landlord may recover possession merely by giving a prescribed period of notice without any ground. In Barbados, possession of residential premises requires a court order.
 
-1. Deposit protected within 30 days of receipt in an authorised tenancy deposit scheme (Housing Act 2004 s.213(1) and (3)).
+Requirement for a court order: a landlord who wishes to recover possession of premises occupied by a tenant under a residential tenancy must commence proceedings in the appropriate court and obtain a judgment or order for possession. Self-help eviction — changing locks, removing belongings, physically excluding the tenant without a court order — is not lawful in Barbados.
 
-2. Prescribed information served on the tenant within 30 days of receipt of the deposit (Housing Act 2004 s.213(5) and (6); SI 2007/797). This is a separate requirement from protection itself — protection without prescribed-information service is non-compliance.
+Court jurisdiction:
 
-3. Gas Safety Certificate (CP12) provided to the tenant before they take occupation, and renewed annually (Gas Safety (Installation and Use) Regulations 1998 reg.36; Trecarrell House Ltd v Rouncefield [2020] EWCA Civ 760).
+(a) Magistrates' Court (Cap. 116A — Magistrates' Court Act): the Magistrates' Court has civil jurisdiction for claims appropriate to its monetary limits. For tenancy matters falling within those limits, possession proceedings may be initiated there.
 
-4. Energy Performance Certificate (EPC) provided to the tenant free of charge (Energy Performance of Buildings (England and Wales) Regulations 2012 reg.6).
+(b) High Court of Barbados (Cap. 117 — Supreme Court of Judicature Act): the High Court has unlimited civil jurisdiction and handles possession proceedings involving higher-value claims, more complex tenancy disputes, or where the Magistrates' Court jurisdiction is exceeded.
 
-5. "How to Rent: the checklist for renting in England" booklet (current version) provided to the tenant.
+Grounds for possession: a landlord seeking possession before expiry of a fixed-term tenancy must establish a recognised ground, such as breach of tenancy terms (including persistent non-payment of rent) or other conduct entitling the landlord to terminate. At the end of a periodic tenancy, the landlord must serve appropriate notice to quit and, if the tenant does not vacate, obtain a court order.
 
-6. HMO licensing in place where the dwelling is a licensable HMO (Housing Act 2004 Pt 2 / Pt 3, and any additional/selective licensing scheme adopted by the local authority).
+Notice to quit: before commencing possession proceedings, a landlord is generally required to serve a notice to quit on the tenant, giving reasonable notice appropriate to the type of tenancy and the period of the tenancy. The common law and the relevant provisions of Cap. 230 govern the minimum notice period and form required.
 
-7. Minimum two months' notice given, in writing, on the prescribed Form 6A.
+Tenant's right to contest: a tenant served with a possession claim has the right to appear before the court, raise any defences (including challenges to the notice, disputes about rent arrears, or counterclaims for disrepair), and put their case before a judge determines whether a possession order is to be made.
 
-8. Notice not served in the first four months of the original tenancy (Deregulation Act 2015 s.41); and any retaliatory-eviction moratorium under Deregulation Act 2015 s.33 not in force.
-
-Status caveat: this doc reflects the s.21 regime as understood at the lastVerified date. The Renters' Rights Act 2024 is expected to abolish s.21 and migrate ASTs to a new periodic-tenancy regime; verify current commencement status on legislation.gov.uk and gov.uk before advising any tenant or landlord on a live notice.`,
-  tags: ['section-21', 'Housing-Act-1988', 'no-fault-possession', 'AST', 'prescribed-information'],
+Currency note: all monetary thresholds in Barbados Dollars (BBD). The BBD is pegged at 2:1 to the United States Dollar (USD).`,
+  tags: ['possession-proceedings', 'court-order', 'Cap-230', 'Magistrates-Court', 'High-Court', 'Barbados', 'eviction'],
 };
 
 export default doc;

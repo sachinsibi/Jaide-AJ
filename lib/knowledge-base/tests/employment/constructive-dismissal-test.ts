@@ -4,47 +4,54 @@ const doc: KnowledgeDocument = {
   id: 'test-constructive-dismissal-test',
   type: 'test',
   category: 'employment',
-  title: 'Constructive Dismissal Test (Western Excavating)',
-  jurisdiction: 'england-wales',
+  title: 'Constructive Dismissal Test — Barbados (Cap. 23 and Common Law)',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   triggers: ['constructive dismissal', 'forced to resign', 'no choice but to leave', 'last straw', 'breach of trust', 'forced out', 'resigned because'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Four-stage test (Western Excavating v Sharp [1978] QB 761): (1) repudiatory breach of contract by the employer; (2) employee resigned (at least in part) in response to the breach; (3) no affirmation — resignation occurred without unreasonable delay; (4) the resignation counts as dismissal under s.95(1)(c) ERA 1996. Mere unreasonable conduct without contractual breach is not enough.',
-  content: `Constructive Dismissal Test:
+    'The constructive dismissal test under Barbados employment law (Cap. 23 and common law) requires: (1) a repudiatory breach of contract by the employer, going to the root of the employment relationship; (2) the employee resigned at least in part in response to that breach; (3) the employee did not affirm the contract by delaying unreasonably before resigning; (4) the employee in fact resigned. Mere unreasonable conduct by the employer without an underlying contractual breach is not sufficient.',
+  content: `Constructive Dismissal Test under Barbados Employment Law (Cap. 23 and Common Law):
 
-The test under s.95(1)(c) ERA 1996 (constructive dismissal) is contractual, not based on reasonableness alone (Western Excavating v Sharp [1978] QB 761).
+The test for constructive dismissal in Barbados is contractual, not based on a general assessment of the employer's reasonableness. The leading persuasive common law authority is Western Excavating (ECC) Ltd v Sharp [1978] QB 761 (Court of Appeal, England and Wales), applied in Barbados as a Commonwealth jurisdiction. The test is also reflected in Cap. 23 (Employment Rights Act, Barbados).
 
-Stage 1 — Repudiatory breach. The employer must have committed a fundamental breach of an express or implied term of the contract, going to the root of the contract.
+Stage 1 — Repudiatory breach by the employer. The employer must have committed a fundamental breach of an express or implied term of the employment contract — a breach going to the root of the relationship. The mere fact that the employer acted unreasonably, harshly, or unfairly is not sufficient without an underlying contractual breach.
 
-Common breaches grounding constructive dismissal:
+Common breaches capable of supporting a constructive dismissal claim:
 
-(a) Breach of the implied term of mutual trust and confidence (Malik v BCCI [1998] AC 20). The leading head: serious unilateral changes to terms; humiliation; failure to investigate grievances; sustained bullying; setting an employee up to fail.
+(a) Breach of the implied term of mutual trust and confidence — the most commonly relied-upon basis. Examples include: unilateral and unjustified changes to fundamental contractual terms; sustained bullying, humiliation, or intimidation; failure to investigate a serious grievance; demotion without contractual authority; creating an intolerable working environment deliberately or recklessly; setting unrealistic targets designed to engineer failure.
 
-(b) Failure to pay agreed wages or honour contractual benefits.
+(b) Failure to pay agreed wages or honour express contractual benefits.
 
-(c) Unilateral changes to fundamental terms (pay, hours, role, location) without consent or contractual right.
+(c) Unilateral and fundamental changes to role, working hours, or place of work without contractual authority and without consent.
 
-(d) Breach of the duty to provide a safe system of work (e.g., failing to address bullying or workplace stress).
+(d) Breach of the duty to provide a safe working environment — persistent failure to address bullying, harassment, or a serious physical safety risk of which the employer is aware.
 
-(e) Failure to comply with grievance procedures — particularly where the failure forms part of a course of conduct.
+(e) Breach of any other express contractual term — for example, demoting in breach of a contractual guarantee of status.
 
-(f) Breach of an express term (e.g., demoting in breach of contract; reducing pay below the contractual rate).
+Stage 2 — Causation. The employee must resign at least in part in response to the employer's breach. If the employee resigned for an entirely different reason unconnected to the breach, the constructive dismissal claim fails. Mixed motives do not defeat the claim if the breach was a genuine contributing cause of the decision to resign.
 
-Stage 2 — Causation. The employee must resign at least in part in response to the breach. Mixed motives do not defeat the claim if the breach was a real cause.
+Stage 3 — No affirmation. The employee must not delay unreasonably before resigning after becoming aware of the breach. Continuing to work for an extended period without protest, after full knowledge of the breach, may amount to affirmation — treating the contract as continuing and waiving the right to resign on that basis.
 
-Stage 3 — No affirmation. The employee must resign within a reasonable time. Continuing to work without protest after the breach can amount to affirmation, treating the contract as continuing and waiving the right to claim constructive dismissal. Reasonable time depends on circumstances; raising a grievance and giving the employer time to respond does not affirm.
+Important: raising a formal internal grievance and allowing the employer a reasonable opportunity to remedy the breach is consistent with preserving the right to claim constructive dismissal. An employee who raises a grievance, waits for a reasonable response, and then resigns where the breach remains unremedied has not affirmed the contract.
 
-Stage 4 — Resignation. The employee must in fact resign — not merely complain or threaten. The resignation can be with or without notice; resignation with notice is still a constructive dismissal if the four elements are met.
+Stage 4 — Resignation. The employee must in fact resign — with or without notice. A threat to resign, a complaint short of resignation, or continued employment following the breach is not sufficient.
 
-The "last straw" doctrine (Omilaju v Waltham Forest LBC [2004] EWCA Civ 1493): a series of non-repudiatory acts may cumulatively breach trust and confidence. The final act must contribute — even slightly — to the cumulative breach; an entirely innocuous act cannot revive affirmed conduct.
+The "last straw" doctrine:
 
-Effect: counts as a dismissal for unfair-dismissal protection; normally also unfair. Wrongful-dismissal damages (breach of contract — notice pay) also available.
+A series of acts by the employer, each individually insufficient to amount to a repudiatory breach, may cumulatively constitute a breach of the implied term of mutual trust and confidence. The final act in the series — the "last straw" — need only be a further contribution to the cumulative breach; it need not itself be a serious act. An entirely innocuous or benign act cannot by itself amount to the last straw.
 
-Tactical: best practice is to raise a written grievance, allow reasonable time, then resign clearly stating the breach. Resigning without grievance risks affirmation findings.`,
-  tags: ['constructive-dismissal-test', 'Western-Excavating', 'mutual-trust-and-confidence', 'last-straw', 'affirmation'],
+Effect of constructive dismissal:
+
+Where the test is satisfied, the resignation counts as a dismissal under Cap. 23. The dismissal will generally also be unfair under Cap. 23. Compensation in the civil courts is assessed on the same basis as for any unfair dismissal.
+
+Forum for claims:
+- Labour Department (Chief Labour Officer): conciliation before or alongside civil proceedings.
+- Magistrates' Court: claims up to $10,000 BBD (approximately $5,000 USD at the 2:1 BBD/USD peg).
+- High Court of Barbados: claims above $10,000 BBD.`,
+  tags: ['constructive-dismissal-test', 'Western-Excavating', 'mutual-trust-and-confidence', 'last-straw', 'affirmation', 'Barbados', 'Cap-23'],
 };
 
 export default doc;

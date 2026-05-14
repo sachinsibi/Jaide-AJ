@@ -1,51 +1,34 @@
 import type { KnowledgeDocument } from '../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'resource-acas',
+  id: 'resource-barbados-labour-department',
   type: 'resource',
-  category: 'employment',
-  title: 'ACAS — Advisory, Conciliation and Arbitration Service',
-  jurisdiction: 'england-wales',
-  url: 'https://www.acas.org.uk',
+  category: 'general',
+  title: 'Labour Department of Barbados — Chief Labour Officer',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['employment'],
   tabs: ['references'],
   factSummary:
-    'ACAS is the independent statutory body for workplace dispute resolution. It provides free advice (helpline 0300 123 1100), the mandatory Early Conciliation service before any Employment Tribunal claim, the Code of Practice on Disciplinary and Grievance Procedures (uplift / reduction up to 25% on tribunal compensation), and a comprehensive online guidance library.',
-  content: `ACAS (https://www.acas.org.uk) is the principal practical resource for employment law in England and Wales. It is funded by government as an independent statutory body and serves both employees and employers.
+    'The Labour Department of Barbados, headed by the Chief Labour Officer, is the primary government body responsible for employment matters, labour conciliation, and enforcement of employment standards.',
+  content: `The Labour Department of Barbados is the principal government authority responsible for employment and labour relations in Barbados. It is headed by the Chief Labour Officer.
 
-Key services:
+Key functions:
 
-- Helpline (0300 123 1100). Free, confidential phone advice for employees, employers, and HR. Open Mon–Fri (extended hours posted on the site).
+- Labour conciliation: the Labour Department provides conciliation services to assist in the resolution of employment disputes between employers and employees, including disputes about dismissal, wages, and working conditions. Conciliation is typically a precursor to formal tribunal or court proceedings.
 
-- Early Conciliation. Mandatory pre-tribunal step (s.18A ETA 1996). Free, conciliated settlement attempts before any ET claim. Most claims settle at this stage.
+- Employment standards enforcement: the Department is responsible for monitoring and enforcing compliance with Barbados employment legislation, including provisions relating to minimum wages, notice periods, and statutory employment rights.
 
-- Code of Practice on Disciplinary and Grievance Procedures (2015). Statutory Code; failure to follow may result in up to 25% uplift / reduction in tribunal compensation under TULRCA 1992 s.207A. The Code sets the minimum standards for fair workplace procedures.
+- Advisory services: the Department provides advice to both employees and employers on their rights and obligations under Barbados employment law.
 
-- Online guidance. Plain-English explainers of every major employment topic — dismissal, redundancy, discrimination, holiday pay, working time, family leave, settlement agreements, restructuring, formal disputes. Updated regularly.
+- Registration and licensing: certain employment-related activities may require registration or licensing through the Labour Department.
 
-- Templates and forms. Standardised letters, policies, and procedures used by tens of thousands of employers — particularly useful for small employers without HR support.
+Barbados employment legislation: the primary legislation governing employment in Barbados includes the Employment Rights Act, Cap. 23 and related statutes. The applicable statutory provisions should be verified at laws.barbados.gov.bb.
 
-- Training. Paid training courses for HR / managers; some free online learning.
-
-- Workplace mediation. Neutral mediator for ongoing employment disputes between named individuals (paid service) — alternative to disciplinary or formal grievance processes.
-
-- Arbitration. The ACAS Arbitration Scheme provides a binding determination as an alternative to tribunal — relatively rare in practice.
-
-Adjacent resources:
-
-- gov.uk/employment-tribunals — for filing and managing tribunal claims.
-- Equality and Human Rights Commission (equalityhumanrights.com) — for discrimination guidance.
-- Working Families (workingfamilies.org.uk) — flexible-working and parental rights.
-- Citizens Advice (citizensadvice.org.uk/work) — broader employee rights advice.
-- Trade unions — for organised workplace representation.
-
-ACAS does NOT enforce employment law — it conciliates. For a binding determination, claimants must use the Employment Tribunal (or, less commonly, ACAS arbitration). For statutory pay enforcement (NMW), HMRC enforces.
-
-Strategic value: pursuing employment matters without engaging ACAS — both for advice and for Early Conciliation — is unusual and generally counter-productive. ACAS conciliation is free, neutral, and resolves the substantial majority of notifications without tribunal proceedings.`,
-  tags: ['ACAS', 'Early-Conciliation', 'Code-of-Practice', 'helpline', 'workplace-mediation', 'employment-resource'],
+Note: the exact contact details and current website for the Labour Department of Barbados should be verified through official Barbados government sources. Practitioners and individuals should seek up-to-date contact information directly from the Barbados government portal.`,
+  tags: ['Labour-Department', 'Chief-Labour-Officer', 'employment', 'Barbados', 'conciliation'],
 };
 
 export default doc;

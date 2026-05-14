@@ -1,51 +1,34 @@
 import type { KnowledgeDocument } from '../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'resource-trading-standards',
+  id: 'resource-barbados-consumer-affairs',
   type: 'resource',
-  category: 'contract-service',
-  title: 'Trading Standards / Citizens Advice consumer service',
-  jurisdiction: 'england-wales',
-  url: 'https://www.tradingstandards.uk/consumers',
+  category: 'general',
+  title: 'Consumer Affairs Division — Barbados',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['contract-service'],
   tabs: ['references'],
   factSummary:
-    'Local-authority Trading Standards services enforce consumer-protection law (CPUTR 2008, CRA 2015 public enforcement, sector-specific safety law). The front-line referral channel is the Citizens Advice consumer service (0808 223 1133), which triages reports and refers serious cases to the relevant Trading Standards team.',
-  content: `Trading Standards (https://www.tradingstandards.uk/consumers) is the umbrella name for the network of local-authority consumer-protection enforcement teams across England and Wales. Each local authority has its own service; complaints are usually routed through a single national first-line:
+    'Consumer protection in Barbados is overseen by the Consumer Affairs Division (or the relevant Barbados consumer protection authority). This body handles complaints about unfair trading practices and consumer rights violations. For contractual disputes, civil court proceedings remain the formal dispute resolution route.',
+  content: `Consumer protection in Barbados:
 
-- Citizens Advice consumer service: 0808 223 1133 (England) / 0808 223 1144 (Welsh-language). Free, independent. Takes consumer reports, gives self-help advice, and refers serious / systemic / criminal cases to the relevant local Trading Standards team.
+Consumer Affairs Division: the Consumer Affairs Division of Barbados (or the relevant Barbados consumer protection authority) is responsible for handling consumer complaints and enforcing consumer protection standards in Barbados. This is the appropriate authority for complaints about unfair trading, misleading sales practices, defective goods, and consumer rights violations. UK Trading Standards has no relevance to Barbados consumer disputes.
 
-What Trading Standards enforces:
+What the Consumer Affairs Division can do: investigate consumer complaints; mediate between consumers and traders; take regulatory action against traders engaging in unfair practices; provide consumer education and awareness.
 
-- Consumer Protection from Unfair Trading Regulations 2008 (criminal offences for misleading actions, misleading omissions, aggressive practices, and 31 specifically banned practices).
-- Consumer Rights Act 2015 (public enforcement under Sch.5).
-- Enterprise Act 2002, Pt 8 (court-ordered enforcement against persistent infringers).
-- Sector-specific consumer safety: food safety, weights and measures, age-restricted goods, product safety.
-- Counterfeit goods (Trade Marks Act 1994).
-- Doorstep crime, scams, rogue traders.
+What it does not do: award compensation directly to individual consumers. Where a consumer seeks financial redress, civil court proceedings remain the appropriate route.
 
-What it does NOT do:
+Civil court proceedings for consumer disputes: contractual and consumer disputes where financial compensation is sought are resolved through the civil courts in Barbados — the Magistrates' Court for claims up to $10,000 BBD and the High Court of Barbados for claims above that threshold.
 
-- Award compensation to individual consumers — that is the role of civil claims, ombudsmen, and ADR providers.
-- Force a trader to give a refund to a particular consumer (though pressure often produces this in practice).
-- Investigate every individual complaint — resources are stretched and prioritisation focuses on serious / repeat / vulnerable-victim cases.
+Barbados consumer legislation: consumer protection in Barbados is governed by the applicable Barbados statutes, which should be verified at laws.barbados.gov.bb. The Consumer Protection Act, Cap. 326D (or equivalent legislation) may be relevant to consumer claims.
 
-Adjacent enforcement:
+Note on contact details: the precise contact details and current website for the Consumer Affairs Division should be verified through official Barbados government sources. The exact URL for the Consumer Affairs Division is not reproduced here to avoid providing an inaccurate link.
 
-- Competition and Markets Authority (CMA) — markets-level consumer law cases against major traders; chairs the consumer enforcement network.
-- Advertising Standards Authority (ASA) — misleading or aggressive advertising (UK Code of Non-broadcast Advertising; UK Code of Broadcast Advertising).
-- Sector regulators (Ofcom, Ofgem, Ofwat, FCA) — for regulated industries.
-- Action Fraud — police-affiliated reporting service for outright fraud.
-
-When to use:
-
-- File a Trading Standards report when a trader's conduct shows misleading practices, aggressive sales, doorstep crime, sale of unsafe / counterfeit goods, or persistent disregard of consumer rights.
-- File in parallel with any civil claim — it is free, signals seriousness, and may produce evidence (criminal conviction; formal enforcement notice) usable at court or ombudsman.
-- The Citizens Advice consumer line is also useful for self-help advice on whether you have a viable claim before deciding whether to litigate.`,
-  tags: ['Trading-Standards', 'Citizens-Advice-consumer', 'CPUTR-2008', 'public-enforcement', 'helpline'],
+Note: UK Trading Standards, the Citizens Advice consumer service (England), and the Competition and Markets Authority are England and Wales institutions and have no jurisdiction over consumer disputes in Barbados.`,
+  tags: ['Consumer-Affairs-Division', 'consumer-protection', 'Barbados', 'unfair-trading', 'contract-service'],
 };
 
 export default doc;

@@ -5,37 +5,35 @@ const doc: KnowledgeDocument = {
   type: 'case',
   category: 'contract-service',
   title: 'Director General of Fair Trading v First National Bank [2001] UKHL 52',
-  jurisdiction: 'england-wales',
-  citation: 'Director General of Fair Trading v First National Bank plc [2001] UKHL 52, [2002] 1 AC 481',
-  url: 'https://www.bailii.org/uk/cases/UKHL/2001/52.html',
+  jurisdiction: 'barbados',
+  citation: 'Director General of Fair Trading v First National Bank plc [2001] UKHL 52, [2002] 1 AC 481 (House of Lords)',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   triggers: ['unfair term', 'small print', 'penalty', 'cancellation fee', 'standard terms', 'good faith', 'imbalance'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Leading authority on the unfair-terms test. A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties\' rights and obligations to the consumer\'s detriment. "Good faith" is an objective standard of fair and open dealing; "significant imbalance" requires a substantive disadvantage to the consumer.',
+    'Persuasive common law authority applied in Barbados as a Commonwealth jurisdiction. Establishes the analytical framework for assessing unfair contract terms. A term is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties\' rights and obligations to the detriment of the weaker party. Note: this case was decided under English statutory provisions (the Unfair Terms in Consumer Contracts Regulations 1999) that do not apply in Barbados; the analytical framework it describes is, however, of persuasive value when applying Barbados law governing unfair contract terms.',
   content: `Director General of Fair Trading v First National Bank [2001] UKHL 52 (House of Lords).
 
-Facts: First National Bank's standard-form consumer loan agreement contained a term entitling the bank to continue charging contractual interest on overdue sums even after a court judgment had been obtained. Without the term, the only interest payable post-judgment would have been the statutory rate (then 8%). The Director General challenged the term as unfair under the Unfair Terms in Consumer Contracts Regulations 1999.
+Status in Barbados: Persuasive common law authority. This case was decided under the Unfair Terms in Consumer Contracts Regulations 1999 (England and Wales) — legislation that does not have direct effect in Barbados. The case is relevant in Barbados as persuasive authority on the general principles that inform the assessment of unfair contract terms under Barbados law and the common law of contract as applied in Commonwealth jurisdictions. Parties should consult laws.barbados.gov.bb for the applicable Barbados statutory provisions governing unfair contract terms.
 
-Held (HL): the term was not unfair. The bank had a legitimate interest in continuing to charge contractual interest on a long-running debt, the rate was not concealed, and the burden of paying interest reflected the substantive bargain. The transparency and substantive fairness of the term, considered together, made it not unfair.
+Facts: First National Bank's standard-form consumer loan agreement contained a term entitling the bank to continue charging contractual interest on overdue sums even after a court judgment had been obtained. The Director General of Fair Trading challenged this term as unfair under the English regulations.
 
-Test for unfairness (now reproduced in CRA 2015 s.62):
+Held (House of Lords): The term was not unfair on the facts. The bank had a legitimate interest in recovering contractual interest on a long-running debt, the rate was not concealed, and the obligation to pay interest reflected the substance of the bargain.
 
-Unfair = "contrary to the requirement of good faith, [the term] causes a significant imbalance in the parties' rights and obligations arising under the contract, to the detriment of the consumer."
+Analytical framework — the two components of unfairness.
 
-Lord Bingham — good faith: looks to "good standards of commercial morality and practice"; requires "fair and open dealing." Openness — terms expressed fully, clearly, legibly, no concealed pitfalls. Fair dealing — supplier must not exploit consumer's necessity, indigence, lack of experience, unfamiliarity, or weak bargaining position.
+Lord Bingham — good faith. Good faith in the context of contract terms requires fair and open dealing. Openness means that terms are expressed fully, clearly, and legibly with no concealed pitfalls or traps for the weaker party. Fair dealing requires that the stronger party does not exploit the other's necessity, limited experience, unfamiliarity with the subject matter, or weak bargaining position.
 
-Lord Steyn — significant imbalance: a term so weighted toward the supplier that it tilts the parties' rights significantly. The court compares the position with vs without the term.
+Lord Steyn — significant imbalance. A significant imbalance arises where a term tilts the parties' rights and obligations materially in favour of the stronger party. The comparison is between the position with the term and the position the weaker party would otherwise enjoy under the general law.
 
-Modern application (CRA 2015 ss.62 and 64):
+Detriment. The imbalance must work against the weaker party. A term that is formally one-sided but does not in practice disadvantage the weaker party is less likely to meet this criterion.
 
-- Substantive plus procedural fairness — court weighs both content and manner of incorporation (transparency, prominence, negotiation).
-- Schedule 2 grey list (s.63) — terms in the indicative list are red flags, not automatically unfair.
-- Main-subject-matter exception (s.64) — fairness test excluded for the main subject matter or price-vs-value, provided transparent and prominent.
-- Effect — unfair term not binding (s.62(1)); rest of contract continues if practicable (s.67).`,
-  tags: ['DGFT-v-First-National-Bank', 'unfair-terms', 'good-faith', 'significant-imbalance', 'CRA-section-62'],
+Application in Barbados. When assessing whether a contract term is enforceable under Barbados law — whether under any applicable statutory provisions or the common law of unconscionability and reasonableness — the concepts of good faith and significant imbalance articulated in this case provide a useful analytical framework. Courts and advisers applying the relevant Barbados provisions governing unfair contract terms may draw on this analysis as persuasive authority.
+
+Transparency is relevant. Whether a term is expressed clearly and prominently, and whether the other party had a genuine opportunity to understand it before contracting, are material to any assessment of fairness under both common law principles and Barbados statutory provisions.`,
+  tags: ['DGFT-v-First-National-Bank', 'unfair-terms', 'good-faith', 'significant-imbalance', 'persuasive-authority', 'barbados'],
 };
 
 export default doc;

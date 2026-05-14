@@ -1,39 +1,34 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-rta-1988-s143',
+  id: 'statute-mvit-cap-166',
   type: 'statute',
   category: 'motor-accident',
-  title: 'Road Traffic Act 1988, s.143 — Compulsory insurance offence',
-  jurisdiction: 'england-wales',
-  citation: 'Road Traffic Act 1988, ss.143 and 145',
-  url: 'https://www.legislation.gov.uk/ukpga/1988/52/section/143',
+  title: 'Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166 — Compulsory Third-Party Insurance',
+  jurisdiction: 'barbados',
+  citation: 'Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['uninsured', 'no insurance', 'without insurance', 'lapsed insurance', 'mib', 'invalid insurance'],
-  tabs: ['legalBreakdown', 'references'],
+  triggers: ['uninsured', 'no insurance', 'without insurance', 'insurance', 'third party', 'compulsory insurance'],
+  tabs: ['overview', 'legalBreakdown', 'references'],
   factSummary:
-    'It is a criminal offence to use, or to cause or permit another to use, a motor vehicle on a road or public place without a policy of insurance complying with the minimum requirements set by s.145 (third-party cover for death, personal injury, and damage to property up to at least £1,200,000).',
-  content: `Section 143 of the Road Traffic Act 1988 makes it a criminal offence to use, or cause or permit another person to use, a motor vehicle on a road or public place without a policy of insurance (or security) in force complying with the requirements of Part VI of the Act.
+    'Cap. 166 makes third-party liability insurance compulsory for motor vehicles used on public roads in Barbados. Every owner or user of a motor vehicle on a road is required to hold a policy that covers third-party liability for death, bodily injury, and property damage. The Act is administered and enforced under the broader motor licensing regime.',
+  content: `The Motor Vehicles Insurance (Third-Party Risks) Act, Cap. 166 establishes the compulsory motor insurance framework in Barbados.
 
-Defence (s.143(3)): it is a defence for an employee charged under s.143 to prove that the vehicle did not belong to them, that they were not paying the cost of the insurance, that they were using the vehicle in the course of their employment, and that they neither knew nor had reason to believe insurance was not in force.
+Compulsory cover: no person shall use, or cause or permit another to use, a motor vehicle on a road unless there is in force a policy of insurance covering third-party liability in respect of death, bodily injury to persons, and damage to third-party property arising from the use of that vehicle on a road.
 
-Penalty: summary conviction; fine up to level 5 on the standard scale; mandatory endorsement (6–8 penalty points) and discretionary disqualification (Sch.2 RTOA 1988). Police may seize and remove the vehicle (s.165A).
+Policy requirements: a compliant policy must be issued by an insurer authorised to carry on insurance business in Barbados under the Insurance Act, Cap. 310, and must cover at minimum the classes of third-party liability specified in Cap. 166.
 
-Section 145 — minimum policy requirements. To comply with Part VI a policy must:
-(a) be issued by an authorised insurer;
-(b) insure such persons or classes of person as specified in respect of liability that may be incurred to others in respect of the death of or bodily injury to any person, or damage to property, caused by, or arising out of, the use of the vehicle on a road or public place;
-(c) cover at least £1,200,000 for damage to property arising out of any one accident, and (in respect of personal injury) cover liability without monetary limit.
+Insurer obligations: where a judgment is obtained against an insured in respect of a liability required to be covered by Cap. 166, the insurer is generally required to satisfy that judgment to the extent it falls within the scope of compulsory cover, even if the insurer may have grounds to avoid the policy as against its own insured.
 
-Civil interaction:
+Interaction with Insurance Act Cap. 310: the insurance industry in Barbados is regulated by the Financial Services Commission under the Insurance Act, Cap. 310. The Commission's role is primarily supervisory and regulatory; it does not operate as an adjudicative complaints body akin to a financial ombudsman. Complaints about insurer conduct may be directed to the Commission, but the scope of that process differs materially from a formal dispute-resolution body.
 
-1. Driving uninsured does not, of itself, prove negligence — civil liability still rests on breach of duty and causation. But it removes the principal route to recovery (the at-fault driver's insurer).
-
-2. Where the at-fault driver is uninsured (or untraced), a victim may claim against the Motor Insurers' Bureau (MIB) under the Uninsured Drivers' Agreement or Untraced Drivers' Agreement. The MIB stands behind the compulsory insurance regime.
-
-3. Where the policy is technically void (e.g., misrepresentation), s.151 RTA 1988 may still require the insurer to satisfy a third-party judgment.`,
-  tags: ['RTA-1988', 'section-143', 'compulsory-insurance', 'section-145', 'minimum-cover', 'MIB'],
+Where an at-fault driver is uninsured: Cap. 166 does not establish a compensation fund equivalent to the Motor Insurers' Bureau in the United Kingdom. Where the at-fault driver is uninsured, recovery is generally pursued directly against that driver through the civil courts. Practical recoverability may depend on the financial position of the uninsured driver.`,
+  eli5Summary:
+    'In Barbados, every driver must have third-party insurance by law. This means if a driver causes an accident, their insurance covers the damage or injury to other people. If a driver has no insurance, the other party may still be able to claim, but they would need to pursue the uninsured driver directly through the courts.',
+  tags: ['Cap-166', 'compulsory-insurance', 'third-party-liability', 'motor-insurance', 'Barbados'],
 };
 
 export default doc;

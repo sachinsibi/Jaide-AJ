@@ -5,34 +5,36 @@ const doc: KnowledgeDocument = {
   type: 'concept',
   category: 'general-civil',
   title: 'Damages in Civil Proceedings — types and structure',
-  jurisdiction: 'england-wales',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['general-civil'],
   tabs: ['legalBreakdown', 'eli5'],
   factSummary:
-    'Civil damages are compensatory — their purpose is to put the claimant in the position they would have been in had the wrong not occurred. Categories: general damages (non-pecuniary, assessed by the court), special damages (quantified pecuniary loss), aggravated damages (where defendant\'s conduct was oppressive), exemplary damages (Rookes v Barnard categories only, rare), nominal damages (vindication), and user damages (unauthorised use).',
+    'Civil damages in Barbados are compensatory — their purpose is to put the claimant in the position they would have been in had the wrong not occurred. Categories include: general damages (non-pecuniary harm assessed by the court), special damages (quantified pecuniary loss), aggravated damages (where the defendant\'s conduct was particularly oppressive), and in rare cases exemplary/punitive damages. All are available from the High Court of Barbados; Magistrates\' Court jurisdiction is limited to monetary claims up to $10,000 BBD.',
   eli5Summary:
-    'When you win a civil case, the court usually awards you money to put you back to where you were before. This covers things you can calculate exactly (like repair bills) and things the court has to estimate (like distress or loss of reputation). In some cases where the other side behaved particularly badly, the court can add extra to punish them — but this is rare.',
-  content: `Compensatory principle (Livingstone v Rawyards Coal Co (1880) 5 App Cas 25): damages aim to put the claimant in the position they would have been in had the wrong not occurred, so far as money can do it.
+    'When a claimant wins a civil case in Barbados, the court usually awards money to put them back to where they were before the harm. This covers things that can be calculated exactly (like repair bills or lost income) and things the court has to estimate (like distress or damage to reputation). In some cases where the other side behaved particularly badly, an extra amount may be awarded — but this is rare.',
+  content: `Compensatory principle: the fundamental purpose of civil damages in common law — including in Barbados — is to put the claimant in the position they would have been in had the wrong not occurred, so far as money can achieve this.
 
-General damages: losses without a precise monetary value, assessed by the court by reference to comparable awards. Includes: physical pain and suffering; psychiatric injury; distress, anxiety, and injured feelings (harassment, defamation, privacy); loss of reputation; loss of amenity; invasion of privacy (loss of control of information — Gulati v MGN [2015]).
+General damages: losses without a precise monetary value, assessed by the court by reference to the facts and comparable awards. Includes: distress, anxiety, and injured feelings (relevant in harassment, defamation, and privacy claims); loss of reputation; invasion of privacy (loss of control of private information); psychiatric harm (where proved). Assessed by the court in its discretion.
 
-Special damages: quantifiable pecuniary losses pleaded specifically and proved by evidence. Includes: repair costs; lost income; professional fees; replacement costs; medical expenses. Must be itemised and supported by receipts or expert evidence.
+Special damages: quantifiable pecuniary losses that must be specifically pleaded and proved by evidence. Includes: repair costs; lost income and earnings; professional fees incurred; replacement costs; medical and treatment expenses. These must be itemised in the claim and supported by receipts or expert evidence where required.
 
-Aggravated damages: an additional compensatory sum where the defendant's conduct was high-handed, oppressive, insulting, or malicious, and this aggravated the claimant's distress. They are compensatory (not punitive) and add to general damages.
+Aggravated damages: an additional compensatory sum available where the defendant's conduct was high-handed, oppressive, malicious, or insulting, and where this conduct aggravated the claimant's distress beyond the ordinary harm of the wrong. Aggravated damages are compensatory in nature — they are not a separate punishment but reflect the additional harm caused by the manner of the defendant's conduct.
 
-Exemplary (punitive) damages: available only in the Rookes v Barnard [1964] AC 1129 categories — (1) oppressive conduct by government servants; (2) conduct calculated to make a profit exceeding compensatory damages; (3) expressly authorised by statute. Rare. Punitive rather than compensatory.
+Exemplary (punitive) damages: available in narrow categories only, at common law — primarily where the defendant's conduct was calculated to make a profit exceeding any compensatory damages, or where it constituted oppressive abuse by governmental authority. These are exceptional and punitive in character, going beyond compensation.
 
-Nominal damages: vindicate the claimant's right where the wrong is proved but no loss is suffered (e.g., trespass per se, breach of privacy where information not yet published).
+Nominal damages: available to vindicate the claimant's legal right where the wrong is proved but no substantial loss is suffered (for example, in trespass per se or breach of a legal right without consequential harm).
 
-User damages: the reasonable fee that would have been payable for the defendant's unauthorised use (e.g., continued trespass, use of private information for commercial purposes).
+Mitigation: the claimant is under a duty to take reasonable steps to limit their loss. Failure to mitigate may reduce the award to the amount a claimant acting reasonably would have suffered.
 
-Mitigation: the claimant must take reasonable steps to limit the loss. Failure to mitigate reduces the award to what a reasonable claimant would have suffered.
+Currency: damages in Barbados civil proceedings are expressed in Barbados Dollars (BBD). The BBD is pegged at approximately 2:1 to the US Dollar.
 
-Interest: s.69 County Courts Act 1984 / s.35A Senior Courts Act 1981, at the court's discretion, typically 8% simple from the date of loss to judgment.`,
-  tags: ['damages', 'general-damages', 'special-damages', 'aggravated-damages', 'exemplary-damages', 'nominal-damages', 'Rookes-v-Barnard'],
+Forum: the Magistrates' Court of Barbados handles civil money claims up to $10,000 BBD (Cap. 116A). Claims above $10,000 BBD are brought in the High Court of Barbados (Cap. 117). The High Court has jurisdiction for all civil claims including those involving injunctions or complex legal issues.
+
+Interest: the court has discretion to award interest on damages for the period between the date of loss and the date of judgment. The applicable rate and rules should be verified under Barbados civil procedure.`,
+  tags: ['damages', 'general-damages', 'special-damages', 'aggravated-damages', 'compensatory', 'Barbados', 'common-law'],
 };
 
 export default doc;

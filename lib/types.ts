@@ -42,6 +42,11 @@ export interface LegalTestItem {
   application: string;
 }
 
+export interface ProcedureStep {
+  title: string;
+  detail: string;
+}
+
 export interface TermItem {
   term: string;
   definition: string;
@@ -67,7 +72,7 @@ export interface AnalysisOutput {
     doctrines: string[];
     caselaw: CaselawItem[];
     legalTests: LegalTestItem[];
-    procedures: string[];
+    procedures: ProcedureStep[];
     evidenceStandards: string;
     precedentPatterns: string;
     keyTerminology: TermItem[];

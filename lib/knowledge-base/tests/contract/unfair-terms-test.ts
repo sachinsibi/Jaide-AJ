@@ -4,37 +4,44 @@ const doc: KnowledgeDocument = {
   id: 'test-unfair-terms-test',
   type: 'test',
   category: 'contract-service',
-  title: 'CRA 2015 Unfair Terms Test',
-  jurisdiction: 'england-wales',
+  title: 'Unfair Contract Terms Test — Barbados',
+  jurisdiction: 'barbados',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   triggers: ['unfair term', 'small print', 'exclusion clause', 'penalty', 'cancellation fee', 'standard terms', 'good faith', 'imbalance'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'Test under CRA 2015 s.62: a term in a consumer contract is unfair if, contrary to the requirement of good faith, it causes a significant imbalance in the parties\' rights and obligations to the consumer\'s detriment. If unfair, the term is not binding (s.62(1)). Subject to a transparency exclusion for main subject-matter and price (s.64).',
-  content: `CRA 2015 Unfair Terms Test:
+    'The enforceability of unfair contract terms in Barbados is assessed under common law doctrines on exclusion and limitation clauses and any relevant Barbados statutory provisions governing unfair contract terms (consult laws.barbados.gov.bb). The analytical framework — whether a term causes a significant imbalance contrary to good faith — reflects principles of general common law applicable in Commonwealth jurisdictions including Barbados.',
+  content: `Unfair Contract Terms Test — Barbados.
 
-Stage 1 — Gateway. Trader-consumer contract or consumer notice. Both standard-form and bespoke terms in scope.
+This test is applied when assessing whether an exclusion clause, limitation clause, penalty clause, or other one-sided term in a Barbados contract is enforceable. The applicable framework draws on common law doctrines and any Barbados statutory provisions governing unfair contract terms. Consult laws.barbados.gov.bb for the current legislative position.
 
-Stage 2 — s.64 transparency exclusion. Fairness test does NOT apply to (a) the main subject matter or (b) price-vs-value, BUT only where the term is transparent (plain language, legible) and prominent. Buried, opaque, or surprising main-subject/price terms are reviewable.
+Stage 1 — Incorporation. The term must have been validly incorporated into the contract before it can be enforced. A term in standard-form conditions, small print, or a separate document is only incorporated if it was brought to the other party's attention before or at the time of contracting. An unusual or onerous term requires a higher degree of notice before it will be treated as having been agreed.
 
-Stage 3 — Fairness test (s.62(4)): "contrary to the requirement of good faith, [causes] a significant imbalance to the consumer's detriment." Three components considered together (DGFT v First National Bank [2001] UKHL 52):
+Stage 2 — Construction. If incorporated, the term is construed narrowly against the party seeking to rely on it (contra proferentem). Ambiguous language in an exclusion or limitation clause is resolved against the drafter. A clause that purports to exclude liability for the party's own negligence must use clear and express language to achieve that effect.
 
-(a) Significant imbalance — term tilts rights significantly in trader's favour. Compare with vs without.
-(b) Contrary to good faith — fair and open dealing. Openness: clear, legible, no concealed pitfalls. Fair dealing: no exploitation of consumer's necessity, inexperience, or weak bargaining position.
-(c) Detriment to consumer — must work against the consumer.
+Stage 3 — Statutory controls. Barbados law governing unfair contract terms may void or render unenforceable certain exclusion or limitation clauses, particularly in consumer contracts. The relevant provisions should be confirmed at laws.barbados.gov.bb. Terms that exclude or restrict liability under the Sale of Goods Act, Cap. 318 may be subject to specific statutory controls.
 
-Stage 4 — Schedule 2 grey list: 20 indicative categories — disproportionate cancellation fees; one-sided binding; unilateral variation; automatic renewal with onerous notice; restrictions on remedies; retention of sums on cancellation; hidden interest/charges; onerous indemnities. Appearance on the list is a red flag, not automatic unfairness.
+Stage 4 — Common law fairness principles. Under the common law as applied in Barbados and other Commonwealth jurisdictions, courts may decline to enforce a term that is unconscionable or that operates in a manner grossly contrary to the reasonable expectations of the parties. The general framework of good faith and significant imbalance — articulated in Director General of Fair Trading v First National Bank [2001] UKHL 52 (persuasive common law authority) — provides the following analytical structure:
 
-Stage 5 — Effect (ss.62(1), 67). Unfair term is not binding; the rest continues if practicable. Operates by force of law, not by consumer election.
+(a) Good faith. The term must not have been introduced in a manner contrary to the requirement of fair and open dealing. Relevant considerations: whether the term was expressed clearly and prominently; whether the other party had a real opportunity to understand its effect; and whether the term exploits the other party's weaker bargaining position, limited experience, or lack of legal knowledge.
 
-Special protections regardless of fairness:
-- s.65 — exclusion of liability for negligence death/PI is not binding.
-- s.31 — exclusion of CRA implied terms (ss.9–11, 17, 49) is not binding.
+(b) Significant imbalance. The term must not create a material tilt in the parties' rights and obligations in favour of the drafter and to the detriment of the other party. The comparison is between the position the other party holds under the contract and the position they would hold under the general law without the term.
 
-Public enforcement: CMA and named regulators can seek injunctions against unfair terms in standard contracts (Sch.3).`,
-  tags: ['unfair-terms-test', 'CRA-section-62', 'good-faith', 'significant-imbalance', 'transparency', 'grey-list'],
+(c) Detriment. The imbalance must work against the party who did not draft the term.
+
+Stage 5 — Effect of an unenforceable term. A term found to be unenforceable under Barbados statute or common law is treated as void or of no effect. The remainder of the contract continues in force to the extent practicable without the offending term.
+
+Examples of terms likely to attract scrutiny.
+- Blanket exclusions of liability for defects in goods or services.
+- Disproportionate cancellation fees that bear no relation to actual loss.
+- Unilateral variation clauses allowing the trader to change material terms without notice.
+- Terms restricting the other party's right to bring a civil claim or seek redress.
+- Automatic renewal terms without adequate notice provisions.
+
+Special note. Regardless of any term in a contract, the implied conditions under the Sale of Goods Act, Cap. 318 as to title, description, quality, and fitness for purpose may not be excluded or restricted in a manner inconsistent with the applicable Barbados statutory provisions governing consumer protection.`,
+  tags: ['unfair-terms-test', 'good-faith', 'significant-imbalance', 'contra-proferentem', 'incorporation', 'construction', 'barbados'],
 };
 
 export default doc;

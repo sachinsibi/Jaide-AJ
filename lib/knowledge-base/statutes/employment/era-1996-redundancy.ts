@@ -1,54 +1,60 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'statute-era-1996-redundancy',
+  id: 'statute-barbados-employment-cap23-redundancy',
   type: 'statute',
   category: 'employment',
-  title: 'Employment Rights Act 1996, ss.135–162 — Redundancy',
-  jurisdiction: 'england-wales',
-  citation: 'Employment Rights Act 1996, ss.135, 139, 162; Trade Union and Labour Relations (Consolidation) Act 1992, s.188',
-  url: 'https://www.legislation.gov.uk/ukpga/1996/18/part/XI',
+  title: 'Employment Rights Act, Cap. 23 — Redundancy and Severance Entitlements',
+  jurisdiction: 'barbados',
+  citation: 'Employment Rights Act, Cap. 23',
+  url: 'https://laws.barbados.gov.bb',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
-  triggers: ['redundancy', 'redundant', 'made redundant', 'reorganisation', 'restructure', 'closure', 'collective consultation', 'selection criteria', 'pool'],
+  triggers: ['redundancy', 'redundant', 'made redundant', 'reorganisation', 'restructure', 'closure', 'severance', 'selection criteria', 'pool'],
   tabs: ['legalBreakdown'],
   factSummary:
-    'A redundancy dismissal is potentially fair under ERA 1996 s.98(2)(c). It must be a genuine redundancy as defined by s.139 (cessation of business, workplace, or reduced need for employees). Procedural fairness requires consultation, fair selection criteria, and consideration of suitable alternative employment. Statutory redundancy pay under s.162 requires 2 years\' service and is calculated on age, length of service, and capped weekly pay.',
-  content: `Sections 135–162 ERA 1996 govern statutory redundancy and its procedural framework. Section 188 of the Trade Union and Labour Relations (Consolidation) Act 1992 governs collective consultation where 20 or more dismissals are proposed at one establishment within 90 days.
+    'Cap. 23 governs redundancy entitlements in Barbados, including the right to statutory severance pay where an employee is dismissed by reason of genuine redundancy. A redundancy is genuine where the employer\'s need for employees to carry out work of a particular kind has ceased or diminished. Procedural fairness — including consultation, fair selection, and consideration of alternative employment — is required for a redundancy dismissal to be lawful.',
+  content: `Redundancy and Severance Entitlements under Cap. 23 (Employment Rights Act, Barbados):
 
-Section 139 — Definition of redundancy. A dismissal is by reason of redundancy where the employer's requirements for employees:
+Definition of redundancy:
 
-(a) to carry out work of a particular kind, or
-(b) to carry out work of a particular kind in the place where the employee was so employed,
+Under Barbados employment law, a dismissal is by reason of redundancy where the employer's requirements for employees to carry out work of a particular kind have ceased or diminished, or are expected to do so. This encompasses:
 
-have ceased or diminished or are expected to cease or diminish.
+(a) Closure of the business as a whole.
+(b) Closure of the particular workplace or site where the employee was employed.
+(c) Reduction in the number of employees required to carry out work of a particular kind.
 
-Three categories: (i) closure of the business; (ii) closure of the workplace; (iii) reduced need for employees doing particular work.
+A sham redundancy — where the redundancy label is used to disguise a dismissal for another reason, or where the role is immediately re-filled — does not constitute genuine redundancy and will not support a fair dismissal on that basis.
 
-Procedural requirements for fair redundancy dismissal (judicial gloss on s.98(4); Williams v Compair Maxam [1982] ICR 156):
+Procedural requirements for a fair redundancy dismissal:
 
-1. Warning and consultation. Employees should be given as much warning as possible. Individual consultation is required even where the redundancy situation is unavoidable (Polkey v A E Dayton [1988] AC 344).
+Barbados employment law and the common law principles applied in Barbados courts require employers to follow a fair process when carrying out redundancies. The persuasive Commonwealth authority of Williams v Compair Maxam [1982] ICR 156 (EAT) sets out principles widely applied across Commonwealth jurisdictions:
 
-2. Fair pool and selection criteria. Identify the correct selection pool (the employees at risk). Apply objective, measurable criteria — performance, attendance, qualifications, length of service. Subjective criteria without objective scoring render selection unfair (Capita Hartshead v Byard [2012] ICR 1256).
+1. Advance warning. Employees at risk of redundancy should be given as much advance notice as reasonably practicable to allow them to seek alternative employment and to engage meaningfully in consultation.
 
-3. Suitable alternative employment. The employer must take reasonable steps to find suitable alternative employment within the business or group.
+2. Consultation. Genuine individual consultation is required — the employee should be given an opportunity to discuss the situation, suggest alternatives, and make representations before a final decision is made. Consultation must be genuine, not a formality.
 
-4. Right to appeal. The employee should have an opportunity to challenge selection.
+3. Fair selection pool. The employer must identify the correct pool of employees at risk — typically those carrying out the same or similar work in the affected area. Defining the pool incorrectly or manipulating it to target a particular employee renders selection unfair.
 
-Collective consultation (TULRCA 1992 s.188):
+4. Objective selection criteria. Selection within the pool should be based on objective, measurable criteria such as skills, qualifications, performance, attendance, and length of service. Purely subjective selection based on personal opinion is inconsistent with a fair process.
 
-Where the employer proposes to dismiss as redundant 20 or more employees at one establishment within 90 days, the employer must consult representatives (recognised union; or elected employee representatives) about ways to avoid, reduce, or mitigate the dismissals. Minimum consultation periods:
-- 30 days where 20–99 dismissals proposed.
-- 45 days where 100 or more dismissals proposed.
-- Failure can result in a Protective Award of up to 90 days' pay per affected employee.
+5. Suitable alternative employment. Before dismissing for redundancy, the employer should take reasonable steps to identify and offer suitable alternative positions within the business. An employee who unreasonably refuses a genuine offer of suitable alternative employment may lose the right to severance pay.
 
-Statutory redundancy pay (s.162):
+6. Right to appeal. The employee should have an opportunity to challenge the selection decision through an internal appeal mechanism.
 
-Calculated by: (a) length of continuous service capped at 20 years; (b) age at dismissal (different multipliers for different age bands); (c) weekly pay subject to a statutory cap reviewed annually.
+Statutory severance pay:
 
-A genuine offer of suitable alternative employment that the employee unreasonably refuses can defeat the right to redundancy pay (s.141).`,
-  tags: ['redundancy', 'ERA-1996', 'section-139', 'collective-consultation', 'TULRCA-section-188', 'selection-criteria', 'suitable-alternative-employment'],
+Cap. 23 provides for statutory severance pay for employees who are dismissed by reason of genuine redundancy and meet the qualifying conditions (including length of service). The method of calculating statutory severance pay is set out in Cap. 23 — parties should consult the current legislation at laws.barbados.gov.bb for the applicable formula and rates. All monetary entitlements are expressed in Barbados dollars (BBD); note the BBD/USD 2:1 fixed peg.
+
+An employee who unreasonably refuses a genuine offer of suitable alternative employment may forfeit the right to statutory severance pay under Cap. 23.
+
+Forum for claims:
+
+Redundancy entitlement disputes may be referred to the Labour Department (Chief Labour Officer) for conciliation or pursued through the civil courts:
+- Magistrates' Court: claims up to $10,000 BBD (approximately $5,000 USD).
+- High Court of Barbados: claims above $10,000 BBD.`,
+  tags: ['Cap-23', 'redundancy', 'severance', 'Barbados', 'consultation', 'selection-criteria', 'suitable-alternative-employment'],
 };
 
 export default doc;

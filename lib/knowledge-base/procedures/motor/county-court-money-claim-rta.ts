@@ -1,43 +1,37 @@
 import type { KnowledgeDocument } from '../../schema';
 
 const doc: KnowledgeDocument = {
-  id: 'procedure-county-court-money-claim-rta',
+  id: 'procedure-barbados-civil-court-motor-claim',
   type: 'procedure',
   category: 'motor-accident',
-  title: 'County Court Money Claim — RTA (Property Damage)',
-  jurisdiction: 'england-wales',
-  citation: 'Civil Procedure Rules, Part 7; CPR 26 (track allocation); CPR 27 (small claims)',
-  url: 'https://www.gov.uk/make-court-claim-for-money',
+  title: 'Civil Court Proceedings for Motor Vehicle Property Damage — Barbados',
+  jurisdiction: 'barbados',
+  citation: 'Magistrates\' Court Act, Cap. 116A; Supreme Court of Judicature Act, Cap. 117 (Barbados)',
   inForce: true,
   lastVerified: '2026-05-01',
   version: '2026-05-01',
   pinFor: ['motor-accident'],
   tabs: ['overview', 'legalBreakdown'],
   factSummary:
-    'For an unresolved RTA property-damage claim, issue at the County Court Money Claims Centre on Form N1 or via Money Claim Online (MCOL) for liquidated sums up to £100,000. Most non-PI motor claims fall on the small claims track (≤£10,000); some on fast track (£10,000–£25,000); rarely multi-track.',
-  content: `Forum: County Court Money Claims Centre (CCMCC) at Salford, with hearings allocated to a local hearing centre.
+    'In Barbados, civil motor accident claims for property damage are heard in the Magistrates\' Court (for amounts up to $10,000 BBD) or the High Court of Barbados (for amounts exceeding $10,000 BBD). Proceedings are commenced by filing a claim in the appropriate court after pre-litigation steps have been exhausted.',
+  content: `Civil Court Proceedings for Motor Vehicle Property Damage Claims in Barbados
 
-Issue routes:
-(a) Money Claim Online (MCOL) — liquidated sums up to £100,000 against up to two defendants; best for specified-sum claims.
-(b) Form N1 — paper, for unspecified-sum claims, more than two defendants, or non-money relief.
+Court jurisdiction by claim value:
 
-Issue fees are banded by claim value (gov.uk/court-fees; confirm current rates before issue).
+Magistrates' Court: has civil jurisdiction over claims where the amount in dispute does not exceed $10,000 BBD. Claims for vehicle damage or other property loss at or below this threshold would typically be brought in the Magistrates' Court. Note that the $10,000 threshold is in Barbados Dollars (BBD); the BBD is pegged at approximately 2:1 to the US Dollar, so a claim expressed in USD should be converted to BBD to determine the appropriate court. The process is generally more accessible and less costly than High Court proceedings.
 
-Particulars of Claim: parties and capacity (driver, keeper, vicarious employer); date/time/location, vehicles, brief factual narrative; cause of action (negligence with duty-breach-causation pleading) and statutory bases (RTA 1988 breaches as evidence); itemised damages (repair/write-off PAV, hire, recovery, storage, excess, loss of use); interest under s.69 County Courts Act 1984; costs.
+High Court of Barbados: has jurisdiction over claims exceeding $10,000 BBD, or where the nature of the claim or the relief sought requires it. Vehicle damage claims in higher ranges, or claims combining property damage with other heads of loss, may fall in the High Court.
 
-Track allocation (CPR 26):
-- Small claims — up to £10,000. Most non-PI claims. Cost recovery very limited (court fees, fixed costs, expert fees up to £750, modest travel/lost-earnings).
-- Fast track — £10,000–£25,000. Standard cost recovery.
-- Multi-track — over £25,000 or where complex.
+Pre-litigation steps: before commencing proceedings, the claimant typically corresponds with the at-fault driver and their insurer, sets out the basis of the claim and the losses claimed, provides supporting evidence (photographs, repair estimates, police report), and allows a reasonable period for response and settlement. Failure to engage in pre-litigation correspondence may be taken into account by the court.
 
-Defence: defendant has 14 days to acknowledge or defend; with acknowledgment, defence in 28 days. Default judgment available.
+Particulars of claim: the statement of claim sets out the parties, the date and circumstances of the accident, the basis of the defendant's liability (negligence — duty, breach, causation, damage), the heads of loss claimed (vehicle repair or write-off value, alternative transport costs, any other consequential losses), and the amount sought.
 
-Directions and trial: small claims often a one-day-or-less hearing with limited disclosure. Judge hears claimant, witnesses, engineer; gives judgment on liability (with any contributory reduction) and quantum.
+Contributory negligence: where the defendant alleges that the claimant's own driving contributed to the accident, the court apportions liability and reduces the award accordingly.
 
-Enforcement: warrant of control; attachment of earnings; third-party debt order; charging order; insurer's s.151 RTA 1988 obligation against the insured driver's insurer (subject to s.152 notification within 7 days of issue).
+Evidence: key evidence includes the police report, photographs of the scene and vehicle damage, witness statements, repair estimates or engineer's assessments, and any dashcam or CCTV footage.
 
-Where the at-fault driver is uninsured or untraced, recovery is via the Motor Insurers' Bureau (UDA or UTA), not direct enforcement.`,
-  tags: ['CPR-Part-7', 'County-Court', 'small-claims', 'MCOL', 'track-allocation', 'enforcement'],
+Enforcement: a judgment of the Magistrates' Court or High Court is enforceable through the court's enforcement mechanisms. Where the defendant has insurance, the judgment may be satisfied by the insurer under Cap. 166.`,
+  tags: ['Magistrates-Court', 'High-Court', 'Barbados', 'civil-claim', 'motor-accident', 'property-damage', 'Cap-116A'],
 };
 
 export default doc;

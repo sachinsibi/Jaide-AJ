@@ -151,12 +151,14 @@ export function AnalysisScreen() {
       }
     };
 
-    void Promise.all([
-      fetchTab('overview'),
-      fetchTab('legalBreakdown'),
-      fetchTab('eli5'),
-      fetchTab('references'),
-    ]);
+    void fetchTab('overview');
+    setTimeout(() => {
+      void Promise.all([
+        fetchTab('legalBreakdown'),
+        fetchTab('eli5'),
+        fetchTab('references'),
+      ]);
+    }, 1500);
   }, [router]);
 
   if (isInitialising) return <LoadingScreen />;

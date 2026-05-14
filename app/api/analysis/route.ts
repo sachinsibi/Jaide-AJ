@@ -3,6 +3,8 @@ import { createTabStream } from '@/lib/llm/analyze';
 import { retrieve } from '@/lib/rag';
 import type { AnalysisRequest, AnalysisTab } from '@/lib/types';
 
+export const maxDuration = 60;
+
 const VALID_TABS: AnalysisTab[] = ['overview', 'legalBreakdown', 'eli5', 'references'];
 
 export async function POST(request: NextRequest): Promise<Response> {
